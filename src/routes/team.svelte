@@ -6,10 +6,8 @@
   import { seo } from '$lib/store/seo';
 
   $seo = {
-    title: 'Whakaoranga Whanau Recovery Hub',
-    description: 'Learn about our community AOD & recovery services',
+    title: 'Ngā kaimahi',
+    description: 'Meet the staff; those in front and behind the scenes',
     robots: 'none',
   };
 </script>
-
-<h1>Hello world!</h1>

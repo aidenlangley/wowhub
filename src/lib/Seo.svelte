@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { seo } from '$lib/store/seo';
+  import { seo } from '$lib/store/seo';
 </script>
 
 <!--
@@ -20,7 +20,7 @@
 	```
 -->
 <svelte:head>
-	<title>{$seo.title}</title>
-	<meta name="description" content={$seo.description} />
-	<meta name="robots" content={$seo.robots} />
+  <title>{$seo.title}</title>
+  <meta name="description" content={$seo.description} />
+  <meta name="robots" content={$seo.robots} />
 </svelte:head>

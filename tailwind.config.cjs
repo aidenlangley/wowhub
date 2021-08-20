@@ -10,23 +10,23 @@ const config = {
 	theme: {
 		extend: {
 			screens: {
-				tyd: em(514),
-				ty: { max: em(513) },
+				tyd: { max: em(513) },
+				ty: em(514),
 
-				smd: em(640),
-				sm: { max: em(639) },
+				smd: { max: em(639) },
+				sm: em(640),
 
-				mdd: em(768),
-				md: { max: em(767) },
+				mdd: { max: em(767) },
+				md: em(768),
 
-				lgd: em(1024),
-				lg: { max: em(1023) },
+				lgd: { max: em(1023) },
+				lg: em(1024),
 
-				xld: em(1280),
-				xl: { max: em(1279) },
+				xld: { max: em(1279) },
+				xl: em(1280),
 
-				'2xld': em(1536),
 				'2xl': { max: em(1536) },
+				'2xld': em(1536),
 			},
 			fontSize: {
 				ty: [rem(12), '.75rem'],
@@ -36,12 +36,15 @@ const config = {
 				14: [rem(14), '.875rem'], // sm
 
 				'text-base': [rem(16), '1.5rem'], // base
+				18: [rem(18), '1.5rem'],
 
 				lg: [rem(20), '1.75rem'],
 				20: [rem(20), '1.75rem'], // lg
+				22: [rem(22), '1.75rem'],
 
 				xl: [rem(24), '1.75rem'],
 				24: [rem(24), '1.75rem'], // xl
+				26: [rem(26), '1.75rem'],
 
 				'2xl': [rem(28), '2rem'],
 				28: [rem(28), '2rem'], // 2xl

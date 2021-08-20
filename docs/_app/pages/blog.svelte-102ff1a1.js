@@ -1,0 +1,1 @@
+import{S as s,i as o,s as t,G as r,V as e}from"../chunks/vendor-dbbe443a.js";import{s as a}from"../chunks/seo-dacd2849.js";function n(s,o,t){let n;return r(s,a,(s=>t(0,n=s))),e(a,n={title:"Blog",description:"Posts & updates from wowhub.co.nz",robots:n.robots},n),[]}class u extends s{constructor(s){super(),o(this,s,n,null,t,{})}}export{u as default};
