@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/icon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@100;300;400;500;700;900&family=Permanent+Marker&family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<title>Welcome</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-e2959700.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-99e68af1.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-8d510f00.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-9a751244.js">
+		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-d406bf36.css">
+
+		<script type="module">
+			import { start } from "/_app/start-e2959700.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-8d510f00.js"),
+						import("/_app/pages/index.svelte-9a751244.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header class="
+        bg-black text-white 
+        flex items-center align-middle sm:text-center
+        p-2 sm:p-4
+        border-b border-gray-300 dark:border-gray-800
+        shadow
+    "><div class="max-h-8 sm:max-h-10 md:max-h-12 lg:max-h-14 xl:max-h-16 max-w-none"><img src="./logo-white.png" alt="wowhub logo white"></div></header>
+
+
+<h1>Hello, World!</h1>
+<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+
+
+
+	
+</div>
+	</body>
+</html>
