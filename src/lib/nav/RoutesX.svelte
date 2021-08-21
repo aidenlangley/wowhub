@@ -9,23 +9,22 @@
 <!--
 	@component
 	`NavSpan` is intended to be inlined in headers and/or footers. `NavLink` are
-	inlined using `flex`.
+	inlined using `flex`. Named `RouteX` as this is a horizontal component.
 -->
-<span
+<nav
   class="
-    text-white
-    space-x-1 sm:space-x-2 xl:space-x-3
-    tyd:text-16 text-18 sm:text-20 md:text-22 lg:text-24 xl:text-26
-    font-medium tracking-tight
+    sm:space-x-1 md:space-x-2
+    tyd:text-20 text-22 sm:text-28 md:text-30 lg:text-32 xl:text-40
+    font-medium tracking-tighter
   "
 >
   {#each $routes as route (route.path)}
     <RouteLink
       route={route.path}
       tooltip={route.translation}
-      active={highlightActive && $page.path == route.path}
+      active={highlightActive && $page.path === route.path}
     >
       {route.name}
     </RouteLink>
   {/each}
-</span>
+</nav>

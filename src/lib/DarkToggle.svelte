@@ -3,13 +3,14 @@
   import SvgMoon from './media/svg/SvgMoon.svelte';
   import SvgSun from './media/svg/SvgSun.svelte';
 
+  // Marks property as reactive.
   $: dark = $state.dark;
   const toggle = () => set(!dark);
 </script>
 
 <!--
     @component
-    Handles toggling dark mode (via local storage.)
+    Handles toggling dark mode (via a `dark` store & local storage.)
 -->
 <div class="items-center align-middle">
   <button

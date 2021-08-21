@@ -7,11 +7,6 @@ export const routes = readable([
     translation: 'home',
   },
   {
-    name: 'tāku ratonga',
-    path: '/services',
-    translation: 'our services',
-  },
-  {
     name: 'ngā kaimahi',
     path: '/team',
     translation: 'the team / workers',
@@ -22,8 +17,8 @@ export const routes = readable([
     translation: 'our friends',
   },
   {
-    name: 'blog',
+    name: 'rangitaki',
     path: '/blog',
-    translation: null,
+    translation: 'blog',
   },
 ]);

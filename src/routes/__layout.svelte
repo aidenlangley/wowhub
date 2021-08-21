@@ -11,9 +11,7 @@
 
   // Componenets
   import Header from '$lib/layout/Header.svelte';
-
-  // Transitions
-  import { fly } from 'svelte/transition';
+  import Footer from '$lib/layout/footer/Footer.svelte';
 </script>
 
 <!-- `svelte:head` with `title` & `meta` tags. -->
@@ -22,4 +20,5 @@
 <div class:dark>
   <Header />
   <slot />
+  <Footer />
 </div>

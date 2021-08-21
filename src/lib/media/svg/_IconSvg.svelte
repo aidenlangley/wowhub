@@ -2,6 +2,10 @@
   import { style } from '../_Icon.svelte';
 </script>
 
+<!--
+  @component
+  Wraps other SVG components so that the styling & viewbox remains the same.
+-->
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class={style}

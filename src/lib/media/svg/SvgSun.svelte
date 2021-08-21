@@ -2,6 +2,10 @@
   import IconSvg from './_IconSvg.svelte';
 </script>
 
+<!--
+  @component
+  Solid sun from heroicons.com.
+-->
 <IconSvg>
   <path
     fill-rule="evenodd"
