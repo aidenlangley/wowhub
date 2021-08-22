@@ -7,13 +7,17 @@
 </script>
 
 <script lang="ts">
-  import { lightHeadingStyle, paragraphStyle } from './IndexBlurb.svelte';
+  import {
+    spacingStyle,
+    lightHeadingStyle,
+    paragraphStyle,
+  } from './IndexBlurb.svelte';
 
   const headings = whakatauki.whakatauki.split(',');
   headings[0] += ',';
 </script>
 
-<div class="space-y-2 sm:space-y-4 md:space-y-8 xl:space-y-12">
+<div class={spacingStyle}>
   <div class="{lightHeadingStyle} text-center">
     {#each headings as heading}
       <h1>{heading}</h1>
@@ -27,7 +31,14 @@
       text-center text-shadow
     "
   >
-    "{whakatauki.translation}"
+    <span
+      class="
+        bg-white bg-opacity-90
+        dark:bg-black dark:bg-opacity-50
+        "
+    >
+      "{whakatauki.translation}"
+    </span>
   </h2>
   <div class={paragraphStyle}>
     <p>

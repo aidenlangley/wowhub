@@ -1,7 +1,7 @@
 <script lang="ts">
   import { seo } from '$lib/store/seo';
   import { state } from '$lib/store/dark';
-  import { blur } from 'svelte/transition';
+  import { blur, fly } from 'svelte/transition';
 
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
@@ -14,10 +14,13 @@
   import Column from '$lib/layout/Column.svelte';
   import Signage from '$lib/media/signage/Signage.svelte';
   import SignageWhite from '$lib/media/signage/SignageWhite.svelte';
-  import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
   import QuickLinks from '$lib/content/QuickLinks.svelte';
+
+  import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
+  import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
-  import IndexServiceList from '$lib/content/index/IndexServiceList.svelte';
+
+  let hideHeader = true;
 </script>
 
 <!--
@@ -28,7 +31,6 @@
 <Page>
   <Column>
     <div
-      slot="center"
       class="
         col-start-2
         pt-4 sm:pt-8 md:pt-16 lg:pt-32
@@ -46,7 +48,7 @@
           </div>
         {/if}
       </div>
-      <div class="p-4">
+      <div class="p-2">
         <div
           class="
             sm:pt-4 md:pt-8 sm:pb-4 md:pb-8
@@ -63,7 +65,7 @@
         <IndexBlurb />
       </div>
       <div class="p-2">
-        <IndexServiceList />
+        <IndexBuzzWords />
       </div>
       <div class="p-2">
         <IndexWhakatauki />

@@ -3,7 +3,7 @@
     <slot name="left" />
   </div>
   <div>
-    <slot name="center" />
+    <slot />
   </div>
   <div class="invisible sm:visible">
     <slot name="right" />

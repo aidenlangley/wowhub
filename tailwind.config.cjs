@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 // Helper functions
 const em = (px) => `${px / 16}em`
 const rem = (px) => `${px / 16}rem`
@@ -90,6 +92,9 @@ const config = {
 				14: '14px',
 				16: '16px'
 			},
+			colors: {
+				orange: colors.orange
+			}
 		},
 	},
 	plugins: [],

@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+  export const spacingStyle =
+    'space-y-2 md:space-y-4 lg:space-y-8 xl:space-y-12';
   export const lightHeadingStyle =
     'text-shadow font-medium tracking-tighter ' +
     'text-28 md:text-42 lg:text-64 ' +
@@ -28,7 +30,7 @@
     <span
       class="
         font-display font-medium tracking-tight
-        text-shadow-md
+        sm:text-shadow text-gray-700 dark:text-white
         text-48 md:text-72 lg:text-96 xl:text-128
       "
     >
