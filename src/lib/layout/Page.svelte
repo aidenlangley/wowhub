@@ -12,7 +12,7 @@
     bg-top bg-blend-difference bg-white
     dark:bg-gray-900 dark:bg-blend-hard-light
     dark:text-white
-    transition duration-500 
+    transition duration-500
   "
 >
   <div class="bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50">

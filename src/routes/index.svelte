@@ -19,6 +19,7 @@
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
   import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
+  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
 
   let hideHeader = true;
 </script>
@@ -69,6 +70,9 @@
       </div>
       <div class="p-2">
         <IndexWhakatauki />
+      </div>
+      <div class="p-2 pb-4">
+        <IndexLatestPosts />
       </div>
     </div>
   </Column>

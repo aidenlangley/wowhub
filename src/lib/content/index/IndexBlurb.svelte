@@ -11,7 +11,7 @@
     'md:text-18 xl:text-20 ' +
     'tracking-tighter xl:leading-relaxed ' +
     'bg-white bg-opacity-95 rounded-lg border border-gray-100 shadow ' +
-    'dark:bg-black dark:bg-opacity-50 dark:border-gray-800';
+    'dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-800';
 </script>
 
 <script lang="ts">

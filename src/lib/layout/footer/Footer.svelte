@@ -35,7 +35,7 @@
 -->
 <footer
   class="
-    bg-gray-900 text-white
+    bg-gray-800 text-white
     align-middle p-2
     border-t border-gray-300 dark:border-gray-800
     space-y-2 sm:grid grid-cols-3 sm:space-y-0
