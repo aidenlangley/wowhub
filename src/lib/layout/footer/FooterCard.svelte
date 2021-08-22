@@ -14,6 +14,8 @@
 </script>
 
 <script lang="ts">
+  import Link from '$lib/content/Link.svelte';
+
   export let business: Business;
 </script>
 
@@ -33,18 +35,18 @@
     </slot>
     <ul>
       <li>
-        <a href="tel:${business.phone}">
+        <Link href="tel:{business.phone}">
           <slot name="phone">
             {business.phone}
           </slot>
-        </a>
+        </Link>
       </li>
       <li>
-        <a href={`mailto:${business.email}`}>
+        <Link href="mailto:{business.email}">
           <slot name="email">
             {business.email}
           </slot>
-        </a>
+        </Link>
       </li>
     </ul>
   </div>

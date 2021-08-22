@@ -2,7 +2,11 @@
   href="https://github.com/aidenlangley"
   target="_blank"
   aria-label="link to website authors' GitHub page"
-  class="flex hover:text-gray-300 space-x-2 justify-end"
+  class="
+    flex space-x-2
+    hover:text-gray-300 focus:text-gray-300 focus:underline
+    justify-end
+  "
 >
   <span class="font-serif font-medium antialiased">by aidenlangley</span>
   <svg

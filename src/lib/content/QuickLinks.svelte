@@ -1,7 +1,7 @@
 <script>
-  import AnimatedButton from './AnimatedButton.svelte';
+  import AnimatedLink from './AnimatedLink.svelte';
   import Link from './Link.svelte';
-  import Button, { ButtonColour } from './Button.svelte';
+  import { ButtonColour } from './Button.svelte';
 
   import SvgMail from '$lib/media/svg/SvgMail.svelte';
   import SvgMailOpen from '$lib/media/svg/SvgMailOpen.svelte';
@@ -12,31 +12,50 @@
   import { info } from '$lib/store/info';
 </script>
 
+<div
+  class="
+    hidden sm:block
+    tracking-tight font-light font-mono
+    text-center text-20
+  "
+>
+  <span
+    class="
+      bg-white bg-opacity-50
+      dark:bg-black dark:bg-opacity-50
+      dark:text-white
+    "
+  >
+    Get in touch, or come and see us.
+  </span>
+</div>
 <div class="space-y-2 sm:space-y-4">
   <div class="flex space-x-2 sm:space-x-4 justify-center">
-    <AnimatedButton>
+    <AnimatedLink href={`mailto:${$info.email}`} text={$info.email} buttonStyle>
       <SvgMail slot="original" />
       <SvgMailOpen slot="transition" />
-      <Link slot="text" to={`mailto:${$info.email}`}>
-        {$info.email}
-      </Link>
-    </AnimatedButton>
-    <AnimatedButton>
+    </AnimatedLink>
+    <AnimatedLink
+      href={`tel:${$info.phone}`}
+      text={$info.phone.replace('+64', '0')}
+      buttonStyle
+    >
       <SvgPhone slot="original" />
       <SvgPhoneOut slot="transition" />
-      <Link slot="text" to={`tel:${$info.phone}`}>
-        {$info.phone.replace('+64', '0')}
-      </Link>
-    </AnimatedButton>
+    </AnimatedLink>
   </div>
   <div class="flex space-x-2 sm:space-x-4 justify-center">
-    <Button colour={ButtonColour.Blue}>
+    <Link
+      href={$info.facebookGroup}
+      buttonStyle
+      buttonColour={ButtonColour.Blue}
+    >
       <SvgExternalLink />
-      <Link to={$info.facebookGroup}>Facebook</Link>
-    </Button>
-    <Button colour={ButtonColour.Default}>
+      <span>Facebook</span>
+    </Link>
+    <Link href={$info.google} buttonStyle>
       <SvgExternalLink />
-      <Link to={$info.google}>Google Maps</Link>
-    </Button>
+      <span>Google Maps</span>
+    </Link>
   </div>
 </div>

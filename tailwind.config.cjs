@@ -5,7 +5,7 @@ const rem = (px) => `${px / 16}rem`
 const config = {
 	mode: "jit",
 	purge: [
-		"./src/**/*.{html,js,svelte,ts}",
+		"./src/**/*.{html,js,svelte,ts,postcss}",
 	],
 	theme: {
 		extend: {

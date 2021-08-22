@@ -1,7 +1,8 @@
 <script lang="ts">
   import Tooltip from '$lib/Tooltip.svelte';
 
-  export let route: string;
+  export let name: string;
+  export let path: string;
   export let tooltip: string = null;
   export let active = false;
 </script>
@@ -14,20 +15,20 @@
 -->
 <a
   sveltekit:prefetch
-  href={route}
+  href={path}
   aria-label={tooltip}
   class={active
     ? 'bg-white text-black ' +
       'tyd:text-20 text-24 sm:text-30 md:text-32 lg:text-34 xl:text-42 ' +
       'font-bold tracking-tighter pointer-events-none ' +
       'tyd:border-b-2 border-b-4 border-green-300'
-    : 'hover:text-gray-300 focus:text-gray-300 transition duration-300'}
+    : 'hover:text-green-300 focus:text-green-300 focus:underline transition duration-300'}
 >
   {#if tooltip}
     <Tooltip text={tooltip} right>
-      <slot />
+      {name}
     </Tooltip>
   {:else}
-    <slot />
+    {name}
   {/if}
 </a>

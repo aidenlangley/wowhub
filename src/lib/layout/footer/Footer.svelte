@@ -63,12 +63,12 @@
   </div>
   <div class="border-l-4 border-indigo-300">
     <FooterCard business={businesses[2]}>
-      <span slot="phone" class="text-indigo-300 hover:text-indigo-400"
-        >{businesses[2].phone}</span
-      >
-      <span slot="email" class="text-purple-500 hover:text-purple-600"
-        >{businesses[2].email}</span
-      >
+      <span slot="phone" class="text-indigo-300 hover:text-indigo-400">
+        {businesses[2].phone}
+      </span>
+      <span slot="email" class="text-purple-500 hover:text-purple-600">
+        {businesses[2].email}
+      </span>
     </FooterCard>
   </div>
   <div class="pt-2 col-span-3 place-self-end">

@@ -19,13 +19,12 @@
     font-medium tracking-tighter
   "
 >
-  {#each $routes as route (route.path)}
+  {#each $routes as { name, path, translation } (path)}
     <RouteLink
-      route={route.path}
-      tooltip={route.translation}
-      active={highlightActive && $page.path === route.path}
-    >
-      {route.name}
-    </RouteLink>
+      {name}
+      {path}
+      tooltip={translation}
+      active={highlightActive && $page.path === path}
+    />
   {/each}
 </nav>

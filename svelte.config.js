@@ -20,9 +20,9 @@ const config = {
             // default options are shown
             pages: 'docs',
             assets: 'docs',
-            fallback: null
+            fallback: null,
         }),
     }
 };
-
+// include: ['svelte-hero-icons'],
 export default config;

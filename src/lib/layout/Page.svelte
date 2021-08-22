@@ -11,6 +11,7 @@
   class="
     bg-top bg-blend-difference bg-white
     dark:bg-gray-900 dark:bg-blend-hard-light
+    dark:text-white
     transition duration-500 
   "
 >
