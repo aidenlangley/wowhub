@@ -3,18 +3,19 @@
     'māori',
     'kaupapa',
     'community',
-    'whanau',
+    'serenity',
     'roopu',
     'tinana',
-    'hinganaro',
-    'wairua',
-    'serenity',
-    'addiction',
     'recovery',
-    'AOD',
-    'bespoke',
+    'addiction',
+    'hollistic',
+    'wairua',
+    'hinganaro',
+    'aod',
+    'whanau',
+    'ora',
     'tailored',
-    'to you',
+    'for you',
   ];
 
   const length = buzzWords.length;
@@ -29,68 +30,72 @@
   }
 </script>
 
-<div class="border border-gray-100 dark:border-gray-800 rounded shadow">
-  <div class="border-t-8 border-black dark:border-blue-500 rounded">
-    <div
-      class="bg-white dark:bg-black border-b-8 border-yellow-300 rounded pt-4 pb-4"
+{#each chunks as chunk}
+  <div class="flex justify-center items-baseline space-x-1">
+    <span
+      class="
+        text-right
+        text-60 ty:text-62 sm:text-64 md:text-72 lg:text-96 xl:text-128
+        tracking-tighter sm:tracking-tight
+        text-gray-800 dark:text-gray-200
+        bg-white bg-opacity-50
+        dark:bg-black dark:bg-opacity-50
+      "
     >
-      {#each chunks as chunk}
-        <div class="flex justify-center items-baseline space-x-1">
-          <span
-            class="
-              text-right
-              text-56
-              font-light tracking-tighter
-              text-gray-800 dark:text-gray-200
-            "
-          >
-            {chunk[0] ? chunk[0] : ''}
-          </span>
-          <span
-            class="
-              align-text-bottom
-              text-32
-              font-medium tracking-tighter
-              text-purple-500"
-          >
-            {chunk[1] ? chunk[1] : ''}
-          </span>
-        </div>
-        <div class="flex justify-center items-center space-x-1">
-          <span
-            class="
-              text-32
-              tracking-tight font-bold
-              text-blue-500 text-shadow 
-            "
-          >
-            {chunk[2] ? chunk[2] : ''}
-          </span>
-          <span class="text-40 text-orange-500 tracking-tighter font-bold">
-            {chunk[3] ? chunk[3] : ''}
-          </span>
-        </div>
-        <div class="flex justify-center items-center space-x-1">
-          <span
-            class="
-              text-32
-              tracking-tighter font-medium
-              text-green-500
-            "
-          >
-            {chunk[4] ? chunk[4] : ''}
-          </span>
-          <span
-            class="
-              text-40
-              tracking-tighter font-bold
-              text-gray-800 dark:text-gray-200
-            "
-          >
-            {chunk[5] ? chunk[5] : ''}
-          </span>
-        </div>
-      {/each}
-    </div>
+      {chunk[0] ? chunk[0] : ''}
+    </span>
+    <span
+      class="
+        align-text-bottom
+        text-32 ty:text-32 sm:text-34 md:text-36 lg:text-38 xl:text-40
+        font-medium tracking-tighter sm:tracking-tight md:tracking-normal
+        text-purple-500
+      "
+    >
+      {chunk[1] ? chunk[1] : ''}
+    </span>
   </div>
-</div>
+  <div class="flex justify-center items-center space-x-1">
+    <span
+      class="
+        text-32 ty:text-32 sm:text-34 md:text-36 lg:text-38 xl:text-40
+        font-bold tracking-tight sm:tracking-normal md:tracking-wide
+        text-blue-500 text-shadow 
+      "
+    >
+      {chunk[2] ? chunk[2] : ''}
+    </span>
+    <span
+      class="
+        text-48 ty:text-60 sm:text-62 md:text-64 lg:text-72 xl:text-96
+        text-orange-500
+        font-bold
+        tracking-tighter
+      "
+    >
+      {chunk[3] ? chunk[3] : ''}
+    </span>
+  </div>
+  <div class="flex justify-center items-center space-x-1">
+    <span
+      class="
+        text-32 ty:text-34 sm:text-36 md:text-38 lg:text-40 xl:text-42
+        tracking-tighter font-medium
+        text-green-500
+        bg-white bg-opacity-50
+        dark:bg-black dark:bg-opacity-50
+      "
+    >
+      {chunk[4] ? chunk[4] : ''}
+    </span>
+    <span
+      class="
+        text-40 ty:text-42 sm:text-48 md:text-56 lg:text-62 xl:text-72
+        tracking-tighter font-bold
+        text-gray-800 dark:text-gray-200
+      "
+    >
+      {chunk[5] ? chunk[5] : ''}
+    </span>
+  </div>
+{/each}
