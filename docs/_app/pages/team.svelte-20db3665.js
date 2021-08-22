@@ -1,0 +1,1 @@
+import{S as s,i as e,s as t,G as n,_ as o}from"../chunks/vendor-e2983a63.js";import{s as a}from"../chunks/seo-d2720df9.js";function r(s,e,t){let r;return n(s,a,(s=>t(0,r=s))),o(a,r={title:"Ngā kaimahi",description:"Meet the staff; those in front and behind the scenes",robots:"none"},r),[]}class i extends s{constructor(s){super(),e(this,s,r,null,t,{})}}export{i as default};
