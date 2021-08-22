@@ -10,7 +10,7 @@
   $: dark = $state.dark;
 
   // Componenets
-  import Header from '$lib/layout/Header.svelte';
+  import Header from '$lib/layout/header/Header.svelte';
   import Footer from '$lib/layout/footer/Footer.svelte';
 </script>
 

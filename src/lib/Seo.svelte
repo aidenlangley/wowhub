@@ -6,7 +6,6 @@
 	@component
 	`Seo` component for routes. Set values via `$lib/store/seo`.
 	
-	- Usage:
 	```tsx
 	<script>
 		import { seo } from "$lib/store.js"
