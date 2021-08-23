@@ -20,9 +20,10 @@
   rel="noopener"
   class={buttonStyle
     ? `${style} ${buttonColour}`
-    : 'font-mono font-medium focus:underline ' +
-      'text-green-700 hover:text-green-500 focus:text-green-500 ' +
-      'dark:text-green-300 dark:hover:text-green-500 dark:focus:text-green-500 ' +
+    : 'font-mono font-bold focus:underline ' +
+      'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
+      'dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 ' +
+      'visited:text-purple-700 dark:visited:text-indigo-300 ' +
       'transition duration-300'}
 >
   <slot>
