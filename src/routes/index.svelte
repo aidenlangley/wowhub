@@ -1,7 +1,7 @@
 <script lang="ts">
   import { seo } from '$lib/store/seo';
   import { state } from '$lib/store/dark';
-  import { blur, fly } from 'svelte/transition';
+  import { blur } from 'svelte/transition';
 
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
@@ -20,8 +20,6 @@
   import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
-
-  let hideHeader = true;
 </script>
 
 <!--
@@ -36,6 +34,7 @@
         col-start-2
         pt-4 sm:pt-8 md:pt-16 lg:pt-32
         space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
+        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
       "
     >
       <div class="p-2">
@@ -62,16 +61,65 @@
           <QuickLinks />
         </div>
       </div>
-      <div class="p-2">
+    </div>
+  </Column>
+  <div
+    class="
+      bg-gradient-to-tl bg-green-500 bg-opacity-80 from-green-300
+      dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
+      border-t border-b border-gray-300 dark:border-gray-800 
+      -skew-y-2
+    "
+  >
+    <Column>
+      <div
+        class="
+          pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
+          pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
+          p-2 skew-y-2
+        "
+      >
         <IndexBlurb />
       </div>
+    </Column>
+  </div>
+  <Column>
+    <div
+      class="
+        col-start-2
+        pt-4 sm:pt-8 md:pt-16 lg:pt-32
+        space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
+        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
+      "
+    >
       <div class="p-2">
         <IndexBuzzWords />
       </div>
-      <div class="p-2">
+    </div>
+  </Column>
+  <div
+    class="
+      bg-gradient-to-br bg-green-500 bg-opacity-80 from-green-300
+      dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
+      border-t border-b border-gray-300 dark:border-gray-800 
+      skew-y-2
+    "
+  >
+    <Column>
+      <div
+        class="
+          pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
+          pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
+          p-2 -skew-y-2
+        "
+      >
         <IndexWhakatauki />
       </div>
-      <div class="p-2 pb-4">
+    </Column>
+  </div>
+  <Column>
+    <div>
+      <div class="p-2 pb-8">
         <IndexLatestPosts />
       </div>
     </div>

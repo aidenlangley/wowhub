@@ -35,7 +35,7 @@
     <span
       class="
         text-right
-        text-60 ty:text-62 sm:text-64 md:text-72 lg:text-96 xl:text-128
+        text-56 ty:text-64 sm:text-72 md:text-96
         tracking-tighter sm:tracking-tight
         text-gray-800 dark:text-gray-200
         bg-white bg-opacity-50
@@ -47,7 +47,7 @@
     <span
       class="
         align-text-bottom
-        text-32 ty:text-32 sm:text-34 md:text-36 lg:text-38 xl:text-40
+        text-32 ty:text-36 sm:text-40 md:text-48 lg:text-56 xl:text-64
         font-medium tracking-tighter sm:tracking-tight md:tracking-normal
         text-purple-500
       "
@@ -58,7 +58,7 @@
   <div class="flex justify-center items-center space-x-1">
     <span
       class="
-        text-30 ty:text-32 sm:text-64 md:text-72 lg:text-96 xl:text-128
+        text-30 ty:text-34 sm:text-38 md:text-42 lg:text-48 xl:text-56
         font-bold tracking-tight sm:tracking-normal md:tracking-tighter
         text-orange-500 text-shadow 
       "
@@ -67,7 +67,7 @@
     </span>
     <span
       class="
-        text-48 ty:text-56 sm:text-64 md:text-64 lg:text-72 xl:text-96
+        text-48 ty:text-56 sm:text-64 md:text-72 lg:text-96 xl:text-128
         text-green-500
         font-bold
         tracking-tighter
@@ -79,7 +79,7 @@
   <div class="flex justify-center items-start space-x-1">
     <span
       class="
-        text-32 ty:text-34 sm:text-36 md:text-38 lg:text-40 xl:text-42
+        text-32 ty:text-36 sm:text-40 md:text-48 lg:text-56 xl:text-64
         tracking-tighter font-medium
         text-blue-500
         bg-white bg-opacity-50
@@ -90,7 +90,7 @@
     </span>
     <span
       class="
-        text-40 ty:text-42 sm:text-48 md:text-56 lg:text-62 xl:text-72
+        text-40 ty:text-44 sm:text-48 md:text-56 lg:text-64 xl:text-72
         tracking-tighter font-bold
         text-gray-800 dark:text-gray-200
       "

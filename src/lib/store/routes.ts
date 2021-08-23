@@ -17,8 +17,8 @@ export const routes = readable([
     translation: 'our friends',
   },
   {
-    name: 'rangitaki',
-    path: '/blog',
+    name: 'panui',
+    path: '/news',
     translation: 'blog',
   },
 ]);

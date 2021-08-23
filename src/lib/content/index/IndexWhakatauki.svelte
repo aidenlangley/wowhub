@@ -31,14 +31,7 @@
       text-center text-shadow
     "
   >
-    <span
-      class="
-        bg-white bg-opacity-90
-        dark:bg-black dark:bg-opacity-50
-        "
-    >
-      "{whakatauki.translation}"
-    </span>
+    "{whakatauki.translation}"
   </h2>
   <div class={paragraphStyle}>
     <p>

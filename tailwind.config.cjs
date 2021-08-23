@@ -10,26 +10,26 @@ const config = {
 		"./src/**/*.{html,js,svelte,ts,postcss}",
 	],
 	theme: {
+		screens: {
+			tyd: { max: em(513) },
+			ty: em(514),
+
+			smd: { max: em(639) },
+			sm: em(640),
+
+			mdd: { max: em(767) },
+			md: em(768),
+
+			lgd: { max: em(1023) },
+			lg: em(1024),
+
+			xld: { max: em(1279) },
+			xl: em(1280),
+
+			'2xl': { max: em(1536) },
+			'2xld': em(1536),
+		},
 		extend: {
-			screens: {
-				tyd: { max: em(513) },
-				ty: em(514),
-
-				smd: { max: em(639) },
-				sm: em(640),
-
-				mdd: { max: em(767) },
-				md: em(768),
-
-				lgd: { max: em(1023) },
-				lg: em(1024),
-
-				xld: { max: em(1279) },
-				xl: em(1280),
-
-				'2xl': { max: em(1536) },
-				'2xld': em(1536),
-			},
 			fontSize: {
 				ty: [rem(12), '.75rem'],
 				12: [rem(12), '.75rem'], // ty
@@ -61,6 +61,7 @@ const config = {
 				38: [rem(38), '2.5rem'],
 				40: [rem(40), '2.5rem'],
 				42: [rem(42), '2.5rem'],
+				44: [rem(44), '2.5rem'],
 
 				'5xl': [rem(48), '1'],
 				48: [rem(48), '1'], // 5xl 3rem
@@ -79,6 +80,9 @@ const config = {
 
 				'9xl': [rem(128), '1'],
 				128: [rem(128), '1'], // 9xl 8 rem
+
+				256: [rem(256), '1'],
+				512: [rem(512), '1'],
 			},
 			fontFamily: {
 				sans: ['Inter'],

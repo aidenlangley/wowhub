@@ -9,10 +9,10 @@
     'p-2 md:p-4 space-y-2 md:space-y-4 ' +
     'text-justify ' +
     'md:text-18 xl:text-20 ' +
-    'tracking-tighter xl:leading-relaxed ' +
-    'bg-gray-50 bg-opacity-80 rounded-lg ' +
-    'border border-gray-300 shadow ' +
-    'dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-800';
+    'tracking-tighter xl:leading-relaxed ';
+  // 'bg-green-50 bg-opacity-80 rounded-lg ' +
+  // 'border border-gray-300 shadow ' +
+  // 'dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-800';
 </script>
 
 <script lang="ts">
