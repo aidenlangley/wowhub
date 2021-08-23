@@ -39,7 +39,7 @@
   <h2
     class="
       font-serif font-light
-      text-gray-800 dark:text-gray-200
+      text-gray-100
       text-22 lg:text-32
       text-shadow text-right sm:text-center
     "

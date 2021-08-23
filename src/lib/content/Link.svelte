@@ -25,7 +25,8 @@
     : 'font-mono font-bold focus:underline ' +
       'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
       'dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 ' +
-      'visited:text-purple-700 hover:visited:text-purple-500 dark:visited:text-indigo-300'}
+      'visited:text-purple-700 hover:visited:text-purple-500 ' +
+      'dark:visited:text-purple-300 dark:hover:visited:text-purple-400'}
 >
   <slot>
     <span>{text}</span>

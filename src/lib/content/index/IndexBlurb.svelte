@@ -31,7 +31,7 @@
     <span
       class="
         font-display font-medium tracking-tight
-        sm:text-shadow text-gray-800 dark:text-white
+        sm:text-shadow dark:text-white
         text-48 sm:text-64 md:text-72 lg:text-96 xl:text-128
       "
     >
@@ -39,7 +39,7 @@
     </span>
   </h1>
   <div class={paragraphStyle}>
-    <p>
+    <p class="dark">
       <Link href="https://goo.gl/maps/WrvBZvvEy1SKGqVS7">
         Whakaoranga Whanau Recovery Hub
       </Link>

@@ -69,8 +69,7 @@
   </Column>
   <div
     class="
-      bg-gradient-to-tr bg-green-600 bg-opacity-80 from-green-300
-      dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
+      bg-gradient-to-tr bg-green-800 bg-opacity-80 from-green-500
       border-t border-b border-gray-300 dark:border-gray-800 
       -skew-y-2 shadow-xl
     "
@@ -80,7 +79,7 @@
         class="
           pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
           pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
-          p-2 skew-y-2
+          p-2 skew-y-2 text-white text-shadow-lg
         "
       >
         <IndexBlurb />
@@ -103,10 +102,9 @@
   </Column>
   <div
     class="
-      bg-gradient-to-br bg-green-600 bg-opacity-80 from-green-300
-      dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
+      bg-gradient-to-br bg-green-800 bg-opacity-80 from-green-500
       border-t border-b border-gray-300 dark:border-gray-800 
-      skew-y-2 shadow-xl
+      skew-y-2 shadow-xl text-white text-shadow-lg
     "
   >
     <Column>
