@@ -106,7 +106,7 @@
       bg-gradient-to-br bg-green-800 bg-opacity-80 from-green-500
       border-t border-b border-gray-300
       dark:from-green-600 dark:border-gray-800 
-      skew-y-2 shadow-xl text-white text-shadow-lg
+      skew-y-2 shadow-xl
     "
   >
     <Column>
@@ -114,7 +114,7 @@
         class="
           pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
           pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
-          p-2 -skew-y-2
+          p-2 -skew-y-2 text-white text-shadow-lg
         "
       >
         <IndexWhakatauki />
@@ -125,8 +125,8 @@
     <div
       class="
         col-start-2
-        pt-4 sm:pt-8 md:pt-16 lg:pt-32
         space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
+        pt-4 sm:pt-8 md:pt-16 lg:pt-32
         pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
       "
     >

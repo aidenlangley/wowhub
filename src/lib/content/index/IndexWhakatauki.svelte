@@ -7,7 +7,7 @@
 </script>
 
 <script lang="ts">
-  import { spacingStyle, paragraphStyle } from './IndexBlurb.svelte';
+  import { paragraphStyle } from './IndexBlurb.svelte';
 
   const headings = whakatauki.whakatauki.split(',');
   headings[0] += ',';
@@ -17,14 +17,10 @@
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<div
-  class={`
-      ${spacingStyle} p-2
-    `}
->
+<div class="space-y-2 md:space-y-4 p-2">
   <div
     class="
-      text-34 sm:text-42 md:text-44 lg:text-56 xl:text-64
+      text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
       tracking-tighter text-shadow sm:text-center
       font-medium italic font-serif
     "
@@ -36,9 +32,9 @@
   <h2
     class="
       font-serif
-      text-gray-100
+      text-right sm:text-center
       text-22 lg:text-32
-      text-shadow text-right sm:text-center
+      text-gray-100 text-shadow 
     "
   >
     "{whakatauki.translation}"

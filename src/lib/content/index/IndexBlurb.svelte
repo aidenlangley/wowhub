@@ -1,18 +1,9 @@
 <script lang="ts" context="module">
-  export const spacingStyle =
-    'space-y-2 md:space-y-4 lg:space-y-8 xl:space-y-12';
-  export const lightHeadingStyle =
-    'text-shadow font-medium tracking-tighter ' +
-    'text-28 md:text-42 lg:text-64 ' +
-    'md:font-light';
   export const paragraphStyle =
     'p-2 md:p-4 space-y-2 md:space-y-4 ' +
     'text-justify ' +
     'md:text-18 xl:text-20 ' +
     'tracking-tighter xl:leading-relaxed ';
-  // 'bg-green-50 bg-opacity-80 rounded-lg ' +
-  // 'border border-gray-300 shadow ' +
-  // 'dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-800';
 </script>
 
 <script lang="ts">
@@ -25,13 +16,20 @@
 -->
 <div class="space-y-2 md:space-y-4 lg:space-y-8 xl:space-y-12">
   <h1 class="text-left">
-    <span class={lightHeadingStyle}>Planting the seed of hope...</span>
+    <span
+      class="
+        text-shadow font-medium tracking-tighter
+        text-28 md:text-42 lg:text-64
+        md:font-light
+      "
+    >
+      Planting the seed of hope...
+    </span>
   </h1>
   <h1 class="text-center">
     <span
       class="
         font-display font-medium tracking-tight
-        sm:text-shadow dark:text-white
         text-48 sm:text-64 md:text-72 lg:text-96 xl:text-128
       "
     >
@@ -39,10 +37,12 @@
     </span>
   </h1>
   <div class={paragraphStyle}>
-    <p class="dark">
-      <Link href="https://goo.gl/maps/WrvBZvvEy1SKGqVS7">
-        Whakaoranga Whanau Recovery Hub
-      </Link>
+    <p>
+      <span class="dark">
+        <Link href="https://goo.gl/maps/WrvBZvvEy1SKGqVS7">
+          Whakaoranga Whanau Recovery Hub
+        </Link>
+      </span>
       is a kaupapa Māori AOD community support service in Kaikohe. We're a team of
       passionate individuals who have lived experience.
     </p>
