@@ -12,6 +12,12 @@
   import { info } from '$lib/store/info';
 </script>
 
+<!--
+  @component
+  Links, styled as buttons, for emailing & making phone calls (targeted at
+  mobile devices) and external links to our Facebook group & page on Google
+  maps.
+-->
 <div
   class="
     hidden sm:block

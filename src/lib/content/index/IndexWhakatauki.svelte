@@ -17,6 +17,10 @@
   headings[0] += ',';
 </script>
 
+<!--
+  @component
+  One of our favourite whakatauki (proverb.)
+-->
 <div
   class={`
       ${spacingStyle} p-2

@@ -30,6 +30,11 @@
   }
 </script>
 
+<!--
+  @component
+  Heat/word map style list of buzzwords. This functions as a sort of services
+  list.
+-->
 {#each chunks as chunk}
   <div class="flex justify-center items-baseline space-x-1">
     <span

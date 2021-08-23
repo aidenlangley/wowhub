@@ -21,6 +21,10 @@
   if (browser) prefetch('/serenity-prayer');
 </script>
 
+<!--
+  @component
+  Serenity prayer in multicolour.
+-->
 <div class="space-y-2 sm:space-y-4">
   <div
     class="

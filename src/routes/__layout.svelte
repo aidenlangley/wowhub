@@ -3,7 +3,7 @@
   import '../app.postcss';
 
   // SEO
-  import Seo from '$lib/Seo.svelte';
+  import Seo from '$lib/_Seo.svelte';
 
   // Dark mode
   import { state } from '$lib/store/dark';

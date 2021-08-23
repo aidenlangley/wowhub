@@ -1,8 +1,8 @@
 <script lang="ts">
   import { state, set } from '$lib/store/dark';
-  import SvgMoon from './media/svg/SvgMoon.svelte';
-  import SvgSun from './media/svg/SvgSun.svelte';
-  import Tooltip from './Tooltip.svelte';
+  import SvgMoon from '../../media/svg/SvgMoon.svelte';
+  import SvgSun from '../../media/svg/SvgSun.svelte';
+  import Tooltip from '../../content/Tooltip.svelte';
   import { fade } from 'svelte/transition';
 
   // Marks property as reactive.
