@@ -7,11 +7,7 @@
 </script>
 
 <script lang="ts">
-  import {
-    spacingStyle,
-    lightHeadingStyle,
-    paragraphStyle,
-  } from './IndexBlurb.svelte';
+  import { spacingStyle, paragraphStyle } from './IndexBlurb.svelte';
 
   const headings = whakatauki.whakatauki.split(',');
   headings[0] += ',';
@@ -30,6 +26,7 @@
     class="
       text-34 sm:text-42 md:text-44 lg:text-56 xl:text-64
       tracking-tighter text-shadow sm:text-center
+      font-medium italic font-serif
     "
   >
     {#each headings as heading}
@@ -38,7 +35,7 @@
   </div>
   <h2
     class="
-      font-serif font-light
+      font-serif
       text-gray-100
       text-22 lg:text-32
       text-shadow text-right sm:text-center

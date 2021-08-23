@@ -70,7 +70,8 @@
   <div
     class="
       bg-gradient-to-tr bg-green-800 bg-opacity-80 from-green-500
-      border-t border-b border-gray-300 dark:border-gray-800 
+      border-t border-b border-gray-300
+      dark:from-green-600 dark:border-gray-800 
       -skew-y-2 shadow-xl
     "
   >
@@ -103,7 +104,8 @@
   <div
     class="
       bg-gradient-to-br bg-green-800 bg-opacity-80 from-green-500
-      border-t border-b border-gray-300 dark:border-gray-800 
+      border-t border-b border-gray-300
+      dark:from-green-600 dark:border-gray-800 
       skew-y-2 shadow-xl text-white text-shadow-lg
     "
   >
