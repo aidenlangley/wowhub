@@ -1,38 +1,45 @@
-# create-svelte
+# Getting Started
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Almost all the instructions you need can be found here: https://kit.svelte.dev/.
 
-## Creating a project
+## Dev
 
-If you're seeing this, you've probably already done this step. Congrats!
+Super simple! Clone me, `npm install && npm run dev`. Very little else needs to be done before you can start writing, hands off compiling and previewing code changes.
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+Relative paths for images are tricky, so this is how they generally need to be handled:
 
-# create a new project in my-app
-npm init svelte@next my-app
+```ts
+import { assets } from '$app/paths';
+export const src = `${assets}/path.png`
 ```
 
-> Note: the `@next` is temporary
+### mdsvex
 
-## Developing
+Svelte Markdown, allows writing .md files AND .svelte code in the same files. Neat, huh? Adder can be found [here](https://github.com/svelte-add/mdsvex).
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+#### 23/08/2021
+I have installed but not used this at the time of writing.
 
-```bash
-npm run dev
+### Tailwind CSS
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+Tailwind works wonderfully with Svelte, and the set-up is all handled by [this](https://github.com/svelte-add/tailwindcss) `svelte-adder`.
+
+### VS Code
+
+Recommended IDE. An extension can be found [here](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+
+### Builds
+
+We are using a [static adapter](https://github.com/sveltejs/kit/tree/master/packages/adapter-static) and hosting with GitHub pages.
+
+Hosting alongside this repo in the `docs/` folder, so `svelte.config.js` needs to reflect that.
+
+Commands for building and deploying are in `package.json`.
+
+```sh
+npm run build && npm run deploy
 ```
 
-## Building
+The website is not hosted underneath the GitHub domain, it's hosted at https://wowhub.co.nz, so there is no need to change the base path in `svelte.config.js`. We will need a `CNAME` instead, pointing to the domain where the app will be hosted.
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+We do want to prevent Jekyll from doing its' thing however, so there must be a .nojekyll file in our `static/` directory.
