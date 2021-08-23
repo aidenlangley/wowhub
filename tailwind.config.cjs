@@ -93,6 +93,7 @@ const config = {
 				16: '16px'
 			},
 			colors: {
+				gray: colors.warmGray,
 				orange: colors.orange
 			}
 		},

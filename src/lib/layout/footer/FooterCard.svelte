@@ -19,7 +19,7 @@
   export let business: Business;
 </script>
 
-<div class="pl-2 space-y-2">
+<div class="p-2 space-y-2">
   <h1 class="text-24 font-serif tracking-tighter">
     <slot name="name">
       {business.name}

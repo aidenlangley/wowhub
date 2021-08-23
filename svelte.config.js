@@ -22,7 +22,13 @@ const config = {
             assets: 'docs',
             fallback: null,
         }),
-    }
+
+        vite: () => ({
+            optimizeDeps: {
+                include: ['svelte-hero-icons'],
+            },
+        })
+    },
 };
 // include: ['svelte-hero-icons'],
 export default config;

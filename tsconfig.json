@@ -39,5 +39,8 @@
 		"src/**/*.js",
 		"src/**/*.ts",
 		"src/**/*.svelte"
+	],
+	"exclude": [
+		"src/svelte.config.js"
 	]
 }

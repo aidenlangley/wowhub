@@ -10,7 +10,8 @@
     'text-justify ' +
     'md:text-18 xl:text-20 ' +
     'tracking-tighter xl:leading-relaxed ' +
-    'bg-white bg-opacity-95 rounded-lg border border-gray-100 shadow ' +
+    'bg-gray-50 bg-opacity-80 rounded-lg ' +
+    'border border-gray-300 shadow ' +
     'dark:bg-gray-900 dark:bg-opacity-80 dark:border-gray-800';
 </script>
 
@@ -31,7 +32,7 @@
       class="
         font-display font-medium tracking-tight
         sm:text-shadow text-gray-700 dark:text-white
-        text-48 md:text-72 lg:text-96 xl:text-128
+        text-48 sm:text-64 md:text-72 lg:text-96 xl:text-128
       "
     >
       Sharing gifts of recovery.

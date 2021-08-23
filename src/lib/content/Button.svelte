@@ -5,7 +5,7 @@
     'p-2 ty:p-3 sm:p-4 shadow ' +
     'font-mono font-medium tyd:tracking-tighter ' +
     'sm:text-18 md:text-20 lg:text-22 xl:text-24 ' +
-    'focus:scale-105 transition duration-300';
+    'hover:scale-105 focus:scale-105 transition duration-300';
 
   export enum ButtonColour {
     Default = 'bg-gray-200 dark:bg-gray-800 ' +

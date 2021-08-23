@@ -36,12 +36,19 @@
 <footer
   class="
     bg-gray-800 text-white
-    align-middle p-2
-    border-t border-gray-300 dark:border-gray-800
+    align-middle p-4
+    border-t border-gray-300 dark:border-gray-700
     space-y-2 sm:grid grid-cols-3 sm:space-y-0
+    sm:space-x-2
   "
 >
-  <div class="border-l-4 border-green-300">
+  <div
+    class="
+      border-l-8 border-green-300
+      bg-gray-900
+      border rounded
+    "
+  >
     <FooterCard business={businesses[0]}>
       <span slot="phone" class="text-green-300 hover:text-green-400">
         {businesses[0].phone}
@@ -51,7 +58,12 @@
       </span>
     </FooterCard>
   </div>
-  <div class="border-l-4 border-blue-300">
+  <div
+    class="border-l-8 border-blue-300
+    bg-gray-900
+      border rounded
+    "
+  >
     <FooterCard business={businesses[1]}>
       <span slot="phone" class="text-blue-200 hover:text-blue-300">
         {businesses[1].phone}
@@ -61,7 +73,13 @@
       </span>
     </FooterCard>
   </div>
-  <div class="border-l-4 border-indigo-300">
+  <div
+    class="
+      border-l-8 border-indigo-300
+      bg-gray-900
+      border rounded
+    "
+  >
     <FooterCard business={businesses[2]}>
       <span slot="phone" class="text-indigo-300 hover:text-indigo-400">
         {businesses[2].phone}
