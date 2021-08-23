@@ -4,7 +4,13 @@
 </script>
 
 <Column>
-  <div class="p-4 space-y-4 text-28 tracking-tighter">
+  <div
+    class="
+      p-4 space-y-4
+      ty:text-18 sm:text-20 md:text-22 lg:text-24 xl:text-26
+      tracking-tighter font-light
+    "
+  >
     <div>
       {#each serenityPrayer.en as line}
         <p>{line}</p>

@@ -36,13 +36,10 @@
 <footer
   class="
     bg-gray-800 text-white
-    align-middle p-4
     border-t border-gray-300 dark:border-gray-700
-    space-y-2 sm:grid grid-cols-3 sm:space-y-0
-    sm:space-x-2
   "
 >
-  <div
+  <!-- <div
     class="
       border-l-8 border-green-300
       bg-gray-900
@@ -50,7 +47,7 @@
     "
   >
     <FooterCard business={businesses[0]}>
-      <span slot="phone" class="text-green-300 hover:text-green-400">
+      <span slot="phone" cnlass="text-green-300 hover:text-green-400">
         {businesses[0].phone}
       </span>
       <span slot="email" class="text-green-500 hover:text-green-600">
@@ -88,8 +85,8 @@
         {businesses[2].email}
       </span>
     </FooterCard>
-  </div>
-  <div class="pt-2 col-span-3 place-self-end">
+  </div> -->
+  <div class="p-2 place-self-end">
     <GitHub />
   </div>
 </footer>
