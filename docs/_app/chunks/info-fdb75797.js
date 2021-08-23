@@ -1,1 +1,0 @@
-import{C as o,W as a}from"./vendor-9466e51d.js";const e=o({dark:"true"===localStorage.getItem("dark")}),t=o=>{e.set({dark:o}),localStorage.setItem("dark",`${o}`)},r=a({phone:"+6494010975",email:"info@wowhub.co.nz",facebookGroup:"https://www.facebook.com/groups/510722916364116",google:"https://goo.gl/maps/WrvBZvvEy1SKGqVS7"});export{t as a,r as i,e as s};
