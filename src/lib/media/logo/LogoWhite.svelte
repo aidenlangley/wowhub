@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { src, alt } from './logo-white';
+  import { src, alt } from './LogoWhite';
 </script>
 
 <!--

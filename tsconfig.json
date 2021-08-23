@@ -31,6 +31,9 @@
 			],
 			"$lib/*": [
 				"src/lib/*"
+			],
+			"$news/*": [
+				"src/routes/news/*"
 			]
 		}
 	},

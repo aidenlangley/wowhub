@@ -19,6 +19,6 @@ export const routes = readable([
   {
     name: 'panui',
     path: '/news',
-    translation: 'blog',
+    translation: 'news',
   },
 ]);

@@ -14,13 +14,13 @@
   import Column from '$lib/layout/Column.svelte';
   import Signage from '$lib/media/signage/Signage.svelte';
   import SignageWhite from '$lib/media/signage/SignageWhite.svelte';
-  import QuickLinks from '$lib/content/QuickLinks.svelte';
 
+  import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
   import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
-  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
+  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
 </script>
 
 <!--
@@ -49,17 +49,20 @@
           </div>
         {/if}
       </div>
-      <div class="p-2">
+      <div class="p-2 space-y-4 sm:space-y-8">
         <div
           class="
-            sm:pt-4 md:pt-8 sm:pb-4 md:pb-8
+            sm:pt-4 md:pt-8
             sm:border-t-4 border-dotted
             border-gray-300 dark:border-gray-600
             transition duration-1000
             space-y-4
           "
         >
-          <QuickLinks />
+          <IndexQuickLinks />
+        </div>
+        <div class="p-2">
+          <IndexLatestPosts />
         </div>
       </div>
     </div>
@@ -121,6 +124,7 @@
   <Column>
     <div>
       <div class="p-2 pb-8">
+        Serenity Prayer goes here!
         <IndexSerenityPrayer />
       </div>
     </div>

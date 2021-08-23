@@ -1,6 +1,7 @@
 <script lang="ts">
   import Link from './Link.svelte';
   import { ButtonColour } from './Button.svelte';
+  import { fade } from 'svelte/transition';
 
   export let href: string;
   export let text: string = null;
@@ -20,9 +21,13 @@
 >
   <Link {href} {buttonStyle} {buttonColour}>
     {#if !transition}
-      <slot name="original" />
+      <div in:fade={{ duration: 300 }}>
+        <slot name="original" />
+      </div>
     {:else}
-      <slot name="transition" />
+      <div in:fade={{ duration: 300 }}>
+        <slot name="transition" />
+      </div>
     {/if}
     <slot name="text">
       <span>{text}</span>

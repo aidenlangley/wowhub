@@ -2,9 +2,9 @@
   import { seo } from '$lib/store/seo';
 
   $seo = {
-    title: 'Rangitaki',
+    title: 'Panui',
     description:
-      'A blog from the Whakaoranga Whanau; posts & updates about the community',
+      'A blog from the Whakaoranga Whanau; news & updates about the community',
     robots: 'none',
   };
 </script>

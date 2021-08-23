@@ -1,6 +1,6 @@
 <script lang="ts">
   import IconImg from './_IconImg.svelte';
-  import { src, alt } from './logo-white';
+  import { src, alt } from './LogoWhite';
 </script>
 
 <!--

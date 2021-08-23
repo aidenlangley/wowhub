@@ -1,7 +1,7 @@
 <script>
-  import AnimatedLink from './AnimatedLink.svelte';
-  import Link from './Link.svelte';
-  import { ButtonColour } from './Button.svelte';
+  import AnimatedLink from '../AnimatedLink.svelte';
+  import Link from '../Link.svelte';
+  import { ButtonColour } from '../Button.svelte';
 
   import SvgMail from '$lib/media/svg/SvgMail.svelte';
   import SvgMailOpen from '$lib/media/svg/SvgMailOpen.svelte';

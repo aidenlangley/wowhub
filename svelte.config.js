@@ -2,6 +2,7 @@ import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
+import path from "path";
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -23,11 +24,16 @@ const config = {
             fallback: null,
         }),
 
-        vite: () => ({
+        vite: {
+            resolve: {
+                alias: {
+                    $news: path.resolve('./src/routes/news')
+                }
+            },
             optimizeDeps: {
                 include: ['svelte-hero-icons'],
             },
-        })
+        }
     },
 };
 // include: ['svelte-hero-icons'],
