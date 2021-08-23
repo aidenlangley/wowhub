@@ -41,8 +41,11 @@
   // Should be a closer / lambda / pass me a function.
   export let click: any = null;
   export let colour: ButtonColour = ButtonColour.Default;
+  export let text: string = null;
 </script>
 
-<button class={`${style} ${colour}`} on:click={click}>
-  <slot />
+<button class="{style} {colour}" on:click={click}>
+  <slot>
+    <span>{text}</span>
+  </slot>
 </button>

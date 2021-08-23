@@ -2,10 +2,10 @@
   export let href: string;
   export let text: string = null;
 
-  import { ButtonColour, style } from './Button.svelte';
+  import { style, ButtonColour } from './Button.svelte';
 
   export let buttonStyle = false;
-  export let buttonColour: ButtonColour = ButtonColour.Default;
+  export let buttonColour: string = ButtonColour.Default;
 
   export let external = true;
 </script>

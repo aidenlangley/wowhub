@@ -6,7 +6,7 @@
   export let href: string;
   export let text: string = null;
   export let buttonStyle = false;
-  export let buttonColour: ButtonColour = ButtonColour.Default;
+  export let buttonColour: string = ButtonColour.Default;
 
   let transition = false;
   const next = () => (transition = true);

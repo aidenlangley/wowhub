@@ -34,13 +34,13 @@
   <slot />
   {#if !hidden}
     <div
-      class={`
+      class="
         relative
-        ${top ? '-top-' : ''}
-        ${topLeft ? '-top-14 -left-40' : ''}
-        ${left ? '-bottom-1 -left-40' : ''}
-        ${right ? '-bottom-1' : ''}
-      `}
+        {top ? '-top-14' : ''}
+        {topLeft ? '-top-14 -left-40' : ''}
+        {left ? '-bottom-1 -left-40' : ''}
+        {right ? '-bottom-1' : ''}
+      "
       transition:fade={{ duration: 100 }}
       aria-haspopup="true"
     >

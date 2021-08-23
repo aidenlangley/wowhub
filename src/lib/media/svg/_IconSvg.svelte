@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { style } from '../_Icon.svelte';
+  import { style } from '$lib/media/_Icon.svelte';
 </script>
 
 <!--
