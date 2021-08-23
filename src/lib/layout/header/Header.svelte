@@ -16,7 +16,7 @@
     flex items-center align-middle
     p-2 sm:p-3 md:p-4 lg:p-6
     border-b border-gray-300 dark:border-gray-800
-    transition duration-500
+    transition duration-500 shadow-lg
   "
 >
   <div class="smd:hidden">

@@ -20,6 +20,7 @@
   import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
+  import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
 </script>
 
 <!--
@@ -65,10 +66,10 @@
   </Column>
   <div
     class="
-      bg-gradient-to-tl bg-green-500 bg-opacity-80 from-green-300
+      bg-gradient-to-tr bg-green-600 bg-opacity-80 from-green-300
       dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
       border-t border-b border-gray-300 dark:border-gray-800 
-      -skew-y-2
+      -skew-y-2 shadow-xl
     "
   >
     <Column>
@@ -99,10 +100,10 @@
   </Column>
   <div
     class="
-      bg-gradient-to-br bg-green-500 bg-opacity-80 from-green-300
+      bg-gradient-to-br bg-green-600 bg-opacity-80 from-green-300
       dark:bg-green-800 dark:bg-opacity-80 dark:from-green-500
       border-t border-b border-gray-300 dark:border-gray-800 
-      skew-y-2
+      skew-y-2 shadow-xl
     "
   >
     <Column>
@@ -120,7 +121,7 @@
   <Column>
     <div>
       <div class="p-2 pb-8">
-        <IndexLatestPosts />
+        <IndexSerenityPrayer />
       </div>
     </div>
   </Column>

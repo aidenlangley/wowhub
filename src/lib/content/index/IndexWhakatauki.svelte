@@ -17,8 +17,17 @@
   headings[0] += ',';
 </script>
 
-<div class={spacingStyle}>
-  <div class="{lightHeadingStyle} text-center">
+<div
+  class={`
+      ${spacingStyle} p-2
+    `}
+>
+  <div
+    class="
+      text-34 sm:text-42 md:text-44 lg:text-56 xl:text-64
+      tracking-tighter text-shadow sm:text-center
+    "
+  >
     {#each headings as heading}
       <h1>{heading}</h1>
     {/each}
@@ -27,8 +36,8 @@
     class="
       font-serif font-light
       text-gray-800 dark:text-gray-200
-      text-24 lg:text-32
-      text-center text-shadow
+      text-22 lg:text-32
+      text-shadow text-right sm:text-center
     "
   >
     "{whakatauki.translation}"

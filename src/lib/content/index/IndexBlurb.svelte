@@ -31,7 +31,7 @@
     <span
       class="
         font-display font-medium tracking-tight
-        sm:text-shadow text-gray-700 dark:text-white
+        sm:text-shadow text-gray-800 dark:text-white
         text-48 sm:text-64 md:text-72 lg:text-96 xl:text-128
       "
     >
