@@ -7,7 +7,7 @@
   Very simple component, just defines `main` to enforce consistency.
 -->
 <main
-  style={`background-image: url(${assets}/images/drawing.png)`}
+  style="background-image: url({assets}/images/drawing.png)"
   class="
     bg-top bg-blend-difference bg-white
     dark:bg-gray-900 dark:bg-blend-hard-light

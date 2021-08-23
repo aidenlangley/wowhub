@@ -1,8 +1,8 @@
 <script lang="ts">
   import { state, set } from '$lib/store/dark';
-  import SvgMoon from '../../media/svg/SvgMoon.svelte';
-  import SvgSun from '../../media/svg/SvgSun.svelte';
-  import Tooltip from '../../content/Tooltip.svelte';
+  import SvgMoon from '$lib/media/svg/SvgMoon.svelte';
+  import SvgSun from '$lib/media/svg/SvgSun.svelte';
+  import Tooltip from '$lib/content/Tooltip.svelte';
   import { fade } from 'svelte/transition';
 
   // Marks property as reactive.
@@ -13,20 +13,18 @@
 </script>
 
 <!--
-    @component
-    Handles toggling dark mode (via a `dark` store & local storage.)
+  @component
+  Handles toggling dark mode (via a `dark` store & local storage.)
 -->
 <div class="items-center align-middle">
   <Tooltip text={label} left>
     <button
-      class={`transition duration-300
-        ${
-          !dark
-            ? 'text-purple-50 hover:text-purple-300 focus:text-purple-300'
-            : 'text-yellow-50 hover:text-yellow-300 focus:text-yellow-300'
-        }
-      `}
-      aria-label={`toggle ${!dark ? 'dark' : 'light'} mode on`}
+      class="transition duration-300
+        {!dark
+        ? 'text-purple-50 hover:text-purple-300 focus:text-purple-300'
+        : 'text-yellow-50 hover:text-yellow-300 focus:text-yellow-300'}
+      "
+      aria-label="toggle {!dark ? 'dark' : 'light'} mode on"
       on:click={toggle}
     >
       {#if !dark}

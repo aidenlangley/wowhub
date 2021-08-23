@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   @screen sm {
     .column {
       display: grid;

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import DarkToggle from '$lib/layout/header/DarkToggle.svelte';
   import LogoWhiteIcon from '$lib/media/logo/LogoWhiteIcon.svelte';
   import RoutesX from './RoutesX.svelte';

@@ -1,7 +1,12 @@
+<script lang="ts" context="module">
+  export const padding =
+    'pt-4 sm:pt-8 md:pt-16 lg:pt-32 ' +
+    'pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24';
+  export const spacing = 'space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32';
+</script>
+
 <script lang="ts">
   import { seo } from '$lib/store/seo';
-  import { state } from '$lib/store/dark';
-  import { blur } from 'svelte/transition';
 
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
@@ -10,17 +15,22 @@
     robots: 'none',
   };
 
+  import { state } from '$lib/store/dark';
+  import { blur } from 'svelte/transition';
+
   import Page from '$lib/layout/Page.svelte';
   import Column from '$lib/layout/Column.svelte';
+  import Skewed from '$lib/layout/Skewed.svelte';
+
   import Signage from '$lib/media/signage/Signage.svelte';
   import SignageWhite from '$lib/media/signage/SignageWhite.svelte';
 
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
+  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
-  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
-  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
+  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
 </script>
 
 <!--
@@ -30,14 +40,7 @@
 -->
 <Page>
   <Column>
-    <div
-      class="
-        col-start-2
-        pt-4 sm:pt-8 md:pt-16 lg:pt-32
-        space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
-        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
-      "
-    >
+    <div class="{padding} {spacing}">
       <div class="p-2">
         {#if !$state.dark}
           <div in:blur>
@@ -67,69 +70,31 @@
       </div>
     </div>
   </Column>
-  <div
-    class="
-      bg-gradient-to-tr bg-green-800 bg-opacity-80 from-green-500
-      border-t border-b border-gray-300
-      dark:from-green-600 dark:border-gray-800 
-      -skew-y-2 shadow-xl
-    "
+  <Skewed
+    gradient="bg-gradient-to-tr"
+    skew={{ outer: '-skew-y-2', inner: 'skew-y-2' }}
   >
-    <Column>
-      <div
-        class="
-          pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
-          pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
-          p-2 skew-y-2 text-white text-shadow-lg
-        "
-      >
-        <IndexBlurb />
-      </div>
-    </Column>
-  </div>
+    <div class="text-white text-shadow-lg">
+      <IndexBlurb />
+    </div>
+  </Skewed>
   <Column>
-    <div
-      class="
-        col-start-2
-        pt-4 sm:pt-8 md:pt-16 lg:pt-32
-        space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
-        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
-      "
-    >
+    <div class={padding}>
       <div class="p-2">
         <IndexSerenityPrayer />
       </div>
     </div>
   </Column>
-  <div
-    class="
-      bg-gradient-to-br bg-green-800 bg-opacity-80 from-green-500
-      border-t border-b border-gray-300
-      dark:from-green-600 dark:border-gray-800 
-      skew-y-2 shadow-xl
-    "
+  <Skewed
+    gradient="bg-gradient-to-br"
+    skew={{ outer: 'skew-y-2', inner: '-skew-y-2' }}
   >
-    <Column>
-      <div
-        class="
-          pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
-          pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
-          p-2 -skew-y-2 text-white text-shadow-lg
-        "
-      >
-        <IndexWhakatauki />
-      </div>
-    </Column>
-  </div>
+    <div class="text-white text-shadow-lg">
+      <IndexWhakatauki />
+    </div>
+  </Skewed>
   <Column>
-    <div
-      class="
-        col-start-2
-        space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
-        pt-4 sm:pt-8 md:pt-16 lg:pt-32
-        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
-      "
-    >
+    <div class={padding}>
       <div class="p-2">
         <IndexBuzzWords />
       </div>

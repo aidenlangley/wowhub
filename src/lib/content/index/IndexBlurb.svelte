@@ -3,7 +3,7 @@
     'p-2 md:p-4 space-y-2 md:space-y-4 ' +
     'text-justify ' +
     'md:text-18 xl:text-20 ' +
-    'tracking-tighter xl:leading-relaxed ';
+    'tracking-tighter xl:leading-relaxed';
 </script>
 
 <script lang="ts">
