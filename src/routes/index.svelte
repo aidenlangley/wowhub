@@ -17,7 +17,7 @@
 
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
-  import IndexBuzzWords from '$lib/content/index/IndexBuzzWords.svelte';
+  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
   import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
@@ -97,7 +97,7 @@
       "
     >
       <div class="p-2">
-        <IndexBuzzWords />
+        <IndexSerenityPrayer />
       </div>
     </div>
   </Column>
@@ -122,10 +122,16 @@
     </Column>
   </div>
   <Column>
-    <div>
-      <div class="p-2 pb-8">
-        Serenity Prayer goes here!
-        <IndexSerenityPrayer />
+    <div
+      class="
+        col-start-2
+        pt-4 sm:pt-8 md:pt-16 lg:pt-32
+        space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32
+        pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24
+      "
+    >
+      <div class="p-2">
+        <IndexBuzzWords />
       </div>
     </div>
   </Column>
