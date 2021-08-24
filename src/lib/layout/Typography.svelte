@@ -34,8 +34,8 @@
       "
     >
       {#if date}
-        <small>
-          {new Date(date).toLocaleString('en-NZ', {
+        <small class="font-mono lg:text-18">
+          posted: {new Date(date).toLocaleString('en-NZ', {
             timeZone: 'Pacific/Auckland',
           })}
         </small>

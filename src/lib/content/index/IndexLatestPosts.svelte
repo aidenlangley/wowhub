@@ -10,7 +10,7 @@
   Small list of 5 links to recent panui.
 -->
 {#if news.length > 0}
-  <div class="space-y-2 sm:text-center">
+  <div class="space-y-2 md:space-y-4 sm:text-center">
     <h1
       class="
         tracking-tight font-light font-mono
@@ -27,29 +27,24 @@
         What's the latest?
       </span>
     </h1>
-    <div
-      class="
-        space-y-2
-        ty:text-18 sm:text-20
-      "
-    >
+    <div class="text-14 ty:text-base sm:text-18 tracking-tighter space-y-1">
       {#each news.slice(0, 5) as { title, description, date, slug } (slug)}
-        <div class="space-x-2">
-          <Link external={false} href={slug}>
-            <span class="tracking-tighter">
-              {new Date(date).toLocaleDateString()}:
-            </span>
-            <span>{title}</span>
-          </Link>
-        </div>
-        <span
+        <p class="font-mono">
+          posted {new Date(date).toLocaleString()}
+        </p>
+        <Link external={false} href={slug}>
+          <span class="ty:text-18 sm:text-20 md:text-24">
+            {title}
+          </span>
+        </Link>
+        <p
           class="
             bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50
-            tracking-tight text-justify
+            tracking-tight
           "
         >
           {description}
-        </span>
+        </p>
       {/each}
     </div>
   </div>
