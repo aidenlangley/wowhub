@@ -32,8 +32,23 @@
 			"$lib/*": [
 				"src/lib/*"
 			],
+			"$routes": [
+				"src/routes"
+			],
+			"$routes/*": [
+				"src/routes/*"
+			],
+			"$news": [
+				"src/routes/news"
+			],
 			"$news/*": [
 				"src/routes/news/*"
+			],
+			"$docs": [
+				"src/routes/docs"
+			],
+			"$docs/*": [
+				"src/routes/docs/*"
 			]
 		}
 	},
@@ -41,9 +56,12 @@
 		"src/**/*.d.ts",
 		"src/**/*.js",
 		"src/**/*.ts",
-		"src/**/*.svelte"
+		"src/**/*.svelte",
+		// "src/**/*.svelte.md",
+		// "src/**/*.svx"
 	],
 	"exclude": [
-		"src/svelte.config.js"
+		"**/*.config.js",
+		"**/*.cjs"
 	]
 }

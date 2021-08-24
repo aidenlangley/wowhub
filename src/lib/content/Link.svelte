@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { browser } from '$app/env';
+  import { prefetch } from '$app/navigation';
+
   export let href: string;
   export let text: string = null;
 
@@ -8,6 +11,7 @@
   export let buttonColour: string = ButtonColour.Default;
 
   export let external = true;
+  if (!external && browser) prefetch(href);
 </script>
 
 <!--

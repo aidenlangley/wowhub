@@ -1,0 +1,22 @@
+---
+title: 'Serenity Prayer'
+description: 'Serenity Prayer in teo reo English & Māori'
+---
+
+# {title}
+
+## {description}
+
+## English
+
+> God, grant me the serenity <br />
+> To accept the things I cannot change <br />
+> Courage to change the things I can <br />
+> And the wisdom to know the difference
+
+## Māori
+
+> E te Atua, tukua mai he ngākau mahaki ki ahua <br />
+> Kia tou tonu te rangimarie i roto i ngā uauatanga <br />
+> Me te kaha ki te whakatika i ngā marotanga kia matou, <br />
+> Kia marama hokinga rereketanga

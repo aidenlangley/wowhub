@@ -1,13 +1,10 @@
 <script lang="ts" context="module">
-  export const padding =
-    'pt-4 sm:pt-8 md:pt-16 lg:pt-32 ' +
-    'pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24';
-  export const spacing = 'space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32';
+  import { load } from './news.svelte';
+  export { load };
 </script>
 
 <script lang="ts">
   import { seo } from '$lib/store/seo';
-
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
     description:
@@ -18,7 +15,7 @@
   import { state } from '$lib/store/dark';
   import { blur } from 'svelte/transition';
 
-  import Page from '$lib/layout/Page.svelte';
+  import Page, { padding, spacing } from '$lib/layout/Page.svelte';
   import Column from '$lib/layout/Column.svelte';
   import Skewed from '$lib/layout/Skewed.svelte';
 
@@ -27,6 +24,10 @@
 
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
+
+  import type { NewsMetadata } from '$news/news.json';
+  export let news: NewsMetadata[];
+
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
@@ -65,7 +66,7 @@
           <IndexQuickLinks />
         </div>
         <div class="p-2">
-          <IndexLatestPosts />
+          <IndexLatestPosts {news} />
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@
 		"dev": "svelte-kit dev",
 		"build": "rm -rf docs && svelte-kit build",
 		"deploy": "npm run build && git add docs && git commit -m '🚀 deploy docs!' && git push",
+		"build:deploy": "npm run build && npm run deploy",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -14,6 +15,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^1.0.0-next.17",
 		"@sveltejs/kit": "^1.0.0-next.156",
+		"@tailwindcss/typography": "^0.4.1",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"autoprefixer": "^10.3.2",
@@ -26,6 +28,7 @@
 		"postcss-load-config": "^3.1.0",
 		"prettier": "~2.2.1",
 		"prettier-plugin-svelte": "^2.2.0",
+		"remark-footnotes": "^4.0.1",
 		"svelte": "^3.42.2",
 		"svelte-check": "^2.0.0",
 		"svelte-hero-icons": "^2.4.0",

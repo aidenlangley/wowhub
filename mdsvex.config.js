@@ -1,12 +1,18 @@
-const config = {
-  "extensions": [".svelte.md", ".md", ".svx"],
+import remarkFootnotes from 'remark-footnotes';
 
-  "smartypants": {
-    "dashes": "oldschool"
+const config = {
+  extensions: ['.svelte.md', '.md', '.svx'],
+
+  smartypants: {
+    dashes: 'oldschool',
   },
 
-  "remarkPlugins": [],
-  "rehypePlugins": []
+  remarkPlugins: [remarkFootnotes],
+  rehypePlugins: [],
+
+  layout: {
+    _: './src/lib/layout/Typography.svelte',
+  },
 };
 
 export default config;
