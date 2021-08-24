@@ -1,0 +1,1 @@
+import{C as r}from"./vendor-7db3d68c.js";import{g as t,r as e}from"./singletons-ff603286.js";const a=r({dark:"true"===localStorage.getItem("dark")}),o=r=>{a.set({dark:r}),localStorage.setItem("dark",`${r}`)},s=e,n=function(r){return s.prefetch(new URL(r,t(document)))};export{o as a,n as p,a as s};
