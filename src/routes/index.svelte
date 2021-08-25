@@ -32,6 +32,8 @@
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
   import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
+  import Banner from '$lib/media/banner/Banner.svelte';
+  import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
 </script>
 
 <!--
@@ -45,11 +47,11 @@
       <div class="p-2">
         {#if !$state.dark}
           <div in:blur>
-            <Signage />
+            <Banner />
           </div>
         {:else}
           <div in:blur>
-            <SignageWhite />
+            <BannerWhite />
           </div>
         {/if}
       </div>

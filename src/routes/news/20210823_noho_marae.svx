@@ -7,6 +7,7 @@ date: '2021-08-23'
 # {title}
 
 <!-- [^24/08/2021-update]
+
 [^24/08/2021-update]: Delayed thanks to COVID-19. -->
 
 ## Information
@@ -23,8 +24,8 @@ date: '2021-08-23'
 # Friday
 
 ```
-| Time  | Activity            |
-| ----- | ------------------- |
+|  Time | Activity            |
+| ----: | :------------------ |
 | 16:00 | Powhiri             |
 |       | Dinner              |
 |       | Marae history       |
@@ -35,8 +36,8 @@ date: '2021-08-23'
 # Saturday
 
 ```
-| Time  | Activity                              |
-| ----- | ------------------------------------- |
+|  Time | Activity                              |
+| ----: | :------------------------------------ |
 | 07:00 | Karakia                               |
 | 07:30 | Maunga hikoi (or tai chi if it's wet) |
 | 09:00 | Breakfast                             |
@@ -48,6 +49,7 @@ date: '2021-08-23'
 | 18:30 | Dinner                                |
 | 20:00 | Talent (guest)                        |
 |       | Moe                                   |
+
 ```
 
 # Sunday
