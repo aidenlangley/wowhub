@@ -1,0 +1,20 @@
+export enum InputType {
+  Checkbox = 'checkbox',
+  Color = 'color',
+  Date = 'date',
+  DateTimeLocal = 'datetime-local',
+  Email = 'email',
+  File = 'file',
+  Hidden = 'hidden',
+  Number = 'number',
+  Password = 'password',
+  Radio = 'radio',
+  Range = 'range',
+  Search = 'search',
+  Submit = 'submit', // Submit should be its own component.
+  Tel = 'tel',
+  Text = 'text',
+  Time = 'time',
+  Url = 'url',
+  Week = 'week',
+}

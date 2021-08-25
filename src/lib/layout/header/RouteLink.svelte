@@ -14,7 +14,6 @@
   parent. The `slot` is intended to just take a `name` to be displayed.
 -->
 <a
-  sveltekit:prefetch
   href={path}
   aria-label={tooltip}
   class={active
@@ -23,6 +22,7 @@
       'font-bold tracking-tighter pointer-events-none ' +
       'tyd:border-b-2 border-b-4 border-green-300'
     : 'hover:text-green-300 focus:text-green-300 focus:underline transition duration-300'}
+  sveltekit:prefetch
 >
   {#if tooltip}
     <Tooltip text={tooltip} right>

@@ -1,10 +1,24 @@
 <script lang="ts" context="module">
+  import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
+  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
+  import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
+  import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
+  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
+  import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
+  import Column from '$lib/layout/Column.svelte';
+  import Page, { padding, spacing } from '$lib/layout/Page.svelte';
+  import Skewed from '$lib/layout/Skewed.svelte';
+  import Banner from '$lib/media/banner/Banner.svelte';
+  import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
+  import { state } from '$lib/store/dark';
+  import { seo } from '$lib/store/seo';
+  import type { NewsMetadata } from '$news/news';
+  import { blur, fade } from 'svelte/transition';
   import { load } from './news.svelte';
   export { load };
 </script>
 
 <script lang="ts">
-  import { seo } from '$lib/store/seo';
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
     description:
@@ -12,25 +26,7 @@
     robots: 'none',
   };
 
-  import { state } from '$lib/store/dark';
-  import { blur } from 'svelte/transition';
-
-  import Page, { padding, spacing } from '$lib/layout/Page.svelte';
-  import Column from '$lib/layout/Column.svelte';
-  import Skewed from '$lib/layout/Skewed.svelte';
-
-  import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
-  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
-
-  import type { NewsMetadata } from '$news/news.json';
   export let news: NewsMetadata[];
-
-  import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
-  import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
-  import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
-  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
-  import Banner from '$lib/media/banner/Banner.svelte';
-  import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
 </script>
 
 <!--
@@ -64,9 +60,11 @@
         >
           <IndexQuickLinks />
         </div>
-        <div class="p-2">
-          <IndexLatestPosts {news} />
-        </div>
+        {#if news}
+          <div class="p-2" in:fade>
+            <IndexLatestPosts {news} />
+          </div>
+        {/if}
       </div>
     </div>
   </Column>

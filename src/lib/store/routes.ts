@@ -1,6 +1,8 @@
+import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
+import type { Route } from './route.d';
 
-export const routes = readable([
+export const routes: Readable<Route[]> = readable([
   {
     name: 'kainga',
     path: '/',

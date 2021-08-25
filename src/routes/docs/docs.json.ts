@@ -1,9 +1,3 @@
-interface DocMetaData {
-  title: string;
-  description: string;
-  slug: string;
-}
-
 export default async function get(): Promise<{
   body: { docs: DocMetaData[] };
 }> {

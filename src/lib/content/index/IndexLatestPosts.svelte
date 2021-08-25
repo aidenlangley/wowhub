@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { NewsMetadata } from '$news/news.json';
+  import type { NewsMetadata } from '$news/news';
   import Link from '../Link.svelte';
 
   export let news: NewsMetadata[];

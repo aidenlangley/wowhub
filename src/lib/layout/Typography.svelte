@@ -1,12 +1,11 @@
 <script>
   import Column from '$lib/layout/Column.svelte';
   import Page, { padding } from '$lib/layout/Page.svelte';
+  import { seo } from '$lib/store/seo';
 
   export let title;
   export let description;
   export let date = null;
-
-  import { seo } from '$lib/store/seo';
 
   $seo = {
     title,

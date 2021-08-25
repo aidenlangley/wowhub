@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+  import { seo } from '$lib/store/seo';
+  import type { NewsMetadata } from '$news/news';
   import type { Load } from '@sveltejs/kit';
 
   export const load: Load = async ({
@@ -14,7 +16,6 @@
 </script>
 
 <script lang="ts">
-  import { seo } from '$lib/store/seo';
   $seo = {
     title: 'Panui',
     description:
@@ -22,7 +23,6 @@
     robots: 'none',
   };
 
-  import type { NewsMetadata } from '$news/news.json';
   export let news: NewsMetadata[];
 </script>
 

@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+  import { paragraphStyle } from './IndexBlurb.svelte';
+
   export const whakatauki = {
     whakatauki: 'E hara taku toa i te toa takitahi, engari he toa takitini',
     translation:
@@ -7,8 +9,6 @@
 </script>
 
 <script lang="ts">
-  import { paragraphStyle } from './IndexBlurb.svelte';
-
   const headings = whakatauki.whakatauki.split(',');
   headings[0] += ',';
 </script>

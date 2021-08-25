@@ -1,9 +1,4 @@
-export interface NewsMetadata {
-  title: string;
-  description: string;
-  date: Date;
-  slug: string;
-}
+import type { NewsMetadata } from './news';
 
 export async function get(): Promise<{
   body: { news: NewsMetadata[] };

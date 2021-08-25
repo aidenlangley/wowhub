@@ -38,7 +38,7 @@
 </script>
 
 <script lang="ts">
-  // Should be a closer / lambda / pass me a function.
+  // Should be a closure / lambda / pass me a function.
   export let click: any = null;
   export let colour: ButtonColour = ButtonColour.Default;
   export let text: string = null;

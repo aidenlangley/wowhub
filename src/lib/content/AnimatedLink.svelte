@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Link from './Link.svelte';
-  import { ButtonColour } from './Button.svelte';
   import { fade } from 'svelte/transition';
+  import { ButtonColour } from './Button.svelte';
+  import Link from './Link.svelte';
 
   export let href: string;
   export let text: string = null;

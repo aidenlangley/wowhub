@@ -1,5 +1,6 @@
 <script lang="ts">
   import { seo } from '$lib/store/seo';
+
   $seo = {
     title: 'Tātou Hoa',
     description:

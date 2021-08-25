@@ -1,11 +1,10 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
+  import { ButtonColour, style } from './Button.svelte';
 
   export let href: string;
   export let text: string = null;
-
-  import { style, ButtonColour } from './Button.svelte';
 
   export let buttonStyle = false;
   export let buttonColour: string = ButtonColour.Default;

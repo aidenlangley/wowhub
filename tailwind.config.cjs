@@ -171,7 +171,7 @@ const config = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
   darkMode: 'class' /* media follows OS, class follows normal conventions */,
   variants: {
     extend: {
