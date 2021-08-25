@@ -19,9 +19,6 @@
   import Column from '$lib/layout/Column.svelte';
   import Skewed from '$lib/layout/Skewed.svelte';
 
-  import Signage from '$lib/media/signage/Signage.svelte';
-  import SignageWhite from '$lib/media/signage/SignageWhite.svelte';
-
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
 
