@@ -20,19 +20,22 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-2deaca95.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-7db3d68c.js">
+		<link rel="modulepreload" href="/_app/start-48c64681.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-5ad32d2c.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-ff603286.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-bacddcca.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-23bf574a.js">
-		<link rel="modulepreload" href="/_app/chunks/seo-d7542b6f.js">
-		<link rel="modulepreload" href="/_app/chunks/navigation-a23043a2.js">
-		<link rel="modulepreload" href="/_app/pages/news.svelte-440b1935.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-ada8d74b.js">
+		<link rel="modulepreload" href="/_app/chunks/dark-900630a8.js">
+		<link rel="modulepreload" href="/_app/chunks/seo-86174600.js">
+		<link rel="modulepreload" href="/_app/pages/news.svelte-bd91891d.js">
+		<link rel="modulepreload" href="/_app/chunks/Column-cb60b3e5.js">
+		<link rel="modulepreload" href="/_app/chunks/news-fae97f70.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b38158ee.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-f5723f98.css">
+		<link rel="stylesheet" href="/_app/assets/Column-78221a57.css">
 
 		<script type="module">
-			import { start } from "/_app/start-2deaca95.js";
+			import { start } from "/_app/start-48c64681.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -45,8 +48,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-23bf574a.js"),
-						import("/_app/pages/news.svelte-440b1935.js")
+						import("/_app/pages/__layout.svelte-ada8d74b.js"),
+						import("/_app/pages/news.svelte-bd91891d.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -66,23 +69,24 @@
 
 
 
+
 <div>
-<header class="bg-gray-900 dark:bg-black text-white flex items-center align-middle p-2 sm:p-3 md:p-4 lg:p-6 border-b border-gray-300 dark:border-gray-800 transition duration-500 shadow-lg "><div class="smd:hidden">
+<header class="bg-gray-900 dark:bg-black text-white flex items-center align-middle p-4 lg:p-6 border-b border-gray-300 dark:border-gray-800 transition duration-500 shadow-lg "><div class="smd:hidden">
 
 <img src="/images/logo/logo-white.png" alt="wowhub logo white" class="\n    max-h-8 sm:max-h-10 md:max-h-12 lg:max-h-14 xl:max-h-16\n    max-w-none\n  "></div>
   <div class="flex-grow">
-<nav class="flex space-x-1 md:space-x-2 items-center sm:justify-center tyd:text-20 text-22 sm:text-28 md:text-30 lg:text-32 xl:text-40 font-medium tracking-tighter ">
-<a sveltekit:prefetch href="/" aria-label="home" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300">
+<nav class="flex space-x-1 md:space-x-2 items-center sm:justify-center tyd:text-base text-22 sm:text-28 md:text-30 lg:text-32 xl:text-40 font-medium tracking-tighter ">
+<a href="/" aria-label="home" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300" sveltekit:prefetch>
 <div>kainga
   </div></a>
-<a sveltekit:prefetch href="/team" aria-label="the team / workers" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300">
+<a href="/team" aria-label="the team / workers" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300" sveltekit:prefetch>
 <div>ngā kaimahi
   </div></a>
-<a sveltekit:prefetch href="/friends" aria-label="our friends" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300">
+<a href="/friends" aria-label="our friends" class="hover:text-green-300 focus:text-green-300 focus:underline transition duration-300" sveltekit:prefetch>
 <div>tātou hoa
   </div></a>
-<a sveltekit:prefetch href="/news" aria-label="news" class="bg-white text-black tyd:text-20 text-24 sm:text-30 md:text-32 lg:text-34 xl:text-42 font-bold tracking-tighter pointer-events-none tyd:border-b-2 border-b-4 border-green-300">
-<div>panui
+<a href="/news" aria-label="news" class="bg-white text-black tyd:text-20 text-24 sm:text-30 md:text-32 lg:text-34 xl:text-42 font-bold tracking-tighter pointer-events-none tyd:border-b-2 border-b-4 border-green-300" sveltekit:prefetch>
+<div>panui &amp; docs
   </div></a></nav></div>
   <div class="smd:hidden">
 <div class="items-center align-middle">
@@ -92,15 +96,32 @@
 <svg xmlns="http://www.w3.org/2000/svg" class="\n    max-h-8 sm:max-h-10 md:max-h-12 lg:max-h-14 xl:max-h-16\n    max-w-none\n  " viewBox="0 0 18 18" fill="currentColor" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg></div>
         </button>
   </div></div></div></header>
-  <div class="pb-4 dark:bg-gray-900 dark:text-white transition duration-300"><h1 class="p-4 text-center"><span class="border-b-8 border-yellow-300 font-serif text-64 text-shadow ">Under construction.
-    </span></h1></div>
+  
+<main style="background-image: url(/images/drawing.png)" class="bg-top bg-blend-difference bg-white dark:bg-gray-900 dark:bg-blend-hard-light dark:text-white transition duration-500 "><div class="bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-70"><div class="column svelte-b236x4"><div class="invisible sm:visible"></div>
+  <div><div class="pt-4 sm:pt-8 md:pt-16 lg:pt-32 pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24 space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32"><div class="p-2 space-y-4 md:space-y-6 lg:space-y-8"><h1><span class="font-bold font-serif tracking-tighter text-shadow text-28 md:text-42 lg:text-64 bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50 border-b-4 border-green-300 dark:border-yellow-300">Panui</span></h1>
+        
+<div class="text-14 ty:text-base sm:text-18 tracking-tighter space-y-2"><div class="space-y-1"><p class="font-mono">posted 23/08/2021, 12:00:00</p>
+  
+<a href="news/./20210823_noho_marae" target="" rel=" noopener" class="font-mono font-bold focus:underline text-blue-600 hover:text-blue-400 focus:text-blue-400 dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 visited:text-purple-700 hover:visited:text-purple-500 dark:visited:text-purple-300 dark:hover:visited:text-purple-400"><span class="ty:text-18 sm:text-20 md:text-24">Upcoming Recovery Marae Noho (when COVID-19 is gone again...)</span></a>
+  <p class="bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50 tracking-tight ">An upcoming recovery noho at Rawhitiroa, Ohaeawai</p></div></div>
+
+        <h1><span class="font-bold font-serif tracking-tighter text-shadow text-28 md:text-42 lg:text-64 bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50 border-b-4 border-green-300 dark:border-yellow-300">Other Docs </span></h1>
+        <div class="space-y-2"><div>
+<a href="docs/./serenity-prayer" target="" rel=" noopener" class="font-mono font-bold focus:underline text-blue-600 hover:text-blue-400 focus:text-blue-400 dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 visited:text-purple-700 hover:visited:text-purple-500 dark:visited:text-purple-300 dark:hover:visited:text-purple-400"><span class="ty:text-18 sm:text-20 md:text-24">Serenity Prayer</span>
+              </a>
+              <p class="font-mono tracking-tighter">Serenity Prayer in teo reo English &amp; Māori</p>
+            </div></div></div></div></div>
+  <div class="invisible sm:visible"></div>
+</div></div></main>
   
 <footer class="bg-gray-800 text-white border-t border-gray-300 dark:border-gray-700 "><div class="p-2 place-self-end"><a href="https://github.com/aidenlangley" target="_blank" aria-label="link to website authors' GitHub page" class="flex space-x-2 hover:text-gray-300 focus:text-gray-300 focus:underline justify-end "><span class="font-serif font-medium antialiased">by aidenlangley</span>
   <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2.247a10 10 0 0 0-3.162 19.487c.5.088.687-.212.687-.475c0-.237-.012-1.025-.012-1.862c-2.513.462-3.163-.613-3.363-1.175a3.636 3.636 0 0 0-1.025-1.413c-.35-.187-.85-.65-.013-.662a2.001 2.001 0 0 1 1.538 1.025a2.137 2.137 0 0 0 2.912.825a2.104 2.104 0 0 1 .638-1.338c-2.225-.25-4.55-1.112-4.55-4.937a3.892 3.892 0 0 1 1.025-2.688a3.594 3.594 0 0 1 .1-2.65s.837-.262 2.75 1.025a9.427 9.427 0 0 1 5 0c1.912-1.3 2.75-1.025 2.75-1.025a3.593 3.593 0 0 1 .1 2.65a3.869 3.869 0 0 1 1.025 2.688c0 3.837-2.338 4.687-4.563 4.937a2.368 2.368 0 0 1 .675 1.85c0 1.338-.012 2.413-.012 2.75c0 .263.187.575.687.475A10.005 10.005 0 0 0 12 2.247z" fill="currentColor"></path></svg></a></div></footer></div>
 
 
 
-	<script type="application/json" data-type="svelte-data" data-url="/news/news.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"news\":[{\"title\":\"Upcoming Recovery Marae Noho (when COVID-19 is gone again...)\",\"description\":\"An upcoming recovery noho at Rawhitiroa, Ohaeawai\",\"date\":\"2021-08-23\",\"slug\":\"news\u002F.\u002F20210823_noho_marae\"}]}"}</script>
+	<script type="application/json" data-type="svelte-data" data-url="/news/news.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"newsList\":[{\"title\":\"Upcoming Recovery Marae Noho (when COVID-19 is gone again...)\",\"description\":\"An upcoming recovery noho at Rawhitiroa, Ohaeawai\",\"date\":\"2021-08-23\",\"slug\":\"news\u002F.\u002F20210823_noho_marae\"}]}"}</script>
+
+	<script type="application/json" data-type="svelte-data" data-url="/docs/docs.json">{"status":200,"statusText":"","headers":{"content-type":"application/json; charset=utf-8"},"body":"{\"docs\":[{\"title\":\"Serenity Prayer\",\"description\":\"Serenity Prayer in teo reo English & Māori\",\"slug\":\"docs\u002F.\u002Fserenity-prayer\"}]}"}</script>
 </div>
   </body>
 </html>
