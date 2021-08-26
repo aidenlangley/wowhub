@@ -23,24 +23,22 @@
 
   Don't use TypeScript, it breaks everything.
 -->
-<Page>
-  <Column>
-    <div
-      class="
+<Column>
+  <div
+    class="
         {padding} p-4
         prose prose-green md:prose-lg lg:prose-xl
         max-w-none
         dark:prose-dark
       "
-    >
-      {#if date}
-        <small class="font-mono lg:text-18">
-          posted: {new Date(date).toLocaleString('en-NZ', {
-            timeZone: 'Pacific/Auckland',
-          })}
-        </small>
-      {/if}
-      <slot />
-    </div>
-  </Column>
-</Page>
+  >
+    {#if date}
+      <small class="font-mono lg:text-18">
+        posted: {new Date(date).toLocaleString('en-NZ', {
+          timeZone: 'Pacific/Auckland',
+        })}
+      </small>
+    {/if}
+    <slot />
+  </div>
+</Column>

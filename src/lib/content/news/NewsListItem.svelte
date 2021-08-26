@@ -14,12 +14,9 @@
       {news.title}
     </span>
   </Link>
-  <p
-    class="
-      bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50
-      tracking-tight
-    "
-  >
-    {news.description}
+  <p class="tracking-tight">
+    <span class="bg-white bg-opacity-50 dark:bg-black dark:bg-opacity-50">
+      {news.description}
+    </span>
   </p>
 </div>

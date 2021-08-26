@@ -16,15 +16,12 @@
   mobile devices) and external links to our Facebook group & page on Google
   maps.
 -->
-<div
-  class="
-    hidden sm:block
-    tracking-tight font-light font-mono
-    text-center text-20
-  "
->
+<div class="space-y-2 sm:space-y-4 transition duration-1000">
   <span
     class="
+      hidden sm:block
+      tracking-tight font-light font-mono
+      text-center text-20
       bg-white bg-opacity-50
       dark:bg-black dark:bg-opacity-50
       dark:text-white
@@ -32,8 +29,6 @@
   >
     Get in touch, or come and see us.
   </span>
-</div>
-<div class="space-y-2 sm:space-y-4">
   <div class="flex space-x-2 sm:space-x-4 justify-center">
     <AnimatedLink href={`mailto:${$info.email}`} text={$info.email} button>
       <SvgMail slot="original" />

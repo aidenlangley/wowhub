@@ -6,7 +6,7 @@
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
   import NewsList from '$lib/content/news/NewsList.svelte';
   import Column from '$lib/layout/Column.svelte';
-  import Page, { padding, spacing } from '$lib/layout/Page.svelte';
+  import { padding, spacing } from '$lib/layout/Page.svelte';
   import Skewed from '$lib/layout/Skewed.svelte';
   import Banner from '$lib/media/banner/Banner.svelte';
   import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
@@ -34,84 +34,80 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<Page>
-  <Column>
-    <div class="{padding} {spacing}">
-      <div class="p-2">
-        {#if !$state.dark}
-          <div in:blur>
-            <Banner />
-          </div>
-        {:else}
-          <div in:blur>
-            <BannerWhite />
-          </div>
-        {/if}
-      </div>
-      <div class="p-4 space-y-4 sm:space-y-8">
-        <div
-          class="
-            sm:pt-4 md:pt-8
-            sm:border-t-4 border-dotted
-            border-gray-300 dark:border-gray-600
-            transition duration-1000
-            space-y-4
-          "
-        >
-          <IndexQuickLinks />
+<Column>
+  <div class="{padding} lg:pt-32 {spacing} lg:space-y-32">
+    <div class="p-2">
+      {#if !$state.dark}
+        <div in:blur>
+          <Banner />
         </div>
-        {#if newsList}
-          <div class="sm:text-center space-y-2 md:space-y-4" in:fade>
-            <h1
+      {:else}
+        <div in:blur>
+          <BannerWhite />
+        </div>
+      {/if}
+    </div>
+    <div class="p-4 space-y-4 sm:space-y-8">
+      <div
+        class="
+          sm:border-t-4 border-dotted
+          border-gray-300 dark:border-gray-600
+          sm:pt-4 md:pt-8
+        "
+      >
+        <IndexQuickLinks />
+      </div>
+      {#if newsList}
+        <div class="sm:text-center space-y-2 md:space-y-4" in:fade>
+          <h1
+            class="
+              tracking-tight font-light font-mono
+              text-20 sm:text-22 md:text-24 lg:text-28 xl:text-32
+            "
+          >
+            <span
               class="
-                tracking-tight font-light font-mono
-                text-20 sm:text-22 md:text-24 lg:text-28 xl:text-32
+                bg-white bg-opacity-50
+                dark:bg-black dark:bg-opacity-50
+                dark:text-white
               "
             >
-              <span
-                class="
-                  bg-white bg-opacity-50
-                  dark:bg-black dark:bg-opacity-50
-                  dark:text-white
-                "
-              >
-                What's the latest?
-              </span>
-            </h1>
-            <NewsList newsList={newsList.slice(0, 5)} />
-          </div>
-        {/if}
-      </div>
+              What's the latest?
+            </span>
+          </h1>
+          <NewsList newsList={newsList.slice(0, 5)} />
+        </div>
+      {/if}
     </div>
-  </Column>
-  <Skewed
-    gradient="bg-gradient-to-tr"
-    skew={{ outer: '-skew-y-2', inner: 'skew-y-2' }}
-  >
-    <div class="text-white text-shadow-lg">
-      <IndexBlurb />
+  </div>
+</Column>
+<Skewed
+  gradient="bg-gradient-to-tr"
+  skew={{ outer: '-skew-y-2', inner: 'skew-y-2' }}
+>
+  <div class="text-white text-shadow-lg">
+    <IndexBlurb />
+  </div>
+</Skewed>
+<Column>
+  <div class={padding}>
+    <div class="p-2">
+      <IndexSerenityPrayer />
     </div>
-  </Skewed>
-  <Column>
-    <div class={padding}>
-      <div class="p-2">
-        <IndexSerenityPrayer />
-      </div>
+  </div>
+</Column>
+<Skewed
+  gradient="bg-gradient-to-br"
+  skew={{ outer: 'skew-y-2', inner: '-skew-y-2' }}
+>
+  <div class="text-white text-shadow-lg">
+    <IndexWhakatauki />
+  </div>
+</Skewed>
+<Column>
+  <div class={padding}>
+    <div class="p-4">
+      <IndexBuzzWords />
     </div>
-  </Column>
-  <Skewed
-    gradient="bg-gradient-to-br"
-    skew={{ outer: 'skew-y-2', inner: '-skew-y-2' }}
-  >
-    <div class="text-white text-shadow-lg">
-      <IndexWhakatauki />
-    </div>
-  </Skewed>
-  <Column>
-    <div class={padding}>
-      <div class="p-4">
-        <IndexBuzzWords />
-      </div>
-    </div>
-  </Column>
-</Page>
+  </div>
+</Column>

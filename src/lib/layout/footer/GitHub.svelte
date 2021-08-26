@@ -5,7 +5,6 @@
   class="
     flex space-x-2
     hover:text-gray-300 focus:text-gray-300 focus:underline
-    justify-end
   "
 >
   <span class="font-serif font-medium antialiased">by aidenlangley</span>

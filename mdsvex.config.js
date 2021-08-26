@@ -5,14 +5,11 @@ import gfm from 'remark-gfm';
 
 const config = {
   extensions: ['.svelte.md', '.md', '.svx'],
-
   smartypants: {
     dashes: 'oldschool',
   },
-
   remarkPlugins: [[footnotes, { inlineNotes: true }], gfm],
   rehypePlugins: [externalLinks, domStringify],
-
   layout: {
     _: './src/lib/layout/Typography.svelte',
   },

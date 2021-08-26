@@ -13,7 +13,8 @@
     border-t border-gray-300 dark:border-gray-700
   "
 >
-  <div class="p-2 place-self-end">
+  <div class="p-2 flex">
+    <div class="flex-grow" />
     <GitHub />
   </div>
 </footer>

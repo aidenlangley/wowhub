@@ -1,10 +1,8 @@
 <script lang="ts" context="module">
   import { assets } from '$app/paths';
 
-  export const padding =
-    'pt-4 sm:pt-8 md:pt-16 lg:pt-32 ' +
-    'pb-8 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24';
-  export const spacing = 'space-y-4 sm:space-y-8 md:space-y-16 lg:space-y-32';
+  export const padding = 'pt-4 sm:pt-8 md:pt-16 ' + 'pb-4 sm:pb-8 md:pb-16';
+  export const spacing = 'space-y-4 sm:space-y-8 md:space-y-16';
 </script>
 
 <!--
@@ -22,7 +20,13 @@
     transition duration-500
   "
 >
-  <div class="bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-70">
+  <div
+    class="
+      bg-white bg-opacity-80
+      dark:bg-black dark:bg-opacity-70
+      {padding} {spacing}
+    "
+  >
     <slot />
   </div>
 </main>

@@ -2,7 +2,7 @@
   import Link from '$lib/content/Link.svelte';
   import NewsList from '$lib/content/news/NewsList.svelte';
   import Column from '$lib/layout/Column.svelte';
-  import Page, { padding, spacing } from '$lib/layout/Page.svelte';
+  import { padding, spacing } from '$lib/layout/Page.svelte';
   import { seo } from '$lib/store/seo';
   import type { NewsMetadata } from '$routes/news/news';
   import type { Load } from '@sveltejs/kit';
@@ -66,33 +66,28 @@
     'border-b-4 border-green-300 dark:border-yellow-300';
 </script>
 
-<Page>
-  <Column>
-    <div class="{padding} {spacing}">
-      <div class="p-2 space-y-4 md:space-y-6 lg:space-y-8">
-        <h1>
-          <span class={titleStyle}>Panui</span>
-        </h1>
-        <NewsList {newsList} />
-
-        <h1>
-          <span class={titleStyle}> Other Docs </span>
-        </h1>
-        <div class="space-y-2">
-          {#each docs as doc}
-            <div>
-              <Link external={false} href={doc.slug}>
-                <span class="ty:text-18 sm:text-20 md:text-24">
-                  {doc.title}
-                </span>
-              </Link>
-              <p class="font-mono tracking-tighter">
-                {doc.description}
-              </p>
-            </div>
-          {/each}
+<Column>
+  <div class="p-2 space-y-4 md:space-y-6 lg:space-y-8">
+    <h1>
+      <span class={titleStyle}>Panui</span>
+    </h1>
+    <NewsList {newsList} />
+    <h1>
+      <span class={titleStyle}>Other Docs</span>
+    </h1>
+    <div class="space-y-2">
+      {#each docs as doc}
+        <div>
+          <Link external={false} href={doc.slug}>
+            <span class="ty:text-18 sm:text-20 md:text-24">
+              {doc.title}
+            </span>
+          </Link>
+          <p class="font-mono tracking-tighter">
+            {doc.description}
+          </p>
         </div>
-      </div>
+      {/each}
     </div>
-  </Column>
-</Page>
+  </div>
+</Column>

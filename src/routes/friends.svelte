@@ -17,10 +17,10 @@
   <h1 class="p-4 text-center">
     <span
       class="
-      border-b-8 border-yellow-300
-      font-serif text-64
-      text-shadow
-    "
+        border-b-8 border-yellow-300
+        font-serif text-64
+        text-shadow
+      "
     >
       Under construction.
     </span>
