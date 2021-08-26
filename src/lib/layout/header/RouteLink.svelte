@@ -21,7 +21,8 @@
       'tyd:text-20 text-24 sm:text-30 md:text-32 lg:text-34 xl:text-42 ' +
       'font-bold tracking-tighter pointer-events-none ' +
       'tyd:border-b-2 border-b-4 border-green-300'
-    : 'hover:text-green-300 focus:text-green-300 focus:underline transition duration-300'}
+    : 'hover:text-green-300 focus:text-green-300 focus:underline ' +
+      'transition duration-300'}
   sveltekit:prefetch
 >
   {#if tooltip}

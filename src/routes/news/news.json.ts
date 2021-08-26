@@ -1,7 +1,7 @@
 import type { NewsMetadata } from './news';
 
 export async function get(): Promise<{
-  body: { news: NewsMetadata[] };
+  body: { newsList: NewsMetadata[] };
 }> {
   const modules = import.meta.glob('./*.svx');
   const news: NewsMetadata[] = [];
@@ -13,7 +13,7 @@ export async function get(): Promise<{
 
   return {
     body: {
-      news: news.sort((x, y) => y.date.getTime() - x.date.getTime()),
+      newsList: news.sort((x, y) => y.date.getTime() - x.date.getTime()),
     },
   };
 }

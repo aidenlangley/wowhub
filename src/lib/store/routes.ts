@@ -19,7 +19,7 @@ export const routes: Readable<Route[]> = readable([
     translation: 'our friends',
   },
   {
-    name: 'panui',
+    name: 'panui & docs',
     path: '/news',
     translation: 'news',
   },

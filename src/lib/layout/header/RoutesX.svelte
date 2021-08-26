@@ -15,7 +15,7 @@
   class="
     flex space-x-1 md:space-x-2
     items-center sm:justify-center
-    tyd:text-20 text-22 sm:text-28 md:text-30 lg:text-32 xl:text-40
+    tyd:text-base text-22 sm:text-28 md:text-30 lg:text-32 xl:text-40
     font-medium tracking-tighter
   "
 >

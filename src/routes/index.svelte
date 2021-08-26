@@ -1,10 +1,10 @@
 <script lang="ts" context="module">
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
-  import IndexLatestPosts from '$lib/content/index/IndexLatestPosts.svelte';
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
   import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
+  import NewsList from '$lib/content/news/NewsList.svelte';
   import Column from '$lib/layout/Column.svelte';
   import Page, { padding, spacing } from '$lib/layout/Page.svelte';
   import Skewed from '$lib/layout/Skewed.svelte';
@@ -14,7 +14,7 @@
   import { seo } from '$lib/store/seo';
   import type { NewsMetadata } from '$news/news';
   import { blur, fade } from 'svelte/transition';
-  import { load } from './news.svelte';
+  import { loadNews as load } from './news.svelte';
   export { load };
 </script>
 
@@ -26,7 +26,7 @@
     robots: 'none',
   };
 
-  export let news: NewsMetadata[];
+  export let newsList: NewsMetadata[];
 </script>
 
 <!--
@@ -48,7 +48,7 @@
           </div>
         {/if}
       </div>
-      <div class="p-2 space-y-4 sm:space-y-8">
+      <div class="p-4 space-y-4 sm:space-y-8">
         <div
           class="
             sm:pt-4 md:pt-8
@@ -60,9 +60,25 @@
         >
           <IndexQuickLinks />
         </div>
-        {#if news}
-          <div class="p-2" in:fade>
-            <IndexLatestPosts {news} />
+        {#if newsList}
+          <div class="sm:text-center space-y-2 md:space-y-4" in:fade>
+            <h1
+              class="
+                tracking-tight font-light font-mono
+                text-20 sm:text-22 md:text-24 lg:text-28 xl:text-32
+              "
+            >
+              <span
+                class="
+                  bg-white bg-opacity-50
+                  dark:bg-black dark:bg-opacity-50
+                  dark:text-white
+                "
+              >
+                What's the latest?
+              </span>
+            </h1>
+            <NewsList newsList={newsList.slice(0, 5)} />
           </div>
         {/if}
       </div>
@@ -93,7 +109,7 @@
   </Skewed>
   <Column>
     <div class={padding}>
-      <div class="p-2">
+      <div class="p-4">
         <IndexBuzzWords />
       </div>
     </div>

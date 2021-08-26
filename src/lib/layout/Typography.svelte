@@ -26,7 +26,7 @@
   <Column>
     <div
       class="
-        {padding} p-2
+        {padding} p-4
         prose prose-green md:prose-lg lg:prose-xl
         max-w-none
         dark:prose-dark

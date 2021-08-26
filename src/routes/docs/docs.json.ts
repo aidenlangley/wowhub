@@ -1,4 +1,6 @@
-export default async function get(): Promise<{
+import type { DocMetaData } from './docs';
+
+export async function get(): Promise<{
   body: { docs: DocMetaData[] };
 }> {
   const modules = import.meta.glob('./*.svx');
@@ -11,7 +13,7 @@ export default async function get(): Promise<{
 
   return {
     body: {
-      docs,
+      docs: docs,
     },
   };
 }
