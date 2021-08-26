@@ -1,12 +1,14 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-  import { ButtonColour } from './Button.svelte';
+  import type { ButtonColour } from './Button.d';
+  import { ButtonColour as buttonColour } from './Button.d';
   import Link from './Link.svelte';
 
   export let href: string;
   export let text: string = null;
-  export let buttonStyle = false;
-  export let buttonColour: string = ButtonColour.Default;
+
+  export let button = false;
+  export let colour: ButtonColour = buttonColour.Default;
 
   let transition = false;
   const next = () => (transition = true);
@@ -19,7 +21,7 @@
   on:pointerover={next}
   on:pointerleave={prev}
 >
-  <Link {href} {buttonStyle} {buttonColour}>
+  <Link {href} {button} {colour}>
     {#if !transition}
       <div in:fade={{ duration: 300 }}>
         <slot name="original" />

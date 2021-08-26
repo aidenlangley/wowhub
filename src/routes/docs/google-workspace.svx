@@ -1,0 +1,78 @@
+---
+title: 'How to Google Workspace'
+description: 'A brief guide on how to use Google Workspace, with gifs.'
+---
+
+<script>
+ import gcNewAccount from './google-workspace/google-chrome-new-profile.gif';
+ import managedBookmarks from './google-workspace/managed-bookmarks.png';
+ import googleDrive from './google-workspace/google-drive.gif';
+ import docsToDrive from './google-workspace/docs-to-drive.gif';
+</script>
+
+# {title}
+
+Google Workspace is a cloud based solution, so you have to adjust to not having
+files on your desktop, and that can be a bit of a hurdle. Instead, just about
+all of your mahi can be done through the browser, Google Chrome in this case,
+which is great since your files can follow you just about anywhere you go.
+Documents aren't tied to the computer you were using any more. This is more
+**secure**, and more convenient.
+
+This will be a quick guide with images and an **FAQ** (frequently asked
+questions section) at the very end.
+
+### Out with the old, in with the new
+
+Here is a quick table of what you're likely used to using, and what Google
+Workspace equivalent is:
+
+| App        | Replaced by |
+| ---------- | ----------- |
+| Outlook    | Gmail       |
+| Word       | Docs        |
+| Excel      | Sheets      |
+| PowerPoint | Slides      |
+
+# Google Chrome
+
+You are probably already using Google Chrome, but if not, you can download it
+[here](https://www.google.com/chrome/).
+
+Once installed, we need to add a new account like so...
+
+<img
+  src={gcNewAccount}
+  alt="how to add a new account to Google Chrome"
+  class="border rounded border-gray-300"
+/>
+
+Now you'll see a bookmarks bar. All of your essential bookmarks are inside the
+folder `Managed bookmarks`.
+
+<img
+  src={managedBookmarks}
+  alt="where to find important bookmarks"
+  class="border rounded border-gray-300"
+/>
+
+# Google Drive
+
+The first and probably most important piece of the puzzle is Google Drive. You
+interact with your files here. You can organise to your hearts content.
+
+<img
+  src={googleDrive}
+  alt="how to get to Google Drive"
+  class="border rounded border-gray-300"
+/>
+
+When you work inside **Google Docs**, **Sheets**, **Slides** or **Forms**, your
+documents will appear in your drive automatically. You can organise them at your
+leisure.
+
+<img
+  src={docsToDrive}
+  alt="making a document in Docs, then organising in Drive"
+  class="border rounded border-gray-300"
+/>

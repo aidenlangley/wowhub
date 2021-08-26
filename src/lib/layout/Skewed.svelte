@@ -1,23 +1,9 @@
-<script lang="ts" context="module">
-  export enum SkewColour {
-    Default = 'bg-green-800 bg-opacity-80 from-green-500 dark:from-green-600',
-  }
-
-  /**
-   * Outer skews outer element, inner corrects it, e.g.
-   * @outer `-skew-y-2`
-   * @inner `skew-y-2`
-   */
-  export interface Skew {
-    outer: string;
-    inner: string;
-  }
-</script>
-
 <script lang="ts">
   import Column from './Column.svelte';
+  import type { Skew, SkewColour } from './Skewed.d';
+  import { SkewColour as skewColour } from './Skewed.d';
 
-  export let colour = SkewColour.Default;
+  export let colour: SkewColour = skewColour.Default;
   export let gradient: string;
   export let skew: Skew;
 </script>

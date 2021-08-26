@@ -31,8 +31,8 @@ const config = {
       resolve: {
         alias: {
           $routes: path.resolve('./src/routes'),
-          $news: path.resolve('./src/routes/news'),
-          $docs: path.resolve('./src/routes/docs'),
+          $news: path.resolve('./src/news'),
+          $docs: path.resolve('./src/docs'),
         },
       },
       optimizeDeps: {

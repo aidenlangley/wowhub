@@ -1,13 +1,15 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
-  import { ButtonColour, style } from './Button.svelte';
+  import type { ButtonColour } from './Button.d';
+  import { ButtonColour as buttonColour } from './Button.d';
+  import { style } from './Button.svelte';
 
   export let href: string;
   export let text: string = null;
 
-  export let buttonStyle = false;
-  export let buttonColour: string = ButtonColour.Default;
+  export let button = false;
+  export let colour: ButtonColour = buttonColour.Default;
 
   export let external = true;
   if (!external && browser) prefetch(href);
@@ -23,8 +25,8 @@
   {href}
   target={external ? '_blank' : ''}
   rel="{external ? 'external' : ''} noopener"
-  class={buttonStyle
-    ? `${style} ${buttonColour}`
+  class={button
+    ? `${style} ${colour}`
     : 'font-mono font-bold focus:underline ' +
       'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
       'dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 ' +

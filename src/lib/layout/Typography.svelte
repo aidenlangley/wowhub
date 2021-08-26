@@ -1,3 +1,4 @@
+<!-- Cannot be ts because of lack of support from `mdsvex` -->
 <script>
   import Column from '$lib/layout/Column.svelte';
   import Page, { padding } from '$lib/layout/Page.svelte';

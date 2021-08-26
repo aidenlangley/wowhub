@@ -12,7 +12,7 @@
   import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
   import { state } from '$lib/store/dark';
   import { seo } from '$lib/store/seo';
-  import type { NewsMetadata } from '$news/news';
+  import type { NewsMetadata } from '$routes/news/news';
   import { blur, fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
   export { load };
