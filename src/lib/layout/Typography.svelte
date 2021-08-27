@@ -1,7 +1,7 @@
 <!-- Cannot be ts because of lack of support from `mdsvex` -->
 <script>
   import Column from '$lib/layout/Column.svelte';
-  import Page, { padding } from '$lib/layout/Page.svelte';
+  import { padding } from '$lib/layout/Page.svelte';
   import { seo } from '$lib/store/seo';
 
   export let title;
@@ -26,11 +26,10 @@
 <Column>
   <div
     class="
-        {padding} p-4
-        prose prose-green md:prose-lg lg:prose-xl
-        max-w-none
-        dark:prose-dark
-      "
+      p-4 max-w-none
+      prose prose-green md:prose-lg lg:prose-xl
+      dark:prose-dark
+    "
   >
     {#if date}
       <small class="font-mono lg:text-18">

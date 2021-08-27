@@ -12,7 +12,7 @@
   @component
   Meet the team.
 -->
-<div class="pb-4 dark:bg-gray-900 dark:text-white transition duration-300">
+<div class="pb-4 dark:text-white">
   <h1 class="p-4 text-center">
     <span
       class="
