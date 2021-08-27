@@ -18,7 +18,7 @@
   <Column>
     <div
       class="
-        {skew.inner}  
+        {skew.inner} 
         pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24
         pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24
         p-2 

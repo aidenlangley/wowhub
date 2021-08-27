@@ -1,5 +1,5 @@
 <script lang="ts" context="module">
-  import { paragraphStyle } from './IndexBlurb.svelte';
+  import Paragraphs from '../Paragraphs.svelte';
 
   export const whakatauki = {
     whakatauki: 'E hara taku toa i te toa takitahi, engari he toa takitini',
@@ -39,7 +39,7 @@
   >
     "{whakatauki.translation}"
   </h2>
-  <div class={paragraphStyle}>
+  <Paragraphs>
     <p>
       A favourite whakatauki of ours that embodies our ideals perfectly. A
       strong individual empowers us all.
@@ -52,5 +52,5 @@
     <p>
       When Taumarere is in need, Hokianga will answer the call, and vice versa.
     </p>
-  </div>
+  </Paragraphs>
 </section>

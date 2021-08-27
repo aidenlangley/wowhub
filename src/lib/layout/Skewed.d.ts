@@ -1,6 +1,5 @@
 export enum SkewColour {
-  Default = 'bg-green-800 bg-opacity-80 from-green-500 dark:from-green-600',
-  Red = 'bg-red-800 bg-opacity-80 from-red-500 dark:from-red-600',
+  Default = 'bg-green-900 bg-opacity-80 from-green-700',
 }
 
 /**

@@ -6,6 +6,7 @@
 
   export let href: string;
   export let text: string = null;
+  export let label: string = text;
 
   export let button = false;
   export let colour: ButtonColour = buttonColour.Default;
@@ -21,7 +22,7 @@
   on:pointerover={next}
   on:pointerleave={prev}
 >
-  <Link {href} {button} {colour}>
+  <Link {href} {label} {button} {colour}>
     {#if !transition}
       <div in:fade={{ duration: 300 }}>
         <slot name="original" />
@@ -31,8 +32,6 @@
         <slot name="transition" />
       </div>
     {/if}
-    <slot name="text">
-      <span>{text}</span>
-    </slot>
+    <span>{text}</span>
   </Link>
 </div>

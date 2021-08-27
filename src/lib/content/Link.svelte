@@ -1,12 +1,22 @@
-<script lang="ts">
+<script lang="ts" context="module">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
   import type { ButtonColour } from './Button.d';
   import { ButtonColour as buttonColour } from './Button.d';
-  import { style } from './Button.svelte';
+  import { style as buttonStyle } from './Button.svelte';
 
+  export const style =
+    'font-mono font-bold focus:underline ' +
+    'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
+    'visited:text-purple-600 hover:visited:text-purple-400 focus:visited:text-purple-400' +
+    'dark:text-blue-400 dark:hover:text-blue-200 dark:focus:text-blue-200 ' +
+    'dark:visited:text-purple-400 dark:hover:visited:text-purple-200 dark:focus:visited:text-purple-200';
+</script>
+
+<script lang="ts">
   export let href: string;
   export let text: string = null;
+  export let label: string = text;
 
   export let button = false;
   export let colour: ButtonColour = buttonColour.Default;
@@ -23,15 +33,10 @@
 -->
 <a
   {href}
+  aria-label={label}
   target={external ? '_blank' : ''}
   rel="{external ? 'external' : ''} noopener"
-  class={button
-    ? `${style} ${colour}`
-    : 'font-mono font-bold focus:underline ' +
-      'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
-      'dark:text-blue-300 dark:hover:text-blue-400 dark:focus:text-blue-400 ' +
-      'visited:text-purple-700 hover:visited:text-purple-500 ' +
-      'dark:visited:text-purple-300 dark:hover:visited:text-purple-400'}
+  class={button ? `${buttonStyle} ${colour}` : style}
 >
   <slot>
     <span>{text}</span>

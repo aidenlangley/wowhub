@@ -1,5 +1,8 @@
 <script lang="ts">
-  import { style } from '$lib/media/_Icon.svelte';
+  import { style as defaultStyle } from '$lib/media/_Icon.svelte';
+
+  export let style: string = defaultStyle;
+  export let viewBox: string = '0 0 18 18';
 </script>
 
 <!--
@@ -9,7 +12,7 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
   class={style}
-  viewBox="0 0 18 18"
+  {viewBox}
   fill="currentColor"
   aria-hidden="true"
 >

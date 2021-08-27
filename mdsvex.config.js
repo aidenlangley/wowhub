@@ -11,7 +11,7 @@ const config = {
   remarkPlugins: [[footnotes, { inlineNotes: true }], gfm],
   rehypePlugins: [externalLinks, domStringify],
   layout: {
-    _: './src/lib/layout/Typography.svelte',
+    _: './src/lib/content/articles/_Layout.svelte',
   },
 };
 

@@ -1,11 +1,5 @@
-<script lang="ts" context="module">
-  import Link from '../Link.svelte';
-
-  export const paragraphStyle =
-    'p-2 md:p-4 space-y-2 md:space-y-4 ' +
-    'text-justify ' +
-    'md:text-18 xl:text-20 ' +
-    'tracking-tighter xl:leading-relaxed';
+<script lang="ts">
+  import Paragraphs from '../Paragraphs.svelte';
 </script>
 
 <!--
@@ -34,15 +28,10 @@
       Sharing gifts of recovery.
     </span>
   </h1>
-  <div class={paragraphStyle}>
+  <Paragraphs>
     <p>
-      <span class="dark">
-        <Link href="https://goo.gl/maps/WrvBZvvEy1SKGqVS7">
-          Whakaoranga Whanau Recovery Hub
-        </Link>
-      </span>
-      is a kaupapa Māori AOD community support service in Kaikohe. We're a team of
-      passionate individuals who have lived experience.
+      <b>Whakaoranga Whanau Recovery Hub</b> is a kaupapa Māori AOD community support
+      service in Kaikohe. We're a team of passionate individuals who have lived experience.
     </p>
     <p>
       We work together and collaborate with other health providers to
@@ -52,5 +41,5 @@
       You can find us at <b>135 Broadway, Kaikohe</b>, Monday to Friday, 10am
       until 3pm.
     </p>
-  </div>
+  </Paragraphs>
 </section>

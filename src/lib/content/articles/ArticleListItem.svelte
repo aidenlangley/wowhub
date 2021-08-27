@@ -13,11 +13,6 @@
     dark:bg-gray-800 dark:border-gray-600
   "
 >
-  {#if article.date}
-    <p class="text-14 sm:text-base">
-      posted {new Date(article.date).toLocaleString()}
-    </p>
-  {/if}
   <Link external={false} href={article.slug}>
     <span class="tracking-tighter text-18 sm:text-20 md:text-24">
       {article.title}
@@ -26,4 +21,9 @@
   <p>
     {article.description}
   </p>
+  {#if article.date}
+    <small class="font-mono tracking-tighter text-14 sm:text-base">
+      posted {new Date(article.date).toLocaleString()}
+    </small>
+  {/if}
 </li>

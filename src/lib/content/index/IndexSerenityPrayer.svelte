@@ -7,7 +7,7 @@
   @component
   Serenity prayer in multicolour.
 -->
-<section id="serenity-prayer" class="space-y-2 sm:space-y-4">
+<section id="serenity-prayer" class="space-y-2 sm:space-y-4" aria-hidden="true">
   <div
     class="
       font-serif font-light
@@ -115,7 +115,7 @@
       <Link href="/docs/serenity-prayer" external={false}>
         <span
           class="
-            text-18 lg:text-28
+            text-base sm:text-18
             tracking-tighter font-medium dark:font-normal
             text-gray-600 dark:text-gray-200
             hover:text-gray-400 dark:hover:text-gray-400

@@ -9,6 +9,7 @@
   import { ButtonColour } from '../Button.d';
   import Link from '../Link.svelte';
   import Span from '../Span.svelte';
+  import SubTitle from '../SubTitle.svelte';
 </script>
 
 <!--
@@ -18,28 +19,30 @@
   maps.
 -->
 <section id="quick-links" class="space-y-2 sm:space-y-4">
-  <h2
-    class="
-      hidden sm:block
-      tracking-tight font-light font-mono
-      text-center text-20
-    "
-  >
-    <Span>Get in touch, or come and see us.</Span>
-  </h2>
+  <div class="hidden sm:block text-center">
+    <SubTitle>
+      <Span>Get in touch, or come and see us.</Span>
+    </SubTitle>
+  </div>
   <div
     class="
       flex space-x-2 sm:space-x-4 justify-center
       transition duration-1000
     "
   >
-    <AnimatedLink href={`mailto:${$info.email}`} text={$info.email} button>
+    <AnimatedLink
+      href="mailto:{$info.email}"
+      text={$info.email}
+      label="email {$info.email}"
+      button
+    >
       <SvgMail slot="original" />
       <SvgMailOpen slot="transition" />
     </AnimatedLink>
     <AnimatedLink
-      href={`tel:${$info.phone}`}
+      href="tel:{$info.phone}"
       text={$info.phone.replace('+64', '0')}
+      label="phone {$info.phone}"
       button
     >
       <SvgPhone slot="original" />
@@ -47,11 +50,16 @@
     </AnimatedLink>
   </div>
   <div class="flex space-x-2 sm:space-x-4 justify-center">
-    <Link href={$info.facebookGroup} button colour={ButtonColour.Blue}>
+    <Link
+      href={$info.facebookGroup}
+      label="link to facebook"
+      button
+      colour={ButtonColour.Blue}
+    >
       <SvgExternalLink />
       <span>Facebook</span>
     </Link>
-    <Link href={$info.google} button>
+    <Link href={$info.google} label="link to Google Maps" button>
       <SvgExternalLink />
       <span>Google Maps</span>
     </Link>
