@@ -1,0 +1,17 @@
+# Build and artifacts
+/node_modules
+/.svelte_kit
+/docs
+/.vscode
+
+# Configs
+.gitignore
+.eslintignore
+.eslintrc.cjs
+.prettierrc
+.editorconfig
+
+# Ignore these file types, usually config, or shpecial
+**/*.json
+**/*.md
+**/*.svx

@@ -1,0 +1,9 @@
+# Build and artifacts
+.svelte_kit
+docs
+.vscode
+
+# Ignore these file types, usually config, or shpecial
+**/*.json
+**/*.md
+**/*.svx

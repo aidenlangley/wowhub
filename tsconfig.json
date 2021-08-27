@@ -61,6 +61,7 @@
     // "src/**/*.svx"
   ],
   "exclude": [
+    ".svelte-kit/*",
     "node_modules/*",
     "docs/*",
     "**/*.config.js",
