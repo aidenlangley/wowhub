@@ -17,7 +17,6 @@
 </script>
 
 <div
-  class="transition duration-300"
   on:focus={next}
   on:blur={prev}
   on:pointerover={next}
@@ -25,7 +24,7 @@
 >
   <Link {href} {label} {button} {colour}>
     {#if !transition}
-      <div in:fade={{ duration: 300 }}>
+      <div in:fade={{ duration: 100 }}>
         <slot name="original" />
       </div>
     {:else}

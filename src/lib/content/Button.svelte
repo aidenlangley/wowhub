@@ -7,7 +7,7 @@
     'border rounded-md shadow ' +
     'font-mono font-medium tyd:tracking-tighter ' +
     'sm:text-18 md:text-20 lg:text-22 xl:text-24 ' +
-    'focus:scale-105 transition duration-300';
+    'focus:scale-105 transition duration-100';
 </script>
 
 <script lang="ts">

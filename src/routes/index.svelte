@@ -36,7 +36,7 @@
 -->
 <Column>
   <div class="{padding} lg:pt-32 {spacing} lg:space-y-32">
-    <section id="banner" class="p-2">
+    <section id="banner" class="p-2 duration-100">
       {#if !$state.dark}
         <div in:blur>
           <Banner />
@@ -61,7 +61,7 @@
       </div>
 
       {#if news}
-        <div in:fade>
+        <div class="transition duration-100" in:fade>
           <IndexLatestNews {news} />
         </div>
       {/if}

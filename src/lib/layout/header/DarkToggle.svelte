@@ -24,13 +24,13 @@
     >
       {#if !dark}
         <slot name="dark">
-          <div in:fade={{ duration: 250 }}>
+          <div in:fade={{ duration: 100 }}>
             <Icon src={Moon} solid class={style} />
           </div>
         </slot>
       {:else}
         <slot name="light">
-          <div in:fade={{ duration: 250 }}>
+          <div in:fade={{ duration: 100 }}>
             <Icon src={Sun} solid class={style} />
           </div>
         </slot>

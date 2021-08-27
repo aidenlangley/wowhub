@@ -22,7 +22,7 @@
       'font-bold tracking-tighter pointer-events-none ' +
       'tyd:border-b-2 border-b-4 border-green-300'
     : 'hover:text-green-300 focus:text-green-300 focus:underline ' +
-      'transition duration-300'}
+      'transition duration-100'}
   sveltekit:prefetch
 >
   {#if tooltip}
