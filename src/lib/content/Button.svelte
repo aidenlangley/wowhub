@@ -3,9 +3,8 @@
   import { ButtonColour as buttonColour } from './Button.d';
 
   export const style =
-    'flex items-center space-x-2 ' +
-    'border rounded-md ' +
-    'p-2 ty:p-3 sm:p-4 shadow ' +
+    'flex items-center space-x-2 p-2 ty:p-3 sm:p-4 ' +
+    'border rounded-md shadow ' +
     'font-mono font-medium tyd:tracking-tighter ' +
     'sm:text-18 md:text-20 lg:text-22 xl:text-24 ' +
     'focus:scale-105 transition duration-300';

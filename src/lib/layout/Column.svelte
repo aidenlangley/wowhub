@@ -2,9 +2,11 @@
   <div class="invisible sm:visible">
     <slot name="left" />
   </div>
-  <div>
+
+  <div class="col-start-2">
     <slot />
   </div>
+
   <div class="invisible sm:visible">
     <slot name="right" />
   </div>

@@ -17,7 +17,7 @@
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<div class="space-y-2 md:space-y-4 p-2">
+<section id="whakatauki" class="space-y-2 md:space-y-4 p-2">
   <div
     class="
       text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
@@ -53,4 +53,4 @@
       When Taumarere is in need, Hokianga will answer the call, and vice versa.
     </p>
   </div>
-</div>
+</section>

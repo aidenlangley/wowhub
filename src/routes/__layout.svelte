@@ -13,7 +13,7 @@
 <Seo />
 
 <!-- Content here. -->
-<div class:dark>
+<div id="dark" class:dark>
   <Header />
   <Page>
     <slot />

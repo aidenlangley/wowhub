@@ -1,6 +1,6 @@
 ---
 title: 'How to Google Workspace'
-description: 'A brief guide on how to use Google Workspace, with gifs.'
+description: 'A brief guide on how to use Google Workspace, with gifs'
 ---
 
 <script>

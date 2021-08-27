@@ -8,6 +8,7 @@
   import AnimatedLink from '../AnimatedLink.svelte';
   import { ButtonColour } from '../Button.d';
   import Link from '../Link.svelte';
+  import Span from '../Span.svelte';
 </script>
 
 <!--
@@ -16,19 +17,16 @@
   mobile devices) and external links to our Facebook group & page on Google
   maps.
 -->
-<div class="space-y-2 sm:space-y-4">
-  <span
+<section id="quick-links" class="space-y-2 sm:space-y-4">
+  <h2
     class="
       hidden sm:block
       tracking-tight font-light font-mono
       text-center text-20
-      bg-white bg-opacity-50
-      dark:bg-black dark:bg-opacity-50
-      dark:text-white
     "
   >
-    Get in touch, or come and see us.
-  </span>
+    <Span>Get in touch, or come and see us.</Span>
+  </h2>
   <div
     class="
       flex space-x-2 sm:space-x-4 justify-center
@@ -58,4 +56,4 @@
       <span>Google Maps</span>
     </Link>
   </div>
-</div>
+</section>

@@ -12,7 +12,7 @@
   @component
   Short mission statement and about us.
 -->
-<div class="space-y-2 md:space-y-4 lg:space-y-8 xl:space-y-12">
+<section id="blurb" class="space-y-2 md:space-y-4 lg:space-y-8 xl:space-y-12">
   <h1 class="text-left">
     <span
       class="
@@ -53,4 +53,4 @@
       until 3pm.
     </p>
   </div>
-</div>
+</section>

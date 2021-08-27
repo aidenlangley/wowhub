@@ -1,10 +1,11 @@
 <script lang="ts" context="module">
+  import type { Article } from '$lib/content/articles/Article';
   import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
+  import IndexLatestNews from '$lib/content/index/IndexLatestNews.svelte';
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
   import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
-  import NewsList from '$lib/content/news/NewsList.svelte';
   import Column from '$lib/layout/Column.svelte';
   import { padding, spacing } from '$lib/layout/Page.svelte';
   import Skewed from '$lib/layout/Skewed.svelte';
@@ -12,7 +13,6 @@
   import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
   import { state } from '$lib/store/dark';
   import { seo } from '$lib/store/seo';
-  import type { NewsMetadata } from '$routes/news/news';
   import { blur, fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
   export { load };
@@ -26,7 +26,7 @@
     robots: 'none',
   };
 
-  export let newsList: NewsMetadata[];
+  export let news: Article[];
 </script>
 
 <!--
@@ -36,7 +36,7 @@
 -->
 <Column>
   <div class="{padding} lg:pt-32 {spacing} lg:space-y-32">
-    <div class="p-2">
+    <section id="banner" class="p-2">
       {#if !$state.dark}
         <div in:blur>
           <Banner />
@@ -46,7 +46,9 @@
           <BannerWhite />
         </div>
       {/if}
-    </div>
+    </section>
+
+    <!-- Visual break after banner via dotted border. -->
     <div class="p-4 space-y-4 sm:space-y-8">
       <div
         class="
@@ -57,30 +59,16 @@
       >
         <IndexQuickLinks />
       </div>
-      {#if newsList}
-        <div class="sm:text-center space-y-2 md:space-y-4" in:fade>
-          <h1
-            class="
-              tracking-tight font-light font-mono
-              text-20 sm:text-22 md:text-24 lg:text-28 xl:text-32
-            "
-          >
-            <span
-              class="
-                bg-white bg-opacity-50
-                dark:bg-black dark:bg-opacity-50
-                dark:text-white
-              "
-            >
-              What's the latest?
-            </span>
-          </h1>
-          <NewsList newsList={newsList.slice(0, 5)} />
+
+      {#if news}
+        <div in:fade>
+          <IndexLatestNews {news} />
         </div>
       {/if}
     </div>
   </div>
 </Column>
+
 <Skewed
   gradient="bg-gradient-to-tr"
   skew={{ outer: '-skew-y-2', inner: 'skew-y-2' }}
@@ -89,13 +77,13 @@
     <IndexBlurb />
   </div>
 </Skewed>
+
 <Column>
-  <div class={padding}>
-    <div class="p-2">
-      <IndexSerenityPrayer />
-    </div>
+  <div class="{padding} p-2">
+    <IndexSerenityPrayer />
   </div>
 </Column>
+
 <Skewed
   gradient="bg-gradient-to-br"
   skew={{ outer: 'skew-y-2', inner: '-skew-y-2' }}
@@ -104,10 +92,9 @@
     <IndexWhakatauki />
   </div>
 </Skewed>
+
 <Column>
   <div class={padding}>
-    <div class="p-4">
-      <IndexBuzzWords />
-    </div>
+    <IndexBuzzWords />
   </div>
 </Column>

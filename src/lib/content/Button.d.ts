@@ -1,6 +1,6 @@
 export enum ButtonColour {
-  Default = 'bg-gray-200 dark:bg-gray-800 ' +
-    'border-gray-300 dark:border-gray-700 ' +
+  Default = 'bg-gray-100 dark:bg-gray-800 ' +
+    'border-gray-300 dark:border-gray-600 ' +
     'hover:text-green-500 dark:hover:text-green-500 ' +
     'focus:text-green-500 dark:focus:text-green-500 ' +
     'dark:text-white',
