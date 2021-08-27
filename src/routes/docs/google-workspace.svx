@@ -12,6 +12,8 @@ description: 'A brief guide on how to use Google Workspace, with gifs.'
 
 # {title}
 
+https://workspace.google.com/features/
+
 Google Workspace is a cloud based solution, so you have to adjust to not having
 files on your desktop, and that can be a bit of a hurdle. Instead, just about
 all of your mahi can be done through the browser, Google Chrome in this case,
@@ -39,7 +41,15 @@ Workspace equivalent is:
 You are probably already using Google Chrome, but if not, you can download it
 [here](https://www.google.com/chrome/).
 
-Once installed, we need to add a new account like so...
+Once installed, we need to add a new profile to Google Chrome. The reason being
+that you would usually only have a default profile, which is your personal
+browser, and we want to add a second profile which will be dedicated to mahi.
+This separates, otherwise known as sandboxing, your configuration and data, and
+allows your Google Workspace administrator to control certain settings that are
+applied to your mahi profile, such as the `Managed bookmarks` bookmarks folder
+that we'll get to later.
+
+Here is how you'd set up a new Google Chrome profile:
 
 <img
   src={gcNewAccount}
@@ -56,7 +66,15 @@ folder `Managed bookmarks`.
   class="border rounded border-gray-300"
 />
 
-# Google Drive
+# Gmail & Chat
+
+https://workspace.google.com/products/gmail/
+
+https://workspace.google.com/products/chat/
+
+# Drive
+
+https://workspace.google.com/products/drive/
 
 The first and probably most important piece of the puzzle is Google Drive. You
 interact with your files here. You can organise to your hearts content.
@@ -76,3 +94,19 @@ leisure.
   alt="making a document in Docs, then organising in Drive"
   class="border rounded border-gray-300"
 />
+
+# Docs, Sheets, Slides & Forms
+
+https://workspace.google.com/products/docs/
+
+# Calendar
+
+https://workspace.google.com/products/calendar/
+
+# Meet
+
+https://workspace.google.com/products/meet/
+
+# Keep
+
+https://workspace.google.com/products/keep/

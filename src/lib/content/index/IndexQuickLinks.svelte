@@ -16,7 +16,7 @@
   mobile devices) and external links to our Facebook group & page on Google
   maps.
 -->
-<div class="space-y-2 sm:space-y-4 transition duration-1000">
+<div class="space-y-2 sm:space-y-4">
   <span
     class="
       hidden sm:block
@@ -29,7 +29,12 @@
   >
     Get in touch, or come and see us.
   </span>
-  <div class="flex space-x-2 sm:space-x-4 justify-center">
+  <div
+    class="
+      flex space-x-2 sm:space-x-4 justify-center
+      transition duration-1000
+    "
+  >
     <AnimatedLink href={`mailto:${$info.email}`} text={$info.email} button>
       <SvgMail slot="original" />
       <SvgMailOpen slot="transition" />

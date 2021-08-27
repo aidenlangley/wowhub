@@ -2,7 +2,6 @@
   import Link from '$lib/content/Link.svelte';
   import NewsList from '$lib/content/news/NewsList.svelte';
   import Column from '$lib/layout/Column.svelte';
-  import { padding, spacing } from '$lib/layout/Page.svelte';
   import { seo } from '$lib/store/seo';
   import type { NewsMetadata } from '$routes/news/news';
   import type { Load } from '@sveltejs/kit';
