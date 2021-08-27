@@ -3,7 +3,7 @@
   import { routes } from '$lib/store/routes';
   import RouteLink from './RouteLink.svelte';
 
-  export let highlightActive: boolean = true;
+  export let highlightActive = true;
 </script>
 
 <!--

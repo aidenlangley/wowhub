@@ -12,7 +12,7 @@
 
 <script lang="ts">
   // Should be a closure / lambda / pass me a function.
-  export let click: any = null;
+  export let click = null;
   export let colour: ButtonColour = buttonColour.Default;
   export let text: string = null;
 </script>

@@ -1,13 +1,12 @@
 # Build and artifacts
-/node_modules
-/.svelte_kit
-/docs
-/.vscode
+.svelte-kit
+.vscode
+docs
+static
 
 # Configs
 .gitignore
 .eslintignore
-.eslintrc.cjs
 .prettierrc
 .editorconfig
 
