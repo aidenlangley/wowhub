@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { bgStyle } from '../Span.svelte';
+  import { style as spanStyle } from '../Span.svelte';
 
   const buzzWords = [
     'māori',
@@ -46,7 +46,7 @@
           text-56 ty:text-64 sm:text-72 md:text-96
           tracking-tighter sm:tracking-tight
           text-gray-800 dark:text-gray-200
-          {bgStyle}
+          {spanStyle}
         "
       >
         {chunk[0] ? chunk[0] : ''}
@@ -67,7 +67,7 @@
         class="
           text-30 ty:text-34 sm:text-38 md:text-42 lg:text-48 xl:text-56
           font-bold tracking-tight sm:tracking-normal md:tracking-tighter
-          text-orange-500 text-shadow 
+          text-orange-500 text-shadow
         "
       >
         {chunk[2] ? chunk[2] : ''}
@@ -90,7 +90,7 @@
           text-32 ty:text-36 sm:text-40 md:text-48 lg:text-56 xl:text-64
           tracking-tighter font-medium
           text-blue-500
-          {bgStyle}
+          {spanStyle}
         "
       >
         {chunk[4] ? chunk[4] : ''}

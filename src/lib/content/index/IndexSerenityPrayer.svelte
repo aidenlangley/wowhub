@@ -77,7 +77,7 @@
           class="
             font-bold
             text-26 sm:text-34 md:text-42 lg:text-56
-            text-gray-600
+            text-gray-600 dark:text-gray-400
           "
         >
           change
@@ -116,7 +116,7 @@
         <span
           class="
             text-base sm:text-18
-            tracking-tighter font-medium dark:font-normal
+            tracking-tighter font-medium
             text-gray-600 dark:text-gray-200
             hover:text-gray-400 dark:hover:text-gray-400
           "

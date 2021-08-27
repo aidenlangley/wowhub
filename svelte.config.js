@@ -7,7 +7,6 @@ import path from 'path';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   extensions: ['.svelte', ...mdsvexConfig.extensions],
-
   // Consult https://github.com/sveltejs/svelte-preprocess
   // for more information about preprocessors
   preprocess: [
@@ -16,7 +15,6 @@ const config = {
     }),
     mdsvex(mdsvexConfig),
   ],
-
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
@@ -26,7 +24,6 @@ const config = {
       assets: 'docs',
       fallback: null,
     }),
-
     vite: {
       resolve: {
         alias: {

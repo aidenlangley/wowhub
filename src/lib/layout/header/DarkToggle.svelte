@@ -7,7 +7,11 @@
 
   // Marks property as reactive.
   $: dark = $state.dark;
-  const toggle = () => set(!dark);
+  const toggleDark = () => set(!dark);
+
+  $: focused = false;
+  const focus = () => (focused = true);
+  const blur = () => (focused = false);
 
   $: label = `toggle ${!dark ? 'dark' : 'light'} mode on`;
 </script>
@@ -18,20 +22,31 @@
 -->
 <div class="items-center align-middle">
   <Tooltip text={label} left>
-    <button
-      aria-label="toggle {!dark ? 'dark' : 'light'} mode on"
-      on:click={toggle}
-    >
+    <button on:click={toggleDark} aria-label={label}>
       {#if !dark}
         <slot name="dark">
-          <div in:fade={{ duration: 100 }}>
-            <Icon src={Moon} solid class={style} />
+          <div
+            in:fade={{ duration: 300 }}
+            on:focus={focus}
+            on:blur={blur}
+            on:pointerover={focus}
+            on:pointerleave={blur}
+            class:text-blue-300={focused}
+          >
+            <Icon src={Moon} solid={focused} class={style} />
           </div>
         </slot>
       {:else}
         <slot name="light">
-          <div in:fade={{ duration: 100 }}>
-            <Icon src={Sun} solid class={style} />
+          <div
+            in:fade={{ duration: 300 }}
+            on:focus={focus}
+            on:blur={blur}
+            on:pointerover={focus}
+            on:pointerleave={blur}
+            class:text-yellow-300={focused}
+          >
+            <Icon src={Sun} solid={focused} class={style} />
           </div>
         </slot>
       {/if}
