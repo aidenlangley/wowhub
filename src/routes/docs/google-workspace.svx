@@ -68,13 +68,13 @@ folder `Managed bookmarks`.
 
 # Gmail & Chat
 
-https://workspace.google.com/products/gmail/
+[Open Gmail](https://mail.google.com/mail/u/0/#inbox) | [More info](https://workspace.google.com/products/gmail/)
 
-https://workspace.google.com/products/chat/
+[Open Chat](https://mail.google.com/chat/u/0/) | [More info](https://workspace.google.com/products/chat/)
 
 # Drive
 
-https://workspace.google.com/products/drive/
+[Open Drive](https://drive.google.com/drive/my-drive) | [More info](https://workspace.google.com/products/drive/)
 
 The first and probably most important piece of the puzzle is Google Drive. You
 interact with your files here. You can organise to your hearts content.
