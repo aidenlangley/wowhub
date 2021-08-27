@@ -9,7 +9,7 @@
     'font-mono font-bold focus:underline ' +
     'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
     'visited:text-purple-600 hover:visited:text-purple-400 focus:visited:text-purple-400' +
-    'dark:text-blue-400 dark:hover:text-blue-100 dark:focus:text-blue-100 ' +
+    'dark:text-blue-300 dark:hover:text-blue-100 dark:focus:text-blue-100 ' +
     'dark:visited:text-purple-400 dark:hover:visited:text-purple-200 dark:focus:visited:text-purple-200';
 </script>
 

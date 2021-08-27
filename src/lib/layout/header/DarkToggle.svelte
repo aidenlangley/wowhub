@@ -32,6 +32,7 @@
             on:pointerover={focus}
             on:pointerleave={blur}
             class:text-blue-300={focused}
+            aria-hidden="true"
           >
             <Icon src={Moon} solid={focused} class={style} />
           </div>
@@ -45,6 +46,7 @@
             on:pointerover={focus}
             on:pointerleave={blur}
             class:text-yellow-300={focused}
+            aria-hidden="true"
           >
             <Icon src={Sun} solid={focused} class={style} />
           </div>

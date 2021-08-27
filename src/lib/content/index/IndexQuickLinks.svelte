@@ -52,11 +52,15 @@
       button
       colour={ButtonColour.Blue}
     >
-      <Icon src={ExternalLink} {size} />
+      <div aria-hidden="true">
+        <Icon src={ExternalLink} {size} aria-hidden="true" />
+      </div>
       <span>Facebook</span>
     </Link>
     <Link href={$info.google} label="link to Google Maps" button>
-      <Icon src={ExternalLink} {size} />
+      <div aria-hidden="true">
+        <Icon src={ExternalLink} {size} />
+      </div>
       <span>Google Maps</span>
     </Link>
   </div>

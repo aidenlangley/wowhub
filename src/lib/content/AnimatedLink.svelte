@@ -24,11 +24,11 @@
 >
   <Link {href} {label} {button} {colour}>
     {#if !transition}
-      <div in:fade={{ duration: 100 }}>
+      <div in:fade={{ duration: 100 }} aria-hidden="true">
         <slot name="original" />
       </div>
     {:else}
-      <div>
+      <div aria-hidden="true">
         <slot name="transition" />
       </div>
     {/if}
