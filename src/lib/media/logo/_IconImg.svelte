@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { style } from '../_Icon.svelte';
+  import { style } from '../Icon.svelte';
 
   export let src: string;
   export let alt: string;

@@ -1,14 +1,18 @@
 <script lang="ts">
-  import SvgExternalLink from '$lib/media/svg/SvgExternalLink.svelte';
-  import SvgMail from '$lib/media/svg/SvgMail.svelte';
-  import SvgMailOpen from '$lib/media/svg/SvgMailOpen.svelte';
-  import SvgPhone from '$lib/media/svg/SvgPhone.svelte';
-  import SvgPhoneOut from '$lib/media/svg/SvgPhoneOut.svelte';
   import { info } from '$lib/store/info';
+  import Icon, {
+    ExternalLink,
+    Mail,
+    MailOpen,
+    Phone,
+    PhoneOutgoing,
+  } from 'svelte-hero-icons';
   import AnimatedLink from '../AnimatedLink.svelte';
   import { ButtonColour } from '../Button.d';
-  import HeadingSmall from '../HeadingSmall.svelte';
+  import HeadingSmall from '../heading/HeadingSmall.svelte';
   import Link from '../Link.svelte';
+
+  const size = '22';
 </script>
 
 <!--
@@ -21,20 +25,15 @@
   <div class="hidden sm:block text-center">
     <HeadingSmall>Get in touch, or come and see us.</HeadingSmall>
   </div>
-  <div
-    class="
-      flex space-x-2 sm:space-x-4 justify-center
-      transition duration-1000
-    "
-  >
+  <div class="flex space-x-2 sm:space-x-4 justify-center">
     <AnimatedLink
       href="mailto:{$info.email}"
       text={$info.email}
       label="email {$info.email}"
       button
     >
-      <SvgMail slot="original" />
-      <SvgMailOpen slot="transition" />
+      <Icon src={Mail} {size} slot="original" />
+      <Icon src={MailOpen} {size} slot="transition" />
     </AnimatedLink>
     <AnimatedLink
       href="tel:{$info.phone}"
@@ -42,8 +41,8 @@
       label="phone {$info.phone}"
       button
     >
-      <SvgPhone slot="original" />
-      <SvgPhoneOut slot="transition" />
+      <Icon src={Phone} {size} slot="original" />
+      <Icon src={PhoneOutgoing} {size} slot="transition" />
     </AnimatedLink>
   </div>
   <div class="flex space-x-2 sm:space-x-4 justify-center">
@@ -53,11 +52,11 @@
       button
       colour={ButtonColour.Blue}
     >
-      <SvgExternalLink />
+      <Icon src={ExternalLink} {size} />
       <span>Facebook</span>
     </Link>
     <Link href={$info.google} label="link to Google Maps" button>
-      <SvgExternalLink />
+      <Icon src={ExternalLink} {size} />
       <span>Google Maps</span>
     </Link>
   </div>

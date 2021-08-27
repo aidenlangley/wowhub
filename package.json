@@ -4,7 +4,6 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write . --plugin-search-dir=. .",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"build": "npm run check && npm run lint && svelte-kit build",

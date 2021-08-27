@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
   import { assets } from '$app/paths';
 
-  export const padding = 'pt-4 sm:pt-8 md:pt-16 ' + 'pb-4 sm:pb-8 md:pb-16';
+  export const padding = 'pt-4 sm:pt-8 md:pt-16 pb-4 sm:pb-8 md:pb-16';
   export const spacing = 'space-y-4 sm:space-y-8 md:space-y-16';
 </script>
 
@@ -17,7 +17,7 @@
     bg-top bg-blend-difference bg-white
     dark:bg-gray-900 dark:bg-blend-hard-light
     dark:text-white
-    transition duration-500
+    transition duration-300
   "
 >
   <div

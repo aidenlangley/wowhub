@@ -19,7 +19,7 @@
     </span>
   </Link>
   <p>
-    {article.description}
+    <span>{article.description}</span>
   </p>
   {#if article.date}
     <small class="font-mono tracking-tighter text-14 sm:text-base">

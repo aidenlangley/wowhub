@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { Article } from '../articles/Article';
   import ArticleList from '../articles/ArticleList.svelte';
-  import HeadingSmall from '../HeadingSmall.svelte';
+  import HeadingSmall from '../heading/HeadingSmall.svelte';
 
   export let news: Article[];
 </script>
