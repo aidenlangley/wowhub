@@ -109,16 +109,7 @@ const config = {
               defaultTheme.letterSpacing.tight
             ),
             h1: {
-              letterSpacing: theme(
-                'letterSpacing.tight',
-                defaultTheme.letterSpacing.tight
-              ),
-            },
-            h2: {
-              letterSpacing: theme(
-                'letterSpacing.tighter',
-                defaultTheme.letterSpacing.tighter
-              ),
+              fontFamily: theme('fontFamily.serif'),
             },
           },
         },

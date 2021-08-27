@@ -12,16 +12,16 @@ date: '2021-08-23'
 
 ## Information
 
-# [Rawhitiroa Marae](https://maorimaps.com/marae/rawhitiroa-te-ahuahu)
+[Rawhitiroa Marae](https://maorimaps.com/marae/rawhitiroa-te-ahuahu)
 
 > 444 State Highway 1, Te Ahuahu<br />
 > Ohaewai Northland, 0475
 
-# Ft. Phill Paikea from [SMSF](https://www.facebook.com/smsfebop).
+Ft. Phill Paikea from [SMSF](https://www.facebook.com/smsfebop).
 
 ## Agenda
 
-# Friday
+### Friday
 
 ```
 |  Time | Activity            |
@@ -33,7 +33,7 @@ date: '2021-08-23'
 |       | Moe                 |
 ```
 
-# Saturday
+### Saturday
 
 ```
 |  Time | Activity                              |
@@ -52,7 +52,7 @@ date: '2021-08-23'
 
 ```
 
-# Sunday
+### Sunday
 
 ```
 | Time  | Activity            |

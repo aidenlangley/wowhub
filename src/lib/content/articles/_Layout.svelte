@@ -37,7 +37,7 @@
           <span class="flex space-x-1 sm:space-x-2">
             {#if date}
               <time datetime={date}>
-                posted: {new Date(date).toLocaleString('en-NZ', {
+                posted {new Date(date).toLocaleString('en-NZ', {
                   timeZone: 'Pacific/Auckland',
                 })}
               </time>

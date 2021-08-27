@@ -7,9 +7,8 @@
   import { info } from '$lib/store/info';
   import AnimatedLink from '../AnimatedLink.svelte';
   import { ButtonColour } from '../Button.d';
+  import HeadingSmall from '../HeadingSmall.svelte';
   import Link from '../Link.svelte';
-  import Span from '../Span.svelte';
-  import SubTitle from '../SubTitle.svelte';
 </script>
 
 <!--
@@ -20,9 +19,7 @@
 -->
 <section id="quick-links" class="space-y-2 sm:space-y-4">
   <div class="hidden sm:block text-center">
-    <SubTitle>
-      <Span>Get in touch, or come and see us.</Span>
-    </SubTitle>
+    <HeadingSmall>Get in touch, or come and see us.</HeadingSmall>
   </div>
   <div
     class="

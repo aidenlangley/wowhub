@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
   import type { Article } from '$lib/content/articles/Article';
   import ArticleList from '$lib/content/articles/ArticleList.svelte';
-  import { bgStyle } from '$lib/content/Span.svelte';
+  import Heading from '$lib/content/heading/Heading.svelte';
   import Column from '$lib/layout/Column.svelte';
   import { seo } from '$lib/store/seo';
   import type { Load } from '@sveltejs/kit';
@@ -55,22 +55,13 @@
 
   export let news: Article[];
   export let docs: Article[];
-
-  const titleStyle =
-    'font-bold font-serif tracking-tighter text-shadow ' +
-    'text-28 md:text-42 lg:text-64 ' +
-    'border-b-4 border-green-300';
 </script>
 
 <Column>
   <section id="news-docs-list" class="p-2 space-y-4 md:space-y-6 lg:space-y-8">
-    <h1>
-      <span class="{titleStyle} {bgStyle}">Panui</span>
-    </h1>
+    <Heading>Panui</Heading>
     <ArticleList articles={news} />
-    <h1>
-      <span class="{titleStyle} {bgStyle}">Other Docs</span>
-    </h1>
+    <Heading>Other Docs</Heading>
     <ArticleList articles={docs} />
   </section>
 </Column>
