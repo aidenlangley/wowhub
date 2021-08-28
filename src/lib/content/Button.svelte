@@ -11,13 +11,11 @@
 </script>
 
 <script lang="ts">
-  // Should be a closure / lambda / pass me a function.
-  export let click = null;
   export let colour: ButtonColour = buttonColour.Default;
   export let text: string = null;
 </script>
 
-<button class="{style} {colour}" on:click={click}>
+<button class="{style} {colour}">
   <slot>
     <span>{text}</span>
   </slot>

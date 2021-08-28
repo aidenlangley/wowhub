@@ -1,14 +1,14 @@
 ---
-title: 'Upcoming Recovery Marae Noho (when COVID-19 is gone again...)'
+title: 'Upcoming Recovery Noho Marae (when COVID-19 is gone again...)'
 description: 'An upcoming recovery noho at Rawhitiroa, Ohaeawai'
 date: '2021-08-23'
 ---
 
 # {title}
 
-<!-- [^24/08/2021-update]
+[^24/08/2021-update]
 
-[^24/08/2021-update]: Delayed thanks to COVID-19. -->
+[^24/08/2021-update]: Delayed thanks to COVID-19.
 
 ## Information
 

@@ -8,7 +8,7 @@ const config = {
   smartypants: {
     dashes: 'oldschool',
   },
-  remarkPlugins: [[footnotes, { inlineNotes: true }], gfm],
+  remarkPlugins: [footnotes, gfm],
   rehypePlugins: [externalLinks, domStringify],
   layout: {
     _: './src/lib/content/articles/_Layout.svelte',
