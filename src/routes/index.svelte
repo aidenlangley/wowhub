@@ -4,16 +4,12 @@
   import IndexLatestNews from '$lib/content/index/IndexLatestNews.svelte';
   import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
-  import IndexBuzzWords from '$lib/content/index/IndexServices.svelte';
+  import IndexServices from '$lib/content/index/IndexServices.svelte';
   import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
-  import Column from '$lib/layout/Column.svelte';
-  import { padding, spacing } from '$lib/layout/Page.svelte';
-  import Skewed from '$lib/layout/Skewed.svelte';
-  import Banner from '$lib/media/banner/Banner.svelte';
-  import BannerWhite from '$lib/media/banner/BannerWhite.svelte';
+  import Banner from '$lib/media/Banner.svelte';
   import { state } from '$lib/store/dark';
   import { seo } from '$lib/store/seo';
-  import { blur, fade } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
   export { load };
 </script>
@@ -34,67 +30,34 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<Column>
-  <div class="{padding} lg:pt-32 {spacing} lg:space-y-32">
-    <section id="banner" class="p-2 duration-100">
-      {#if !$state.dark}
-        <div in:blur>
-          <Banner />
-        </div>
-      {:else}
-        <div in:blur>
-          <BannerWhite />
-        </div>
-      {/if}
+<div class="grid column p-4">
+  <section id="banner" class="padding lg:pt-24 lg:pb-24 duration-100">
+    <Banner white={$state.dark} />
+  </section>
+
+  <!-- Visual break after banner via dotted border. -->
+  <section
+    id="quick-links"
+    class="padding
+      border-t-4 border-dotted border-gray-300 dark:border-gray-600"
+  >
+    <IndexQuickLinks />
+  </section>
+
+  {#if news}
+    <section id="latest-news" class="" in:fade>
+      <IndexLatestNews {news} />
     </section>
+  {/if}
+</div>
 
-    <!-- Visual break after banner via dotted border. -->
-    <div class="p-4 space-y-4 sm:space-y-8">
-      <div
-        class="
-          sm:border-t-4 border-dotted
-          border-gray-300 dark:border-gray-600
-          sm:pt-4 md:pt-8
-        "
-      >
-        <IndexQuickLinks />
-      </div>
+<section id="blurb" class="text-white text-shadow-lg">
+  <IndexBlurb />
+</section>
 
-      {#if news}
-        <div class="transition duration-100" in:fade>
-          <IndexLatestNews {news} />
-        </div>
-      {/if}
-    </div>
-  </div>
-</Column>
+<IndexSerenityPrayer />
+<div class="text-white text-shadow-lg">
+  <IndexWhakatauki />
+</div>
 
-<Skewed
-  gradient="bg-gradient-to-tr"
-  skew={{ outer: '-skew-y-2', inner: 'skew-y-2' }}
->
-  <div class="text-white text-shadow-lg">
-    <IndexBlurb />
-  </div>
-</Skewed>
-
-<Column>
-  <div class="{padding} p-2">
-    <IndexSerenityPrayer />
-  </div>
-</Column>
-
-<Skewed
-  gradient="bg-gradient-to-br"
-  skew={{ outer: 'skew-y-2', inner: '-skew-y-2' }}
->
-  <div class="text-white text-shadow-lg">
-    <IndexWhakatauki />
-  </div>
-</Skewed>
-
-<Column>
-  <div class={padding}>
-    <IndexBuzzWords />
-  </div>
-</Column>
+<IndexServices />

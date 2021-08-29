@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .column > * {
+    grid-column-start: 2;
+  }
+
+  @screen sm {
+    .column {
+      grid-template-columns: 1fr 18fr 1fr;
+    }
+
+    @screen md {
+      .column {
+        grid-template-columns: 1fr 8fr 1fr;
+      }
+    }
+
+    @screen lg {
+      .column {
+        grid-template-columns: 1fr 4fr 1fr;
+      }
+    }
+
+    @screen xl {
+      .column {
+        grid-template-columns: 1fr 3fr 1fr;
+      }
+    }
+  }
+
+  @responsive {
+    .padding {
+      @apply pt-4 sm:pt-8 md:pt-16 pb-4 sm:pb-8 md:pb-16;
+    }
+
+    .skew > * {
+      @apply pt-12 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24;
+      @apply pb-12 sm:pb-14 md:pb-16 lg:pb-20 xl:pb-24;
+    }
+
+    .text-shadow {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-shadow-md {
+      text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-shadow-lg {
+      text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-shadow-none {
+      text-shadow: none;
+    }
+  }
+}

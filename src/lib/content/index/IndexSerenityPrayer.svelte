@@ -1,6 +1,5 @@
 <script lang="ts">
-  import Link from '../Link.svelte';
-  import Span from '../Span.svelte';
+  import Link from '../link/Link.svelte';
 </script>
 
 <!--
@@ -16,7 +15,7 @@
     "
   >
     <p>
-      <Span>
+      <span>
         <span
           class="
             font-medium
@@ -35,10 +34,10 @@
         >
           serenity
         </span>
-      </Span>
+      </span>
     </p>
     <p>
-      <Span>
+      <span>
         To
         <span
           class="
@@ -59,10 +58,10 @@
         >
           cannot change
         </span>
-      </Span>
+      </span>
     </p>
     <p>
-      <Span>
+      <span>
         <span
           class="
             font-bold
@@ -83,10 +82,10 @@
           change
         </span>
         the things I can
-      </Span>
+      </span>
     </p>
     <p>
-      <Span>
+      <span>
         And the
         <span
           class="
@@ -107,7 +106,7 @@
         >
           difference
         </span>
-      </Span>
+      </span>
     </p>
   </div>
   <div class="text-right">

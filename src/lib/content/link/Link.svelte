@@ -1,12 +1,12 @@
 <script lang="ts" context="module">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
-  import type { ButtonColour } from './Button.d';
-  import { ButtonColour as buttonColour } from './Button.d';
-  import { style as buttonStyle } from './Button.svelte';
+  import type { ButtonColour } from '../button/Button.d';
+  import { ButtonColour as buttonColour } from '../button/Button.d';
+  import { style as buttonStyle } from '../button/Button.svelte';
 
   export const style =
-    'font-mono font-bold focus:underline ' +
+    'font-mono font-medium focus:underline ' +
     'text-blue-600 hover:text-blue-400 focus:text-blue-400 ' +
     'visited:text-purple-600 hover:visited:text-purple-400 focus:visited:text-purple-400' +
     'dark:text-blue-300 dark:hover:text-blue-100 dark:focus:text-blue-100 ' +
@@ -33,12 +33,13 @@
 -->
 <a
   {href}
-  aria-label={label}
   target={external ? '_blank' : ''}
-  rel="{external ? 'external' : ''} noopener"
-  class={button ? `${buttonStyle} ${colour}` : style}
+  rel="noopener {external ? 'external' : ''}"
+  aria-label={label}
+  class="
+    {button ? `${buttonStyle} ${colour}` : style}"
 >
   <slot>
-    <span>{text}</span>
+    {text}
   </slot>
 </a>

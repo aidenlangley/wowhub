@@ -1,6 +1,4 @@
 <script lang="ts" context="module">
-  import Paragraphs from '../Paragraphs.svelte';
-
   export const whakatauki = {
     whakatauki: 'E hara taku toa i te toa takitahi, engari he toa takitini',
     translation:
@@ -17,7 +15,7 @@
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<section id="whakatauki" class="space-y-2 md:space-y-4 p-2">
+<section id="whakatauki">
   <div
     class="
       text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
@@ -29,28 +27,26 @@
       <h1>{heading}</h1>
     {/each}
   </div>
-  <h2
+  <h3
     class="
       font-serif
       text-right sm:text-center
       text-22 lg:text-32
-      text-gray-100 text-shadow 
+      text-gray-100 text-shadow
     "
   >
     "{whakatauki.translation}"
-  </h2>
-  <Paragraphs>
-    <p>
-      A favourite whakatauki of ours that embodies our ideals perfectly. A
-      strong individual empowers us all.
-    </p>
-    <p>
-      We take a holistic approach when it comes to treatment. Behind the
-      individual there's roopu, whanau, there's hinganaro, tinana and wairua.
-      Addiction only accounts for a fraction of the recovery process.
-    </p>
-    <p>
-      When Taumarere is in need, Hokianga will answer the call, and vice versa.
-    </p>
-  </Paragraphs>
+  </h3>
+  <p>
+    A favourite whakatauki of ours that embodies our ideals perfectly. A strong
+    individual empowers us all.
+  </p>
+  <p>
+    We take a holistic approach when it comes to treatment. Behind the
+    individual there's roopu, whanau, there's hinganaro, tinana and wairua.
+    Addiction only accounts for a fraction of the recovery process.
+  </p>
+  <p>
+    When Taumarere is in need, Hokianga will answer the call, and vice versa.
+  </p>
 </section>

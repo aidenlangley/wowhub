@@ -2,7 +2,6 @@
   import type { Article } from '$lib/content/articles/Article';
   import ArticleList from '$lib/content/articles/ArticleList.svelte';
   import Heading from '$lib/content/heading/Heading.svelte';
-  import Column from '$lib/layout/Column.svelte';
   import { seo } from '$lib/store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -57,11 +56,9 @@
   export let docs: Article[];
 </script>
 
-<Column>
-  <section id="news-docs-list" class="p-2 space-y-4 md:space-y-6 lg:space-y-8">
-    <Heading>Panui</Heading>
-    <ArticleList articles={news} />
-    <Heading>Other Docs</Heading>
-    <ArticleList articles={docs} />
-  </section>
-</Column>
+<section id="news-docs-list" class="p-2 space-y-4 md:space-y-6 lg:space-y-8">
+  <Heading>Panui</Heading>
+  <ArticleList articles={news} />
+  <Heading>Other Docs</Heading>
+  <ArticleList articles={docs} />
+</section>

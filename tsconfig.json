@@ -26,6 +26,12 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
+      "$assets": [
+        "static"
+      ],
+      "$assets/*": [
+        "static/*"
+      ],
       "$lib": [
         "src/lib"
       ],

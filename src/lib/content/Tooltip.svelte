@@ -7,7 +7,7 @@
   export let top = false; // Spawns top, grows right.
   export let topLeft = false; // Spawns top, grows left.
   export let left = false; // Spawns bottom, grows left.
-  export let right = false; // default. Spawns bottom, grows right.
+  export let right = true; // default. Spawns bottom, grows right.
 
   let hidden = true;
 
@@ -26,6 +26,7 @@
   ```
 -->
 <div
+  class="grid"
   on:focus={show}
   on:blur={hide}
   on:pointerover={show}
@@ -34,25 +35,20 @@
   <slot />
   {#if !hidden}
     <div
-      class="
-        relative
+      class="relative
         {top ? '-top-14' : ''}
         {topLeft ? '-top-14 -left-40' : ''}
         {left ? '-bottom-1 -left-40' : ''}
-        {right ? '-bottom-1' : ''}
-      "
+        {right ? '-bottom-1' : ''}"
       transition:fade={{ duration: 100 }}
       aria-haspopup="true"
     >
       <span
-        class="
-          p-1 w-max max-w-xs
-          bg-gray-900 bg-opacity-90
-          border rounded border-gray-700 shadow
+        class="p-1 w-max max-w-xs
+          bg-gray-900/90 border rounded border-gray-700 shadow
           text-base lg:text-18 text-gray-100 text-center
           font-mono font-normal tracking-tighter leading-tight
-          absolute
-        "
+          absolute"
       >
         {text}
       </span>

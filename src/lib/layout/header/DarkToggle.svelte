@@ -1,11 +1,9 @@
 <script lang="ts">
   import Tooltip from '$lib/content/Tooltip.svelte';
-  import { style } from '$lib/media/Icon.svelte';
   import { set, state } from '$lib/store/dark';
   import Icon, { Moon, Sun } from 'svelte-hero-icons';
   import { fade } from 'svelte/transition';
 
-  // Marks property as reactive.
   $: dark = $state.dark;
   const toggleDark = () => set(!dark);
 
@@ -13,45 +11,38 @@
   const focus = () => (focused = true);
   const blur = () => (focused = false);
 
-  $: label = `toggle ${!dark ? 'dark' : 'light'} mode on`;
+  $: text = `toggle ${!dark ? 'dark' : 'light'} mode on`;
 </script>
 
 <!--
   @component
   Handles toggling dark mode (via a `dark` store & local storage.)
 -->
-<div class="items-center align-middle">
-  <Tooltip text={label} left>
-    <button on:click={toggleDark} aria-label={label}>
-      {#if !dark}
-        <slot name="dark">
-          <div
-            in:fade={{ duration: 300 }}
-            on:focus={focus}
-            on:blur={blur}
-            on:pointerover={focus}
-            on:pointerleave={blur}
-            class:text-blue-300={focused}
-            aria-hidden="true"
-          >
-            <Icon src={Moon} solid={focused} class={style} />
-          </div>
-        </slot>
-      {:else}
-        <slot name="light">
-          <div
-            in:fade={{ duration: 300 }}
-            on:focus={focus}
-            on:blur={blur}
-            on:pointerover={focus}
-            on:pointerleave={blur}
-            class:text-yellow-300={focused}
-            aria-hidden="true"
-          >
-            <Icon src={Sun} solid={focused} class={style} />
-          </div>
-        </slot>
-      {/if}
-    </button>
-  </Tooltip>
-</div>
+<Tooltip {text} left>
+  <button
+    aria-label={text}
+    on:click={toggleDark}
+    on:focus={focus}
+    on:blur={blur}
+    on:pointerover={focus}
+    on:pointerleave={blur}
+  >
+    {#if !dark}
+      <span
+        class:text-blue-300={focused}
+        aria-hidden="true"
+        in:fade={{ duration: 100 }}
+      >
+        <Icon src={Moon} solid={focused} />
+      </span>
+    {:else}
+      <span
+        class:text-yellow-300={focused}
+        aria-hidden="true"
+        in:fade={{ duration: 100 }}
+      >
+        <Icon src={Sun} solid={focused} />
+      </span>
+    {/if}
+  </button>
+</Tooltip>
