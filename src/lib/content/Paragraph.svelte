@@ -2,10 +2,35 @@
   export let justify = false;
 </script>
 
-<p
-  class="pt-1 pb-1 lg:pt-2 lg:pb-2 md:text-18 xl:text-20 xl:leading-relaxed
-    tracking-tighter md:tracking-tight"
-  class:text-justify={justify}
->
+<p class:text-justify={justify}>
   <slot />
 </p>
+
+<style lang="postcss">
+  p {
+    padding-top: 0.25rem; /* 4px */
+    padding-bottom: 0.25rem; /* 4px */
+    letter-spacing: -0.05em;
+  }
+
+  @screen md {
+    p {
+      letter-spacing: -0.025em;
+      @apply text-18;
+    }
+  }
+
+  @screen lg {
+    p {
+      padding-top: 0.5rem; /* 8px */
+      padding-bottom: 0.5rem; /* 8px */
+    }
+  }
+
+  @screen xl {
+    p {
+      line-height: 1.625;
+      @apply text-20;
+    }
+  }
+</style>

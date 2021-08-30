@@ -3,25 +3,35 @@
 
 @layer components {
   .button {
-    @apply p-2 border rounded-md shadow;
-    @apply font-mono font-medium text-18;
-    @apply grid grid-flow-col gap-x-1 tracking-tight;
-    @apply place-items-center place-content-center;
+    padding: 0.5rem; /* 8px */
+    border-width: 1px;
+    border-radius: 0.375rem /* 6px */;
 
-    /* Default colours. */
-    @apply bg-gray-100 border-gray-300;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+
+    display: inline-grid;
+    grid-auto-flow: column;
+    column-gap: 0.25rem; /* 4px */
+
+    align-items: center;
+    justify-content: center;
+
+    @apply shadow font-mono text-18 bg-gray-100 border-gray-300;
+    @apply transition-all;
   }
 }
 
 @screen ty {
   .button {
-    @apply p-3;
+    padding: 0.75rem; /* 12px */
   }
 }
 
 @screen sm {
   .button {
-    @apply p-4 gap-x-2;
+    padding: 1rem; /* 16px */
+    column-gap: 0.5rem; /* 8px */
   }
 }
 
@@ -33,20 +43,21 @@
 
 @screen lg {
   .button {
-    @apply text-22 p-5;
+    padding: 1.25rem; /* 20px */
+    @apply text-22;
   }
 }
 
 @screen xl {
   .button {
-    @apply text-24 p-6;
+    padding: 1.5rem; /* 24px */
+    @apply text-24;
   }
 }
 
 .button:hover,
 .button:focus {
   @apply text-green-700;
-  @apply scale-105 ease-in-out duration-100;
 }
 
 .dark .button {

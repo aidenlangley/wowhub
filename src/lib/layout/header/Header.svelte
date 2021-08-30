@@ -9,12 +9,7 @@
   Header consists of our logo, inlined navigation links and a toggle for dark
   mode.
 -->
-<header
-  class="grid p-4 lg:p-6
-    place-items-center place-content-center justify-items-center
-    text-white bg-gray-900 dark:bg-black
-    border-b border-gray-300 dark:border-gray-800"
->
+<header>
   <Logo white />
   <Routes />
   <DarkToggle />
@@ -22,7 +17,24 @@
 
 <style lang="postcss">
   header {
+    display: grid;
     grid-template-columns: 0 auto 0;
+
+    place-items: center;
+    place-content: center;
+    justify-items: center;
+
+    padding: 1rem; /* 16px */
+    border-bottom-width: 1px;
+
+    @apply text-white bg-gray-900 border-gray-300;
+
+    @apply transition-colors;
+    transition-duration: 1000ms;
+  }
+
+  :global(.dark) header {
+    @apply bg-black border-gray-800;
   }
 
   @screen ty {
@@ -40,6 +52,7 @@
   @screen lg {
     header {
       grid-template-columns: 1fr 23fr 1fr;
+      padding: 1.5rem; /* 24px */
     }
   }
 </style>

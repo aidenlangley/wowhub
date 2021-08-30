@@ -24,10 +24,11 @@
 <!-- `svelte:head` with `title` & `meta` tags. -->
 <Seo />
 
-<div id="root" class:dark>
+<div class="root" class:dark>
   <Header />
   <main style="background-image: url({assets}/images/drawing.png)">
-    <div class="bg-opaque padding">
+    <!-- Opacity provider `div`. -->
+    <div class="padding">
       <slot />
     </div>
   </main>
@@ -35,19 +36,30 @@
 </div>
 
 <style lang="postcss">
-  #root {
+  .root {
     min-width: 360px;
   }
 
-  main {
-    @apply bg-top bg-white bg-blend-difference duration-500;
+  .root > main {
+    background-position: top;
+    background-blend-mode: difference;
+    @apply bg-white;
+
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 1000ms;
   }
 
-  .dark main {
-    @apply bg-gray-900 bg-blend-hard-light text-white;
+  .root > main > div {
+    @apply bg-white/80;
   }
 
-  .bg-opaque {
-    @apply bg-white/80 dark:bg-black/70;
+  .root.dark > main {
+    background-blend-mode: hard-light;
+    @apply bg-gray-900 text-white;
+  }
+
+  .root.dark > main > div {
+    @apply bg-black/70;
   }
 </style>

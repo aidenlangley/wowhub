@@ -6,21 +6,12 @@
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<div>
-  <h1
-    class="text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
-    font-serif font-medium italic text-shadow
-    tracking-tight sm:text-center sm:grid sm:grid-flow-row pb-4"
-  >
+<div class="headings text-shadow-lg">
+  <h1>
     <span>E hara taku toa i te toa takitahi,</span>
     <span>engari he toa takitini</span>
   </h1>
-  <h2
-    class="text-right sm:text-center text-gray-100 text-shadow text-22 lg:text-32
-    font-serif"
-  >
-    "My strength is not that of a single warrior, but that of many"
-  </h2>
+  <h2>"My strength is not that of a single warrior, but that of many"</h2>
 </div>
 <div>
   <Paragraph justify>
@@ -36,3 +27,57 @@
     When Taumarere is in need, Hokianga will answer the call, and vice versa.
   </Paragraph>
 </div>
+
+<style lang="postcss">
+  div.headings > h1 {
+    padding-bottom: 1rem; /* 16px */
+
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    font-style: italic;
+
+    @apply font-serif text-34;
+  }
+
+  div.headings > h2 {
+    text-align: right;
+    @apply font-serif text-22 text-gray-100;
+  }
+
+  @screen sm {
+    div.headings > h1 {
+      display: grid;
+      grid-auto-flow: row;
+      row-gap: 0.5rem;
+
+      text-align: center;
+      @apply text-42;
+    }
+
+    div.headings > h2 {
+      text-align: center;
+    }
+  }
+
+  @screen md {
+    div.headings > h1 {
+      @apply text-44;
+    }
+  }
+
+  @screen lg {
+    div.headings > h1 {
+      @apply text-56;
+    }
+
+    div.headings > h2 {
+      @apply text-32;
+    }
+  }
+
+  @screen xl {
+    div.headings > h1 {
+      @apply text-72;
+    }
+  }
+</style>

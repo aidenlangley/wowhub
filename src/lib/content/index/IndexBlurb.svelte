@@ -6,19 +6,9 @@
   @component
   Short mission statement and about us.
 -->
-<div>
-  <h1
-    class="text-left font-medium md:font-light tracking-tighter
-    text-28 md:text-42 lg:text-64 pb-4"
-  >
-    Planting the seed of hope...
-  </h1>
-  <h1
-    class="text-center font-display font-medium tracking-tight
-    text-48 sm:text-64 md:text-72 lg:text-96 xl:text-128"
-  >
-    Sharing gifts of recovery.
-  </h1>
+<div class="headings">
+  <h1 class="text-shadow-lg">Planting the seed of hope...</h1>
+  <h2>Sharing gifts of recovery.</h2>
 </div>
 <div>
   <Paragraph justify>
@@ -34,3 +24,54 @@
     until 3pm.
   </Paragraph>
 </div>
+
+<style lang="postcss">
+  div.headings > h1 {
+    padding-bottom: 1rem; /* 16px */
+
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: -0.05em;
+    @apply text-28;
+  }
+
+  div.headings > h2 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    @apply text-48 font-display;
+  }
+
+  @screen sm {
+    div.headings > h2 {
+      @apply text-64;
+    }
+  }
+
+  @screen md {
+    div.headings > h1 {
+      font-weight: 300;
+      @apply text-42;
+    }
+
+    div.headings > h2 {
+      @apply text-72;
+    }
+  }
+
+  @screen lg {
+    div.headings > h1 {
+      @apply text-64;
+    }
+
+    div.headings > h2 {
+      @apply text-96;
+    }
+  }
+
+  @screen xl {
+    div.headings > h2 {
+      @apply text-128;
+    }
+  }
+</style>

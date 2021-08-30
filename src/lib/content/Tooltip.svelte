@@ -20,13 +20,27 @@
     content: attr(data-tooltip);
     position: absolute;
     z-index: 1;
-    top: 125%;
+    top: 150%;
     right: 10%;
 
     /* Styling. */
-    @apply p-1 w-max max-w-xs text-base text-gray-100;
-    @apply font-mono font-normal tracking-tighter leading-tight;
-    @apply bg-gray-900/90 border rounded border-gray-700 shadow;
+    padding: 0.5rem; /* 8px */
+    width: max-content;
+    max-width: 20rem; /* 320px */
+
+    @apply text-14;
+    letter-spacing: -0.05em;
+
+    border-width: 1px;
+    border-radius: 0.25rem; /* 4px */
+
+    @apply text-gray-100 font-mono bg-gray-900/90 border-gray-700 shadow;
+  }
+
+  @screen ty {
+    span[data-tooltip]:hover::after {
+      @apply text-base;
+    }
   }
 
   @screen lg {

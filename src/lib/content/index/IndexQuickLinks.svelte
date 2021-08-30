@@ -13,15 +13,13 @@
   mobile devices) and external links to our Facebook group & page on Google
   maps.
 -->
-<div
-  class="pt-4 sm:border-t-8 border-dotted border-gray-200 dark:border-gray-800"
->
+<div class="headings">
   <Heading3 center>
     <Span>Get in touch, or come and see us.</Span>
   </Heading3>
 </div>
 
-<div class="pt-2 grid gap-2 sm:grid-cols-2 sm:gap-4 lg:gap-6">
+<div class="links">
   <Link href="mailto:{$info.email}" label="email {$info.email}" button>
     <Icon src={Mail} />
     <span>{$info.email}</span>
@@ -46,3 +44,43 @@
     <span>Google Maps</span>
   </Link>
 </div>
+
+<style lang="postcss">
+  div.headings {
+    padding-top: 1rem; /* 16px */
+  }
+
+  div.links {
+    padding-top: 0.5rem; /* 8px */
+
+    display: grid;
+    gap: 0.5rem; /* 8px */
+  }
+
+  div.links :global(.button):hover {
+    @apply scale-105;
+  }
+
+  @screen sm {
+    div.headings {
+      border-top-width: 8px;
+      border-style: dotted;
+      @apply border-gray-200;
+    }
+
+    :global(.dark) div.headings {
+      @apply border-gray-800;
+    }
+
+    div.links {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem; /* 16px */
+    }
+  }
+
+  @screen lg {
+    div.links {
+      gap: 1.5rem; /* 24px */
+    }
+  }
+</style>

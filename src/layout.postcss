@@ -2,11 +2,23 @@
 
 @layer utilities {
   .column {
-    @apply grid;
+    display: grid;
+    padding: 1rem;
   }
 
-  .padding {
-    @apply pt-4 pb-4 grid grid-flow-row gap-y-4;
+  .pad {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .pad-b {
+    padding-bottom: 1rem;
+  }
+
+  .gaps-y {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 0.5rem;
   }
 
   .gradient-dark-green {
@@ -19,11 +31,7 @@
 }
 
 .column > * {
-  @apply col-start-2;
-}
-
-.skew > * {
-  @apply padding;
+  grid-column-start: 2;
 }
 
 @screen sm {
@@ -31,12 +39,22 @@
     grid-template-columns: 1fr 18fr 1fr;
   }
 
-  .padding {
-    @apply pt-8 pb-8 gap-y-8;
+  .pad {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .pad-b {
+    padding-bottom: 2rem;
+  }
+
+  .gaps-y {
+    row-gap: 1rem;
   }
 
   .skew > * {
-    @apply pt-14 pb-14 gap-y-6;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -45,12 +63,22 @@
     grid-template-columns: 1fr 8fr 1fr;
   }
 
-  .padding {
-    @apply pt-16 pb-16 gap-y-16;
+  .pad {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .pad-b {
+    padding-bottom: 2.5rem;
+  }
+
+  .gaps-y {
+    row-gap: 1.5rem;
   }
 
   .skew > * {
-    @apply pt-16 pb-16 gap-y-8;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -59,17 +87,27 @@
     grid-template-columns: 1fr 4fr 1fr;
   }
 
+  .pad {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .pad-b {
+    padding-bottom: 3.5rem;
+  }
+
+  .gaps-y {
+    row-gap: 2rem; /* 32px */
+  }
+
   .skew > * {
-    @apply pt-20 pb-20 gap-y-20;
+    padding-top: 5rem; /* 80px */
+    padding-bottom: 5rem; /* 80px */
   }
 }
 
 @screen xl {
   .column {
     grid-template-columns: 1fr 3fr 1fr;
-  }
-
-  .skew > * {
-    @apply pt-24 pb-24 gap-y-16;
   }
 }

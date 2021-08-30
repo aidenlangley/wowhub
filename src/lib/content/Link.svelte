@@ -1,6 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
+  import './button.postcss';
 
   export let href: string;
   export let internal = false;
@@ -32,16 +33,32 @@
   <slot />
 </a>
 
-<style lang="postcss" global>
-  @import './button.postcss';
+<style lang="postcss">
+  a.link {
+    display: inline-grid;
+    grid-auto-flow: column;
+    column-gap: 0.25rem; /* 4px */
+
+    align-items: center;
+    justify-content: start;
+  }
+
+  @screen sm {
+    a.link,
+    a.button {
+      column-gap: 0.5rem; /* 8px */
+    }
+  }
 
   a.link:not(.button) {
-    @apply font-mono font-medium text-blue-600;
+    font-weight: 500;
+    @apply font-mono text-blue-600;
   }
 
   a.link:not(.button):hover,
   a.link:not(.button):focus {
-    @apply underline text-blue-400;
+    text-decoration: underline;
+    @apply text-blue-400;
   }
 
   a.link:not(.button):visited {
@@ -53,21 +70,21 @@
     @apply text-purple-400;
   }
 
-  .dark a.link:not(.button) {
+  :global(.dark) a.link:not(.button) {
     @apply text-blue-400;
   }
 
-  .dark a.link:not(.button):hover,
-  .dark a.link:not(.button):focus {
+  :global(.dark) a.link:not(.button):hover,
+  :global(.dark) a.link:not(.button):focus {
     @apply text-blue-200;
   }
 
-  .dark a.link:not(.button):visited {
+  :global(.dark) a.link:not(.button):visited {
     @apply text-purple-400;
   }
 
-  .dark a.link:not(.button):hover:visited,
-  .dark a.link:not(.button):focus:visited {
+  :global(.dark) a.link:not(.button):hover:visited,
+  :global(.dark) a.link:not(.button):focus:visited {
     @apply text-purple-200;
   }
 </style>

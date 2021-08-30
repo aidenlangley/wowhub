@@ -30,39 +30,57 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="column p-4 padding">
-  <section id="banner" class="padding">
+<div class="column pad gaps-y">
+  <section class="pad">
     <Banner white={$state.dark} />
   </section>
 
   <!-- Visual break after banner via dotted border. -->
-  <section id="quick-links">
+  <section>
     <IndexQuickLinks />
   </section>
 
   {#if news}
-    <section id="latest-news" in:fade>
+    <section class="pad-b" in:fade>
       <IndexLatestNews {news} />
     </section>
   {/if}
 </div>
 
-<div class="skew -skew-y-2 gradient-dark-green bg-gradient-to-bl">
-  <section id="blurb" class="skew-y-2 column">
+<section class="blurb skew gradient-dark-green">
+  <div class="column pad gaps-y">
     <IndexBlurb />
-  </section>
-</div>
+  </div>
+</section>
 
-<section id="serenity-prayer" aria-hidden="true" class="column">
+<section aria-hidden="true" class="column pad">
   <IndexSerenityPrayer />
 </section>
 
-<div class="skew skew-y-2 gradient-dark-green bg-gradient-to-br">
-  <section id="whakatauki" class="-skew-y-2 column">
+<section class="whakatauki skew gradient-dark-green">
+  <div class="column pad gaps-y">
     <IndexWhakatauki />
-  </section>
-</div>
+  </div>
+</section>
 
-<section id="services" aria-hidden="true" class="column">
+<section aria-hidden="true" class="pad">
   <IndexServices />
 </section>
+
+<style lang="postcss">
+  section.blurb {
+    @apply -skew-y-2 bg-gradient-to-bl;
+  }
+
+  section.blurb > * {
+    @apply skew-y-2;
+  }
+
+  section.whakatauki {
+    @apply skew-y-2 bg-gradient-to-br;
+  }
+
+  section.whakatauki > * {
+    @apply -skew-y-2;
+  }
+</style>
