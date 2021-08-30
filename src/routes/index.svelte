@@ -30,7 +30,7 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="column pad gaps-y">
+<div class="root column pad gaps-y">
   <section class="pad">
     <Banner white={$state.dark} />
   </section>
@@ -68,6 +68,11 @@
 </section>
 
 <style lang="postcss">
+  div.root {
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   section.blurb {
     @apply -skew-y-2 bg-gradient-to-bl;
   }

@@ -100,7 +100,24 @@
     letter-spacing: -0.05em;
     font-weight: 500;
     @apply font-serif text-gray-800 text-56;
-    @apply ty:text-64 sm:text-72 md:text-96;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n + 1) > :first-child {
+      @apply text-64;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n + 1) > :first-child {
+      @apply text-72;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n + 1) > :first-child {
+      @apply text-96;
+    }
   }
 
   :global(.dark) div.services > :nth-child(3n + 1) > :first-child {
@@ -111,9 +128,37 @@
   div.services > :nth-child(3n + 1) > :last-child {
     font-weight: 500;
     letter-spacing: -0.05em;
-
     @apply text-32 text-purple-500;
-    @apply ty:text-36 sm:text-40 md:text-48 lg:text-56 xl:text-64;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n + 1) > :last-child {
+      @apply text-36;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n + 1) > :last-child {
+      @apply text-40;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n + 1) > :last-child {
+      @apply text-48;
+    }
+  }
+
+  @screen lg {
+    div.services > :nth-child(3n + 1) > :last-child {
+      @apply text-56;
+    }
+  }
+
+  @screen xl {
+    div.services > :nth-child(3n + 1) > :last-child {
+      @apply text-64;
+    }
   }
 
   /* This is the middle line. */
@@ -126,19 +171,75 @@
     font-weight: bold;
     letter-spacing: -0.025em;
     text-decoration: underline;
-
     @apply text-orange-500 text-30;
-    @apply ty:text-34 sm:text-38 sm:tracking-normal;
-    @apply md:text-42 md:tracking-tighter;
-    @apply lg:text-48 xl:text-56;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n + 2) > :first-child {
+      @apply text-34;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n + 2) > :first-child {
+      letter-spacing: 0em;
+      @apply text-38;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n + 2) > :first-child {
+      letter-spacing: -0.05em;
+      @apply text-42;
+    }
+  }
+
+  @screen lg {
+    div.services > :nth-child(3n + 2) > :first-child {
+      @apply text-48;
+    }
+  }
+
+  @screen xl {
+    div.services > :nth-child(3n + 2) > :first-child {
+      @apply text-56;
+    }
   }
 
   div.services > :nth-child(3n + 2) > :last-child {
     font-weight: bold;
     letter-spacing: -0.05em;
-
     @apply font-serif text-green-500 text-48;
-    @apply ty:text-56 sm:text-64 md:text-72 lg:text-96 xl:text-128;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n + 2) > :last-child {
+      @apply text-56;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n + 2) > :last-child {
+      @apply text-64;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n + 2) > :last-child {
+      @apply text-72;
+    }
+  }
+
+  @screen lg {
+    div.services > :nth-child(3n + 2) > :last-child {
+      @apply text-96;
+    }
+  }
+
+  @screen xl {
+    div.services > :nth-child(3n + 2) > :last-child {
+      @apply text-128;
+    }
   }
 
   /* This is the bottom line. */
@@ -150,17 +251,73 @@
   div.services > :nth-child(3n) > :first-child {
     font-weight: 500;
     letter-spacing: -0.05em;
-
     @apply font-serif text-blue-500 text-32;
-    @apply ty:text-36 sm:text-40 md:text-48 lg:text-56 xl:text-64;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n) > :first-child {
+      @apply text-36;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n) > :first-child {
+      @apply text-40;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n) > :first-child {
+      @apply text-48;
+    }
+  }
+
+  @screen lg {
+    div.services > :nth-child(3n) > :first-child {
+      @apply text-56;
+    }
+  }
+
+  @screen xl {
+    div.services > :nth-child(3n) > :first-child {
+      @apply text-64;
+    }
   }
 
   div.services > :nth-child(3n) > :last-child {
     font-weight: bold;
     letter-spacing: -0.05em;
-
     @apply text-gray-600 text-40;
-    @apply ty:text-44 sm:text-48 md:text-56 lg:text-64 xl:text-72;
+  }
+
+  @screen ty {
+    div.services > :nth-child(3n) > :last-child {
+      @apply text-44;
+    }
+  }
+
+  @screen sm {
+    div.services > :nth-child(3n) > :last-child {
+      @apply text-48;
+    }
+  }
+
+  @screen md {
+    div.services > :nth-child(3n) > :last-child {
+      @apply text-56;
+    }
+  }
+
+  @screen lg {
+    div.services > :nth-child(3n) > :last-child {
+      @apply text-64;
+    }
+  }
+
+  @screen xl {
+    div.services > :nth-child(3n) > :last-child {
+      @apply text-72;
+    }
   }
 
   :global(.dark) div.services > :nth-child(3n) > :last-child {

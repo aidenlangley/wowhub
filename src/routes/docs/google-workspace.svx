@@ -54,7 +54,7 @@ Here is how you'd set up a new Google Chrome profile:
 <img
   src={gcNewAccount}
   alt="how to add a new account to Google Chrome"
-  class="border rounded border-gray-300"
+  class="border rounded border-gray-300 dark:border-gray-700"
 />
 
 Now you'll see a bookmarks bar. All of your essential bookmarks are inside the
@@ -63,7 +63,7 @@ folder `Managed bookmarks`.
 <img
   src={managedBookmarks}
   alt="where to find important bookmarks"
-  class="border rounded border-gray-300"
+  class="border rounded border-gray-300 dark:border-gray-700"
 />
 
 ## Gmail & Chat
@@ -82,7 +82,7 @@ interact with your files here. You can organise to your hearts content.
 <img
   src={googleDrive}
   alt="how to get to Google Drive"
-  class="border rounded border-gray-300"
+  class="border rounded border-gray-300 dark:border-gray-700"
 />
 
 When you work inside **Google Docs**, **Sheets**, **Slides** or **Forms**, your
@@ -92,7 +92,7 @@ leisure.
 <img
   src={docsToDrive}
   alt="making a document in Docs, then organising in Drive"
-  class="border rounded border-gray-300"
+  class="border rounded border-gray-300 dark:border-gray-700"
 />
 
 ## Docs, Sheets, Slides & Forms

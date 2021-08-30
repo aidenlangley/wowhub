@@ -52,7 +52,8 @@
 
   a.link:not(.button) {
     font-weight: 500;
-    @apply font-mono text-blue-600;
+    font-family: 'Fira Code';
+    @apply text-blue-600;
   }
 
   a.link:not(.button):hover,

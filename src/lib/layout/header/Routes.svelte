@@ -46,7 +46,7 @@
     font-size: 1rem; /* 16px */
     line-height: 1.5rem; /* 24px */
 
-    @apply transition-all;
+    transition-duration: 150ms;
   }
 
   nav > ol > li:hover a:not(.active),

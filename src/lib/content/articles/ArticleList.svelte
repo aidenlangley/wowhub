@@ -29,7 +29,8 @@
 
   @screen sm {
     ol {
-      @apply text-18;
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.5rem; /* 24px */
     }
   }
 </style>

@@ -38,27 +38,33 @@
 
   li span {
     letter-spacing: -0.05em;
-    @apply text-18;
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5rem; /* 24px */
   }
 
   li > small {
     letter-spacing: -0.05em;
-    @apply font-mono text-14;
+    font-size: 0.875rem; /* 14px */
+    line-height: 0.875rem; /* 14px */
+    font-family: 'Fira Code';
   }
 
   @screen sm {
     li span {
-      @apply text-20;
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.75rem; /* 28px */
     }
 
     li > small {
-      @apply text-base;
+      font-size: 1rem; /* 16px */
+      line-height: 1.5rem; /* 24px */
     }
   }
 
   @screen md {
     li span {
-      @apply text-24;
+      font-size: 1.5rem /* 24px */;
+      line-height: 1.75rem /* 28px */;
     }
   }
 </style>

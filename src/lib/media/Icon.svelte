@@ -12,4 +12,4 @@
   export let style: string = null;
 </script>
 
-<Icon {src} {solid} {size} class={style} />
+<Icon {src} {solid} {size} class={style} aria-hidden="true" />

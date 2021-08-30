@@ -6,6 +6,7 @@
   import Header from '$lib/layout/header/Header.svelte';
   import Seo from '$lib/Seo.svelte';
   import { state } from '$lib/store/dark';
+  import '../app.scss';
 
   $: dark = $state.dark;
 </script>
@@ -36,7 +37,7 @@
 </div>
 
 <style lang="postcss">
-  div.root {
+  :global(body) {
     min-width: 360px;
   }
 

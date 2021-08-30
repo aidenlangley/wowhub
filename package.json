@@ -32,10 +32,11 @@
 		"rehype-external-links": "^1.0.0",
 		"remark-footnotes": "^4.0.1",
 		"remark-gfm": "^2.0.0",
+		"sass": "^1.38.2",
 		"svelte": "^3.42.4",
 		"svelte-check": "^2.2.5",
 		"svelte-hero-icons": "^2.4.0",
-		"svelte-preprocess": "^4.8.0",
+		"svelte-preprocess": "^4.7.4",
 		"tailwindcss": "^2.2.8",
 		"tslib": "^2.0.0",
 		"typescript": "~4.3.5"

@@ -2,7 +2,7 @@
   export let underline = false;
 </script>
 
-<span class:under-line={underline}>
+<span class="span" class:under-line={underline}>
   <slot />
 </span>
 
@@ -11,8 +11,7 @@
     @apply bg-white/50;
   }
 
-  /* This reaches a lot. Be careful. */
-  :global(.dark) span {
+  :global(.dark) span.span {
     @apply bg-black/50;
   }
 

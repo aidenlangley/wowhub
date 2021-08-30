@@ -29,7 +29,7 @@
     border-bottom-width: 1px;
 
     @apply text-white bg-gray-900 border-gray-300;
-    @apply transition-colors;
+
     transition-duration: 1000ms;
   }
 

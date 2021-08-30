@@ -16,7 +16,8 @@
   @screen md {
     p {
       letter-spacing: -0.025em;
-      @apply text-18;
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.5rem; /* 24px */
     }
   }
 
@@ -30,7 +31,8 @@
   @screen xl {
     p {
       line-height: 1.625;
-      @apply text-20;
+      font-size: 1.25rem; /* 20px */
+      line-height: 1.75rem; /* 28px */
     }
   }
 </style>

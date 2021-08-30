@@ -13,12 +13,15 @@
 
     font-weight: 300;
     letter-spacing: -0.025em;
-    @apply text-18;
+
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.5rem; /* 24px */
   }
 
   @screen sm {
     h3 {
-      @apply text-22;
+      font-size: 1.375rem; /* 22px */
+      line-height: 1.75rem; /* 28px */
     }
   }
 </style>

@@ -49,6 +49,7 @@
   }
 
   footer.page-footer * {
+    letter-spacing: -0.025em;
     @apply text-gray-300;
   }
 

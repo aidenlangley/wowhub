@@ -32,46 +32,55 @@
     text-align: left;
     font-weight: 500;
     letter-spacing: -0.05em;
-    @apply text-28;
+    font-size: 1.75rem; /* 28px */
+    line-height: 2rem; /* 32px */
   }
 
   div.headings > h2 {
     text-align: center;
     font-weight: 500;
     letter-spacing: -0.025em;
-    @apply text-48 font-display;
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+    font-family: 'Permanent Marker';
   }
 
   @screen sm {
     div.headings > h2 {
-      @apply text-64;
+      font-size: 4rem; /* 64px */
+      line-height: 1;
     }
   }
 
   @screen md {
     div.headings > h1 {
       font-weight: 300;
-      @apply text-42;
+      font-size: 2.625rem; /* 42px */
+      line-height: 2.5rem; /* 40px */
     }
 
     div.headings > h2 {
-      @apply text-72;
+      font-size: 4.5rem; /* 72px */
+      line-height: 1;
     }
   }
 
   @screen lg {
     div.headings > h1 {
-      @apply text-64;
+      font-size: 4rem; /* 64px */
+      line-height: 1;
     }
 
     div.headings > h2 {
-      @apply text-96;
+      font-size: 6rem; /* 96px */
+      line-height: 1;
     }
   }
 
   @screen xl {
     div.headings > h2 {
-      @apply text-128;
+      font-size: 8rem; /* 128px */
+      line-height: 1;
     }
   }
 </style>

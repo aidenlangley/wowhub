@@ -28,24 +28,28 @@
     width: max-content;
     max-width: 20rem; /* 320px */
 
-    @apply text-14;
     letter-spacing: -0.05em;
+    font-size: 0.875rem; /* 14px */
+    line-height: 0.875rem; /* 14px */
+    font-family: 'Fira Code';
 
     border-width: 1px;
     border-radius: 0.25rem; /* 4px */
 
-    @apply text-gray-100 font-mono bg-gray-900/90 border-gray-700 shadow;
+    @apply text-gray-100 bg-gray-900/90 border-gray-700 shadow;
   }
 
   @screen ty {
     span[data-tooltip]:hover::after {
-      @apply text-base;
+      font-size: 1rem; /* 16px */
+      line-height: 1.5rem; /* 24px */
     }
   }
 
   @screen lg {
     span[data-tooltip]:hover::after {
-      @apply text-18;
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.5rem; /* 24px */
     }
   }
 </style>
