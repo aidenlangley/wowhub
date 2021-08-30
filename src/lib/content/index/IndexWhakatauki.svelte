@@ -1,52 +1,38 @@
-<script lang="ts" context="module">
-  export const whakatauki = {
-    whakatauki: 'E hara taku toa i te toa takitahi, engari he toa takitini',
-    translation:
-      'My strength is not that of a single warrior, but that of many',
-  };
-</script>
-
-<script lang="ts">
-  const headings = whakatauki.whakatauki.split(',');
-  headings[0] += ',';
+<script>
+  import Paragraph from '../Paragraph.svelte';
 </script>
 
 <!--
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<section id="whakatauki">
-  <div
-    class="
-      text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
-      tracking-tighter text-shadow sm:text-center
-      font-medium italic font-serif
-    "
+<div>
+  <h1
+    class="text-34 sm:text-42 md:text-44 lg:text-56 xl:text-72
+    font-serif font-medium italic text-shadow
+    tracking-tight sm:text-center sm:grid sm:grid-flow-row pb-4"
   >
-    {#each headings as heading}
-      <h1>{heading}</h1>
-    {/each}
-  </div>
-  <h3
-    class="
-      font-serif
-      text-right sm:text-center
-      text-22 lg:text-32
-      text-gray-100 text-shadow
-    "
+    <span>E hara taku toa i te toa takitahi,</span>
+    <span>engari he toa takitini</span>
+  </h1>
+  <h2
+    class="text-right sm:text-center text-gray-100 text-shadow text-22 lg:text-32
+    font-serif"
   >
-    "{whakatauki.translation}"
-  </h3>
-  <p>
+    "My strength is not that of a single warrior, but that of many"
+  </h2>
+</div>
+<div>
+  <Paragraph justify>
     A favourite whakatauki of ours that embodies our ideals perfectly. A strong
     individual empowers us all.
-  </p>
-  <p>
+  </Paragraph>
+  <Paragraph justify>
     We take a holistic approach when it comes to treatment. Behind the
     individual there's roopu, whanau, there's hinganaro, tinana and wairua.
     Addiction only accounts for a fraction of the recovery process.
-  </p>
-  <p>
+  </Paragraph>
+  <Paragraph justify>
     When Taumarere is in need, Hokianga will answer the call, and vice versa.
-  </p>
-</section>
+  </Paragraph>
+</div>

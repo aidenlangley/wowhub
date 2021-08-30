@@ -10,7 +10,7 @@
   List of links to recent panui.
 -->
 {#if articles.length > 0}
-  <ol class="sm:text-18 tracking-tight space-y-2">
+  <ol class="grid gap-y-2 pt-2 sm:text-18 tracking-tight">
     {#each articles as article (article.slug)}
       <ArticleListItem {article} />
     {/each}

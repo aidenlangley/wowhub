@@ -13,6 +13,6 @@
   @component
   Meet the team.
 -->
-<div class="p-2">
+<div class="grid column gap-y-4 p-4">
   <TeamMembers />
 </div>

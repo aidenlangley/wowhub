@@ -1,23 +1,22 @@
 <script lang="ts">
-  import Link from '../link/Link.svelte';
+  import Link from '../Link.svelte';
+  import Paragraph from '../Paragraph.svelte';
   import type { Article } from './Article';
 
   export let article: Article;
 </script>
 
 <li
-  class="space-y-1 p-4
+  class="grid gap-y-1 p-4
     bg-gray-100 border border-gray-300 rounded shadow
     dark:bg-gray-900 dark:border-gray-700"
 >
-  <Link external={false} href={article.slug}>
+  <Link href={article.slug} internal>
     <span class="tracking-tighter text-18 sm:text-20 md:text-24">
       {article.title}
     </span>
   </Link>
-  <p>
-    <span>{article.description}</span>
-  </p>
+  <p>{article.description}</p>
   {#if article.date}
     <small class="font-mono tracking-tighter text-14 sm:text-base">
       posted {new Date(article.date).toLocaleString()}

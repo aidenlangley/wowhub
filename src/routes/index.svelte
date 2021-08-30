@@ -18,7 +18,7 @@
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
     description:
-      'He Waka Eke Noa te tai Tokerau. Learn about our community AOD & recovery services',
+      'He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services',
     robots: 'none',
   };
 
@@ -30,34 +30,39 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="grid column p-4">
-  <section id="banner" class="padding lg:pt-24 lg:pb-24 duration-100">
+<div class="column p-4 padding">
+  <section id="banner" class="padding">
     <Banner white={$state.dark} />
   </section>
 
   <!-- Visual break after banner via dotted border. -->
-  <section
-    id="quick-links"
-    class="padding
-      border-t-4 border-dotted border-gray-300 dark:border-gray-600"
-  >
+  <section id="quick-links">
     <IndexQuickLinks />
   </section>
 
   {#if news}
-    <section id="latest-news" class="" in:fade>
+    <section id="latest-news" in:fade>
       <IndexLatestNews {news} />
     </section>
   {/if}
 </div>
 
-<section id="blurb" class="text-white text-shadow-lg">
-  <IndexBlurb />
-</section>
-
-<IndexSerenityPrayer />
-<div class="text-white text-shadow-lg">
-  <IndexWhakatauki />
+<div class="skew -skew-y-2 gradient-dark-green bg-gradient-to-bl">
+  <section id="blurb" class="skew-y-2 column">
+    <IndexBlurb />
+  </section>
 </div>
 
-<IndexServices />
+<section id="serenity-prayer" aria-hidden="true" class="column">
+  <IndexSerenityPrayer />
+</section>
+
+<div class="skew skew-y-2 gradient-dark-green bg-gradient-to-br">
+  <section id="whakatauki" class="-skew-y-2 column">
+    <IndexWhakatauki />
+  </section>
+</div>
+
+<section id="services" aria-hidden="true" class="column">
+  <IndexServices />
+</section>

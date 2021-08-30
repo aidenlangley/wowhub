@@ -12,7 +12,7 @@ const rem = (px) => `${round(px / 16)}rem`;
 
 const config = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,css,ts,postcss,svelte}'],
+  purge: ['./src/**/*.{postcss,svelte}'],
   theme: {
     screens: {
       tyd: { max: em(513) },

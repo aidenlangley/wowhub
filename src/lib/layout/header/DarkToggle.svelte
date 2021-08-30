@@ -18,7 +18,7 @@
   @component
   Handles toggling dark mode (via a `dark` store & local storage.)
 -->
-<Tooltip {text} left>
+<Tooltip {text}>
   <button
     aria-label={text}
     on:click={toggleDark}
@@ -31,7 +31,7 @@
       <span
         class:text-blue-300={focused}
         aria-hidden="true"
-        in:fade={{ duration: 100 }}
+        in:fade={{ duration: 200 }}
       >
         <Icon src={Moon} solid={focused} />
       </span>
@@ -39,7 +39,7 @@
       <span
         class:text-yellow-300={focused}
         aria-hidden="true"
-        in:fade={{ duration: 100 }}
+        in:fade={{ duration: 200 }}
       >
         <Icon src={Sun} solid={focused} />
       </span>

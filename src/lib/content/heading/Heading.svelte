@@ -1,5 +1,6 @@
-<h1>
-  <span class="border-b-4 border-green-300">
-    <slot />
-  </span>
+<h1
+  class="font-bold font-serif text-shadow text-28 md:text-42 lg:text-64
+    pt-2 pb-2"
+>
+  <slot />
 </h1>

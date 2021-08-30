@@ -1,0 +1,68 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply p-2 border rounded-md shadow;
+    @apply font-mono font-medium text-18;
+    @apply grid grid-flow-col gap-x-1 tracking-tight;
+    @apply place-items-center place-content-center;
+
+    /* Default colours. */
+    @apply bg-gray-100 border-gray-300;
+  }
+}
+
+@screen ty {
+  .button {
+    @apply p-3;
+  }
+}
+
+@screen sm {
+  .button {
+    @apply p-4 gap-x-2;
+  }
+}
+
+@screen md {
+  .button {
+    @apply text-20;
+  }
+}
+
+@screen lg {
+  .button {
+    @apply text-22 p-5;
+  }
+}
+
+@screen xl {
+  .button {
+    @apply text-24 p-6;
+  }
+}
+
+.button:hover,
+.button:focus {
+  @apply text-green-700;
+  @apply scale-105 ease-in-out duration-100;
+}
+
+.dark .button {
+  @apply bg-gray-900 border-gray-700;
+}
+
+.dark .button:hover,
+.dark .button:focus {
+  @apply text-green-300;
+}
+
+.button.blue {
+  @apply bg-blue-600 border-blue-400 text-white;
+}
+
+.button.blue:hover,
+.button.blue:focus {
+  @apply text-blue-200;
+}

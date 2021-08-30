@@ -10,8 +10,9 @@
   mode.
 -->
 <header
-  class="grid place-items-center p-4 lg:p-6
-    text-white bg-gray-900 dark:bg-black shadow-lg
+  class="grid p-4 lg:p-6
+    place-items-center place-content-center justify-items-center
+    text-white bg-gray-900 dark:bg-black
     border-b border-gray-300 dark:border-gray-800"
 >
   <Logo white />
@@ -22,10 +23,6 @@
 <style lang="postcss">
   header {
     grid-template-columns: 0 auto 0;
-  }
-
-  header:last-child {
-    @apply justify-self-end;
   }
 
   @screen ty {
