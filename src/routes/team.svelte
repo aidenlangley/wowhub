@@ -1,5 +1,4 @@
 <script lang="ts">
-  import TeamMembers from '$lib/content/team/TeamMembers.svelte';
   import { seo } from '$lib/store/seo';
 
   $seo = {
@@ -13,6 +12,16 @@
   @component
   Meet the team.
 -->
-<div class="grid column gap-y-4 p-4">
-  <TeamMembers />
+<div class="pb-4 dark:text-white">
+  <h1 class="p-4 text-center">
+    <span
+      class="
+        border-b-8 border-yellow-300
+        font-serif text-64
+        text-shadow
+      "
+    >
+      Under construction.
+    </span>
+  </h1>
 </div>
