@@ -16,9 +16,13 @@
 
     align-items: center;
     justify-content: center;
+    vertical-align: middle;
 
     @apply shadow font-mono text-18 bg-gray-100 border-gray-300;
-    @apply transition-all;
+
+    transition-property: background-color, border-color, color, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
   }
 }
 

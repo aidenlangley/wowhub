@@ -1,7 +1,7 @@
 <script lang="ts">
   import { browser } from '$app/env';
   import { prefetch } from '$app/navigation';
-  import './button.postcss';
+  import '$css/button.postcss';
 
   export let href: string;
   export let internal = false;

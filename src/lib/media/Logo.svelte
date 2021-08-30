@@ -12,3 +12,11 @@
 {:else}
   <img src={LogoWhite} {alt} in:blur />
 {/if}
+
+<style class="postcss">
+  /* Since it's a tall image, not square, we'll hack it up a lil. */
+  img {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+</style>

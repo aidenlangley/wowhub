@@ -22,13 +22,11 @@
 
     place-items: center;
     place-content: center;
-    justify-items: center;
 
     padding: 1rem; /* 16px */
     border-bottom-width: 1px;
 
     @apply text-white bg-gray-900 border-gray-300;
-
     @apply transition-colors;
     transition-duration: 1000ms;
   }
@@ -39,20 +37,23 @@
 
   @screen ty {
     header {
+      /* 5% auto 5% */
       grid-template-columns: 1fr 18fr 1fr;
     }
   }
 
   @screen sm {
     header {
-      grid-template-columns: 1fr 18fr 1fr;
+      padding: 1.25rem; /* 20 px */
     }
   }
 
   @screen lg {
     header {
-      grid-template-columns: 1fr 23fr 1fr;
       padding: 1.5rem; /* 24px */
+
+      /* 4% auto 4% */
+      grid-template-columns: 1fr 23fr 1fr;
     }
   }
 </style>

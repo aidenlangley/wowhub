@@ -1,11 +1,11 @@
 <script lang="ts">
   import { assets } from '$app/paths';
-  import Footer from '$lib/layout/footer/Footer.svelte';
+  import '$css/layout.postcss';
+  import '$css/tailwind.postcss';
+  import Footer from '$lib/layout/Footer.svelte';
   import Header from '$lib/layout/header/Header.svelte';
   import Seo from '$lib/Seo.svelte';
   import { state } from '$lib/store/dark';
-  import '../layout.postcss';
-  import '../tailwind.postcss';
 
   $: dark = $state.dark;
 </script>
@@ -36,11 +36,11 @@
 </div>
 
 <style lang="postcss">
-  .root {
+  div.root {
     min-width: 360px;
   }
 
-  .root > main {
+  div.root > main {
     background-position: top;
     background-blend-mode: difference;
     @apply bg-white;
@@ -50,16 +50,16 @@
     transition-duration: 1000ms;
   }
 
-  .root > main > div {
+  div.root > main > div {
     @apply bg-white/80;
   }
 
-  .root.dark > main {
+  div.root.dark > main {
     background-blend-mode: hard-light;
     @apply bg-gray-900 text-white;
   }
 
-  .root.dark > main > div {
+  div.root.dark > main > div {
     @apply bg-black/70;
   }
 </style>

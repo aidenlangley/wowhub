@@ -32,6 +32,12 @@
       "$assets/*": [
         "static/*"
       ],
+      "$css": [
+        "static/css"
+      ],
+      "$css/*": [
+        "static/css/*"
+      ],
       "$lib": [
         "src/lib"
       ],

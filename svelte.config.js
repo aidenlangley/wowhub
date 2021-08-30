@@ -28,6 +28,7 @@ const config = {
       resolve: {
         alias: {
           $assets: path.resolve('./static'),
+          $css: path.resolve('./static/css'),
           $routes: path.resolve('./src/routes'),
           $news: path.resolve('./src/news'),
           $docs: path.resolve('./src/docs'),

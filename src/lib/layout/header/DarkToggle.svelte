@@ -46,3 +46,9 @@
     {/if}
   </button>
 </Tooltip>
+
+<style lang="postcss">
+  button {
+    vertical-align: middle;
+  }
+</style>
