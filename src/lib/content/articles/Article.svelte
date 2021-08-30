@@ -22,32 +22,34 @@
 
   Don't use TypeScript, it breaks everything.
 -->
-<article
-  class="
+<div class="column pad">
+  <article
+    class="
       p-4 max-w-none
       prose prose-green md:prose-lg lg:prose-xl
       dark:prose-dark
     "
->
-  {#if date || author}
-    <header>
-      <small class="font-mono lg:text-18">
-        <span class="flex space-x-1 sm:space-x-2">
-          {#if date}
-            <time datetime={date}>
-              posted {new Date(date).toLocaleString('en-NZ', {
-                timeZone: 'Pacific/Auckland',
-              })}
-            </time>
-          {/if}
-          {#if author}
-            <address>
-              by {author}
-            </address>
-          {/if}
-        </span>
-      </small>
-    </header>
-  {/if}
-  <slot />
-</article>
+  >
+    {#if date || author}
+      <header>
+        <small class="font-mono lg:text-18">
+          <span class="flex space-x-1 sm:space-x-2">
+            {#if date}
+              <time datetime={date}>
+                posted {new Date(date).toLocaleString('en-NZ', {
+                  timeZone: 'Pacific/Auckland',
+                })}
+              </time>
+            {/if}
+            {#if author}
+              <address>
+                by {author}
+              </address>
+            {/if}
+          </span>
+        </small>
+      </header>
+    {/if}
+    <slot />
+  </article>
+</div>

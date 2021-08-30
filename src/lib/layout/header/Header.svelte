@@ -17,6 +17,8 @@
 
 <style lang="postcss">
   header {
+    max-height: 96px;
+
     display: grid;
     grid-template-columns: 0 auto 0;
 
