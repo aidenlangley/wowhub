@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import Tooltip from '$lib/content/Tooltip.svelte';
+  import Tooltip from '$components/Tooltip.svelte';
   import { routes } from '$lib/store/routes';
 </script>
 
@@ -30,39 +30,36 @@
 
 <style lang="postcss">
   nav > ol {
+    column-gap: 0.25rem; /* 4px */
     display: grid;
     grid-auto-flow: column;
-
-    place-items: center;
     place-content: center;
+    place-items: center;
     place-self: center;
-
-    column-gap: 0.25rem; /* 4px */
   }
 
   nav > ol > li a {
+    font-size: 1rem; /* 16px */
     font-weight: 500;
     letter-spacing: -0.05em;
-    font-size: 1rem; /* 16px */
     line-height: 1.5rem; /* 24px */
-
     transition-duration: 150ms;
   }
 
   nav > ol > li:hover a:not(.active),
   nav > ol > li:focus a:not(.active) {
     text-decoration: underline;
+
     @apply text-green-300;
   }
 
   nav > ol > li a.active {
+    border-bottom-width: 2px;
+    font-size: 1.125rem; /* 18px */
     font-weight: 700;
     letter-spacing: -0.05em;
-    font-size: 1.125rem; /* 18px */
     line-height: 1.5rem; /* 24px */
-
     pointer-events: none;
-    border-bottom-width: 2px;
 
     @apply text-black bg-white border-green-300;
   }
@@ -78,10 +75,9 @@
     }
 
     nav > ol > li a.active {
+      border-bottom-width: 4px;
       font-size: 1.5rem; /* 24px */
       line-height: 1.75rem; /* 28px */
-
-      border-bottom-width: 4px;
     }
   }
 

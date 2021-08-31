@@ -11,7 +11,7 @@ const config = {
   remarkPlugins: [footnotes, gfm],
   rehypePlugins: [externalLinks, domStringify],
   layout: {
-    _: './src/lib/content/articles/Article.svelte',
+    _: './src/lib/components/articles/Article.svelte',
   },
 };
 

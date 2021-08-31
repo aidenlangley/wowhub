@@ -1,8 +1,8 @@
 <script lang="ts" context="module">
-  import type { Article } from '$lib/content/articles/Article';
-  import ArticleList from '$lib/content/articles/ArticleList.svelte';
-  import Heading from '$lib/content/heading/Heading.svelte';
-  import Span from '$lib/content/Span.svelte';
+  import type { Article } from '$components/articles/Article';
+  import ArticleList from '$components/articles/ArticleList.svelte';
+  import Heading from '$components/heading/Heading.svelte';
+  import Span from '$components/Span.svelte';
   import { seo } from '$lib/store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -57,23 +57,17 @@
   export let docs: Article[];
 </script>
 
-<div class="grid column gap-y-4 p-4">
-  <section id="news-list">
+<div class="grid column pad gaps-y">
+  <section>
     <Heading>
       <Span underline>Panui</Span>
     </Heading>
     <ArticleList articles={news} />
   </section>
-  <section id="docs-list">
+  <section>
     <Heading>
       <Span underline>Other Docs</Span>
     </Heading>
     <ArticleList articles={docs} />
   </section>
 </div>
-
-<style lang="postcss">
-  section {
-    @apply grid grid-flow-row gap-y-2;
-  }
-</style>

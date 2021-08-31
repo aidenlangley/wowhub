@@ -1,8 +1,8 @@
-import { mdsvex } from 'mdsvex';
-import mdsvexConfig from './mdsvex.config.js';
-import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
+import { mdsvex } from 'mdsvex';
 import path from 'path';
+import preprocess from 'svelte-preprocess';
+import mdsvexConfig from './mdsvex.config.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -12,7 +12,6 @@ const config = {
   preprocess: [
     preprocess({
       postcss: true,
-      sass: true,
     }),
     mdsvex(mdsvexConfig),
   ],
@@ -28,11 +27,10 @@ const config = {
     vite: {
       resolve: {
         alias: {
-          $assets: path.resolve('./static'),
-          $css: path.resolve('./static/css'),
-          $routes: path.resolve('./src/routes'),
-          $news: path.resolve('./src/news'),
-          $docs: path.resolve('./src/docs'),
+          $components: path.resolve('./src/lib/components'),
+          $layout: path.resolve('./src/lib/layout'),
+          $media: path.resolve('./src/lib/media'),
+          $images: path.resolve('./static/images'),
         },
       },
       optimizeDeps: {

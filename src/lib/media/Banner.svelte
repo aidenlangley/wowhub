@@ -1,6 +1,6 @@
 <script lang="ts">
-  import BannerWhite from '$assets/images/banner-white.png';
-  import Banner from '$assets/images/banner.png';
+  import BannerWhite from '$images/banner-white.png';
+  import Banner from '$images/banner.png';
   import { blur } from 'svelte/transition';
 
   export let white = false;

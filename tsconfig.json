@@ -26,47 +26,26 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
-      "$assets": [
-        "static"
-      ],
-      "$assets/*": [
-        "static/*"
-      ],
-      "$css": [
-        "static/css"
-      ],
-      "$css/*": [
-        "static/css/*"
-      ],
-      "$lib": [
-        "src/lib"
-      ],
       "$lib/*": [
         "src/lib/*"
       ],
-      "$routes": [
-        "src/routes"
+      "$components/*": [
+        "src/lib/components/*"
       ],
-      "$routes/*": [
-        "src/routes/*"
+      "$layout/*": [
+        "src/lib/layout/*"
       ],
-      "$news": [
-        "src/routes/news"
+      "$media/*": [
+        "src/lib/media/*"
       ],
-      "$news/*": [
-        "src/routes/news/*"
+      "$images/*": [
+        "static/images/*"
       ],
-      "$docs": [
-        "src/routes/docs"
-      ],
-      "$docs/*": [
-        "src/routes/docs/*"
-      ]
     }
   },
   "include": [
     "src/**/*.svelte",
     "src/**/*.ts",
-    "src/**/*.svx"
+    // "src/**/*.svx"
   ]
 }

@@ -17,19 +17,16 @@
 
 <style lang="postcss">
   header {
-    max-height: 96px;
-
+    background-color: theme('colors.gray.900');
+    border-bottom-width: 1px;
+    border-color: theme('colors.gray.300');
+    color: theme('colors.white');
     display: grid;
     grid-template-columns: 0 auto 0;
-
-    place-items: center;
-    place-content: center;
-
+    max-height: 96px;
     padding: 1rem; /* 16px */
-    border-bottom-width: 1px;
-
-    @apply text-white bg-gray-900 border-gray-300;
-
+    place-content: center;
+    place-items: center;
     transition-duration: 1000ms;
   }
 
@@ -52,10 +49,9 @@
 
   @screen lg {
     header {
-      padding: 1.5rem; /* 24px */
-
       /* 4% auto 4% */
       grid-template-columns: 1fr 23fr 1fr;
+      padding: 1.5rem; /* 24px */
     }
   }
 </style>

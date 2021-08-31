@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Tooltip from '$lib/content/Tooltip.svelte';
+  import Tooltip from '$components/Tooltip.svelte';
   import { set, state } from '$lib/store/dark';
   import Icon, { Moon, Sun } from 'svelte-hero-icons';
   import { fade } from 'svelte/transition';

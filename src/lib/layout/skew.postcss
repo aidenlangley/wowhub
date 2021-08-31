@@ -1,0 +1,69 @@
+@layer utilities {
+  .gradient-dark-green {
+    color: theme('colors.white');
+
+    @apply from-green-900/95 bg-green-700/90;
+
+    @nest .dark & {
+      @apply from-green-900/80 bg-green-700/70;
+    }
+  }
+
+  .skew-left {
+    background-image: theme('backgroundImage.gradient-to-bl');
+
+    @apply -skew-y-2;
+
+    & > * {
+      @apply skew-y-2;
+    }
+  }
+
+  .skew-right {
+    background-image: theme('backgroundImage.gradient-to-br');
+
+    @apply skew-y-2;
+
+    & > * {
+      @apply -skew-y-2;
+    }
+  }
+
+  /* .skew-left,
+  .skew-right {
+    & > * {
+      padding-bottom: theme('padding.7');
+      padding-top: theme('padding.7');
+    }
+  } */
+
+  @screen sm {
+    .skew-left,
+    .skew-right {
+      & > * {
+        padding-bottom: theme('padding.14');
+        padding-top: theme('padding.14');
+      }
+    }
+  }
+
+  @screen md {
+    .skew-left,
+    .skew-right {
+      & > * {
+        padding-bottom: theme('padding.16');
+        padding-top: theme('padding.16');
+      }
+    }
+  }
+
+  @screen lg {
+    .skew-left,
+    .skew-right {
+      & > * {
+        padding-bottom: theme('padding.20');
+        padding-top: theme('padding.20');
+      }
+    }
+  }
+}

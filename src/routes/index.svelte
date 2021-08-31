@@ -1,11 +1,11 @@
 <script lang="ts" context="module">
-  import type { Article } from '$lib/content/articles/Article';
-  import IndexBlurb from '$lib/content/index/IndexBlurb.svelte';
-  import IndexLatestNews from '$lib/content/index/IndexLatestNews.svelte';
-  import IndexQuickLinks from '$lib/content/index/IndexQuickLinks.svelte';
-  import IndexSerenityPrayer from '$lib/content/index/IndexSerenityPrayer.svelte';
-  import IndexServices from '$lib/content/index/IndexServices.svelte';
-  import IndexWhakatauki from '$lib/content/index/IndexWhakatauki.svelte';
+  import type { Article } from '$components/articles/Article';
+  import IndexBlurb from '$components/index/IndexBlurb.svelte';
+  import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
+  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
+  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
+  import IndexServices from '$components/index/IndexServices.svelte';
+  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
   import Banner from '$lib/media/Banner.svelte';
   import { state } from '$lib/store/dark';
   import { seo } from '$lib/store/seo';
@@ -47,7 +47,7 @@
   {/if}
 </div>
 
-<section class="blurb skew gradient-dark-green">
+<section class="blurb skew-left gradient-dark-green">
   <div class="column pad gaps-y">
     <IndexBlurb />
   </div>
@@ -57,7 +57,7 @@
   <IndexSerenityPrayer />
 </section>
 
-<section class="whakatauki skew gradient-dark-green">
+<section class="whakatauki skew-right gradient-dark-green">
   <div class="column pad gaps-y">
     <IndexWhakatauki />
   </div>
@@ -70,22 +70,6 @@
 <style lang="postcss">
   div.root {
     transition-duration: 1000ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  section.blurb {
-    @apply -skew-y-2 bg-gradient-to-bl;
-  }
-
-  section.blurb > * {
-    @apply skew-y-2;
-  }
-
-  section.whakatauki {
-    @apply skew-y-2 bg-gradient-to-br;
-  }
-
-  section.whakatauki > * {
-    @apply -skew-y-2;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
   }
 </style>

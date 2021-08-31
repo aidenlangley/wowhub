@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Link from '$lib/content/Link.svelte';
+  import Link from '$lib/components/Link.svelte';
 </script>
 
 <!--
@@ -32,6 +32,12 @@
 <style lang="postcss">
   footer.page-footer {
     border-top-width: 1px;
+    display: grid;
+    grid-auto-flow: col;
+    padding: 0.5rem; /* 8px */
+    place-content: center end;
+    place-items: center end;
+
     @apply text-white bg-gray-900 border-gray-300;
   }
 
@@ -39,17 +45,9 @@
     @apply bg-black border-gray-800;
   }
 
-  footer.page-footer {
-    padding: 0.5rem; /* 8px */
-
-    display: grid;
-    grid-auto-flow: col;
-    place-items: center end;
-    place-content: center end;
-  }
-
   footer.page-footer * {
     letter-spacing: -0.025em;
+
     @apply text-gray-300;
   }
 

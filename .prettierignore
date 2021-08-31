@@ -8,6 +8,7 @@ static
 .gitignore
 .eslintignore
 .prettierrc
+.stylelintignore
 .editorconfig
 
 # Ignore these file types, usually config, or shpecial

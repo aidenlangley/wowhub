@@ -1,12 +1,10 @@
 <script lang="ts">
   import { assets } from '$app/paths';
-  import '$css/layout.postcss';
-  import '$css/tailwind.postcss';
   import Footer from '$lib/layout/Footer.svelte';
   import Header from '$lib/layout/header/Header.svelte';
   import Seo from '$lib/Seo.svelte';
   import { state } from '$lib/store/dark';
-  import '../app.scss';
+  import '../app.postcss';
 
   $: dark = $state.dark;
 </script>
@@ -14,12 +12,11 @@
 <!--
   @component
   Default layout.
+  - Inject Seo component.
   - Adds root element for controlling `dark` class.
   - Injects `Header` & `Footer`.
-  - Grabs background image from assets and layers another div below to achieve
+  - Grabs background image from assets and layers another div below to provide
     opacity.
-  - Applies `grid`, top & bottom padding and defines gaps between grid items.
-  - Defines some `global` CSS styling.
 -->
 
 <!-- `svelte:head` with `title` & `meta` tags. -->
@@ -27,7 +24,7 @@
 
 <div class="root" class:dark>
   <Header />
-  <main style="background-image: url({assets}/images/drawing.png)">
+  <main style="background-image: url({assets}/images/drawing.png);">
     <!-- Opacity provider `div`. -->
     <div class="padding">
       <slot />
@@ -42,13 +39,16 @@
   }
 
   div.root > main {
-    background-position: top;
     background-blend-mode: difference;
-    @apply bg-white;
+    background-color: theme('backgroundColor.white');
 
-    transition-property: background-color;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Background */
+    background-position: top;
     transition-duration: 1000ms;
+
+    /* Animations */
+    transition-property: background-color;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
   }
 
   div.root > main > div {
@@ -57,7 +57,8 @@
 
   div.root.dark > main {
     background-blend-mode: hard-light;
-    @apply bg-gray-900 text-white;
+    background-color: theme('colors.gray.900');
+    color: theme('colors.white');
   }
 
   div.root.dark > main > div {

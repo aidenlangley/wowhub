@@ -12,24 +12,14 @@ const rem = (px) => `${round(px / 16)}rem`;
 
 const config = {
   mode: 'jit',
-  purge: ['./src/**/*.{postcss,svelte}'],
+  purge: ['./src/**/*.{js,ts,svelte,svx,css,postcss}'],
   theme: {
     screens: {
-      tyd: { max: em(513) },
       ty: em(514),
-
-      smd: { max: em(639) },
       sm: em(640),
-
-      mdd: { max: em(767) },
       md: em(768),
-
-      lgd: { max: em(1023) },
       lg: em(1024),
-
-      xld: { max: em(1279) },
       xl: em(1280),
-
       wide: { max: em(2560) },
     },
     extend: {
@@ -85,10 +75,10 @@ const config = {
         128: [rem(128), '1'], // 9xl 8 rem
       },
       fontFamily: {
-        sans: ['Inter'],
-        serif: ['"Roboto Slab"'],
-        mono: ['"Fira Code"'],
-        display: ['"Permanent Marker"'],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
+        mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
+        display: ['"Permanent Marker"', ...defaultTheme.fontFamily.serif],
       },
       borderWidth: {
         10: '10px',

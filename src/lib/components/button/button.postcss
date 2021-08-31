@@ -1,0 +1,82 @@
+@layer components {
+  .button {
+    align-items: center;
+    background-color: theme('colors.gray.100');
+    border-color: theme('colors.gray.300');
+    border-radius: theme('borderRadius.md');
+    border-width: theme('borderWidth.DEFAULT');
+    box-shadow: theme('boxShadow.DEFAULT');
+    column-gap: theme('gap.1');
+    display: inline-grid;
+    font-family: theme('fontFamily.mono');
+    font-size: theme('fontSize.18');
+    font-weight: theme('fontWeight.medium');
+    grid-auto-flow: column;
+    justify-content: center;
+    letter-spacing: theme('letterSpacing.tight');
+    padding: theme('padding.2');
+    transition-duration: 200ms;
+    transition-property: background-color, border-color, color, transform;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
+    vertical-align: middle;
+
+    &:hover,
+    &:focus {
+      color: theme('colors.green.700');
+    }
+
+    @nest .dark & {
+      background-color: theme('colors.gray.900');
+      border-color: theme('colors.gray.700');
+
+      &:hover,
+      &:focus {
+        color: theme('colors.green.300');
+      }
+    }
+
+    &.blue {
+      background-color: theme('colors.blue.600');
+      border-color: theme('colors.blue.400');
+      color: theme('colors.white');
+
+      &:hover,
+      &:focus {
+        color: theme('colors.blue.200');
+      }
+    }
+  }
+
+  @screen ty {
+    .button {
+      padding: theme('padding.3');
+    }
+  }
+
+  @screen sm {
+    .button {
+      column-gap: theme('gap.2');
+      padding: theme('padding.4');
+    }
+  }
+
+  @screen md {
+    .button {
+      font-size: theme('fontSize.20');
+    }
+  }
+
+  @screen lg {
+    .button {
+      font-size: theme('fontSize.22');
+      padding: theme('padding.5');
+    }
+  }
+
+  @screen xl {
+    .button {
+      font-size: theme('fontSize.24');
+      padding: theme('padding.6');
+    }
+  }
+}

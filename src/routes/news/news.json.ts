@@ -1,4 +1,4 @@
-import type { Article } from '$lib/content/articles/Article';
+import type { Article } from '$components/articles/Article.d';
 
 export async function get(): Promise<{
   body: { news: Article[] };

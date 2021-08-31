@@ -1,0 +1,77 @@
+@layer utilities {
+  .pad {
+    padding-bottom: theme('padding.6');
+    padding-top: theme('padding.6');
+  }
+
+  .pad-b {
+    padding-bottom: theme('padding.4');
+  }
+
+  .gaps-y {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: theme('gap.4');
+  }
+
+  .text-shadow {
+    text-shadow: theme('boxShadow.inner');
+  }
+
+  .text-shadow-md {
+    text-shadow: theme('boxShadow.md');
+  }
+
+  .text-shadow-lg {
+    text-shadow: theme('boxShadow.xl');
+  }
+
+  .text-shadow-none {
+    text-shadow: theme('boxShadow.none');
+  }
+
+  @screen sm {
+    .pad {
+      padding-bottom: theme('padding.8');
+      padding-top: theme('padding.8');
+    }
+
+    .pad-b {
+      padding-bottom: theme('padding.8');
+    }
+
+    .gaps-y {
+      row-gap: theme('gap.4');
+    }
+  }
+
+  @screen md {
+    .pad {
+      padding-bottom: theme('padding.10');
+      padding-top: theme('padding.10');
+    }
+
+    .pad-b {
+      padding-bottom: theme('padding.10');
+    }
+
+    .gaps-y {
+      row-gap: theme('gap.6');
+    }
+  }
+
+  @screen lg {
+    .pad {
+      padding-bottom: theme('padding.14');
+      padding-top: theme('padding.14');
+    }
+
+    .pad-b {
+      padding-bottom: theme('padding.14');
+    }
+
+    .gaps-y {
+      row-gap: theme('gap.8');
+    }
+  }
+}
