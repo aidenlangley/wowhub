@@ -4,7 +4,7 @@
   import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
   import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
-  import IndexServices from '$components/index/IndexServices.svelte';
+  import IndexServices from '$lib/components/index/services/IndexServices.svelte';
   import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
   import Banner from '$lib/media/Banner.svelte';
   import { state } from '$lib/store/dark';

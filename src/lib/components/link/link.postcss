@@ -1,0 +1,44 @@
+a.link {
+  align-items: center;
+  column-gap: theme('gap.1');
+  display: inline-grid;
+  grid-auto-flow: column;
+  justify-content: start;
+
+  &:not(.button) {
+    color: theme('colors.blue.600');
+    font-family: theme('fontFamily.mono');
+    font-weight: theme('fontWeight.medium');
+
+    &:hover,
+    &:focus {
+      color: theme('colors.blue.400');
+      text-decoration: underline;
+
+      &:visited {
+        color: theme('colors.purple.400');
+      }
+    }
+
+    &:visited {
+      color: theme('colors.purple.600');
+    }
+
+    @nest :global(.dark) & {
+      color: theme('colors.blue.400');
+
+      &:hover,
+      &:focus {
+        color: theme('colors.purple.200');
+
+        &:visited {
+          color: theme('colors.purple.200');
+        }
+      }
+
+      &:visited {
+        color: theme('colors.purple.400');
+      }
+    }
+  }
+}

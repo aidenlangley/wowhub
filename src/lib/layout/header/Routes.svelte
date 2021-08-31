@@ -1,7 +1,7 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import Tooltip from '$components/Tooltip.svelte';
-  import { routes } from '$lib/store/routes';
+  import { routes } from '$store/routes';
 </script>
 
 <!--
@@ -30,102 +30,85 @@
 
 <style lang="postcss">
   nav > ol {
-    column-gap: 0.25rem; /* 4px */
+    column-gap: theme('gap.1');
     display: grid;
     grid-auto-flow: column;
     place-content: center;
     place-items: center;
     place-self: center;
-  }
 
-  nav > ol > li a {
-    font-size: 1rem; /* 16px */
-    font-weight: 500;
-    letter-spacing: -0.05em;
-    line-height: 1.5rem; /* 24px */
-    transition-duration: 150ms;
-  }
-
-  nav > ol > li:hover a:not(.active),
-  nav > ol > li:focus a:not(.active) {
-    text-decoration: underline;
-
-    @apply text-green-300;
-  }
-
-  nav > ol > li a.active {
-    border-bottom-width: 2px;
-    font-size: 1.125rem; /* 18px */
-    font-weight: 700;
-    letter-spacing: -0.05em;
-    line-height: 1.5rem; /* 24px */
-    pointer-events: none;
-
-    @apply text-black bg-white border-green-300;
-  }
-
-  @screen ty {
-    nav > ol {
+    @screen ty {
       column-gap: 0.5rem; /* 8px */
     }
 
-    nav > ol > li a {
-      font-size: 1.375rem; /* 22px */
-      line-height: 1.75rem; /* 28px */
-    }
+    & > li {
+      font-weight: theme('fontWeight.medium');
+      letter-spacing: theme('letterSpacing.tighter');
+      transition-duration: 150ms;
 
-    nav > ol > li a.active {
-      border-bottom-width: 4px;
-      font-size: 1.5rem; /* 24px */
-      line-height: 1.75rem; /* 28px */
-    }
-  }
+      @apply text-base;
 
-  @screen sm {
-    nav > ol > li a {
-      font-size: 1.625rem; /* 26px */
-      line-height: 1.75rem; /* 28px */
-    }
+      @screen ty {
+        @apply text-22;
+      }
 
-    nav > ol > li a.active {
-      font-size: 1.75rem; /* 28px */
-      line-height: 2rem; /* 32px */
-    }
-  }
+      @screen sm {
+        @apply text-26;
+      }
 
-  @screen md {
-    nav > ol > li a {
-      font-size: 1.75rem; /* 28px */
-      line-height: 2rem; /* 32px */
-    }
+      @screen md {
+        @apply text-28;
+      }
 
-    nav > ol > li a.active {
-      font-size: 1.875rem; /* 30px */
-      line-height: 2rem; /* 32px */
-    }
-  }
+      @screen lg {
+        @apply text-30;
+      }
 
-  @screen lg {
-    nav > ol > li a {
-      font-size: 1.875rem; /* 30px */
-      line-height: 2rem; /* 32px */
-    }
+      @screen xl {
+        @apply text-38;
+      }
 
-    nav > ol > li a.active {
-      font-size: 2rem; /* 32px */
-      line-height: 2.25rem; /* 36px */
-    }
-  }
+      &:hover,
+      &:focus {
+        & a:not(.active) {
+          color: theme('colors.green.300');
+          text-decoration: underline;
+        }
+      }
 
-  @screen xl {
-    nav > ol > li a {
-      font-size: 2.375rem; /* 38px */
-      line-height: 2.5rem; /* 40px */
-    }
+      & a.active {
+        background-color: theme('colors.white');
+        border-bottom-width: theme('borderWidth.2');
+        border-color: theme('colors.green.300');
+        color: theme('colors.black');
+        font-weight: theme('fontWeight.bold');
+        letter-spacing: theme('letterSpacing.tighter');
+        pointer-events: none;
 
-    nav > ol > li a.active {
-      font-size: 2.5rem; /* 40px */
-      line-height: 2.5rem; /* 40px */
+        @apply text-18;
+
+        @screen ty {
+          border-bottom-width: theme('borderWidth.4');
+
+          @apply text-24;
+        }
+
+        @screen sm {
+          @apply text-28;
+        }
+
+        @screen md {
+          @apply text-30;
+        }
+
+        @screen lg {
+          @apply text-32;
+        }
+
+        @screen xl {
+          @apply text-40;
+        }
+      }
     }
   }
 </style>

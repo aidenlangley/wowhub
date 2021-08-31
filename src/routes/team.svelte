@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { seo } from '$lib/store/seo';
+  import TeamMembers from '$components/team/TeamMembers.svelte';
+  import { seo } from '$store/seo';
 
   $seo = {
     title: 'Ngā kaimahi',
@@ -12,6 +13,10 @@
   @component
   Meet the team.
 -->
+<div class="column pad gaps-y">
+  <TeamMembers />
+</div>
+
 <div class="pb-4 dark:text-white">
   <h1 class="p-4 text-center">
     <span

@@ -30,6 +30,7 @@ const config = {
           $components: path.resolve('./src/lib/components'),
           $layout: path.resolve('./src/lib/layout'),
           $media: path.resolve('./src/lib/media'),
+          $store: path.resolve('./src/lib/store'),
           $images: path.resolve('./static/images'),
         },
       },

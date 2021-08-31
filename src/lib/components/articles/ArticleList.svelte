@@ -20,15 +20,12 @@
 <style lang="postcss">
   ol {
     display: grid;
-    letter-spacing: -0.025em;
-    padding-top: 0.5rem /* 8px */;
-    row-gap: 0.5rem; /* 8px */
-  }
+    letter-spacing: theme('letterSpacing.tight');
+    padding-top: theme('padding.2');
+    row-gap: theme('gap.2');
 
-  @screen sm {
-    ol {
-      font-size: 1.125rem; /* 18px */
-      line-height: 1.5rem; /* 24px */
+    @screen sm {
+      @apply text-18;
     }
   }
 </style>

@@ -15,3 +15,7 @@ static
 **/*.json
 **/*.md
 **/*.svx
+
+# stylelint has this covered
+**/*.postcss
+**/*.css

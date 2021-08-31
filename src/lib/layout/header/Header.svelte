@@ -1,6 +1,6 @@
 <script lang="ts">
-  import DarkToggle from '$lib/layout/header/DarkToggle.svelte';
-  import Logo from '$lib/media/Logo.svelte';
+  import DarkToggle from '$layout/header/DarkToggle.svelte';
+  import Logo from '$media/Logo.svelte';
   import Routes from './Routes.svelte';
 </script>
 
@@ -18,40 +18,35 @@
 <style lang="postcss">
   header {
     background-color: theme('colors.gray.900');
-    border-bottom-width: 1px;
+    border-bottom-width: theme('borderWidth.DEFAULT');
     border-color: theme('colors.gray.300');
     color: theme('colors.white');
     display: grid;
     grid-template-columns: 0 auto 0;
-    max-height: 96px;
-    padding: 1rem; /* 16px */
+    max-height: theme('height.24');
+    padding: theme('padding.4');
     place-content: center;
     place-items: center;
     transition-duration: 1000ms;
-  }
 
-  :global(.dark) header {
-    @apply bg-black border-gray-800;
-  }
+    @nest :global(.dark) & {
+      background-color: theme('colors.black');
+      border-color: theme('colors.gray.800');
+    }
 
-  @screen ty {
-    header {
+    @screen ty {
       /* 5% auto 5% */
       grid-template-columns: 1fr 18fr 1fr;
     }
-  }
 
-  @screen sm {
-    header {
-      padding: 1.25rem; /* 20 px */
+    @screen sm {
+      padding: theme('padding.5');
     }
-  }
 
-  @screen lg {
-    header {
+    @screen lg {
       /* 4% auto 4% */
       grid-template-columns: 1fr 23fr 1fr;
-      padding: 1.5rem; /* 24px */
+      padding: theme('padding.6');
     }
   }
 </style>

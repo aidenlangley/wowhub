@@ -8,18 +8,15 @@
 
 <style lang="postcss">
   h3 {
-    font-size: 1.125rem; /* 18px */
-    font-weight: 300;
-    letter-spacing: -0.025em;
-    line-height: 1.5rem; /* 24px */
-    padding-bottom: 0.5rem; /* 8px */
-    padding-top: 0.5rem; /* 8px */
-  }
+    @apply text-18;
 
-  @screen sm {
-    h3 {
-      font-size: 1.375rem; /* 22px */
-      line-height: 1.75rem; /* 28px */
+    font-weight: theme('fontWeight.light');
+    letter-spacing: theme('letterSpacing.tight');
+    padding-bottom: theme('padding.2');
+    padding-top: theme('padding.2');
+
+    @screen sm {
+      @apply text-22;
     }
   }
 </style>

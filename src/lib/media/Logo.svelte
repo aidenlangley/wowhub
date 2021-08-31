@@ -16,7 +16,7 @@
 <style class="postcss">
   /* Since it's a tall image, not square, we'll hack it up a lil. */
   img {
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
+    padding-bottom: theme('padding.2');
+    padding-top: theme('padding.2');
   }
 </style>

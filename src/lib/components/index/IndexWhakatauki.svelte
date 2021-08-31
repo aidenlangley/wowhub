@@ -29,55 +29,54 @@
 </div>
 
 <style lang="postcss">
-  div.headings > h1 {
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: -0.025em;
-    padding-bottom: 1rem; /* 16px */
+  div.headings {
+    font-family: theme('fontFamily.serif');
 
-    @apply font-serif text-34;
-  }
+    & > h1 {
+      font-style: italic;
+      font-weight: theme('fontWeight.medium');
+      letter-spacing: theme('letterSpacing.tight');
+      padding-bottom: theme('padding.4');
 
-  div.headings > h2 {
-    text-align: right;
+      @apply text-34;
 
-    @apply font-serif text-22 text-gray-100;
-  }
+      @screen sm {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: theme('gap.2');
+        text-align: center;
 
-  @screen sm {
-    div.headings > h1 {
-      display: grid;
-      grid-auto-flow: row;
-      row-gap: 0.5rem;
-      text-align: center;
+        @apply text-42;
+      }
 
-      @apply text-42;
+      @screen md {
+        @apply text-44;
+      }
+
+      @screen lg {
+        @apply text-56;
+      }
+
+      @screen xl {
+        @apply text-72;
+      }
     }
 
-    div.headings > h2 {
-      text-align: center;
-    }
-  }
+    & > h2 {
+      color: theme('colors.gray.200');
+      text-align: right;
 
-  @screen md {
-    div.headings > h1 {
-      @apply text-44;
-    }
-  }
+      @apply text-22;
 
-  @screen lg {
-    div.headings > h1 {
-      @apply text-56;
-    }
+      @screen sm {
+        text-align: center;
+      }
 
-    div.headings > h2 {
-      @apply text-32;
-    }
-  }
+      @screen lg {
+        font-weight: theme('fontWeight.light');
 
-  @screen xl {
-    div.headings > h1 {
-      @apply text-72;
+        @apply text-32;
+      }
     }
   }
 </style>

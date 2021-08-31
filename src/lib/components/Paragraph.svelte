@@ -8,31 +8,23 @@
 
 <style lang="postcss">
   p {
-    letter-spacing: -0.05em;
-    padding-bottom: 0.25rem; /* 4px */
-    padding-top: 0.25rem; /* 4px */
-  }
+    letter-spacing: theme('letterSpacing.tighter');
+    padding-bottom: theme('padding.1');
+    padding-top: theme('padding.1');
 
-  @screen md {
-    p {
-      font-size: 1.125rem; /* 18px */
-      letter-spacing: -0.025em;
-      line-height: 1.5rem; /* 24px */
+    @screen md {
+      @apply text-18;
     }
-  }
 
-  @screen lg {
-    p {
-      padding-bottom: 0.5rem; /* 8px */
-      padding-top: 0.5rem; /* 8px */
+    @screen lg {
+      padding-bottom: theme('padding.2');
+      padding-top: theme('padding.2');
     }
-  }
 
-  @screen xl {
-    p {
-      font-size: 1.25rem; /* 20px */
-      line-height: 1.625;
-      line-height: 1.75rem; /* 28px */
+    @screen xl {
+      line-height: theme('lineHeight.relaxed');
+
+      @apply text-20;
     }
   }
 </style>

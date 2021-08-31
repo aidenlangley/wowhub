@@ -38,6 +38,9 @@
       "$media/*": [
         "src/lib/media/*"
       ],
+      "$store/*": [
+        "src/lib/store/*"
+      ],
       "$images/*": [
         "static/images/*"
       ],

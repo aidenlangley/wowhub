@@ -5,24 +5,18 @@
 <style lang="postcss">
   h1 {
     font-family: theme('fontFamily.serif');
-    font-size: 1.75rem; /* 28px */
-    font-weight: bold;
-    line-height: 2rem; /* 32px */
-    padding-bottom: 0.5rem;
-    padding-top: 0.5rem;
-  }
+    font-weight: theme('fontWeight.bold');
+    padding-bottom: theme('padding.2');
+    padding-top: theme('padding.2');
 
-  @screen sm {
-    h1 {
-      font-size: 2.625rem; /* 42px */
-      line-height: 2.5rem; /* 40px */
+    @apply text-28;
+
+    @screen sm {
+      @apply text-42;
     }
-  }
 
-  @screen lg {
-    h1 {
-      font-size: 4rem; /* 64px */
-      line-height: 1;
+    @screen lg {
+      @apply text-64;
     }
   }
 </style>

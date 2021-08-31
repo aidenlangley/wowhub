@@ -10,7 +10,7 @@
 		"lint:es": "eslint .",
 		"lint:style": "stylelint .",
 		"lint:style:fix": "stylelint . --fix",
-		"build": "npm run check && npm run lint && svelte-kit build",
+		"build": "npm run lint && svelte-kit build",
 		"build:deploy": "npm run build && npm run deploy",
 		"build:preview": "npm run build && npm run preview",
 		"deploy": "git add docs && git commit -m '🚀 deploy docs!' && git push",

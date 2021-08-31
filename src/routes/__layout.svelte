@@ -1,10 +1,9 @@
 <script lang="ts">
   import { assets } from '$app/paths';
-  import Footer from '$lib/layout/Footer.svelte';
-  import Header from '$lib/layout/header/Header.svelte';
+  import Footer from '$lib/layout/footer/Footer.svelte';
+  import Header from '$layout/header/Header.svelte';
   import Seo from '$lib/Seo.svelte';
-  import { state } from '$lib/store/dark';
-  import '../app.postcss';
+  import { state } from '$store/dark';
 
   $: dark = $state.dark;
 </script>
@@ -33,35 +32,35 @@
   <Footer />
 </div>
 
-<style lang="postcss">
-  :global(body) {
+<style lang="postcss" global>
+  @import '../app.postcss';
+
+  body {
     min-width: 360px;
   }
 
-  div.root > main {
-    background-blend-mode: difference;
-    background-color: theme('backgroundColor.white');
+  div.root {
+    & > main {
+      background-blend-mode: difference;
+      background-color: theme('backgroundColor.white');
+      background-position: top;
+      transition-duration: 1000ms;
+      transition-property: background-color;
+      transition-timing-function: theme('transitionTimingFunction.in-out');
 
-    /* Background */
-    background-position: top;
-    transition-duration: 1000ms;
+      & > div {
+        @apply bg-white/80;
+      }
+    }
 
-    /* Animations */
-    transition-property: background-color;
-    transition-timing-function: theme('transitionTimingFunction.in-out');
-  }
+    &.dark > main {
+      background-blend-mode: hard-light;
+      background-color: theme('colors.gray.900');
+      color: theme('colors.white');
 
-  div.root > main > div {
-    @apply bg-white/80;
-  }
-
-  div.root.dark > main {
-    background-blend-mode: hard-light;
-    background-color: theme('colors.gray.900');
-    color: theme('colors.white');
-  }
-
-  div.root.dark > main > div {
-    @apply bg-black/70;
+      & > div {
+        @apply bg-black/70;
+      }
+    }
   }
 </style>

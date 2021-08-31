@@ -1,18 +1,16 @@
-<script lang="ts">
-  import Link from '$lib/components/Link.svelte';
-</script>
-
 <!--
   @component
   `Footer` contains information regarding the other businesses associated with
   wowhub (loosely.)
 -->
-<footer class="page-footer">
-  <Link
+<footer>
+  <a
     href="https://github.com/aidenlangley"
-    label="link to website authors' GitHub page"
+    target="_blank"
+    rel="noopener external"
+    aria-label="link to website authors' GitHub page"
   >
-    <span>by aidenlangley</span>
+    by aidenlangley
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -26,38 +24,9 @@
         fill="currentColor"
       />
     </svg>
-  </Link>
+  </a>
 </footer>
 
 <style lang="postcss">
-  footer.page-footer {
-    border-top-width: 1px;
-    display: grid;
-    grid-auto-flow: col;
-    padding: 0.5rem; /* 8px */
-    place-content: center end;
-    place-items: center end;
-
-    @apply text-white bg-gray-900 border-gray-300;
-  }
-
-  :global(.dark) footer.page-footer {
-    @apply bg-black border-gray-800;
-  }
-
-  footer.page-footer * {
-    letter-spacing: -0.025em;
-
-    @apply text-gray-300;
-  }
-
-  footer.page-footer *:hover,
-  footer.page-footer *:focus {
-    @apply text-gray-100;
-  }
-
-  footer.page-footer svg {
-    max-height: 1.5rem;
-    max-width: 1.5rem;
-  }
+  @import './footer.postcss';
 </style>

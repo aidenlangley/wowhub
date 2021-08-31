@@ -9,13 +9,14 @@
 <style lang="postcss">
   span {
     @apply bg-white/50;
-  }
 
-  :global(.dark) span.span {
-    @apply bg-black/50;
-  }
+    @nest :global(.dark) & {
+      @apply bg-black/50;
+    }
 
-  span.under-line {
-    @apply border-b-4 border-green-300;
+    &.under-line {
+      border-bottom-width: theme('borderWidth.4');
+      border-color: theme('colors.green.300');
+    }
   }
 </style>

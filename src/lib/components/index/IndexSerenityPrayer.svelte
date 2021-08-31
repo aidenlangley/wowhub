@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Link from '../Link.svelte';
+  import Link from '../link/Link.svelte';
 </script>
 
 <!--
@@ -39,226 +39,152 @@
 <style lang="postcss">
   div.passage {
     text-align: center;
+
+    & > p {
+      font-family: theme('fontFamily.serif');
+      font-weight: theme('fontWeight.light');
+      letter-spacing: theme('letterSpacing.tighter');
+
+      @apply text-20;
+
+      @screen sm {
+        @apply text-24;
+      }
+
+      @screen md {
+        @apply text-28;
+      }
+
+      @screen lg {
+        @apply text-36;
+      }
+
+      & > span.god {
+        font-weight: theme('fontWeight.medium');
+
+        @apply text-24;
+
+        @screen sm {
+          @apply text-32;
+        }
+
+        @screen lg {
+          @apply text-48;
+        }
+      }
+
+      & > span.serenity {
+        color: theme('colors.blue.500');
+
+        @apply text-28;
+
+        @screen sm {
+          @apply text-36;
+        }
+
+        @screen lg {
+          @apply text-64;
+        }
+      }
+
+      & > span.accept {
+        color: theme('colors.green.500');
+        font-weight: theme('fontWeight.medium');
+
+        @apply text-26;
+
+        @screen sm {
+          @apply text-34;
+        }
+
+        @screen lg {
+          @apply text-48;
+        }
+      }
+
+      & > span.cannot-change {
+        color: theme('colors.orange.500');
+        font-weight: theme('fontWeight.bold');
+
+        @apply text-22;
+
+        @screen sm {
+          @apply text-30;
+        }
+
+        @screen lg {
+          @apply text-56;
+        }
+      }
+
+      & > span.courage {
+        color: theme('colors.red.500');
+        font-weight: theme('fontWeight.bold');
+
+        @apply text-28;
+
+        @screen sm {
+          @apply text-36;
+        }
+
+        @screen lg {
+          @apply text-56;
+        }
+      }
+
+      & > span.change {
+        color: theme('colors.gray.600');
+        font-weight: theme('fontWeight.bold');
+
+        @apply text-26;
+
+        @screen sm {
+          @apply text-34;
+        }
+
+        @screen lg {
+          @apply text-56;
+        }
+
+        @nest :global(.dark) & {
+          color: theme('colors.gray.400');
+        }
+      }
+
+      & > span.wisdom {
+        color: theme('colors.purple.500');
+        font-weight: theme('fontWeight.bold');
+
+        @apply text-32;
+
+        @screen sm {
+          @apply text-40;
+        }
+
+        @screen lg {
+          @apply text-64;
+        }
+      }
+
+      & > span.difference {
+        color: theme('colors.yellow.500');
+        font-weight: theme('fontWeight.medium');
+
+        @apply text-28;
+
+        @screen sm {
+          @apply text-36;
+        }
+
+        @screen lg {
+          @apply text-56;
+        }
+      }
+    }
   }
 
-  div.passage > p {
-    font-family: theme('fontFamily.serif');
-    font-size: 1.25rem; /* 20px */
-    font-weight: 300;
-    letter-spacing: -0.05em;
-    line-height: 1.25;
-    line-height: 1.75rem; /* 28px */
-  }
-
-  div.passage > p > span.god {
-    font-size: 1.5rem; /* 24px */
-    font-weight: 500;
-    line-height: 1.75rem; /* 28px */
-  }
-
-  div.passage > p > span.serenity {
-    font-size: 1.75rem; /* 28px */
-    font-weight: 700;
-    line-height: 2rem; /* 32px */
-
-    @apply text-blue-500;
-  }
-
-  div.passage > p > span.accept {
-    font-size: 1.625rem; /* 26px */
-    font-weight: 500;
-    line-height: 1.75rem; /* 28px */
-
-    @apply text-green-500;
-  }
-
-  div.passage > p > span.cannot-change {
-    font-size: 1.375rem; /* 22px */
-    font-weight: bold;
-    line-height: 1.75rem; /* 28px */
-
-    @apply text-orange-500;
-  }
-
-  div.passage > p > span.courage {
-    font-size: 1.75rem; /* 28px */
-    font-weight: bold;
-    line-height: 2rem; /* 32px */
-
-    @apply text-red-500;
-  }
-
-  div.passage > p > span.change {
-    font-size: 1.625rem; /* 26px */
-    font-weight: bold;
-    line-height: 1.75rem; /* 28px */
-
-    @apply text-gray-600;
-  }
-
-  :global(.dark) div.passage > p > span.change {
-    @apply text-gray-400;
-  }
-
-  div.passage > p > span.wisdom {
-    font-size: 2rem; /* 32px */
-    font-weight: bold;
-    line-height: 2.25rem; /* 36px */
-
-    @apply text-purple-500;
-  }
-
-  div.passage > p > span.difference {
-    font-size: 1.75rem; /* 28px */
-    font-weight: 500;
-    line-height: 2rem; /* 32px */
-
-    @apply text-yellow-500;
-  }
-
-  .source {
-    padding: 0.25rem;
+  div.source {
+    padding: theme('padding.1');
     text-align: right;
-  }
-
-  @screen sm {
-    div.passage > p {
-      font-size: 1.5rem; /* 24px */
-      line-height: 1.75rem; /* 28px */
-    }
-
-    div.passage > p > span.god {
-      font-size: 2rem; /* 32px */
-      line-height: 2.25rem; /* 36px */
-    }
-
-    div.passage > p > span.serenity {
-      font-size: 2.25rem; /* 36px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.accept {
-      font-size: 2.125rem; /* 34px */
-      line-height: 2.25rem; /* 36px */
-    }
-
-    div.passage > p > span.cannot-change {
-      font-size: 1.875rem; /* 30px */
-      line-height: 2rem; /* 32px */
-    }
-
-    div.passage > p > span.courage {
-      font-size: 2.25rem; /* 36px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.change {
-      font-size: 2.125rem; /* 34px */
-      line-height: 2.25rem; /* 36px */
-    }
-
-    div.passage > p > span.wisdom {
-      font-size: 2.5rem; /* 40px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.difference {
-      font-size: 2.25rem; /* 36px */
-      line-height: 2.5rem; /* 40px */
-    }
-  }
-
-  @screen md {
-    div.passage > p {
-      font-size: 2rem; /* 32px */
-      line-height: 2.25rem; /* 36px */
-    }
-
-    div.passage > p > span.god {
-      font-size: 2.5rem; /* 40px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.serenity {
-      font-size: 2.75rem; /* 44px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.accept {
-      font-size: 2.625rem; /* 42px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.cannot-change {
-      font-size: 2.375rem; /* 38px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.courage {
-      font-size: 2.75rem; /* 44px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.change {
-      font-size: 2.625rem; /* 42px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.wisdom {
-      font-size: 3rem; /* 48px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.difference {
-      font-size: 2.75rem; /* 44px */
-      line-height: 2.5rem; /* 40px */
-    }
-  }
-
-  @screen lg {
-    div.passage > p {
-      font-size: 2.25rem; /* 36px */
-      line-height: 2.5rem; /* 40px */
-    }
-
-    div.passage > p > span.god {
-      font-size: 3rem; /* 48px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.serenity {
-      font-size: 4rem; /* 64px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.accept {
-      font-size: 3rem; /* 48px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.cannot-change {
-      font-size: 3.5rem; /* 56px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.courage {
-      font-size: 3.5rem; /* 56px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.change {
-      font-size: 3.5rem; /* 56px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.wisdom {
-      font-size: 4rem; /* 64px */
-      line-height: 1;
-    }
-
-    div.passage > p > span.difference {
-      font-size: 3.5rem; /* 56px */
-      line-height: 1;
-    }
   }
 </style>

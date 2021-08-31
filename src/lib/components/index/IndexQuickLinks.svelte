@@ -1,9 +1,9 @@
 <script lang="ts">
   import Heading3 from '$components/heading/Heading3.svelte';
-  import Link from '$components/Link.svelte';
+  import Link from '$lib/components/link/Link.svelte';
   import Span from '$components/Span.svelte';
-  import Icon from '$lib/media/Icon.svelte';
-  import { info } from '$lib/store/info';
+  import Icon from '$media/Icon.svelte';
+  import { info } from '$store/info';
   import { ExternalLink, Mail, Phone } from 'svelte-hero-icons';
 </script>
 
@@ -47,38 +47,35 @@
 
 <style lang="postcss">
   div.headings {
-    padding-top: 1rem; /* 16px */
+    padding-top: theme('padding.4');
 
     @screen sm {
+      border-color: theme('colors.gray.200');
       border-style: dotted;
-      border-top-width: 8px;
-
-      @apply border-gray-200;
+      border-top-width: theme('borderWidth.8');
 
       @nest :global(.dark) & {
-        @apply border-gray-800;
+        border-color: theme('colors.gray.800');
       }
     }
   }
 
   div.links {
     display: grid;
-    gap: 0.5rem; /* 8px */
-    padding-top: 0.5rem; /* 8px */
+    gap: theme('gap.2');
+    padding-top: theme('padding.2');
 
     & :global(.button):hover {
       @apply scale-105;
     }
 
     @screen sm {
-      gap: 1rem; /* 16px */
+      gap: theme('gap.4');
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-  }
 
-  @screen lg {
-    div.links {
-      gap: 1.5rem; /* 24px */
+    @screen lg {
+      gap: theme('gap.6');
     }
   }
 </style>
