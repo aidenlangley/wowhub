@@ -6,38 +6,45 @@ a.link {
   justify-content: start;
 
   &:not(.button) {
-    color: theme('colors.blue.600');
     font-family: theme('fontFamily.mono');
     font-weight: theme('fontWeight.medium');
 
     &:hover,
     &:focus {
-      color: theme('colors.blue.400');
       text-decoration: underline;
+    }
 
-      &:visited {
-        color: theme('colors.purple.400');
+    &:link {
+      color: theme('colors.blue.600');
+
+      @nest :global(.dark) & {
+        color: theme('colors.blue.400');
+      }
+
+      &:hover,
+      &:focus {
+        color: theme('colors.blue.400');
+
+        @nest :global(.dark) & {
+          color: theme('colors.blue.200');
+        }
       }
     }
 
     &:visited {
       color: theme('colors.purple.600');
-    }
 
-    @nest :global(.dark) & {
-      color: theme('colors.blue.400');
+      @nest :global(.dark) & {
+        color: theme('colors.purple.400');
+      }
 
       &:hover,
       &:focus {
-        color: theme('colors.purple.200');
+        color: theme('colors.purple.400');
 
-        &:visited {
+        @nest :global(.dark) & {
           color: theme('colors.purple.200');
         }
-      }
-
-      &:visited {
-        color: theme('colors.purple.400');
       }
     }
   }

@@ -13,42 +13,36 @@
 <style lang="postcss">
   span[data-tooltip] {
     position: relative;
-  }
 
-  span[data-tooltip]:hover::after {
-    border-radius: 0.25rem; /* 4px */
-    border-width: 1px;
+    &:hover,
+    &:focus {
+      &::after {
+        border-color: theme('colors.gray.700');
+        border-radius: theme('borderRadius.DEFAULT');
+        border-width: theme('borderWidth.DEFAULT');
+        box-shadow: theme('boxShadow.DEFAULT');
+        color: theme('colors.gray.100');
+        content: attr(data-tooltip);
+        font-family: theme('fontFamily.mono');
+        letter-spacing: theme('letterSpacing.tighter');
+        max-width: theme('maxWidth.xs');
+        padding: theme('padding.2');
+        position: absolute;
+        right: 10%;
+        top: 150%;
+        width: max-content;
+        z-index: 1;
 
-    /* Key styles for tooltip content (visibility) and position. */
-    content: attr(data-tooltip);
-    font-family: theme('fontFamily.mono');
-    font-size: 0.875rem; /* 14px */
-    letter-spacing: -0.05em;
-    line-height: 0.875rem; /* 14px */
-    max-width: 20rem; /* 320px */
+        @apply text-14 bg-gray-900/90;
 
-    /* Styling. */
-    padding: 0.5rem; /* 8px */
-    position: absolute;
-    right: 10%;
-    top: 150%;
-    width: max-content;
-    z-index: 1;
+        @screen ty {
+          @apply text-base;
+        }
 
-    @apply text-gray-100 bg-gray-900/90 border-gray-700 shadow;
-  }
-
-  @screen ty {
-    span[data-tooltip]:hover::after {
-      font-size: 1rem; /* 16px */
-      line-height: 1.5rem; /* 24px */
-    }
-  }
-
-  @screen lg {
-    span[data-tooltip]:hover::after {
-      font-size: 1.125rem; /* 18px */
-      line-height: 1.5rem; /* 24px */
+        @screen lg {
+          @apply text-18;
+        }
+      }
     }
   }
 </style>

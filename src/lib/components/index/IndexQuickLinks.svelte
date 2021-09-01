@@ -65,8 +65,8 @@
     gap: theme('gap.2');
     padding-top: theme('padding.2');
 
-    & :global(.button):hover {
-      @apply scale-105;
+    & :global(.button):hover,
+    & :global(.button):focus {
     }
 
     @screen sm {

@@ -30,8 +30,8 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="root column pad gaps-y">
-  <section class="pad">
+<div class="root column pad-y gaps-y">
+  <section class="pad-y">
     <Banner white={$state.dark} />
   </section>
 
@@ -47,23 +47,27 @@
   {/if}
 </div>
 
-<section class="blurb skew-left gradient-dark-green">
-  <div class="column pad gaps-y">
-    <IndexBlurb />
-  </div>
-</section>
+<div class="pad-x">
+  <section class="blurb skew-left gradient-dark-green">
+    <div class="column pad-y gaps-y">
+      <IndexBlurb />
+    </div>
+  </section>
+</div>
 
-<section aria-hidden="true" class="column pad">
+<section aria-hidden="true" class="column pad-y">
   <IndexSerenityPrayer />
 </section>
 
-<section class="whakatauki skew-right gradient-dark-green">
-  <div class="column pad gaps-y">
-    <IndexWhakatauki />
-  </div>
-</section>
+<div class="pad-x">
+  <section class="whakatauki skew-right gradient-dark-green">
+    <div class="column pad-y gaps-y">
+      <IndexWhakatauki />
+    </div>
+  </section>
+</div>
 
-<section aria-hidden="true" class="pad">
+<section aria-hidden="true" class="pad-y">
   <IndexServices />
 </section>
 

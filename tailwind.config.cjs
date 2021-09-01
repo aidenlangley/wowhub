@@ -22,6 +22,12 @@ const config = {
       xl: em(1280),
       wide: { max: em(2560) },
     },
+    fontFamily: {
+      sans: ['Inter', ...defaultTheme.fontFamily.sans],
+      serif: ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
+      mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
+      display: ['"Permanent Marker"', ...defaultTheme.fontFamily.serif],
+    },
     extend: {
       fontSize: {
         ty: [rem(12), '.75rem'],
@@ -74,12 +80,6 @@ const config = {
         '9xl': [rem(128), '1'],
         128: [rem(128), '1'], // 9xl 8 rem
       },
-      fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        serif: ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
-        mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
-        display: ['"Permanent Marker"', ...defaultTheme.fontFamily.serif],
-      },
       borderWidth: {
         10: '10px',
         12: '12px',
@@ -91,6 +91,17 @@ const config = {
         orange: colors.orange,
       },
       typography: (theme) => ({
+        sm: {
+          css: {
+            blockquote: {
+              backgroundColor: theme(
+                'colors.gray.50',
+                defaultTheme.colors.gray[50]
+              ),
+              borderLeftWidth: theme('borderWidth.2'),
+            },
+          },
+        },
         DEFAULT: {
           css: {
             color: theme('colors.black'),
@@ -98,9 +109,6 @@ const config = {
               'letterSpacing.tight',
               defaultTheme.letterSpacing.tight
             ),
-            h1: {
-              fontFamily: theme('fontFamily.serif'),
-            },
           },
         },
         dark: {
@@ -108,6 +116,9 @@ const config = {
             color: theme('colors.gray.100'),
             a: {
               color: theme('colors.green.300'),
+              '&:hover': {
+                color: theme('colors.green.200'),
+              },
             },
             strong: {
               color: theme('colors.gray.100'),

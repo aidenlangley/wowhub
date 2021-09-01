@@ -1,4 +1,6 @@
 <script lang="ts">
+  import UnderConstruction from '$lib/components/UnderConstruction.svelte';
+
   import { seo } from '$lib/store/seo';
 
   $seo = {
@@ -13,16 +15,8 @@
   @component
   Friends and affiliates.
 -->
-<div class="pb-4 dark:text-white">
-  <h1 class="p-4 text-center">
-    <span
-      class="
-        border-b-8 border-yellow-300
-        font-serif text-64
-        text-shadow
-      "
-    >
-      Under construction.
-    </span>
-  </h1>
+<div class="root column pad-y gaps-y">
+  <section class="under-construction">
+    <UnderConstruction />
+  </section>
 </div>

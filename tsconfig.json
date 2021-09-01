@@ -26,20 +26,38 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
+      "$lib": [
+        "src/lib"
+      ],
       "$lib/*": [
         "src/lib/*"
+      ],
+      "$components": [
+        "src/lib/components"
       ],
       "$components/*": [
         "src/lib/components/*"
       ],
+      "$layout": [
+        "src/lib/layout"
+      ],
       "$layout/*": [
         "src/lib/layout/*"
+      ],
+      "$media": [
+        "src/lib/media"
       ],
       "$media/*": [
         "src/lib/media/*"
       ],
+      "$store": [
+        "src/lib/store"
+      ],
       "$store/*": [
         "src/lib/store/*"
+      ],
+      "$images": [
+        "static/images"
       ],
       "$images/*": [
         "static/images/*"

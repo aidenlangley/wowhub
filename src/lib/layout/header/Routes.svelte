@@ -44,7 +44,6 @@
     & > li {
       font-weight: theme('fontWeight.medium');
       letter-spacing: theme('letterSpacing.tighter');
-      transition-duration: 150ms;
 
       @apply text-base;
 
@@ -68,45 +67,47 @@
         @apply text-38;
       }
 
-      &:hover,
-      &:focus {
-        & a:not(.active) {
-          color: theme('colors.green.300');
-          text-decoration: underline;
-        }
-      }
-
-      & a.active {
-        background-color: theme('colors.white');
-        border-bottom-width: theme('borderWidth.2');
-        border-color: theme('colors.green.300');
-        color: theme('colors.black');
-        font-weight: theme('fontWeight.bold');
-        letter-spacing: theme('letterSpacing.tighter');
-        pointer-events: none;
-
-        @apply text-18;
-
-        @screen ty {
-          border-bottom-width: theme('borderWidth.4');
-
-          @apply text-24;
+      & a {
+        &:not(.active) {
+          &:hover,
+          &:focus {
+            color: theme('colors.green.300');
+            text-decoration: underline;
+          }
         }
 
-        @screen sm {
-          @apply text-28;
-        }
+        &.active {
+          background-color: theme('colors.white');
+          border-bottom-width: theme('borderWidth.2');
+          border-color: theme('colors.green.300');
+          color: theme('colors.black');
+          font-weight: theme('fontWeight.bold');
+          letter-spacing: theme('letterSpacing.tighter');
+          pointer-events: none;
 
-        @screen md {
-          @apply text-30;
-        }
+          @apply text-18;
 
-        @screen lg {
-          @apply text-32;
-        }
+          @screen ty {
+            border-bottom-width: theme('borderWidth.4');
 
-        @screen xl {
-          @apply text-40;
+            @apply text-24;
+          }
+
+          @screen sm {
+            @apply text-28;
+          }
+
+          @screen md {
+            @apply text-30;
+          }
+
+          @screen lg {
+            @apply text-32;
+          }
+
+          @screen xl {
+            @apply text-40;
+          }
         }
       }
     }

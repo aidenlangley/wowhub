@@ -6,7 +6,7 @@
     border-radius: theme('borderRadius.md');
     border-width: theme('borderWidth.DEFAULT');
     box-shadow: theme('boxShadow.DEFAULT');
-    column-gap: theme('gap.1');
+    column-gap: theme('gap.2');
     display: inline-grid;
     font-family: theme('fontFamily.mono');
     font-weight: theme('fontWeight.medium');
@@ -14,26 +14,29 @@
     justify-content: center;
     letter-spacing: theme('letterSpacing.tight');
     padding: theme('padding.2');
-    transition-duration: 200ms;
-    transition-property: background-color, border-color, color, transform;
-    transition-timing-function: theme('transitionTimingFunction.in-out');
     vertical-align: middle;
 
     @apply text-18;
 
     &:hover,
     &:focus {
-      color: theme('colors.green.700');
+      background-color: theme('colors.gray.50');
+
+      @apply -translate-y-0.5 drop-shadow;
+
+      &:active {
+        @apply translate-y-0 drop-shadow-none;
+      }
+
+      @nest .dark & {
+        background-color: theme('colors.gray.800');
+        border-color: theme('colors.gray.600');
+      }
     }
 
     @nest .dark & {
       background-color: theme('colors.gray.900');
       border-color: theme('colors.gray.700');
-
-      &:hover,
-      &:focus {
-        color: theme('colors.green.300');
-      }
     }
 
     @screen ty {
@@ -41,7 +44,6 @@
     }
 
     @screen sm {
-      column-gap: theme('gap.2');
       padding: theme('padding.4');
     }
 
@@ -64,7 +66,8 @@
 
       &:hover,
       &:focus {
-        color: theme('colors.blue.200');
+        background-color: theme('colors.blue.500');
+        border-color: theme('colors.blue.300');
       }
     }
   }

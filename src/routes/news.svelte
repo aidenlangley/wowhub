@@ -47,7 +47,7 @@
 
 <script lang="ts">
   $seo = {
-    title: 'Panui',
+    title: 'Panui & other documents',
     description:
       'A blog from the Whakaoranga Whanau; news & updates from the community',
     robots: 'none',
@@ -57,7 +57,25 @@
   export let docs: Article[];
 </script>
 
-<div class="grid column pad gaps-y">
+<div class="root column pad gaps-y">
+  <!-- <aside>
+    <ol>
+      {#each news as article}
+        <li>
+          <Link href={article.slug} label={article.title} internal>
+            {article.title}
+          </Link>
+        </li>
+      {/each}
+    </ol>
+    <ol>
+      {#each docs as doc}
+        <li>
+          {doc.slug}
+        </li>
+      {/each}
+    </ol>
+  </aside> -->
   <section>
     <Heading>
       <Span underline>Panui</Span>
@@ -71,3 +89,15 @@
     <ArticleList articles={docs} />
   </section>
 </div>
+
+<style lang="postcss">
+  /* div.root {
+    & > aside {
+      display: hidden;
+
+      @screen md {
+        display: block;
+      }
+    }
+  } */
+</style>

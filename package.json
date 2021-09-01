@@ -2,7 +2,7 @@
 	"name": "wowhub",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev --host",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"prettier:check": "prettier --check --plugin-search-dir=. .",
 		"prettier:format": "prettier --write . --plugin-search-dir=. .",
@@ -28,6 +28,7 @@
 		"eslint": "^7.22.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-svelte3": "^3.2.0",
+		"heroicons": "^1.0.4",
 		"mdsvex": "^0.9.8",
 		"postcss": "^8.3.5",
 		"postcss-import": "^14.0.2",

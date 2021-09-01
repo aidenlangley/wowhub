@@ -1,37 +1,45 @@
 @layer utilities {
-  .gradient-dark-green {
-    color: theme('colors.white');
+  .gradient-dark-green,
+  .gradient-yellow {
+    border-bottom-width: theme('borderWidth.4');
 
-    @apply from-green-900/95 bg-green-700/90;
-
-    @nest .dark & {
-      @apply from-green-900/80 bg-green-700/70;
+    @screen sm {
+      border-radius: theme('borderRadius.3xl');
     }
-  }
 
-  .skew-left {
-    background-image: theme('backgroundImage.gradient-to-bl');
+    &.gradient-dark-green {
+      border-color: theme('colors.green.900');
+      color: theme('colors.white');
 
-    @apply -skew-y-2;
+      @apply from-green-900/95 bg-green-700/90;
 
-    & > * {
-      @apply skew-y-2;
+      @nest .dark & {
+        border-color: theme('colors.green.300');
+
+        @apply from-green-900/80 bg-green-700/70;
+      }
     }
-  }
 
-  .skew-right {
-    background-image: theme('backgroundImage.gradient-to-br');
+    &.gradient-yellow {
+      border-color: theme('colors.black');
+      color: theme('colors.black');
 
-    @apply skew-y-2;
+      @apply from-yellow-300/95 bg-yellow-500/90;
 
-    & > * {
-      @apply -skew-y-2;
+      @nest .dark & {
+        border-color: theme('colors.yellow.100');
+      }
     }
   }
 
   .skew-left,
-  .skew-right {
+  .skew-left-slight,
+  .skew-right,
+  .skew-right-slight {
     & > * {
+      padding-bottom: theme('padding.12');
+      padding-top: theme('padding.12');
+
       @screen sm {
         padding-bottom: theme('padding.14');
         padding-top: theme('padding.14');
@@ -45,6 +53,48 @@
       @screen lg {
         padding-bottom: theme('padding.20');
         padding-top: theme('padding.20');
+      }
+    }
+
+    &.skew-left,
+    &.skew-left-slight {
+      background-image: theme('backgroundImage.gradient-to-bl');
+
+      &.skew-left {
+        @apply -skew-y-2;
+
+        & > * {
+          @apply skew-y-2;
+        }
+      }
+
+      &.skew-left-slight {
+        @apply -skew-y-1;
+
+        & > * {
+          @apply skew-y-1;
+        }
+      }
+    }
+
+    &.skew-right,
+    &.skew-right-slight {
+      background-image: theme('backgroundImage.gradient-to-br');
+
+      &.skew-right {
+        @apply skew-y-2;
+
+        & > * {
+          @apply -skew-y-2;
+        }
+      }
+
+      &.skew-right-slight {
+        @apply skew-y-1;
+
+        & > * {
+          @apply -skew-y-1;
+        }
       }
     }
   }

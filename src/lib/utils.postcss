@@ -1,37 +1,61 @@
 @layer utilities {
-  .pad {
-    padding-bottom: theme('padding.6');
-    padding-top: theme('padding.6');
+  :root {
+    --padding: theme('padding.6');
+    --padding-sm: theme('padding.8');
+    --padding-md: theme('padding.10');
+    --padding-lg: theme('padding.14');
+  }
+
+  .pad-y {
+    padding-bottom: var(--padding);
+    padding-top: var(--padding);
 
     @screen sm {
-      padding-bottom: theme('padding.8');
-      padding-top: theme('padding.8');
+      padding-bottom: var(--padding-sm);
+      padding-top: var(--padding-sm);
     }
 
     @screen md {
-      padding-bottom: theme('padding.10');
-      padding-top: theme('padding.10');
+      padding-bottom: var(--padding-md);
+      padding-top: var(--padding-md);
     }
 
     @screen lg {
-      padding-bottom: theme('padding.14');
-      padding-top: theme('padding.14');
+      padding-bottom: var(--padding-lg);
+      padding-top: var(--padding-lg);
+    }
+  }
+
+  .pad-x {
+    @screen sm {
+      padding-left: var(--padding);
+      padding-right: var(--padding);
+    }
+
+    @screen md {
+      padding-left: var(--padding-sm);
+      padding-right: var(--padding-sm);
+    }
+
+    @screen lg {
+      padding-left: var(--padding-md);
+      padding-right: var(--padding-md);
     }
   }
 
   .pad-b {
-    padding-bottom: theme('padding.4');
+    padding-bottom: var(--padding);
 
     @screen md {
-      padding-bottom: theme('padding.10');
+      padding-bottom: var(--padding);
     }
 
     @screen md {
-      padding-bottom: theme('padding.10');
+      padding-bottom: var(--padding);
     }
 
     @screen lg {
-      padding-bottom: theme('padding.14');
+      padding-bottom: var(--padding);
     }
   }
 
@@ -53,8 +77,12 @@
     }
   }
 
+  .text-shadow-sm {
+    text-shadow: theme('boxShadow.sm');
+  }
+
   .text-shadow {
-    text-shadow: theme('boxShadow.inner');
+    text-shadow: theme('boxShadow.DEFAULT');
   }
 
   .text-shadow-md {
@@ -62,7 +90,15 @@
   }
 
   .text-shadow-lg {
+    text-shadow: theme('boxShadow.lg');
+  }
+
+  .text-shadow-xl {
     text-shadow: theme('boxShadow.xl');
+  }
+
+  .text-shadow-2xl {
+    text-shadow: theme('boxShadow.2xl');
   }
 
   .text-shadow-none {

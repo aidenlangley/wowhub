@@ -29,7 +29,9 @@
   aria-label={label}
   class={button ? `button ${colour}` : 'link'}
 >
-  <slot />
+  <slot>
+    {href}
+  </slot>
 </a>
 
 <style lang="postcss">

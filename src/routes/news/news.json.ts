@@ -8,7 +8,10 @@ export async function get(): Promise<{
 
   for (const slug in modules) {
     const { metadata } = await modules[slug]();
-    news.push({ ...metadata, slug: `news/${slug}`.replace('.svx', '') });
+    news.push({
+      ...metadata,
+      slug: `news/${slug}`.replace('./', '').replace('.svx', ''),
+    });
   }
 
   return {

@@ -23,9 +23,12 @@
   Don't use TypeScript, it breaks everything.
 -->
 <div class="root column pad">
-  <article class="prose prose-green md:prose-lg lg:prose-xl dark:prose-dark">
+  <article
+    class="prose prose-green prose-sm
+      sm:prose sm:prose-green md:prose-lg lg:prose-xl dark:prose-dark"
+  >
     {#if date || author}
-      <header>
+      <header class="metadata">
         <small>
           {#if date}
             <time datetime={date}>
@@ -47,30 +50,25 @@
 </div>
 
 <style lang="postcss">
+  /*
+  Limit complexity here. Tailwind directives are okay, nesting is not.
+  Once I remove `tailwindcss/typography`, we're good to use more complex PostCSS
+  enabled code.
+  */
   div.root > article {
     max-width: none;
-    padding: 1rem;
   }
 
-  div.root > article > header > small {
-    display: flex;
+  div.root > article > header.metadata > small {
+    column-gap: theme('gap.1');
+    display: inline-grid;
     font-family: theme('fontFamily.mono');
-  }
-
-  div.root > article > header > small:first-child {
-    margin-right: 0.25rem;
-  }
-
-  @screen sm {
-    div.root > article > header > small:first-child {
-      margin-right: 0.5rem;
-    }
+    grid-auto-flow: column;
   }
 
   @screen lg {
-    div.root > article > header > small {
-      font-size: 1.125rem; /* 18px */
-      line-height: 1.5rem; /* 24px */
+    div.root > article > header.metadata > small {
+      @apply text-18;
     }
   }
 </style>
