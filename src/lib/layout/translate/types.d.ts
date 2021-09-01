@@ -1,6 +1,4 @@
 export enum TranslateDirection {
-  Left = 'translate-left',
-  Right = 'translate-right',
   BottomRight = 'translate-br',
 }
 

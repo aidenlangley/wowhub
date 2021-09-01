@@ -1,22 +1,35 @@
-:root {
-  /* Bottom right */
-  --translate-br-slight:
-    translateX(theme('translate.1'))
-    translateY(theme('translate.1'));
-  --translate-br:
-    translateX(theme('translate.2'))
-    translateY(theme('translate.2'));
-  --translate-br-strong:
-    translateX(theme('translate.3'))
-    translateY(theme('translate.3'));
-}
+@layer utilities {
+  :root {
+    /* Bottom right */
+    --translate-br-slight:
+      translateX(theme('translate.1'))
+      translateY(theme('translate.1'));
+    --translate-br:
+      translateX(theme('translate.2'))
+      translateY(theme('translate.2'));
+    --translate-br-strong:
+      translateX(theme('translate.3'))
+      translateY(theme('translate.3'));
+  }
 
-div.bg {
-  max-width: fit-content;
+  .translate-br {
+    background-color: theme('colors.black');
+    max-width: fit-content;
 
-  @apply text-56;
+    @nest :global(.dark) & {
+      background-color: theme('colors.green.300');
+    }
 
-  &.translate-br {
+    & > :global(*) {
+      background-color: theme('colors.green.300');
+      color: theme('colors.black');
+
+      @nest :global(.dark) & {
+        background-color: theme('colors.green.900');
+        color: theme('colors.white');
+      }
+    }
+
     &.translate {
       & > :global(*) {
         transform: var(--translate-br);

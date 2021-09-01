@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { team } from '$lib/store/team';
+  import { team } from '$store/team';
   import TeamMemberCard from './TeamMemberCard.svelte';
 </script>
 

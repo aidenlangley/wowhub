@@ -1,27 +1,48 @@
-<h1>
-  <slot />
-</h1>
+<script lang="ts">
+  import Translate from '$layout/translate/Translate.svelte';
+  import {
+    TranslateDirection,
+    TranslateStrength,
+  } from '$layout/translate/types.d';
+</script>
+
+<Translate
+  direction={TranslateDirection.BottomRight}
+  strength={TranslateStrength.Default}
+>
+  <h1>
+    <slot />
+  </h1>
+</Translate>
 
 <style lang="postcss">
   h1 {
     font-family: theme('fontFamily.serif');
-    font-weight: theme('fontWeight.bold');
-    padding-bottom: theme('padding.2');
-    padding-top: theme('padding.2');
+    font-weight: theme('fontWeight.medium');
+    padding: theme('padding.1');
 
-    @apply text-28;
+    @apply text-26;
 
     @screen sm {
-      padding-bottom: theme('padding.4');
-      padding-top: theme('padding.4');
+      font-weight: theme('fontWeight.bold');
+      padding: theme('padding.2');
 
-      @apply text-42;
+      @apply text-32;
+    }
+
+    @screen md {
+      padding: theme('padding.3');
+
+      @apply text-40;
     }
 
     @screen lg {
-      padding-bottom: theme('padding.8');
-      padding-top: theme('padding.8');
+      padding: theme('padding.4');
 
+      @apply text-56;
+    }
+
+    @screen xl {
       @apply text-64;
     }
   }

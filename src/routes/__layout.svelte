@@ -1,7 +1,7 @@
 <script lang="ts">
   import { assets } from '$app/paths';
-  import Footer from '$lib/layout/footer/Footer.svelte';
   import Header from '$layout/header/Header.svelte';
+  import Footer from '$lib/layout/footer/Footer.svelte';
   import Seo from '$lib/Seo.svelte';
   import { state } from '$store/dark';
 
@@ -46,12 +46,16 @@
       background-blend-mode: difference;
       background-color: theme('backgroundColor.white');
       background-position: top;
-      transition-duration: 1000ms;
+      transition-duration: 300ms;
       transition-property: background-color;
-      transition-timing-function: theme('transitionTimingFunction.in-out');
 
       & > div {
         @apply bg-white/80;
+
+        & > * {
+          transition-duration: 500ms;
+          transition-timing-function: theme('transitionTimingFunction.in-out');
+        }
       }
     }
 

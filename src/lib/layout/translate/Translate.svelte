@@ -1,15 +1,10 @@
 <script lang="ts">
   import type { TranslateDirection, TranslateStrength } from './types.d';
-  import { TranslateStrength as tranStr } from './types.d';
 
   export let direction: TranslateDirection;
-  export let strength: TranslateStrength = tranStr.Default;
+  export let strength: TranslateStrength;
 </script>
 
-<div class="bg {direction} {strength}">
+<div class="{direction} {strength}">
   <slot />
 </div>
-
-<style lang="postcss">
-  @import './translate.postcss';
-</style>

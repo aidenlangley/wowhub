@@ -7,7 +7,7 @@
 <Skew
   direction={SkewDirection.Right}
   strength={SkewStrength.Slight}
-  colour={GradientColour.Yellow}
+  colour={GradientColour.Red}
 >
   <span class="message">
     <h1>Under construction...</h1>
@@ -37,7 +37,6 @@
     }
 
     & > small {
-      color: theme('colors.gray.800');
       font-weight: theme('fontWeight.medium');
 
       @apply text-20;

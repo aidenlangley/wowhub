@@ -1,8 +1,7 @@
 <script lang="ts" context="module">
   import ArticleCards from '$components/articles/ArticleCards.svelte';
   import type { Article } from '$components/articles/types.d';
-  import Translate from '$layout/translate/Translate.svelte';
-  import { TranslateDirection } from '$layout/translate/types.d';
+  import Heading from '$lib/components/heading/Heading.svelte';
   import { seo } from '$store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -46,8 +45,6 @@
 </script>
 
 <script lang="ts">
-  import Tooltip from '$lib/components/Tooltip.svelte';
-
   $seo = {
     title: 'Panui & other documents',
     description:
@@ -61,42 +58,11 @@
 
 <div class="root column pad-y gaps-y">
   <section class="gaps-y">
-    <Translate direction={TranslateDirection.BottomRight}>
-      <h1>Panui (news)</h1>
-    </Translate>
+    <Heading>Panui (news)</Heading>
     <ArticleCards articles={news} />
   </section>
   <section class="gaps-y">
-    <Translate direction={TranslateDirection.BottomRight}>
-      <h1>Other info</h1>
-    </Translate>
+    <Heading>Other info</Heading>
     <ArticleCards articles={docs} />
   </section>
 </div>
-
-<style lang="postcss">
-  div.root {
-    & > section {
-      & > :global(.bg) {
-        background-color: theme('colors.black');
-        border-radius: theme('borderRadius.lg');
-
-        @nest :global(.dark) & {
-          background-color: theme('colors.green.300');
-        }
-      }
-
-      & h1 {
-        background-color: theme('colors.green.300');
-        border-radius: theme('borderRadius.lg');
-        font-family: theme('fontFamily.serif');
-        font-weight: theme('fontWeight.medium');
-        padding: theme('padding.2');
-
-        @nest :global(.dark) & {
-          background-color: theme('colors.green.800');
-        }
-      }
-    }
-  }
-</style>

@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Member } from '$store/types.d';
+  import Heading from '../heading/Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
 
   export let member: Member;
@@ -7,11 +8,9 @@
 
 <section class="member">
   <img src={member.imgSrc} alt="image of {member.name}" />
-  <h1>
-    <span>
-      {member.name}
-    </span>
-  </h1>
+  <Heading>
+    {member.name}
+  </Heading>
   <h2>
     <span>
       {member.tags.join(' | ')}
@@ -64,22 +63,6 @@
         height: 100%;
         max-width: theme('width.96');
         place-content: center;
-      }
-    }
-
-    & > h1 {
-      letter-spacing: theme('letterSpacing.tighter');
-      text-shadow: theme('dropShadow.lg');
-
-      @apply text-64;
-
-      & > span {
-        border-bottom-width: theme('borderWidth.8');
-        border-color: theme('colors.green.300');
-      }
-
-      @screen sm {
-        grid-area: name;
       }
     }
 

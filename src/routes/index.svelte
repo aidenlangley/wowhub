@@ -78,10 +78,3 @@
 <section class="pad-y" aria-hidden="true">
   <IndexServices />
 </section>
-
-<style lang="postcss">
-  div.root {
-    transition-duration: 1000ms;
-    transition-timing-function: theme('transitionTimingFunction.in-out');
-  }
-</style>
