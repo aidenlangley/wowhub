@@ -8,12 +8,16 @@
 
 <style lang="postcss">
   h3 {
-    @apply text-18;
-
     font-weight: theme('fontWeight.light');
     letter-spacing: theme('letterSpacing.tight');
     padding-bottom: theme('padding.2');
     padding-top: theme('padding.2');
+
+    @apply text-18;
+
+    @nest :global(.dark) & {
+      color: theme('colors.white');
+    }
 
     @screen sm {
       @apply text-22;

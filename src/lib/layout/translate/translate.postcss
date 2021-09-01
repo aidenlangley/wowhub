@@ -12,13 +12,11 @@
       translateY(theme('translate.3'));
   }
 
+  /* .translate-rl, */
   .translate-br {
-    background-color: theme('colors.green.300');
     max-width: fit-content;
 
     & > :global(*) {
-      background-color: theme('colors.green.300');
-      color: theme('colors.black');
       transform: var(--translate-br-slight);
 
       @screen md {
@@ -27,6 +25,22 @@
 
       @screen lg {
         transform: var(--translate-br-strong);
+      }
+    }
+
+    &.translate-green {
+      background-color: theme('colors.green.300');
+    }
+
+    &.translate-red {
+      background-color: theme('colors.red.400');
+    }
+
+    &.translate-yellow {
+      background-color: theme('colors.black');
+
+      @nest :global(.dark) & {
+        background-color: theme('colors.gray.500');
       }
     }
   }

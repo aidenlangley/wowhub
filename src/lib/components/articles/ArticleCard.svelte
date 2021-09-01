@@ -30,9 +30,21 @@
     padding: theme('padding.4');
     row-gap: theme('gap.1');
 
+    @apply bg-gray-100/80;
+
+    &:hover {
+      @apply bg-gray-50/90;
+    }
+
     @nest :global(.dark) & {
-      background-color: theme('colors.gray.900');
       border-color: theme('colors.gray.700');
+      color: theme('colors.white');
+
+      @apply bg-gray-900/70;
+
+      &:hover {
+        @apply bg-gray-800/80;
+      }
     }
 
     & span {

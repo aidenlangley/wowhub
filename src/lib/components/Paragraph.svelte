@@ -12,6 +12,10 @@
     padding-bottom: theme('padding.1');
     padding-top: theme('padding.1');
 
+    @nest :global(.dark) & {
+      color: theme('colors.white');
+    }
+
     @screen md {
       @apply text-18;
     }

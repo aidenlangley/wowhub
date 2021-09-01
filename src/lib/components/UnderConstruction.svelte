@@ -1,19 +1,17 @@
 <script>
-  import Skew from '$layout/skew/Skew.svelte';
-  import { SkewDirection, SkewStrength } from '$lib/layout/skew/types.d';
+  import { BackgroundColour } from '$lib/layout/translate/types.d';
   import { GradientColour } from '$lib/layout/types.d';
+  import Heading from './heading/Heading.svelte';
 </script>
 
-<Skew
-  direction={SkewDirection.Right}
-  strength={SkewStrength.Slight}
-  colour={GradientColour.Red}
->
-  <span class="message">
-    <h1>Under construction...</h1>
-    <small>Check back later.</small>
-  </span>
-</Skew>
+<div class="column">
+  <Heading bg={BackgroundColour.Yellow} fg={GradientColour.Yellow}>
+    <span class="message">
+      <h1>Under construction...</h1>
+      <small>Check back later.</small>
+    </span>
+  </Heading>
+</div>
 
 <style lang="postcss">
   span.message {

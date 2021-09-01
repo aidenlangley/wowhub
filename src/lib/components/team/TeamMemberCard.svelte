@@ -13,7 +13,7 @@
   </Heading>
   <h2>
     <span>
-      {member.tags.join(' | ')}
+      {member.tags.join(', ')}
     </span>
   </h2>
   <div class="blurb">
@@ -67,13 +67,26 @@
     }
 
     & > h2 {
-      font-family: theme('fontFamily.mono');
-      letter-spacing: theme('letterSpacing.tight');
-      padding: theme('padding.1');
-      padding-top: theme('padding.2');
+      letter-spacing: theme('letterSpacing.tighter');
+
+      @apply text-18;
+
+      @nest :global(.dark) & {
+        color: theme('colors.white');
+      }
 
       @screen sm {
         grid-area: tags;
+
+        @apply text-20;
+      }
+
+      @screen md {
+        @apply text-24;
+      }
+
+      @screen lg {
+        @apply text-28;
       }
     }
 

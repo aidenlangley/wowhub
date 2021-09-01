@@ -9,10 +9,22 @@
     --skew-right-slight: skewY(1deg);
     --skew-right: skewY(2deg);
     --skew-right-strong: skewY(3deg);
+
+    /* Rotate = move both Y & X, left */
+    --rotate-left-slight: skewY(-1deg) skewX(-1deg);
+    --rotate-left: skewY(-2deg) skewX(-2deg);
+    --rotate-left-strong: skewY(-3deg) skewX(-3deg);
+
+    /* Rotate right */
+    --rotate-right-slight: skewY(1deg) skewX(1deg);
+    --rotate-right: skewY(2deg) skewX(2deg);
+    --rotate-right-strong: skewY(3deg) skewX(3deg);
   }
 
   .skew-left,
-  .skew-right {
+  .skew-right,
+  .rotate-left,
+  .rotate-right {
     border-bottom-width: theme('borderWidth.4');
     border-top-width: theme('borderWidth.2');
 

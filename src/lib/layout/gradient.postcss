@@ -1,9 +1,10 @@
 @layer utilities {
   .gradient-green,
+  .gradient-yellow,
   .gradient-red {
     border-top-color: theme('colors.gray.300');
 
-    @nest .dark & {
+    @nest :global(.dark) & {
       border-top-color: theme('colors.gray.700');
     }
 
@@ -13,8 +14,20 @@
 
       @apply from-green-900/95 bg-green-700/90;
 
-      @nest .dark & {
+      @nest :global(.dark) & {
         @apply from-green-900/95 bg-green-700/95;
+      }
+    }
+
+    &.gradient-yellow {
+      border-bottom-color: theme('colors.yellow.300');
+
+      @apply from-yellow-500/95 bg-yellow-300/90;
+
+      @nest :global(.dark) & {
+        color: theme('colors.black');
+
+        @apply from-yellow-500/95 bg-yellow-300/90;
       }
     }
 
@@ -24,10 +37,8 @@
 
       @apply from-red-900/95 bg-red-700/90;
 
-      @nest .dark & {
-        color: theme('colors.red.400');
-
-        @apply from-gray-900/90 bg-gray-700/80;
+      @nest :global(.dark) & {
+        @apply from-red-900/90 bg-red-800/80;
       }
     }
   }

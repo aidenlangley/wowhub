@@ -1,10 +1,9 @@
 <script lang="ts">
   import Icon, { QuestionMarkCircle } from 'svelte-hero-icons';
   import Tooltip from '../Tooltip.svelte';
-  import type { Input } from './types.d';
-  import { Input as inputEnum } from './types.d';
+  import { Input } from './types';
 
-  export let type: Input;
+  export let type: Input = Input.Text;
   export let id: string = null;
   export let label: string = null;
   export let tooltip: string = null;
@@ -34,15 +33,15 @@
     Makes me sad coming from Rust and having to do this...
     Give me a match case anyday. We are iterating over the enum.
   -->
-  {#if type === inputEnum.Text}
+  {#if type === Input.Text}
     <input type="text" {id} bind:value class="rounded shadow" />
-  {:else if type === inputEnum.Number}
+  {:else if type === Input.Number}
     <input type="number" {id} bind:value class="rounded shadow" />
-  {:else if type === inputEnum.Range}
+  {:else if type === Input.Range}
     <input type="range" {id} bind:value class="rounded shadow" />
-  {:else if type === inputEnum.Checkbox}
+  {:else if type === Input.Checkbox}
     <input {id} type="checkbox" bind:value class="rounded shadow" />
-  {:else if type === inputEnum.Radio}
+  {:else if type === Input.Radio}
     {#each options as option}
       <input
         type="radio"

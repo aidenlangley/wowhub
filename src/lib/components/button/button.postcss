@@ -18,9 +18,10 @@
 
     @apply text-18;
 
-    @nest .dark & {
+    @nest :global(.dark) & {
       background-color: theme('colors.gray.900');
       border-color: theme('colors.gray.700');
+      color: theme('colors.white');
     }
 
     &:hover,
@@ -33,7 +34,7 @@
         @apply translate-y-0 drop-shadow-none;
       }
 
-      @nest .dark & {
+      @nest :global(.dark) & {
         background-color: theme('colors.gray.800');
         border-color: theme('colors.gray.600');
       }

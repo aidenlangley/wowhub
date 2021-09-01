@@ -45,6 +45,10 @@
   div.passage {
     text-align: center;
 
+    @nest :global(.dark) & {
+      color: theme('colors.white');
+    }
+
     & > p {
       font-family: theme('fontFamily.serif');
       font-weight: theme('fontWeight.light');

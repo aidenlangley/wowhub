@@ -62,7 +62,6 @@
     &.dark > main {
       background-blend-mode: hard-light;
       background-color: theme('colors.gray.900');
-      color: theme('colors.white');
 
       & > div {
         @apply bg-black/70;
