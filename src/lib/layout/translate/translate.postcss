@@ -13,37 +13,19 @@
   }
 
   .translate-br {
-    background-color: theme('colors.black');
+    background-color: theme('colors.green.300');
     max-width: fit-content;
-
-    @nest :global(.dark) & {
-      background-color: theme('colors.green.300');
-    }
 
     & > :global(*) {
       background-color: theme('colors.green.300');
       color: theme('colors.black');
+      transform: var(--translate-br-slight);
 
-      @nest :global(.dark) & {
-        background-color: theme('colors.green.900');
-        color: theme('colors.white');
-      }
-    }
-
-    &.translate {
-      & > :global(*) {
+      @screen md {
         transform: var(--translate-br);
       }
-    }
 
-    &.translate-slight {
-      & > :global(*) {
-        transform: var(--translate-br-slight);
-      }
-    }
-
-    &.translate-strong {
-      & > :global(*) {
+      @screen lg {
         transform: var(--translate-br-strong);
       }
     }

@@ -1,10 +1,9 @@
 <script lang="ts">
-  import type { TranslateDirection, TranslateStrength } from './types.d';
+  import type { TranslateDirection } from './types.d';
 
   export let direction: TranslateDirection;
-  export let strength: TranslateStrength;
 </script>
 
-<div class="{direction} {strength}">
+<div class={direction}>
   <slot />
 </div>

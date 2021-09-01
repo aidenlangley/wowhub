@@ -13,6 +13,16 @@
 
   .skew-left,
   .skew-right {
+    border-bottom-width: theme('borderWidth.4');
+    border-top-width: theme('borderWidth.2');
+
+    @apply drop-shadow-lg;
+
+    @screen sm {
+      border-bottom-width: theme('borderWidth.8');
+      border-radius: theme('borderRadius.3xl');
+    }
+
     /* Pad above and below */
     & > * {
       padding-bottom: theme('padding.12');

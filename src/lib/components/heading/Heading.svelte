@@ -1,16 +1,10 @@
 <script lang="ts">
   import Translate from '$layout/translate/Translate.svelte';
-  import {
-    TranslateDirection,
-    TranslateStrength,
-  } from '$layout/translate/types.d';
+  import { TranslateDirection } from '$layout/translate/types.d';
 </script>
 
-<Translate
-  direction={TranslateDirection.BottomRight}
-  strength={TranslateStrength.Default}
->
-  <h1>
+<Translate direction={TranslateDirection.BottomRight}>
+  <h1 class="gradient-green">
     <slot />
   </h1>
 </Translate>

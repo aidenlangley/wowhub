@@ -1,19 +1,10 @@
 @layer utilities {
   .gradient-green,
   .gradient-red {
-    border-bottom-width: theme('borderWidth.4');
     border-top-color: theme('colors.gray.300');
-    border-top-width: theme('borderWidth.2');
-
-    @apply drop-shadow-2xl;
 
     @nest .dark & {
       border-top-color: theme('colors.gray.700');
-    }
-
-    @screen sm {
-      border-bottom-width: theme('borderWidth.8');
-      border-radius: theme('borderRadius.3xl');
     }
 
     &.gradient-green {
@@ -23,7 +14,7 @@
       @apply from-green-900/95 bg-green-700/90;
 
       @nest .dark & {
-        @apply from-green-900/80 bg-green-700/70;
+        @apply from-green-900/95 bg-green-700/95;
       }
     }
 
