@@ -22,7 +22,7 @@
 
   Don't use TypeScript, it breaks everything.
 -->
-<div class="root column pad">
+<div class="root column pad-y">
   <article
     class="prose prose-green prose-sm
       sm:prose sm:prose-green md:prose-lg lg:prose-xl dark:prose-dark"

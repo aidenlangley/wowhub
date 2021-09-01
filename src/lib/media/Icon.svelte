@@ -20,10 +20,7 @@
     }
   }
 
-  export let classes = '';
-  export { classes as class };
-
-  const style = `heroicon ${!solid ? 'outline' : 'solid'} ${classes}`;
+  const style = `heroicon ${!solid ? 'outline' : 'solid'}`;
 </script>
 
 {#if !solid}

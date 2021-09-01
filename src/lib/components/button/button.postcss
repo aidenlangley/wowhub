@@ -18,6 +18,11 @@
 
     @apply text-18;
 
+    @nest .dark & {
+      background-color: theme('colors.gray.900');
+      border-color: theme('colors.gray.700');
+    }
+
     &:hover,
     &:focus {
       background-color: theme('colors.gray.50');
@@ -32,11 +37,6 @@
         background-color: theme('colors.gray.800');
         border-color: theme('colors.gray.600');
       }
-    }
-
-    @nest .dark & {
-      background-color: theme('colors.gray.900');
-      border-color: theme('colors.gray.700');
     }
 
     @screen ty {

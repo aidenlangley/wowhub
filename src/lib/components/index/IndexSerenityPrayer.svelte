@@ -37,6 +37,11 @@
 </div>
 
 <style lang="postcss">
+  div.source {
+    padding: theme('padding.1');
+    text-align: right;
+  }
+
   div.passage {
     text-align: center;
 
@@ -75,6 +80,7 @@
 
       & > span.serenity {
         color: theme('colors.blue.500');
+        font-weight: theme('fontWeight.bold');
 
         @apply text-28;
 
@@ -89,7 +95,7 @@
 
       & > span.accept {
         color: theme('colors.green.500');
-        font-weight: theme('fontWeight.medium');
+        font-weight: theme('fontWeight.bold');
 
         @apply text-26;
 
@@ -104,7 +110,7 @@
 
       & > span.cannot-change {
         color: theme('colors.orange.500');
-        font-weight: theme('fontWeight.bold');
+        font-weight: theme('fontWeight.medium');
 
         @apply text-22;
 
@@ -119,7 +125,7 @@
 
       & > span.courage {
         color: theme('colors.red.500');
-        font-weight: theme('fontWeight.bold');
+        font-weight: theme('fontWeight.black');
 
         @apply text-28;
 
@@ -153,7 +159,7 @@
 
       & > span.wisdom {
         color: theme('colors.purple.500');
-        font-weight: theme('fontWeight.bold');
+        font-weight: theme('fontWeight.black');
 
         @apply text-32;
 
@@ -181,10 +187,5 @@
         }
       }
     }
-  }
-
-  div.source {
-    padding: theme('padding.1');
-    text-align: right;
   }
 </style>

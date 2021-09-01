@@ -4,11 +4,14 @@
   import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
   import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
-  import IndexServices from '$lib/components/index/services/IndexServices.svelte';
   import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
-  import Banner from '$lib/media/Banner.svelte';
-  import { state } from '$lib/store/dark';
-  import { seo } from '$lib/store/seo';
+  import IndexServices from '$components/index/services/IndexServices.svelte';
+  import { Colour } from '$layout/Gradient.d';
+  import { Direction, Strength } from '$layout/Skew.d';
+  import Skew from '$layout/Skew.svelte';
+  import Banner from '$media/Banner.svelte';
+  import { state } from '$store/dark';
+  import { seo } from '$store/seo';
   import { fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
   export { load };
@@ -47,27 +50,31 @@
   {/if}
 </div>
 
-<div class="pad-x">
-  <section class="blurb skew-left gradient-dark-green">
-    <div class="column pad-y gaps-y">
-      <IndexBlurb />
-    </div>
-  </section>
-</div>
+<section class="blurb pad-x">
+  <Skew
+    direction={Direction.Left}
+    strength={Strength.Slight}
+    colour={Colour.Green}
+  >
+    <IndexBlurb />
+  </Skew>
+</section>
 
-<section aria-hidden="true" class="column pad-y">
+<section class="column pad-y" aria-hidden="true">
   <IndexSerenityPrayer />
 </section>
 
-<div class="pad-x">
-  <section class="whakatauki skew-right gradient-dark-green">
-    <div class="column pad-y gaps-y">
-      <IndexWhakatauki />
-    </div>
-  </section>
-</div>
+<section class="whakatauki pad-x">
+  <Skew
+    direction={Direction.Right}
+    strength={Strength.Slight}
+    colour={Colour.Green}
+  >
+    <IndexWhakatauki />
+  </Skew>
+</section>
 
-<section aria-hidden="true" class="pad-y">
+<section class="pad-y" aria-hidden="true">
   <IndexServices />
 </section>
 

@@ -3,6 +3,7 @@
   import ArticleList from '$components/articles/ArticleList.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import Span from '$components/Span.svelte';
+  import UnderConstruction from '$lib/components/UnderConstruction.svelte';
   import { seo } from '$lib/store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -57,47 +58,21 @@
   export let docs: Article[];
 </script>
 
-<div class="root column pad gaps-y">
-  <!-- <aside>
-    <ol>
-      {#each news as article}
-        <li>
-          <Link href={article.slug} label={article.title} internal>
-            {article.title}
-          </Link>
-        </li>
-      {/each}
-    </ol>
-    <ol>
-      {#each docs as doc}
-        <li>
-          {doc.slug}
-        </li>
-      {/each}
-    </ol>
-  </aside> -->
-  <section>
+<section class="under-construction pad-y pad-x">
+  <UnderConstruction />
+</section>
+
+<div class="root column pad-y gaps-y">
+  <section class="panui">
     <Heading>
       <Span underline>Panui</Span>
     </Heading>
     <ArticleList articles={news} />
   </section>
-  <section>
+  <section class="docs">
     <Heading>
       <Span underline>Other Docs</Span>
     </Heading>
     <ArticleList articles={docs} />
   </section>
 </div>
-
-<style lang="postcss">
-  /* div.root {
-    & > aside {
-      display: hidden;
-
-      @screen md {
-        display: block;
-      }
-    }
-  } */
-</style>

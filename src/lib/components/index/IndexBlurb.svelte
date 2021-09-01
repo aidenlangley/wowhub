@@ -7,7 +7,7 @@
   Short mission statement and about us.
 -->
 <div class="headings">
-  <h1 class="">Planting the seed of hope...</h1>
+  <h1>Planting the seed of hope...</h1>
   <h2>Sharing gifts of recovery.</h2>
 </div>
 <div>
@@ -30,7 +30,6 @@
     font-weight: theme('fontWeight.medium');
 
     & > h1 {
-      letter-spacing: theme('letterSpacing.tighter');
       padding-bottom: theme('padding.4');
       text-align: left;
 
@@ -41,6 +40,8 @@
       }
 
       @screen md {
+        letter-spacing: theme('letterSpacing.tighter');
+
         @apply text-42;
       }
 
@@ -62,10 +63,6 @@
 
       @screen md {
         @apply text-72;
-      }
-
-      @screen lg {
-        @apply text-96;
       }
 
       @screen xl {

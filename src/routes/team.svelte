@@ -14,10 +14,12 @@
   @component
   Meet the team.
 -->
+
+<section class="under-construction pad-y pad-x">
+  <UnderConstruction />
+</section>
+
 <div class="root column pad-y gaps-y">
-  <section class="under-construction">
-    <UnderConstruction />
-  </section>
   <section>
     <TeamMembers />
   </section>

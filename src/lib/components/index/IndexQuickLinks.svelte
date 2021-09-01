@@ -65,10 +65,6 @@
     gap: theme('gap.2');
     padding-top: theme('padding.2');
 
-    & :global(.button):hover,
-    & :global(.button):focus {
-    }
-
     @screen sm {
       gap: theme('gap.4');
       grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,19 +1,50 @@
-<div class="skew-right-slight gradient-yellow">
-  <h1>
-    <span class="text-shadow">under construction</span>
-  </h1>
-  <small />
-</div>
+<script>
+  import { Colour } from '$layout/Gradient.d';
+  import { Direction, Strength } from '$layout/Skew.d';
+  import Skew from '$layout/Skew.svelte';
+</script>
+
+<Skew
+  direction={Direction.Right}
+  strength={Strength.None}
+  colour={Colour.Yellow}
+>
+  <span class="message">
+    <h1>Under construction...</h1>
+    <small>Check back later.</small>
+  </span>
+</Skew>
 
 <style lang="postcss">
-  h1 {
+  span.message {
     font-family: theme('fontFamily.mono');
-    font-weight: theme('fontWeight.black');
     letter-spacing: theme('letterSpacing.tighter');
-    padding: theme('padding.8');
     text-align: center;
-    text-transform: lowercase;
 
-    @apply text-48;
+    & > h1 {
+      font-weight: theme('fontWeight.black');
+      padding-bottom: theme('padding.2');
+
+      @apply text-26;
+
+      @screen sm {
+        @apply text-40;
+      }
+
+      @screen lg {
+        @apply text-56;
+      }
+    }
+
+    & > small {
+      color: theme('colors.gray.800');
+      font-weight: theme('fontWeight.medium');
+
+      @apply text-20;
+
+      @screen sm {
+        @apply text-28;
+      }
+    }
   }
 </style>

@@ -1,0 +1,35 @@
+@layer utilities {
+  .gradient-green,
+  .gradient-yellow {
+    border-bottom-width: theme('borderWidth.4');
+
+    @screen sm {
+      border-bottom-width: theme('borderWidth.8');
+      border-radius: theme('borderRadius.3xl');
+    }
+
+    &.gradient-green {
+      border-color: theme('colors.green.300');
+      color: theme('colors.white');
+
+      @apply from-green-900/95 bg-green-700/90;
+
+      @nest .dark & {
+        @apply from-green-900/80 bg-green-700/70;
+      }
+    }
+
+    &.gradient-yellow {
+      border-color: theme('colors.black');
+      color: theme('colors.black');
+
+      @apply from-yellow-300/95 bg-yellow-500/90;
+
+      @nest .dark & {
+        border-color: theme('colors.yellow.300');
+
+        @apply from-yellow-500/80 bg-yellow-600/70;
+      }
+    }
+  }
+}
