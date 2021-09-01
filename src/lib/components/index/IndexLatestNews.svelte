@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Article } from '../articles/Article';
-  import ArticleList from '../articles/ArticleList.svelte';
+  import type { Article } from '../articles/types.d';
+  import ArticleCards from '../articles/ArticleCards.svelte';
   import Heading3 from '../heading/Heading3.svelte';
   import Span from '../Span.svelte';
 
@@ -11,5 +11,5 @@
   <Heading3>
     <Span>What's the latest?</Span>
   </Heading3>
-  <ArticleList articles={news.slice(0, 5)} />
+  <ArticleCards articles={news.slice(0, 5)} />
 {/if}

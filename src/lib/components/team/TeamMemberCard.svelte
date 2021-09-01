@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Member } from '$lib/store/team.d';
+  import type { Member } from '$store/types.d';
   import Paragraph from '../Paragraph.svelte';
 
   export let member: Member;

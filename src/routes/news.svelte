@@ -1,10 +1,11 @@
 <script lang="ts" context="module">
-  import type { Article } from '$components/articles/Article';
-  import ArticleList from '$components/articles/ArticleList.svelte';
+  import type { Article } from '$lib/components/articles/types.d';
+  import ArticleCards from '$components/articles/ArticleCards.svelte';
+  import BoxHeading from '$components/heading/BoxHeading.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import Span from '$components/Span.svelte';
-  import UnderConstruction from '$lib/components/UnderConstruction.svelte';
-  import { seo } from '$lib/store/seo';
+  import UnderConstruction from '$components/UnderConstruction.svelte';
+  import { seo } from '$store/seo';
   import type { Load } from '@sveltejs/kit';
 
   export const loadDocs: Load = async ({
@@ -64,15 +65,21 @@
 
 <div class="root column pad-y gaps-y">
   <section class="panui">
+    <BoxHeading>Panui</BoxHeading>
+  </section>
+</div>
+
+<div class="column pad-y gaps-y">
+  <section>
     <Heading>
       <Span underline>Panui</Span>
     </Heading>
-    <ArticleList articles={news} />
+    <ArticleCards articles={news} />
   </section>
   <section class="docs">
     <Heading>
       <Span underline>Other Docs</Span>
     </Heading>
-    <ArticleList articles={docs} />
+    <ArticleCards articles={docs} />
   </section>
 </div>

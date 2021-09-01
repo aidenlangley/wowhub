@@ -1,9 +1,9 @@
-export enum Direction {
+export enum SkewDirection {
   Left = 'skew-left',
   Right = 'skew-right',
 }
 
-export enum Strength {
+export enum SkewStrength {
   Default = 'skew',
   Slight = 'skew-slight',
   Strong = 'skew-strong',

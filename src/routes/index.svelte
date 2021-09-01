@@ -1,19 +1,20 @@
 <script lang="ts" context="module">
-  import type { Article } from '$components/articles/Article';
+  import type { Article } from '$components/articles/types.d';
   import IndexBlurb from '$components/index/IndexBlurb.svelte';
   import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
   import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
   import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
   import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
   import IndexServices from '$components/index/services/IndexServices.svelte';
-  import { Colour } from '$layout/Gradient.d';
-  import { Direction, Strength } from '$layout/Skew.d';
-  import Skew from '$layout/Skew.svelte';
+  import Skew from '$layout/skew/Skew.svelte';
+  import { SkewDirection, SkewStrength } from '$layout/skew/types.d';
+  import { GradientColour } from '$layout/types.d';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
   import { fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
+
   export { load };
 </script>
 
@@ -52,9 +53,9 @@
 
 <section class="blurb pad-x">
   <Skew
-    direction={Direction.Left}
-    strength={Strength.Slight}
-    colour={Colour.Green}
+    direction={SkewDirection.Left}
+    strength={SkewStrength.Slight}
+    colour={GradientColour.Green}
   >
     <IndexBlurb />
   </Skew>
@@ -66,9 +67,9 @@
 
 <section class="whakatauki pad-x">
   <Skew
-    direction={Direction.Right}
-    strength={Strength.Slight}
-    colour={Colour.Green}
+    direction={SkewDirection.Right}
+    strength={SkewStrength.Slight}
+    colour={GradientColour.Green}
   >
     <IndexWhakatauki />
   </Skew>

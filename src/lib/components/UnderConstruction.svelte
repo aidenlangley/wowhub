@@ -1,13 +1,13 @@
 <script>
-  import { Colour } from '$layout/Gradient.d';
-  import { Direction, Strength } from '$layout/Skew.d';
-  import Skew from '$layout/Skew.svelte';
+  import Skew from '$layout/skew/Skew.svelte';
+  import { SkewDirection, SkewStrength } from '$lib/layout/skew/types.d';
+  import { GradientColour } from '$lib/layout/types.d';
 </script>
 
 <Skew
-  direction={Direction.Right}
-  strength={Strength.None}
-  colour={Colour.Yellow}
+  direction={SkewDirection.Right}
+  strength={SkewStrength.Slight}
+  colour={GradientColour.Yellow}
 >
   <span class="message">
     <h1>Under construction...</h1>

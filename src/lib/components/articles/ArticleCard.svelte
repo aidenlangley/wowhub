@@ -1,6 +1,6 @@
 <script lang="ts">
   import Link from '../link/Link.svelte';
-  import type { Article } from './Article';
+  import type { Article } from './types.d';
 
   export let article: Article;
 </script>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import Heading3 from '$components/heading/Heading3.svelte';
-  import Link from '$lib/components/link/Link.svelte';
+  import Link from '$components/link/Link.svelte';
   import Span from '$components/Span.svelte';
   import Icon from '$media/Icon.svelte';
   import { info } from '$store/info';
@@ -68,10 +68,6 @@
     @screen sm {
       gap: theme('gap.4');
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    @screen lg {
-      gap: theme('gap.6');
     }
   }
 </style>

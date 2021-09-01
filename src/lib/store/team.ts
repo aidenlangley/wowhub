@@ -1,6 +1,6 @@
 import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
-import type { Member } from './team.d';
+import type { Member } from './types.d';
 import { assets } from '$app/paths';
 
 export const team: Readable<Member[]> = readable([

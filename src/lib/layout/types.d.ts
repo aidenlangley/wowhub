@@ -1,4 +1,4 @@
-export enum Colour {
+export enum GradientColour {
   Green = 'gradient-green',
   Yellow = 'gradient-yellow',
 }

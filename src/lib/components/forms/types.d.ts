@@ -1,4 +1,4 @@
-export enum InputType {
+export enum Input {
   Checkbox = 'checkbox',
   Color = 'color',
   Date = 'date',

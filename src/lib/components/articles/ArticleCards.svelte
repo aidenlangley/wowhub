@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { Article } from './Article';
-  import ArticleListItem from './ArticleListItem.svelte';
+  import type { Article } from './types';
+  import ArticleCard from './ArticleCard.svelte';
 
   export let articles: Article[];
 </script>
@@ -12,7 +12,7 @@
 {#if articles.length > 0}
   <ol>
     {#each articles as article (article.slug)}
-      <ArticleListItem {article} />
+      <ArticleCard {article} />
     {/each}
   </ol>
 {/if}

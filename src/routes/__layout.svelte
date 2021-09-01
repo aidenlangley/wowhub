@@ -37,6 +37,8 @@
 
   body {
     min-width: 360px;
+
+    @apply transform-gpu;
   }
 
   div.root {

@@ -1,9 +1,9 @@
 @layer utilities {
   :root {
-    --padding: theme('padding.6');
-    --padding-sm: theme('padding.8');
-    --padding-md: theme('padding.10');
-    --padding-lg: theme('padding.14');
+    --padding: theme('padding.10');
+    --padding-sm: theme('padding.12');
+    --padding-md: theme('padding.14');
+    --padding-lg: theme('padding.16');
   }
 
   .pad-y {
@@ -65,14 +65,10 @@
     row-gap: theme('gap.4');
 
     @screen sm {
-      row-gap: theme('gap.4');
-    }
-
-    @screen md {
       row-gap: theme('gap.6');
     }
 
-    @screen lg {
+    @screen md {
       row-gap: theme('gap.8');
     }
   }

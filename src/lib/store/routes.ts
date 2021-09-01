@@ -1,6 +1,6 @@
 import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
-import type { Route } from './route.d';
+import type { Route } from './types.d';
 
 export const routes: Readable<Route[]> = readable([
   {
