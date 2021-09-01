@@ -1,10 +1,8 @@
 <script lang="ts" context="module">
-  import type { Article } from '$lib/components/articles/types.d';
   import ArticleCards from '$components/articles/ArticleCards.svelte';
-  import BoxHeading from '$components/heading/BoxHeading.svelte';
-  import Heading from '$components/heading/Heading.svelte';
-  import Span from '$components/Span.svelte';
-  import UnderConstruction from '$components/UnderConstruction.svelte';
+  import type { Article } from '$components/articles/types.d';
+  import Translate from '$layout/translate/Translate.svelte';
+  import { TranslateDirection } from '$layout/translate/types.d';
   import { seo } from '$store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -48,6 +46,8 @@
 </script>
 
 <script lang="ts">
+  import Tooltip from '$lib/components/Tooltip.svelte';
+
   $seo = {
     title: 'Panui & other documents',
     description:
@@ -59,27 +59,44 @@
   export let docs: Article[];
 </script>
 
-<section class="under-construction pad-y pad-x">
-  <UnderConstruction />
-</section>
-
 <div class="root column pad-y gaps-y">
-  <section class="panui">
-    <BoxHeading>Panui</BoxHeading>
-  </section>
-</div>
-
-<div class="column pad-y gaps-y">
-  <section>
-    <Heading>
-      <Span underline>Panui</Span>
-    </Heading>
+  <section class="gaps-y">
+    <Translate direction={TranslateDirection.BottomRight}>
+      <h1>Panui (news)</h1>
+    </Translate>
     <ArticleCards articles={news} />
   </section>
-  <section class="docs">
-    <Heading>
-      <Span underline>Other Docs</Span>
-    </Heading>
+  <section class="gaps-y">
+    <Translate direction={TranslateDirection.BottomRight}>
+      <h1>Other info</h1>
+    </Translate>
     <ArticleCards articles={docs} />
   </section>
 </div>
+
+<style lang="postcss">
+  div.root {
+    & > section {
+      & > :global(.bg) {
+        background-color: theme('colors.black');
+        border-radius: theme('borderRadius.lg');
+
+        @nest :global(.dark) & {
+          background-color: theme('colors.green.300');
+        }
+      }
+
+      & h1 {
+        background-color: theme('colors.green.300');
+        border-radius: theme('borderRadius.lg');
+        font-family: theme('fontFamily.serif');
+        font-weight: theme('fontWeight.medium');
+        padding: theme('padding.2');
+
+        @nest :global(.dark) & {
+          background-color: theme('colors.green.800');
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,38 @@
+:root {
+  /* Bottom right */
+  --translate-br-slight:
+    translateX(theme('translate.1'))
+    translateY(theme('translate.1'));
+  --translate-br:
+    translateX(theme('translate.2'))
+    translateY(theme('translate.2'));
+  --translate-br-strong:
+    translateX(theme('translate.3'))
+    translateY(theme('translate.3'));
+}
+
+div.bg {
+  max-width: fit-content;
+
+  @apply text-56;
+
+  &.translate-br {
+    &.translate {
+      & > :global(*) {
+        transform: var(--translate-br);
+      }
+    }
+
+    &.translate-slight {
+      & > :global(*) {
+        transform: var(--translate-br-slight);
+      }
+    }
+
+    &.translate-strong {
+      & > :global(*) {
+        transform: var(--translate-br-strong);
+      }
+    }
+  }
+}
