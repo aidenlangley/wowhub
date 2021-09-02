@@ -1,5 +1,6 @@
 export enum TranslateDirection {
   BottomRight = 'translate-br',
+  BottomLeft = 'translate-bl',
 }
 
 export enum BackgroundColour {

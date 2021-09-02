@@ -1,6 +1,6 @@
 <script lang="ts">
-  import TeamMembers from '$components/team/TeamMembers.svelte';
-  import UnderConstruction from '$components/UnderConstruction.svelte';
+  import TeamMemberCards from '$components/team/TeamMemberCards.svelte';
+  import UnderConstruction from '$components/Error.svelte';
   import { seo } from '$store/seo';
 
   $seo = {
@@ -14,13 +14,10 @@
   @component
   Meet the team.
 -->
+<UnderConstruction />
 
-<section class="under-construction pad-y pad-x">
-  <UnderConstruction />
-</section>
-
-<div class="root column pad-y gaps-y">
+<div class="root pad-x pad-y gaps-y">
   <section>
-    <TeamMembers />
+    <TeamMemberCards />
   </section>
 </div>

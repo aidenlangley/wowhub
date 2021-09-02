@@ -1,7 +1,6 @@
 <script lang="ts">
-  import UnderConstruction from '$lib/components/UnderConstruction.svelte';
-
-  import { seo } from '$lib/store/seo';
+  import UnderConstruction from '$components/Error.svelte';
+  import { seo } from '$store/seo';
 
   $seo = {
     title: 'Tātou Hoa',

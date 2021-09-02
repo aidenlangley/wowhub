@@ -23,13 +23,11 @@
     font-weight: theme('fontWeight.medium');
     padding: theme('padding.1');
 
-    @apply text-26;
+    @apply text-32;
 
     @screen sm {
       font-weight: theme('fontWeight.bold');
       padding: theme('padding.2');
-
-      @apply text-32;
     }
 
     @screen md {

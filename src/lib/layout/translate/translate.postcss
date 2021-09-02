@@ -10,21 +10,48 @@
     --translate-br-strong:
       translateX(theme('translate.3'))
       translateY(theme('translate.3'));
+
+    /* Bottom left */
+    --translate-bl-slight:
+      translateX(theme('translate.-1'))
+      translateY(theme('translate.1'));
+    --translate-bl:
+      translateX(theme('translate.-2'))
+      translateY(theme('translate.2'));
+    --translate-bl-strong:
+      translateX(theme('translate.-3'))
+      translateY(theme('translate.3'));
   }
 
-  /* .translate-rl, */
-  .translate-br {
+  .translate-br,
+  .translate-bl {
     max-width: fit-content;
 
-    & > :global(*) {
-      transform: var(--translate-br-slight);
+    &.translate-br {
+      & > :global(*) {
+        transform: var(--translate-br-slight);
 
-      @screen md {
-        transform: var(--translate-br);
+        @screen md {
+          transform: var(--translate-br);
+        }
+
+        @screen lg {
+          transform: var(--translate-br-strong);
+        }
       }
+    }
 
-      @screen lg {
-        transform: var(--translate-br-strong);
+    &.translate-bl {
+      & > :global(*) {
+        transform: var(--translate-bl-slight);
+
+        @screen md {
+          transform: var(--translate-bl);
+        }
+
+        @screen lg {
+          transform: var(--translate-bl-strong);
+        }
       }
     }
 
@@ -40,7 +67,7 @@
       background-color: theme('colors.black');
 
       @nest :global(.dark) & {
-        background-color: theme('colors.gray.500');
+        background-color: theme('colors.gray.700');
       }
     }
   }

@@ -1,23 +1,24 @@
-<script>
+<script lang="ts">
   import { BackgroundColour } from '$lib/layout/translate/types.d';
   import { GradientColour } from '$lib/layout/types.d';
   import Heading from './heading/Heading.svelte';
 </script>
 
-<div class="column">
+<section class="column pad-y pad-x">
   <Heading bg={BackgroundColour.Yellow} fg={GradientColour.Yellow}>
-    <span class="message">
-      <h1>Under construction...</h1>
-      <small>Check back later.</small>
-    </span>
+    <slot>
+      <span class="message">
+        <h1>Under construction...</h1>
+        <small>Check back later.</small>
+      </span>
+    </slot>
   </Heading>
-</div>
+</section>
 
 <style lang="postcss">
   span.message {
     font-family: theme('fontFamily.mono');
     letter-spacing: theme('letterSpacing.tighter');
-    text-align: center;
 
     & > h1 {
       font-weight: theme('fontWeight.black');

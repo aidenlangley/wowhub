@@ -17,6 +17,8 @@
     }
 
     @screen md {
+      letter-spacing: theme('letterSpacing.tight');
+
       @apply text-18;
     }
 

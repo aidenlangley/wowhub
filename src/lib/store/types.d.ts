@@ -10,6 +10,7 @@ export interface Member {
   about: string[];
   frontline?: boolean;
   imgSrc?: string;
+  tallImg?: boolean;
 }
 
 export interface Seo {
