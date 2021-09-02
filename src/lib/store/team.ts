@@ -5,7 +5,7 @@ import { assets } from '$app/paths';
 
 export const team: Readable<Member[]> = readable([
   {
-    name: 'Dee',
+    name: '🌊 Dee',
     tags: ['peer support', 'māoritanga'],
     about: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
@@ -55,7 +55,7 @@ export const team: Readable<Member[]> = readable([
     imgSrc: `${assets}/images/people/kamina.jpg`,
   },
   {
-    name: 'Lisa',
+    name: '👩‍⚕️ Lisa',
     tags: ['clinical lead', 'mental health'],
     about: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
@@ -65,5 +65,43 @@ export const team: Readable<Member[]> = readable([
     ],
     frontline: true,
     // imgSrc: `${assets}/images/people/kamina.jpg`,
+  },
+  {
+    name: '🔥 Matua Stu & Whaea Bess',
+    tags: ['he waka eke noa', 'aod counselling'],
+    about: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
+        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
+        'ex ea commodo consequat.',
+    ],
+    frontline: true,
+    imgSrc: `${assets}/images/people/stu-bess.jpg`,
+    tallImg: true,
+  },
+  {
+    name: 'Noreen',
+    tags: ['he waka eke noa', 'peer support'],
+    about: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
+        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
+        'ex ea commodo consequat.',
+    ],
+    frontline: true,
+    imgSrc: `${assets}/images/people/noreen.jpg`,
+  },
+  {
+    name: '💻 Aiden',
+    tags: ['software engineer', 'self referral'],
+    about: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
+        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
+        'ex ea commodo consequat.',
+    ],
+    frontline: true,
+    imgSrc: `${assets}/images/people/aiden.jpg`,
+    tallImg: true,
   },
 ]);

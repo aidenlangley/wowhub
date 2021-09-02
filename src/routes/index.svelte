@@ -54,7 +54,7 @@
 <section class="blurb pad-x">
   <Skew
     direction={SkewDirection.Left}
-    strength={SkewStrength.Slight}
+    strength={SkewStrength.None}
     colour={GradientColour.Green}
   >
     <IndexBlurb />
@@ -68,7 +68,7 @@
 <section class="whakatauki pad-x">
   <Skew
     direction={SkewDirection.Right}
-    strength={SkewStrength.Slight}
+    strength={SkewStrength.None}
     colour={GradientColour.Green}
   >
     <IndexWhakatauki />

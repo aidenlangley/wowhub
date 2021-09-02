@@ -1,5 +1,6 @@
 <script lang="ts">
   import { team } from '$store/team';
+  import Heading from '../heading/Heading.svelte';
   import TeamMemberCard from './TeamMemberCard.svelte';
 </script>
 
@@ -8,6 +9,12 @@
   Wraps a list of `TeamMemberCard`. No background on `< sm` screens, but colour
   kicks in `> sm`. Requires 2 divs for a two-tone rotated look.
 -->
+<div class="heading column">
+  <Heading>
+    <span>Mātou tīma he hui mai!</span>
+    <span class="small">Meet our team!</span>
+  </Heading>
+</div>
 <div class="root">
   <div class="inner column gradient-gray pad-y gaps-y">
     {#each $team as member, index}
@@ -21,11 +28,37 @@
 </div>
 
 <style lang="postcss">
+  div.heading {
+    @apply place-items-center;
+
+    & > :global(*) {
+      z-index: 1;
+
+      & :global(h1) {
+        display: inline-grid;
+
+        & > :global(.small) {
+          font-family: theme('fontFamily.mono');
+          font-weight: theme('fontWeight.medium');
+          letter-spacing: theme('letterSpacing.tighter');
+          text-align: end;
+
+          @apply text-20;
+
+          @media screen(sm) {
+            @apply text-28;
+          }
+        }
+      }
+    }
+  }
+
   div.root {
-    background-color: theme('colors.green.300');
     border-color: theme('colors.green.500');
+    z-index: 0;
 
     @media screen(sm) {
+      background-color: theme('colors.green.300');
       border-radius: theme('borderRadius.DEFAULT');
       border-width: theme('borderWidth.DEFAULT');
 

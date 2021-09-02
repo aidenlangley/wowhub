@@ -10,9 +10,10 @@
   <h1>Planting the seed of hope...</h1>
   <h2>Sharing gifts of recovery.</h2>
 </div>
-<div>
+<div class="blurb">
   <Paragraph justify>
-    <b>Whakaoranga Whanau Recovery Hub</b> is a kaupapa Māori AOD community support
+    <b>Whakaoranga Whanau Recovery Hub</b> &
+    <b>He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
     service in Kaikohe. We're a team of passionate individuals who have lived experience.
   </Paragraph>
   <Paragraph justify>

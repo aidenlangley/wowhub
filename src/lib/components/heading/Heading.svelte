@@ -24,7 +24,7 @@
     font-weight: theme('fontWeight.medium');
     padding: theme('padding.1');
 
-    @apply text-32;
+    @apply text-28;
 
     @screen sm {
       font-weight: theme('fontWeight.bold');

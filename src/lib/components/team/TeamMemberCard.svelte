@@ -4,7 +4,6 @@
   import type { Member } from '$store/types.d';
   import { UserCircle } from 'svelte-hero-icons';
   import Heading from '../heading/Heading.svelte';
-  import Paragraph from '../Paragraph.svelte';
 
   export let member: Member;
   export let right = false;
@@ -69,18 +68,10 @@
 
     @screen lg {
       gap: theme('gap.4');
-      grid-template-areas:
-        'img  name  tags  '
-        'img  blurb blurb '
-        'img  blurb blurb ';
-      grid-template-columns: 1fr auto 1fr;
+      grid-template-columns: 2fr 3fr;
 
       &.right {
-        grid-template-areas:
-          'tags   name  img  '
-          'blurb  blurb img  '
-          'blurb  blurb img  ';
-        grid-template-columns: 1fr auto 1fr;
+        grid-template-columns: 3fr 2fr;
       }
     }
 

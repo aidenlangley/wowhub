@@ -14,8 +14,4 @@
   @component
   Friends and affiliates.
 -->
-<section class="under-construction pad-y pad-x">
-  <UnderConstruction />
-</section>
-
-<div class="root column pad-y gaps-y" />
+<UnderConstruction />
