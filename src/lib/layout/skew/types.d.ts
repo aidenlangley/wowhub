@@ -4,10 +4,3 @@ export enum SkewDirection {
   RotateLeft = 'rotate-left',
   RotateRight = 'rotate-right',
 }
-
-export enum SkewStrength {
-  Default = 'skew',
-  Slight = 'skew-slight',
-  Strong = 'skew-strong',
-  None = '',
-}

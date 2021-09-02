@@ -24,8 +24,8 @@
 <div class="root" class:dark>
   <Header />
   <main style="background-image: url({assets}/images/drawing.png);">
-    <!-- Opacity provider `div`. -->
-    <div class="padding">
+    <!-- Primarily an opacity provider `div` -->
+    <div class="opacity-provider pad-y gaps-y">
       <slot />
     </div>
   </main>
@@ -47,7 +47,7 @@
       transition-duration: 300ms;
       transition-property: background-color;
 
-      & > div {
+      & > div.opacity-provider {
         @apply bg-white/80;
 
         & > * {
@@ -61,7 +61,7 @@
       background-blend-mode: hard-light;
       background-color: theme('colors.gray.900');
 
-      & > div {
+      & > div.opacity-provider {
         @apply bg-black/70;
       }
     }

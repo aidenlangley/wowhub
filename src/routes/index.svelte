@@ -6,9 +6,6 @@
   import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
   import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
   import IndexServices from '$components/index/services/IndexServices.svelte';
-  import Skew from '$layout/skew/Skew.svelte';
-  import { SkewDirection, SkewStrength } from '$layout/skew/types.d';
-  import { GradientColour } from '$layout/types.d';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
@@ -34,47 +31,35 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="root column pad-y gaps-y">
-  <section class="pad-y">
+<div class="root column gaps-y">
+  <section id="banner" class="pad-y">
     <Banner white={$state.dark} />
   </section>
 
   <!-- Visual break after banner via dotted border. -->
-  <section>
+  <section id="quick-links">
     <IndexQuickLinks />
   </section>
 
   {#if news}
-    <section class="pad-b" in:fade>
+    <section id="news" in:fade>
       <IndexLatestNews {news} />
     </section>
   {/if}
 </div>
 
-<section class="blurb pad-x">
-  <Skew
-    direction={SkewDirection.Left}
-    strength={SkewStrength.None}
-    colour={GradientColour.Green}
-  >
-    <IndexBlurb />
-  </Skew>
+<section id="blurb" class="pad-y pad-x">
+  <IndexBlurb />
 </section>
 
-<section class="column pad-y" aria-hidden="true">
+<section id="serenity-prayer" class="column" aria-hidden="true">
   <IndexSerenityPrayer />
 </section>
 
-<section class="whakatauki pad-x">
-  <Skew
-    direction={SkewDirection.Right}
-    strength={SkewStrength.None}
-    colour={GradientColour.Green}
-  >
-    <IndexWhakatauki />
-  </Skew>
+<section id="whakatauki" class="pad-y pad-x">
+  <IndexWhakatauki />
 </section>
 
-<section class="pad-y" aria-hidden="true">
+<section id="services" aria-hidden="true">
   <IndexServices />
 </section>
