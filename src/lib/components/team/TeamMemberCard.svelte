@@ -2,7 +2,7 @@
   import { TranslateDirection } from '$lib/layout/translate/types.d';
   import Icon from '$lib/media/Icon.svelte';
   import type { Member } from '$store/types.d';
-  import { UserAdd, UserCircle, Users } from 'svelte-hero-icons';
+  import { UserCircle } from 'svelte-hero-icons';
   import Heading from '../heading/Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
 
