@@ -20,25 +20,25 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-0819b16c.js">
+		<link rel="modulepreload" href="/_app/start-1eb56ec5.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-dc84e8b1.js">
 		<link rel="modulepreload" href="/_app/chunks/singletons-ff603286.js">
 		<link rel="modulepreload" href="/_app/chunks/paths-bacddcca.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-a7d4d38d.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-f9958469.js">
 		<link rel="modulepreload" href="/_app/chunks/dark-ffb13b66.js">
 		<link rel="modulepreload" href="/_app/chunks/seo-1c9b74d4.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-1861f863.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-93742997.js">
 		<link rel="modulepreload" href="/_app/chunks/news-6067f7bf.js">
 		<link rel="modulepreload" href="/_app/chunks/Heading-36f3a385.js">
 		<link rel="modulepreload" href="/_app/chunks/Icon-7378c4ff.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-b1a30352.css">
-		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-7f2f243d.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-ebda81ff.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-78e1af7f.css">
 		<link rel="stylesheet" href="/_app/assets/news-42f8d7d1.css">
 		<link rel="stylesheet" href="/_app/assets/Heading-0b53de6a.css">
 
 		<script type="module">
-			import { start } from "/_app/start-0819b16c.js";
+			import { start } from "/_app/start-1eb56ec5.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -51,8 +51,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-a7d4d38d.js"),
-						import("/_app/pages/index.svelte-1861f863.js")
+						import("/_app/pages/__layout.svelte-f9958469.js"),
+						import("/_app/pages/index.svelte-93742997.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -102,11 +102,11 @@
 </span>
 </header>
   <main style="background-image: url(/images/drawing.png);">
-    <div class="padding">
-<div class="root column pad-y gaps-y"><section class="pad-y"><img src="/_app/assets/banner-b3819a17.png" alt="wowhub banner"></section>
+    <div class="opacity-provider pad-y gaps-y">
+<div class="root column gaps-y"><section id="banner" class="pad-y"><img src="/_app/assets/banner-b3819a17.png" alt="wowhub banner"></section>
 
   
-  <section>
+  <section id="quick-links">
 <div class="headings svelte-1r93bv0"><h3 class="svelte-19t930p sm:text-center"><span class="span svelte-171o8s0">Get in touch, or come and see us.
 </span>
 </h3></div>
@@ -129,7 +129,7 @@
 </a>
 </div></section>
 
-  <section class="pad-b"><h3 class="svelte-19t930p"><span class="span svelte-171o8s0">What&#39;s the latest?
+  <section id="news"><h3 class="svelte-19t930p"><span class="span svelte-171o8s0">What&#39;s the latest?
 </span>
 </h3>
   
@@ -140,26 +140,27 @@
   <small class="svelte-1frlsn2">posted 23/08/2021, 12:00:00</small>
 </li></ol></section></div>
 
-<section class="blurb pad-x">
-<div class="skew-left  gradient-green"><div class="column pad-y gaps-y">
-<div class="headings svelte-1264k0k"><h1 class="svelte-1264k0k">Planting the seed of hope...</h1>
-  <h2 class="svelte-1264k0k">Sharing gifts of recovery.</h2></div>
-<div class="blurb"><p class="svelte-1lsrv9g text-justify"><b>Whakaoranga Whanau Recovery Hub</b> &amp;
-    <b>He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
-    service in Kaikohe. We&#39;re a team of passionate individuals who have lived experience.
-  
-</p>
-  <p class="svelte-1lsrv9g text-justify">We work together and collaborate with other health providers to strengthen,
-    educate and empower individuals to reach their full potential.
-  
-</p>
-  <p class="svelte-1lsrv9g text-justify">You can find us at <b>135 Broadway, Kaikohe</b>, Monday to Friday, 10am
-    until 3pm.
-  
-</p>
-</div></div></div></section>
+<section id="blurb" class="pad-y pad-x">
 
-<section class="column pad-y" aria-hidden="true">
+<div id="blurb-skewed-bg" class="skewed-grid svelte-nehk5k"><div class="skewed-bg skew-left gradient-green svelte-nehk5k"></div>
+  <div class="content column pad-y gaps-y svelte-nehk5k"><div class="headings svelte-dzip7w"><h1 class="svelte-dzip7w">Planting the seed of hope...</h1>
+    <h2 class="svelte-dzip7w">Sharing gifts of recovery.</h2></div>
+  <div class="svelte-dzip7w"><p class="svelte-1lsrv9g text-justify"><b class="svelte-dzip7w">Whakaoranga Whanau Recovery Hub</b> &amp;
+      <b class="svelte-dzip7w">He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
+      service in Kaikohe. We&#39;re a team of passionate individuals who have lived experience.
+    
+</p>
+    <p class="svelte-1lsrv9g text-justify">We work together and collaborate with other health providers to
+      strengthen, educate and empower individuals to reach their full potential.
+    
+</p>
+    <p class="svelte-1lsrv9g text-justify">You can find us at <b class="svelte-dzip7w">135 Broadway, Kaikohe</b>, Monday to Friday, 10am
+      until 3pm.
+    
+</p></div></div>
+</div></section>
+
+<section id="serenity-prayer" class="column" aria-hidden="true">
 
 <div class="passage svelte-1a7bvrk"><p class="svelte-1a7bvrk"><span class="god svelte-1a7bvrk">God,</span>
     grant me the
@@ -182,26 +183,27 @@
 </a>
 </div></section>
 
-<section class="whakatauki pad-x">
-<div class="skew-right  gradient-green"><div class="column pad-y gaps-y">
-<div class="headings svelte-16dtolc"><h1 class="svelte-16dtolc"><span>E hara taku toa i te toa takitahi,</span>
-    <span>engari he toa takitini</span></h1>
-  <h2 class="svelte-16dtolc">&quot;My strength is not that of a single warrior, but that of many&quot;</h2></div>
-<div><p class="svelte-1lsrv9g text-justify">A favourite whakatauki of ours that embodies our ideals perfectly. A strong
-    individual empowers us all.
-  
-</p>
-  <p class="svelte-1lsrv9g text-justify">We take a holistic approach when it comes to treatment. Behind the
-    individual there&#39;s roopu, whanau, there&#39;s hinganaro, tinana and wairua.
-    Addiction only accounts for a fraction of the recovery process.
-  
-</p>
-  <p class="svelte-1lsrv9g text-justify">When Taumarere is in need, Hokianga will answer the call, and vice versa.
-  
-</p>
-</div></div></div></section>
+<section id="whakatauki" class="pad-y pad-x">
 
-<section class="pad-y" aria-hidden="true">
+<div id="whakatauki-skewed-bg" class="skewed-grid svelte-nehk5k"><div class="skewed-bg skew-right gradient-green svelte-nehk5k"></div>
+  <div class="content column pad-y gaps-y svelte-nehk5k"><div class="headings svelte-1a9w5xk"><h1 class="svelte-1a9w5xk"><span class="svelte-1a9w5xk">E hara taku toa i te toa takitahi,</span>
+      <span class="svelte-1a9w5xk">engari he toa takitini</span></h1>
+    <h2 class="svelte-1a9w5xk">&quot;My strength is not that of a single warrior, but that of many&quot;</h2></div>
+  <div class="svelte-1a9w5xk"><p class="svelte-1lsrv9g text-justify">A favourite whakatauki of ours that embodies our ideals perfectly. A
+      strong individual empowers us all.
+    
+</p>
+    <p class="svelte-1lsrv9g text-justify">We take a holistic approach when it comes to treatment. Behind the
+      individual there&#39;s roopu, whanau, there&#39;s hinganaro, tinana and wairua.
+      Addiction only accounts for a fraction of the recovery process.
+    
+</p>
+    <p class="svelte-1lsrv9g text-justify">When Taumarere is in need, Hokianga will answer the call, and vice versa.
+    
+</p></div></div>
+</div></section>
+
+<section id="services" aria-hidden="true">
 <div class="services svelte-1bv6dsd"><div class="svelte-1bv6dsd"><span class="svelte-1bv6dsd">māori</span>
       <span class="svelte-1bv6dsd">kaupapa
       </span></div>
