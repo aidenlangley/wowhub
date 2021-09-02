@@ -1,10 +1,10 @@
 <script lang="ts">
-  import LogoWhite from '$images/logo/logo-white.png';
-  import Logo from '$images/logo/logo.png';
-  import { blur } from 'svelte/transition';
+  import LogoWhite from '$images/logo/logo-white.png'
+  import Logo from '$images/logo/logo.png'
+  import { blur } from 'svelte/transition'
 
-  export let white = false;
-  const alt = 'wowhub logo';
+  export let white = false
+  const alt = 'wowhub logo'
 </script>
 
 {#if !white}

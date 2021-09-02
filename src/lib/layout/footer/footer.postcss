@@ -17,23 +17,16 @@ footer {
   & > a {
     align-items: center;
     color: theme('colors.gray.300');
-    column-gap: theme('gap.2'); /* 4px */
+    column-gap: theme('gap.2');
     display: inline-grid;
     font-family: theme('fontFamily.mono');
     grid-auto-flow: column;
     justify-content: start;
+    letter-spacing: theme('letterSpacing.tight');
 
     &:hover,
     &:focus {
       color: theme('colors.gray.100');
-    }
-
-    @screen sm {
-      @apply text-18;
-    }
-
-    @screen lg {
-      @apply text-20;
     }
   }
 

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Link from '../link/Link.svelte';
-  import type { Article } from './types.d';
+  import Link from '../link/Link.svelte'
+  import type { Article } from './types.d'
 
-  export let article: Article;
+  export let article: Article
 </script>
 
 <li>

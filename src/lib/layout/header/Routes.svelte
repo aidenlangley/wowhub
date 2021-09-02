@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import Tooltip from '$components/Tooltip.svelte';
-  import { routes } from '$store/routes';
+  import { page } from '$app/stores'
+  import Tooltip from '$components/Tooltip.svelte'
+  import { routes } from '$store/routes'
 </script>
 
 <!--
@@ -78,7 +78,7 @@
 
         &.active {
           background-color: theme('colors.white');
-          border-bottom-width: theme('borderWidth.2');
+          border-bottom-width: theme('borderWidth.4');
           border-color: theme('colors.green.300');
           color: theme('colors.black');
           font-weight: theme('fontWeight.bold');
@@ -88,8 +88,6 @@
           @apply text-20;
 
           @screen ty {
-            border-bottom-width: theme('borderWidth.4');
-
             @apply text-24;
           }
 

@@ -1,17 +1,17 @@
 <!-- Cannot be ts because of lack of support from `mdsvex` -->
 <script>
-  import { seo } from '$lib/store/seo';
+  import { seo } from '$lib/store/seo'
 
-  export let title;
-  export let description;
-  export let date = null;
-  export let author = null;
+  export let title
+  export let description
+  export let date = null
+  export let author = null
 
   $seo = {
     title,
     description,
     robots: 'none',
-  };
+  }
 </script>
 
 <!--

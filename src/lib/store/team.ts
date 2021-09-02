@@ -1,7 +1,7 @@
-import type { Readable } from 'svelte/store';
-import { readable } from 'svelte/store';
-import type { Member } from './types.d';
-import { assets } from '$app/paths';
+import type { Readable } from 'svelte/store'
+import { readable } from 'svelte/store'
+import type { Member } from './types.d'
+import { assets } from '$app/paths'
 
 export const team: Readable<Member[]> = readable([
   {
@@ -105,4 +105,4 @@ export const team: Readable<Member[]> = readable([
     imgSrc: `${assets}/images/people/aiden.jpg`,
     tallImg: true,
   },
-]);
+])

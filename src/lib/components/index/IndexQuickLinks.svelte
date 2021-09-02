@@ -1,10 +1,9 @@
 <script lang="ts">
-  import Heading3 from '$components/heading/Heading3.svelte';
-  import Link from '$components/link/Link.svelte';
-  import Span from '$components/Span.svelte';
-  import Icon from '$media/Icon.svelte';
-  import { info } from '$store/info';
-  import { ExternalLink, Mail, Phone } from 'svelte-hero-icons';
+  import Heading3 from '$components/heading/Heading3.svelte'
+  import Link from '$components/link/Link.svelte'
+  import Icon from '$media/Icon.svelte'
+  import { info } from '$store/info'
+  import { ExternalLink, Mail, Phone } from 'svelte-hero-icons'
 </script>
 
 <!--
@@ -14,11 +13,8 @@
   maps.
 -->
 <div class="headings">
-  <Heading3 center>
-    <Span>Get in touch, or come and see us.</Span>
-  </Heading3>
+  <Heading3 center>Get in touch, or come and see us.</Heading3>
 </div>
-
 <div class="links">
   <Link href="mailto:{$info.email}" label="email {$info.email}" button>
     <Icon src={Mail} />
@@ -65,9 +61,35 @@
     gap: theme('gap.2');
     padding-top: theme('padding.2');
 
-    @screen sm {
+    @media screen(sm) {
       gap: theme('gap.4');
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-areas:
+        'top    top     '
+        'bottom bottom  ';
     }
+
+    /* & > :nth-child(1),
+    & > :nth-child(2) {
+      grid-area: top;
+      justify-items: center;
+      place-items: center;
+    }
+
+    & > :nth-child(3),
+    & > :nth-child(4) {
+      grid-area: bottom;
+      justify-items: start;
+      place-items: center;
+    }
+
+    & > :nth-child(odd) {
+      justify-items: right;
+      place-items: center;
+    }
+
+    & > :nth-child(even) {
+      justify-items: left;
+      place-items: start;
+    } */
   }
 </style>

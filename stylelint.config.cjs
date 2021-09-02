@@ -25,4 +25,4 @@ module.exports = {
     'no-descending-specificity': null,
     'order/properties-alphabetical-order': true,
   },
-};
+}

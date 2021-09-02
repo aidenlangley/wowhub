@@ -1,9 +1,11 @@
 <script lang="ts">
-  export let center = false;
+  export let center = false
 </script>
 
 <h3 class:sm:text-center={center}>
-  <slot />
+  <span>
+    <slot />
+  </span>
 </h3>
 
 <style lang="postcss">
@@ -21,6 +23,14 @@
 
     @screen sm {
       @apply text-22;
+    }
+
+    & > span {
+      @apply bg-white/80;
+
+      @nest :global(.dark) & {
+        @apply bg-black/80;
+      }
     }
   }
 </style>

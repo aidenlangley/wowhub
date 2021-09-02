@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let justify = false;
+  export let justify = false
 </script>
 
 <p class:text-justify={justify}>

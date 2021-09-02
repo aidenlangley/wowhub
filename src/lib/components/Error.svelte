@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { BackgroundColour } from '$lib/layout/translate/types.d';
-  import { GradientColour } from '$lib/layout/types.d';
-  import Heading from './heading/Heading.svelte';
+  import { BackgroundColour } from '$lib/layout/translate/types.d'
+  import { GradientColour } from '$lib/layout/types.d'
+  import Heading from './heading/Heading.svelte'
 </script>
 
 <section class="column pad-x">
@@ -9,7 +9,7 @@
     <slot>
       <span class="message">
         <h1>Under construction...</h1>
-        <small>Check back later.</small>
+        <small>Check back later. Contact details are in the footer.</small>
       </span>
     </slot>
   </Heading>

@@ -16,16 +16,16 @@
     'ora',
     'tailored',
     'for you',
-  ];
+  ]
 
-  const length = buzzWords.length;
-  let chunks: string[][] = [];
+  const length = buzzWords.length
+  let chunks: string[][] = []
   for (let index = 0; index < length; index++) {
-    if (buzzWords.length == 0) break;
+    if (buzzWords.length == 0) break
     if (buzzWords.length >= 6) {
-      chunks[index] = buzzWords.splice(0, 6);
+      chunks[index] = buzzWords.splice(0, 6)
     } else {
-      chunks[index] = buzzWords.splice(0, buzzWords.length);
+      chunks[index] = buzzWords.splice(0, buzzWords.length)
     }
   }
 </script>

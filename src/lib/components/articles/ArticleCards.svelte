@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Article } from './types';
-  import ArticleCard from './ArticleCard.svelte';
+  import type { Article } from './types'
+  import ArticleCard from './ArticleCard.svelte'
 
-  export let articles: Article[];
+  export let articles: Article[]
 </script>
 
 <!--

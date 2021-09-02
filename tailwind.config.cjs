@@ -1,14 +1,14 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme')
+const colors = require('tailwindcss/colors')
 
 // Helper functions
 const round = (num) =>
   num
     .toFixed(7)
     .replace(/(\.[0-9]+?)0+$/, '$1')
-    .replace(/\.0$/, '');
-const em = (px) => `${round(px / 16)}em`;
-const rem = (px) => `${round(px / 16)}rem`;
+    .replace(/\.0$/, '')
+const em = (px) => `${round(px / 16)}em`
+const rem = (px) => `${round(px / 16)}rem`
 
 const config = {
   mode: 'jit',
@@ -170,6 +170,6 @@ const config = {
       typography: ['dark'],
     },
   },
-};
+}
 
-module.exports = config;
+module.exports = config

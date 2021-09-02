@@ -1,13 +1,13 @@
 <script lang="ts">
-  import { TranslateDirection } from '$lib/layout/translate/types.d';
-  import Icon from '$lib/media/Icon.svelte';
-  import type { Member } from '$store/types.d';
-  import { UserCircle } from 'svelte-hero-icons';
-  import Heading from '../heading/Heading.svelte';
-  import Paragraph from '../Paragraph.svelte';
+  import { TranslateDirection } from '$lib/layout/translate/types.d'
+  import Icon from '$lib/media/Icon.svelte'
+  import type { Member } from '$store/types.d'
+  import { UserCircle } from 'svelte-hero-icons'
+  import Heading from '../heading/Heading.svelte'
+  import Paragraph from '../Paragraph.svelte'
 
-  export let member: Member;
-  export let right = false;
+  export let member: Member
+  export let right = false
 </script>
 
 <section class="member" class:right>

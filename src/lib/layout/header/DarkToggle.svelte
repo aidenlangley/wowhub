@@ -1,17 +1,17 @@
 <script lang="ts">
-  import Tooltip from '$components/Tooltip.svelte';
-  import { set, state } from '$store/dark';
-  import Icon, { Moon, Sun } from 'svelte-hero-icons';
-  import { fade } from 'svelte/transition';
+  import Tooltip from '$components/Tooltip.svelte'
+  import { set, state } from '$store/dark'
+  import Icon, { Moon, Sun } from 'svelte-hero-icons'
+  import { fade } from 'svelte/transition'
 
-  $: dark = $state.dark;
-  const toggleDark = () => set(!dark);
+  $: dark = $state.dark
+  const toggleDark = () => set(!dark)
 
-  $: focused = false;
-  const focus = () => (focused = true);
-  const blur = () => (focused = false);
+  $: focused = false
+  const focus = () => (focused = true)
+  const blur = () => (focused = false)
 
-  $: text = `toggle ${!dark ? 'dark' : 'light'} mode on`;
+  $: text = `toggle ${!dark ? 'dark' : 'light'} mode on`
 </script>
 
 <!--

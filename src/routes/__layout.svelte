@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { assets } from '$app/paths';
-  import Header from '$layout/header/Header.svelte';
-  import Footer from '$lib/layout/footer/Footer.svelte';
-  import Seo from '$lib/Seo.svelte';
-  import { state } from '$store/dark';
+  import { assets } from '$app/paths'
+  import Header from '$layout/header/Header.svelte'
+  import Footer from '$lib/layout/footer/Footer.svelte'
+  import Seo from '$lib/Seo.svelte'
+  import { state } from '$store/dark'
 
-  $: dark = $state.dark;
+  $: dark = $state.dark
 </script>
 
 <!--

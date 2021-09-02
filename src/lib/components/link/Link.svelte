@@ -1,19 +1,19 @@
 <script lang="ts">
-  import { browser } from '$app/env';
-  import { prefetch } from '$app/navigation';
+  import { browser } from '$app/env'
+  import { prefetch } from '$app/navigation'
 
-  export let href: string;
-  export let internal = false;
-  export let label: string = null;
-  export let button = false;
-  export let colour: string = null;
+  export let href: string
+  export let internal = false
+  export let label: string = null
+  export let button = false
+  export let colour: string = null
 
   if (internal && browser) {
-    prefetch(href);
+    prefetch(href)
   }
 
-  const target = !internal ? '_blank' : null;
-  const rel = `noopener ${!internal ? 'external' : ''}`;
+  const target = !internal ? '_blank' : null
+  const rel = `noopener ${!internal ? 'external' : ''}`
 </script>
 
 <!--

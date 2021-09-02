@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { team } from '$store/team';
-  import Heading from '../heading/Heading.svelte';
-  import TeamMemberCard from './TeamMemberCard.svelte';
+  import { team } from '$store/team'
+  import Heading from '../heading/Heading.svelte'
+  import TeamMemberCard from './TeamMemberCard.svelte'
 </script>
 
 <!--

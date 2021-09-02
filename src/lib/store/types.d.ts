@@ -1,20 +1,20 @@
 export interface Route {
-  name: string;
-  path: string;
-  translation: string;
+  name: string
+  path: string
+  translation: string
 }
 
 export interface Member {
-  name: string;
-  tags: string[];
-  about: string[];
-  frontline?: boolean;
-  imgSrc?: string;
-  tallImg?: boolean;
+  name: string
+  tags: string[]
+  about: string[]
+  frontline?: boolean
+  imgSrc?: string
+  tallImg?: boolean
 }
 
 export interface Seo {
-  title: string;
-  description: string;
-  robots: string;
+  title: string
+  description: string
+  robots: string
 }

@@ -1,18 +1,18 @@
 <script lang="ts" context="module">
-  import type { Article } from '$components/articles/types.d';
-  import IndexBlurb from '$components/index/IndexBlurb.svelte';
-  import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
-  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
-  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
-  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
-  import IndexServices from '$components/index/services/IndexServices.svelte';
-  import Banner from '$media/Banner.svelte';
-  import { state } from '$store/dark';
-  import { seo } from '$store/seo';
-  import { fade } from 'svelte/transition';
-  import { loadNews as load } from './news.svelte';
+  import type { Article } from '$components/articles/types.d'
+  import IndexBlurb from '$components/index/IndexBlurb.svelte'
+  import IndexLatestNews from '$components/index/IndexLatestNews.svelte'
+  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte'
+  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte'
+  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte'
+  import IndexServices from '$components/index/services/IndexServices.svelte'
+  import Banner from '$media/Banner.svelte'
+  import { state } from '$store/dark'
+  import { seo } from '$store/seo'
+  import { fade } from 'svelte/transition'
+  import { loadNews as load } from './news.svelte'
 
-  export { load };
+  export { load }
 </script>
 
 <script lang="ts">
@@ -21,9 +21,9 @@
     description:
       'He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services',
     robots: 'none',
-  };
+  }
 
-  export let news: Article[];
+  export let news: Article[]
 </script>
 
 <!--
