@@ -1,20 +1,25 @@
 <script lang="ts">
   import { TranslateDirection } from '$lib/layout/translate/types.d';
+  import Icon from '$lib/media/Icon.svelte';
   import type { Member } from '$store/types.d';
+  import { UserCircle } from 'svelte-hero-icons';
   import Heading from '../heading/Heading.svelte';
   import Paragraph from '../Paragraph.svelte';
 
   export let member: Member;
   export let right = false;
-  export let tallImg = false;
 </script>
 
 <section class="member" class:right>
-  <img
-    src={member.imgSrc}
-    alt="image of {member.name}"
-    class:tall={member.tallImg}
-  />
+  {#if member.imgSrc}
+    <img
+      src={member.imgSrc}
+      alt="image of {member.name}"
+      class:tall={member.tallImg}
+    />
+  {:else}
+    <Icon src={UserCircle} solid size="100%" />
+  {/if}
   <div class="name">
     <Heading
       direction={right
@@ -31,7 +36,7 @@
   </h2>
   <div class="blurb">
     {#each member.about as line}
-      <Paragraph>{line}</Paragraph>
+      <p>{line}</p>
     {/each}
   </div>
 </section>
@@ -43,7 +48,7 @@
     row-gap: theme('gap.2');
 
     @screen sm {
-      align-items: end;
+      align-items: center;
       gap: theme('gap.3');
       grid-template-areas:
         'img  name  '
@@ -57,7 +62,8 @@
           'tags  img  '
           'blurb img  ';
         grid-template-columns: 2fr 1fr;
-        place-items: end;
+        justify-items: right;
+        text-align: right;
       }
     }
 
@@ -71,14 +77,10 @@
 
       &.right {
         grid-template-areas:
-          'tags   name   img  '
-          'blurb  blurb  img  '
-          'blurb  blurb  img  ';
+          'tags   name  img  '
+          'blurb  blurb img  '
+          'blurb  blurb img  ';
         grid-template-columns: 1fr auto 1fr;
-
-        & > h2.tags {
-          padding-right: theme('padding.2');
-        }
       }
     }
 
@@ -89,18 +91,27 @@
     }
 
     & > img {
-      border-color: theme('colors.gray.300');
-      border-radius: theme('borderRadius.xl');
-      border-width: theme('borderWidth.DEFAULT');
-      max-height: theme('height.48');
+      border-radius: theme('borderRadius.DEFAULT');
+      box-shadow: theme('dropShadow.md');
       object-fit: cover;
+    }
+
+    & :global(svg) {
+      color: theme('colors.green.700');
+
+      @nest :global(.dark) & {
+        color: theme('colors.green.300');
+      }
+    }
+
+    & > img,
+    & :global(svg) {
+      max-height: theme('height.48');
       place-self: center;
       width: 100%;
 
-      @apply drop-shadow-lg;
-
-      @nest :global(.dark) & {
-        border-color: theme('colors.gray.700');
+      &.tall {
+        @apply object-top;
       }
 
       @screen ty {
@@ -115,6 +126,7 @@
     }
 
     & > h2.tags {
+      align-self: end;
       color: theme('colors.gray.700');
       font-family: theme('fontFamily.mono');
       letter-spacing: theme('letterSpacing.tighter');
@@ -133,21 +145,17 @@
 
       @screen md {
         letter-spacing: theme('letterSpacing.tight');
-
-        @apply text-24;
       }
 
       @screen lg {
         padding-left: theme('padding.2');
-
-        @apply text-28;
+        padding-right: theme('padding.2');
       }
     }
 
     & > div.blurb {
-      text-align: justify;
-
       @screen sm {
+        font-weight: theme('fontWeight.light');
         grid-area: blurb;
       }
     }

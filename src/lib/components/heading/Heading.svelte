@@ -19,6 +19,7 @@
 
 <style lang="postcss">
   h1 {
+    border-radius: theme('borderRadius.DEFAULT');
     font-family: theme('fontFamily.serif');
     font-weight: theme('fontWeight.medium');
     padding: theme('padding.1');

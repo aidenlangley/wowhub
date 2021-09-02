@@ -22,25 +22,36 @@
 
 <style lang="postcss">
   div.root {
-    @screen sm {
-      background-color: theme('colors.green.300');
+    background-color: theme('colors.green.300');
+    border-color: theme('colors.green.500');
+
+    @media screen(sm) {
       border-radius: theme('borderRadius.DEFAULT');
-      box-shadow: theme('boxShadow.md');
+      border-width: theme('borderWidth.DEFAULT');
 
       @apply -rotate-2;
+    }
 
-      & > div.inner {
+    @nest :global(.dark) & {
+      background-color: theme('colors.green.800');
+      border-color: theme('colors.green.600');
+    }
+
+    & > div.inner {
+      border-bottom-width: theme('borderWidth.DEFAULT');
+      border-color: theme('colors.gray.300');
+      border-radius: theme('borderRadius.DEFAULT');
+      border-top-width: theme('borderWidth.DEFAULT');
+
+      @media screen(sm) {
         background-image: theme('backgroundImage.gradient-to-b');
-        border-color: theme('colors.gray.300');
-        border-radius: theme('borderRadius.DEFAULT');
         border-width: theme('borderWidth.DEFAULT');
-        box-shadow: theme('boxShadow.md');
 
         @apply rotate-2;
+      }
 
-        @nest :global(.dark) & {
-          border-color: theme('colors.gray.600');
-        }
+      @nest :global(.dark) & {
+        border-color: theme('colors.gray.600');
       }
     }
   }

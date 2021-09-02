@@ -6,7 +6,7 @@
   @component
   One of our favourite whakatauki (proverb.)
 -->
-<div class="headings text-shadow-lg">
+<div class="headings">
   <h1>
     <span>E hara taku toa i te toa takitahi,</span>
     <span>engari he toa takitini</span>

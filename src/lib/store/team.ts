@@ -28,6 +28,7 @@ export const team: Readable<Member[]> = readable([
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/rhonda.jpg`,
+    tallImg: true,
   },
   {
     name: 'Jane',
@@ -52,5 +53,17 @@ export const team: Readable<Member[]> = readable([
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/kamina.jpg`,
+  },
+  {
+    name: 'Lisa',
+    tags: ['clinical lead', 'mental health'],
+    about: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
+        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
+        'ex ea commodo consequat.',
+    ],
+    frontline: true,
+    // imgSrc: `${assets}/images/people/kamina.jpg`,
   },
 ]);

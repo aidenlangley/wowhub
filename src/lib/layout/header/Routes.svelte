@@ -85,7 +85,7 @@
           letter-spacing: theme('letterSpacing.tighter');
           pointer-events: none;
 
-          @apply text-18;
+          @apply text-20;
 
           @screen ty {
             border-bottom-width: theme('borderWidth.4');

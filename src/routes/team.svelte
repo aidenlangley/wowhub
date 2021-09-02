@@ -16,8 +16,8 @@
 -->
 <UnderConstruction />
 
-<div class="root pad-x pad-y gaps-y">
-  <section>
+<div class="root pad-y gaps-y">
+  <section class="pad-x">
     <TeamMemberCards />
   </section>
 </div>
