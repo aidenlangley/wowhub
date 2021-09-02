@@ -62,7 +62,7 @@
       border-radius: theme('borderRadius.DEFAULT');
       border-width: theme('borderWidth.DEFAULT');
 
-      @apply -rotate-2;
+      @apply -rotate-1;
     }
 
     @nest :global(.dark) & {
@@ -80,7 +80,7 @@
         background-image: theme('backgroundImage.gradient-to-b');
         border-width: theme('borderWidth.DEFAULT');
 
-        @apply rotate-2;
+        @apply rotate-1;
       }
 
       @nest :global(.dark) & {
