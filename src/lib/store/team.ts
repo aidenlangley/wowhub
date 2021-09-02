@@ -43,6 +43,19 @@ export const team: Readable<Member[]> = readable([
     imgSrc: `${assets}/images/people/jane.jpg`,
   },
   {
+    name: '🔥 Matua Stu & Whaea Bess',
+    tags: ['he waka eke noa', 'aod counselling'],
+    about: [
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
+        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
+        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
+        'ex ea commodo consequat.',
+    ],
+    frontline: true,
+    imgSrc: `${assets}/images/people/stu-bess.jpg`,
+    tallImg: true,
+  },
+  {
     name: 'Kamina',
     tags: ['administration', 'logistics'],
     about: [
@@ -66,19 +79,7 @@ export const team: Readable<Member[]> = readable([
     frontline: true,
     // imgSrc: `${assets}/images/people/kamina.jpg`,
   },
-  {
-    name: '🔥 Matua Stu & Whaea Bess',
-    tags: ['he waka eke noa', 'aod counselling'],
-    about: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
-        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
-        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
-        'ex ea commodo consequat.',
-    ],
-    frontline: true,
-    imgSrc: `${assets}/images/people/stu-bess.jpg`,
-    tallImg: true,
-  },
+
   {
     name: 'Noreen',
     tags: ['he waka eke noa', 'peer support'],

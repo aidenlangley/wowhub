@@ -4,7 +4,7 @@
   import Heading from './heading/Heading.svelte';
 </script>
 
-<section class="column pad-y pad-x">
+<section class="column pad-x">
   <Heading bg={BackgroundColour.Yellow} fg={GradientColour.Yellow}>
     <slot>
       <span class="message">

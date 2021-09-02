@@ -1,75 +1,75 @@
-@layer utilities {
-  :root {
-    /* Bottom right */
-    --translate-br-slight:
-      translateX(theme('translate.1'))
-      translateY(theme('translate.1'));
-    --translate-br:
-      translateX(theme('translate.2'))
-      translateY(theme('translate.2'));
-    --translate-br-strong:
-      translateX(theme('translate.3'))
-      translateY(theme('translate.3'));
+:root {
+  /* Bottom right */
+  --translate-br-slight:
+    translateX(theme('translate.1'))
+    translateY(theme('translate.1'));
+  --translate-br:
+    translateX(theme('translate.2'))
+    translateY(theme('translate.2'));
+  --translate-br-strong:
+    translateX(theme('translate.3'))
+    translateY(theme('translate.3'));
 
-    /* Bottom left */
-    --translate-bl-slight:
-      translateX(theme('translate.-1'))
-      translateY(theme('translate.1'));
-    --translate-bl:
-      translateX(theme('translate.-2'))
-      translateY(theme('translate.2'));
-    --translate-bl-strong:
-      translateX(theme('translate.-3'))
-      translateY(theme('translate.3'));
+  /* Bottom left */
+  --translate-bl-slight:
+    translateX(theme('translate.-1'))
+    translateY(theme('translate.1'));
+  --translate-bl:
+    translateX(theme('translate.-2'))
+    translateY(theme('translate.2'));
+  --translate-bl-strong:
+    translateX(theme('translate.-3'))
+    translateY(theme('translate.3'));
+}
+
+.translate-br,
+.translate-bl {
+  border-radius: theme('borderRadius.DEFAULT');
+  max-width: theme('maxWidth.max');
+  transition-duration: 500ms;
+  transition-timing-function: theme('transitionTimingFunction.in-out');
+
+  &.translate-br {
+    & > :global(*) {
+      transform: var(--translate-br-slight);
+
+      @screen md {
+        transform: var(--translate-br);
+      }
+
+      @screen lg {
+        transform: var(--translate-br-strong);
+      }
+    }
   }
 
-  .translate-br,
-  .translate-bl {
-    border-radius: theme('borderRadius.DEFAULT');
-    max-width: theme('maxWidth.max');
+  &.translate-bl {
+    & > :global(*) {
+      transform: var(--translate-bl-slight);
 
-    &.translate-br {
-      & > :global(*) {
-        transform: var(--translate-br-slight);
+      @screen md {
+        transform: var(--translate-bl);
+      }
 
-        @screen md {
-          transform: var(--translate-br);
-        }
-
-        @screen lg {
-          transform: var(--translate-br-strong);
-        }
+      @screen lg {
+        transform: var(--translate-bl-strong);
       }
     }
+  }
 
-    &.translate-bl {
-      & > :global(*) {
-        transform: var(--translate-bl-slight);
+  &.translate-green {
+    background-color: theme('colors.green.300');
+  }
 
-        @screen md {
-          transform: var(--translate-bl);
-        }
+  &.translate-red {
+    background-color: theme('colors.red.400');
+  }
 
-        @screen lg {
-          transform: var(--translate-bl-strong);
-        }
-      }
-    }
+  &.translate-yellow {
+    background-color: theme('colors.black');
 
-    &.translate-green {
-      background-color: theme('colors.green.300');
-    }
-
-    &.translate-red {
-      background-color: theme('colors.red.400');
-    }
-
-    &.translate-yellow {
-      background-color: theme('colors.black');
-
-      @nest :global(.dark) & {
-        background-color: theme('colors.gray.700');
-      }
+    @nest :global(.dark) & {
+      background-color: theme('colors.gray.700');
     }
   }
 }

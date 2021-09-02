@@ -56,7 +56,7 @@
   export let docs: Article[];
 </script>
 
-<div class="root column pad-y gaps-y">
+<div class="root column gaps-y">
   <section class="gaps-y">
     <Heading>Panui (news)</Heading>
     <ArticleCards articles={news} />

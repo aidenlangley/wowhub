@@ -2,8 +2,9 @@
   import { TranslateDirection } from '$lib/layout/translate/types.d';
   import Icon from '$lib/media/Icon.svelte';
   import type { Member } from '$store/types.d';
-  import { UserCircle } from 'svelte-hero-icons';
+  import { UserAdd, UserCircle, Users } from 'svelte-hero-icons';
   import Heading from '../heading/Heading.svelte';
+  import Paragraph from '../Paragraph.svelte';
 
   export let member: Member;
   export let right = false;
@@ -35,7 +36,7 @@
   </h2>
   <div class="blurb">
     {#each member.about as line}
-      <p>{line}</p>
+      <Paragraph>{line}</Paragraph>
     {/each}
   </div>
 </section>
@@ -45,6 +46,8 @@
     display: inline-grid;
     grid-auto-flow: row;
     row-gap: theme('gap.2');
+    transition-duration: 500ms;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
 
     @screen sm {
       align-items: center;
@@ -88,7 +91,7 @@
     }
 
     & :global(svg) {
-      color: theme('colors.green.700');
+      color: theme('colors.gray.700');
 
       @nest :global(.dark) & {
         color: theme('colors.green.300');
@@ -141,6 +144,10 @@
       @screen lg {
         padding-left: theme('padding.2');
         padding-right: theme('padding.2');
+      }
+
+      @screen xl {
+        font-size: theme('fontSize.26');
       }
     }
 

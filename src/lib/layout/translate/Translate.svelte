@@ -8,3 +8,7 @@
 <div class="{direction} {colour}">
   <slot />
 </div>
+
+<style lang="postcss">
+  @import './translate.postcss';
+</style>
