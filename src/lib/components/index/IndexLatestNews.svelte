@@ -9,5 +9,4 @@
 {#if news.length > 0}
   <Heading3>What's the latest?</Heading3>
   <ArticleCards articles={news.slice(0, 5)} />
-
 {/if}

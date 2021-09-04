@@ -3,6 +3,8 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev --host",
+		"svelte:build": "svelte-kit build",
+		"svelte:build:deploy": "svelte-kit build && npm run deploy",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"prettier:check": "prettier --check --plugin-search-dir=. .",

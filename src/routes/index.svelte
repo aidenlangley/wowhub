@@ -41,6 +41,7 @@
     <IndexQuickLinks />
   </section>
 
+
   <iframe
     title="Beating Addiction Together"
     src="https://tehiku.nz/embed/11829"
@@ -75,9 +76,9 @@
 
 <style lang="postcss">
   iframe {
-    place-self: center;
-    border-width: 4px;
     border-color: theme('colors.green.800');
+    border-width: 4px;
     box-shadow: theme('boxShadow.lg');
+    place-self: center;
   }
 </style>
