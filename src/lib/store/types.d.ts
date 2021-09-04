@@ -18,3 +18,9 @@ export interface Seo {
   description: string
   robots: string
 }
+
+export interface Form {
+  title: string
+  description: string
+  url: string
+}

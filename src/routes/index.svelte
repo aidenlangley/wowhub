@@ -1,18 +1,18 @@
 <script lang="ts" context="module">
-  import type { Article } from '$components/articles/types.d'
-  import IndexBlurb from '$components/index/IndexBlurb.svelte'
-  import IndexLatestNews from '$components/index/IndexLatestNews.svelte'
-  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte'
-  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte'
-  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte'
-  import IndexServices from '$components/index/services/IndexServices.svelte'
-  import Banner from '$media/Banner.svelte'
-  import { state } from '$store/dark'
-  import { seo } from '$store/seo'
-  import { fade } from 'svelte/transition'
-  import { loadNews as load } from './news.svelte'
+  import type { Article } from '$components/articles/types.d';
+  import IndexBlurb from '$components/index/IndexBlurb.svelte';
+  import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
+  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
+  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
+  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
+  import IndexServices from '$components/index/services/IndexServices.svelte';
+  import Banner from '$media/Banner.svelte';
+  import { state } from '$store/dark';
+  import { seo } from '$store/seo';
+  import { fade } from 'svelte/transition';
+  import { loadNews as load } from './news.svelte';
 
-  export { load }
+  export { load };
 </script>
 
 <script lang="ts">
@@ -31,7 +31,7 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="root column gaps-y">
+<div class="root column gaps-y sm">
   <section id="banner" class="pad-y">
     <Banner white={$state.dark} />
   </section>
@@ -40,6 +40,15 @@
   <section id="quick-links">
     <IndexQuickLinks />
   </section>
+
+  <iframe
+    title="Beating Addiction Together"
+    src="https://tehiku.nz/embed/11829"
+    width="640"
+    height="360"
+    frameborder="0"
+    allowfullscreen
+  />
 
   {#if news}
     <section id="news" in:fade>
@@ -63,3 +72,12 @@
 <section id="services" aria-hidden="true">
   <IndexServices />
 </section>
+
+<style lang="postcss">
+  iframe {
+    place-self: center;
+    border-width: 4px;
+    border-color: theme('colors.green.800');
+    box-shadow: theme('boxShadow.lg');
+  }
+</style>

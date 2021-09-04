@@ -56,6 +56,12 @@
   export let docs: Article[]
 </script>
 
+<!--
+  @component
+  Entry point for `docs` & `news`.
+-->
+
+<!-- Aside for quicker navigation-->
 <aside>
   <nav>
     <!-- News -->
@@ -65,11 +71,16 @@
     <ol />
   </nav>
 </aside>
+
+<!--  Full fat list of news & docs -->
 <div class="root column gaps-y">
+  <!-- News -->
   <section class="gaps-y">
     <Heading>Panui (news)</Heading>
     <ArticleCards articles={news} />
   </section>
+
+  <!-- Docs -->
   <section class="gaps-y">
     <Heading>Other info</Heading>
     <ArticleCards articles={docs} />
