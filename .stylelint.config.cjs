@@ -1,6 +1,6 @@
 module.exports = {
-  extends: 'stylelint-config-standard',
-  plugins: ['stylelint-order'],
+  extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
+
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -21,8 +21,5 @@ module.exports = {
         ignorePseudoClasses: ['global'],
       },
     ],
-    'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null,
-    'order/properties-alphabetical-order': true,
   },
 }

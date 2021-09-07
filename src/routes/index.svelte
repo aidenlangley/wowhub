@@ -23,7 +23,7 @@
     robots: 'none',
   }
 
-  export let news: Article[]
+  export let news: Article[];
 </script>
 
 <!--
@@ -41,15 +41,16 @@
     <IndexQuickLinks />
   </section>
 
-
-  <iframe
-    title="Beating Addiction Together"
-    src="https://tehiku.nz/embed/11829"
-    width="640"
-    height="360"
-    frameborder="0"
-    allowfullscreen
-  />
+  <section
+    id="video"
+    class="video"
+  >
+    <iframe
+      title="Beating Addiction Together"
+      src="https://tehiku.nz/embed/11829"
+      allowfullscreen
+    />
+  </section>
 
   {#if news}
     <section id="news" in:fade>
@@ -75,10 +76,31 @@
 </section>
 
 <style lang="postcss">
-  iframe {
-    border-color: theme('colors.green.800');
-    border-width: 4px;
-    box-shadow: theme('boxShadow.lg');
+  section.video {
     place-self: center;
+
+    & > iframe {
+      border-color: theme('colors.gray.300');
+      border-radius: theme('borderRadius.lg');
+      border-width: theme('borderWidth.DEFAULT');
+      box-shadow: theme('boxShadow.lg');
+
+      @nest :global(.dark) & {
+        border-color: theme('colors.gray.700');
+      }
+
+      width: 20rem;
+      height: 11.25rem;
+
+      @media screen(sm) {
+        width: 40rem;
+        height: 22.5rem;
+      }
+
+      @media screen(lg) {
+        width: 60rem;
+        height: 33.75rem;
+      }
+    }
   }
 </style>

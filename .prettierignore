@@ -1,6 +1,5 @@
 # Build and artifacts
 .svelte-kit
-.vscode
 docs
 static
 

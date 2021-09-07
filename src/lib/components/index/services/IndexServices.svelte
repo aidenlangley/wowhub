@@ -13,9 +13,11 @@
     'hinengaro',
     'aod',
     'whānau',
-    'ora',
+    'wellness',
     'tailored',
     'for you',
+    'anger management',
+    'ora',
   ]
 
   const length = buzzWords.length
