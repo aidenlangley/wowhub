@@ -1,8 +1,8 @@
 <script>
-  import Skew from '$layout/skew/Skew.svelte'
-  import { SkewDirection } from '$layout/skew/types.d'
-  import { GradientColour } from '$layout/types.d'
-  import Paragraph from '../Paragraph.svelte'
+  import Skew from '$layout/skew/Skew.svelte';
+  import { SkewDirection } from '$layout/skew/types.d';
+  import { GradientColour } from '$layout/types.d';
+  import Paragraph from '../Paragraph.svelte';
 </script>
 
 <!--
@@ -28,7 +28,7 @@
     </Paragraph>
     <Paragraph justify>
       We take a holistic approach when it comes to treatment. Behind the
-      individual there's roopu, whanau, there's hinganaro, tinana and wairua.
+      individual there's roopu, whanau, there's hinengaro, tinana and wairua.
       Addiction only accounts for a fraction of the recovery process.
     </Paragraph>
     <Paragraph justify>
