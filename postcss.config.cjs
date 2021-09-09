@@ -3,7 +3,7 @@ const dev = mode === 'development'
 
 const config = {
   plugins: [
-    require('postcss-import')({ plugins: [require('stylelint')] }),
+    require('postcss-import'),
     require('tailwindcss/nesting')(require('postcss-nesting')),
     require('tailwindcss'),
     require('autoprefixer'),

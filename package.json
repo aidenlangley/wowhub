@@ -11,8 +11,6 @@
 		"prettier:format": "prettier --write . --plugin-search-dir=. .",
 		"lint": "npm run check && prettier --check --plugin-search-dir=. . && eslint . && stylelint .",
 		"lint:es": "eslint .",
-		"lint:style": "stylelint .",
-		"lint:style:fix": "stylelint . --fix",
 		"build": "npm run prettier:format && npm run lint && svelte-kit build",
 		"build:deploy": "npm run build && npm run deploy",
 		"build:preview": "npm run build && npm run preview",

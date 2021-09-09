@@ -8,6 +8,7 @@ export interface Member {
   name: string
   tags: string[]
   about: string[]
+  pepeha?: string[]
   frontline?: boolean
   imgSrc?: string
   tallImg?: boolean

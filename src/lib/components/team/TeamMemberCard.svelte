@@ -3,11 +3,14 @@
   import Icon from '$lib/media/Icon.svelte'
   import type { Member } from '$store/types.d'
   import { UserCircle } from 'svelte-hero-icons'
+  import { fade } from 'svelte/transition'
   import Heading from '../heading/Heading.svelte'
   import Paragraph from '../Paragraph.svelte'
 
   export let member: Member
   export let right = false
+
+  let showPepeha = false
 </script>
 
 <section class="member" class:right>
@@ -35,6 +38,23 @@
     </span>
   </h2>
   <div class="blurb">
+    {#if member.pepeha}
+      <button
+        on:click={() => {
+          showPepeha = !showPepeha
+        }}
+      >
+        show pepeha
+      </button>
+      {#if showPepeha}
+        <div class="pepeha" in:fade>
+          <!-- {#each member.pepeha as line}
+            <p>{line}</p>
+          {/each} -->
+          <Paragraph>{member.pepeha.join(', ')}</Paragraph>
+        </div>
+      {/if}
+    {/if}
     {#each member.about as line}
       <Paragraph>{line}</Paragraph>
     {/each}
@@ -60,9 +80,9 @@
 
       &.right {
         grid-template-areas:
-          'name  img  '
-          'tags  img  '
-          'blurb img  ';
+          'name   img '
+          'tags   img '
+          'blurb  img ';
         grid-template-columns: 2fr 1fr;
         justify-items: right;
         text-align: right;
@@ -152,9 +172,15 @@
     }
 
     & > div.blurb {
-      @screen sm {
-        font-weight: theme('fontWeight.light');
-        grid-area: blurb;
+      font-weight: theme('fontWeight.light');
+      grid-area: blurb;
+
+      & > button {
+        font-family: theme('fontFamily.mono');
+      }
+
+      & > div.pepeha {
+        padding-bottom: theme('padding.2');
       }
     }
   }
