@@ -1,24 +1,18 @@
 :root {
   /* Bottom right */
-  --translate-br-slight:
-    translateX(theme('translate.1'))
+  --translate-br-slight: translateX(theme('translate.1'))
     translateY(theme('translate.1'));
-  --translate-br:
-    translateX(theme('translate.2'))
+  --translate-br: translateX(theme('translate.2'))
     translateY(theme('translate.2'));
-  --translate-br-strong:
-    translateX(theme('translate.3'))
+  --translate-br-strong: translateX(theme('translate.3'))
     translateY(theme('translate.3'));
 
   /* Bottom left */
-  --translate-bl-slight:
-    translateX(theme('translate.-1'))
+  --translate-bl-slight: translateX(theme('translate.-1'))
     translateY(theme('translate.1'));
-  --translate-bl:
-    translateX(theme('translate.-2'))
+  --translate-bl: translateX(theme('translate.-2'))
     translateY(theme('translate.2'));
-  --translate-bl-strong:
-    translateX(theme('translate.-3'))
+  --translate-bl-strong: translateX(theme('translate.-3'))
     translateY(theme('translate.3'));
 }
 
@@ -33,11 +27,11 @@
     & > :global(*) {
       transform: var(--translate-br-slight);
 
-      @screen md {
+      @media screen(md) {
         transform: var(--translate-br);
       }
 
-      @screen lg {
+      @media screen(lg) {
         transform: var(--translate-br-strong);
       }
     }
@@ -47,11 +41,11 @@
     & > :global(*) {
       transform: var(--translate-bl-slight);
 
-      @screen md {
+      @media screen(md) {
         transform: var(--translate-bl);
       }
 
-      @screen lg {
+      @media screen(lg) {
         transform: var(--translate-bl-strong);
       }
     }

@@ -53,7 +53,7 @@
 
       @apply text-34;
 
-      @screen sm {
+      @media screen(sm) {
         display: grid;
         grid-auto-flow: row;
         row-gap: theme('gap.2');
@@ -62,15 +62,15 @@
         @apply text-42;
       }
 
-      @screen md {
+      @media screen(md) {
         @apply text-44;
       }
 
-      @screen lg {
+      @media screen(lg) {
         @apply text-56;
       }
 
-      @screen xl {
+      @media screen(xl) {
         @apply text-72;
       }
     }
@@ -81,11 +81,11 @@
 
       @apply text-22;
 
-      @screen sm {
+      @media screen(sm) {
         text-align: center;
       }
 
-      @screen lg {
+      @media screen(lg) {
         font-weight: theme('fontWeight.light');
 
         @apply text-32;

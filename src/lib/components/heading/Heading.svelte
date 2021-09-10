@@ -1,14 +1,14 @@
 <script lang="ts">
-  import Translate from '$layout/translate/Translate.svelte'
+  import Translate from '$layout/translate/Translate.svelte';
   import {
     BackgroundColour,
     TranslateDirection,
-  } from '$layout/translate/types.d'
-  import { GradientColour } from '$layout/types.d'
+  } from '$layout/translate/types.d';
+  import { GradientColour } from '$layout/types.d';
 
-  export let direction: TranslateDirection = TranslateDirection.BottomRight
-  export let bg: BackgroundColour = BackgroundColour.Green
-  export let fg: GradientColour = GradientColour.Green
+  export let direction: TranslateDirection = TranslateDirection.BottomRight;
+  export let bg: BackgroundColour = BackgroundColour.Green;
+  export let fg: GradientColour = GradientColour.Green;
 </script>
 
 <Translate {direction} colour={bg}>
@@ -26,24 +26,24 @@
 
     @apply text-28;
 
-    @screen sm {
+    @media screen(sm) {
       font-weight: theme('fontWeight.bold');
       padding: theme('padding.2');
     }
 
-    @screen md {
+    @media screen(md) {
       padding: theme('padding.3');
 
       @apply text-40;
     }
 
-    @screen lg {
+    @media screen(lg) {
       padding: theme('padding.4');
 
       @apply text-56;
     }
 
-    @screen xl {
+    @media screen(xl) {
       @apply text-64;
     }
   }

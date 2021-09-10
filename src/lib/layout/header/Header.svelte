@@ -1,7 +1,7 @@
 <script lang="ts">
-  import DarkToggle from '$layout/header/DarkToggle.svelte'
-  import Logo from '$media/Logo.svelte'
-  import Routes from './Routes.svelte'
+  import DarkToggle from '$layout/header/DarkToggle.svelte';
+  import Logo from '$media/Logo.svelte';
+  import Routes from './Routes.svelte';
 </script>
 
 <!--
@@ -34,16 +34,16 @@
       border-color: theme('colors.gray.800');
     }
 
-    @screen ty {
+    @media screen(ty) {
       /* 5% auto 5% */
       grid-template-columns: 1fr 18fr 1fr;
     }
 
-    @screen sm {
+    @media screen(sm) {
       padding: theme('padding.5');
     }
 
-    @screen lg {
+    @media screen(lg) {
       /* 4% auto 4% */
       grid-template-columns: 1fr 23fr 1fr;
       padding: theme('padding.6');

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Link from '../link/Link.svelte'
-  import type { Article } from './types.d'
+  import Link from '../link/Link.svelte';
+  import type { Article } from './types.d';
 
-  export let article: Article
+  export let article: Article;
 </script>
 
 <li>
@@ -52,11 +52,11 @@
 
       @apply text-18;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-20;
       }
 
-      @screen md {
+      @media screen(md) {
         @apply text-24;
       }
     }
@@ -67,7 +67,7 @@
 
       @apply text-14;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-base;
       }
     }

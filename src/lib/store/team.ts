@@ -1,7 +1,7 @@
-import { assets } from '$app/paths'
-import type { Readable } from 'svelte/store'
-import { readable } from 'svelte/store'
-import type { Member } from './types.d'
+import { assets } from '$app/paths';
+import type { Readable } from 'svelte/store';
+import { readable } from 'svelte/store';
+import type { Member } from './types.d';
 
 export const team: Readable<Member[]> = readable([
   {
@@ -80,11 +80,23 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Kamina',
     tags: ['administration', 'logistics'],
+    pepeha: [
+      'Ko Moehau te maunga',
+      'ko Ti Kapa te awak',
+      'ko Tainui te waka',
+      'ko Mainai te marae',
+      'ko Ngati Pukenga, Ngati Whanaunga ngā hapu',
+      'ko Maru Tuahu te iwi',
+      'ko Kamina McSheffrey ahau',
+    ],
     about: [
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do  ' +
-        'eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ' +
-        'minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ' +
-        'ex ea commodo consequat.',
+      'Kamina has been living in Kaikohe for 3 years now, her grandmother ' +
+        "was born in Waima. She's a qualified Kaiako for Te Ataarangi, total " +
+        'immersion  te reo Māori. She has worked for Te Whare Wananga o ' +
+        'Awanuiarangi, Hamilton, I was head kaiako for Tumatauenga Kohanga ' +
+        'Reo in Linton, Palmerston North & have been working in ' +
+        'administration & office management for 15 years in Auckland. Just ' +
+        'like the rest of our team, she also has lived experience with AOD.',
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/kamina.jpg`,
@@ -127,4 +139,4 @@ export const team: Readable<Member[]> = readable([
     imgSrc: `${assets}/images/people/aiden.jpg`,
     tallImg: true,
   },
-])
+]);

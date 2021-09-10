@@ -21,6 +21,14 @@ a.link {
         color: theme('colors.blue.400');
       }
 
+      &:visited {
+        color: theme('colors.purple.600');
+
+        @nest :global(.dark) & {
+          color: theme('colors.purple.400');
+        }
+      }
+
       &:hover,
       &:focus {
         color: theme('colors.blue.400');
@@ -28,22 +36,13 @@ a.link {
         @nest :global(.dark) & {
           color: theme('colors.blue.200');
         }
-      }
-    }
 
-    &:visited {
-      color: theme('colors.purple.600');
+        &:visited {
+          color: theme('colors.purple.400');
 
-      @nest :global(.dark) & {
-        color: theme('colors.purple.400');
-      }
-
-      &:hover,
-      &:focus {
-        color: theme('colors.purple.400');
-
-        @nest :global(.dark) & {
-          color: theme('colors.purple.200');
+          @nest :global(.dark) & {
+            color: theme('colors.purple.200');
+          }
         }
       }
     }

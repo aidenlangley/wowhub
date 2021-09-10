@@ -10,34 +10,34 @@
     padding-bottom: var(--padding);
     padding-top: var(--padding);
 
-    @screen sm {
+    @media screen(sm) {
       padding-bottom: var(--padding-sm);
       padding-top: var(--padding-sm);
     }
 
-    @screen md {
+    @media screen(md) {
       padding-bottom: var(--padding-md);
       padding-top: var(--padding-md);
     }
 
-    @screen lg {
+    @media screen(lg) {
       padding-bottom: var(--padding-lg);
       padding-top: var(--padding-lg);
     }
   }
 
   .pad-x {
-    @screen sm {
+    @media screen(sm) {
       padding-left: var(--padding);
       padding-right: var(--padding);
     }
 
-    @screen md {
+    @media screen(md) {
       padding-left: var(--padding-sm);
       padding-right: var(--padding-sm);
     }
 
-    @screen lg {
+    @media screen(lg) {
       padding-left: var(--padding-md);
       padding-right: var(--padding-md);
     }
@@ -48,15 +48,15 @@
     grid-auto-flow: row;
     row-gap: theme('gap.4');
 
-    @screen sm {
+    @media screen(sm) {
       row-gap: theme('gap.6');
     }
 
-    @screen md {
+    @media screen(md) {
       row-gap: theme('gap.8');
     }
 
-    @screen lg {
+    @media screen(lg) {
       row-gap: theme('gap.12');
     }
   }

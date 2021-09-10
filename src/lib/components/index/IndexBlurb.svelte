@@ -1,8 +1,8 @@
 <script>
-  import Paragraph from '$components/Paragraph.svelte'
-  import Skew from '$layout/skew/Skew.svelte'
-  import { SkewDirection } from '$layout/skew/types.d'
-  import { GradientColour } from '$layout/types.d'
+  import Paragraph from '$components/Paragraph.svelte';
+  import Skew from '$layout/skew/Skew.svelte';
+  import { SkewDirection } from '$layout/skew/types.d';
+  import { GradientColour } from '$layout/types.d';
 </script>
 
 <!--
@@ -45,17 +45,17 @@
 
       @apply text-28;
 
-      @screen sm {
+      @media screen(sm) {
         font-weight: theme('fontWeight.light');
       }
 
-      @screen md {
+      @media screen(md) {
         letter-spacing: theme('letterSpacing.tighter');
 
         @apply text-42;
       }
 
-      @screen lg {
+      @media screen(lg) {
         @apply text-64;
       }
     }
@@ -67,15 +67,15 @@
 
       @apply text-48;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-64;
       }
 
-      @screen md {
+      @media screen(md) {
         @apply text-72;
       }
 
-      @screen xl {
+      @media screen(xl) {
         @apply text-128;
       }
     }

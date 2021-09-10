@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let center = false
+  export let center = false;
 </script>
 
 <h3 class:sm:text-center={center}>
@@ -21,7 +21,7 @@
       color: theme('colors.white');
     }
 
-    @screen sm {
+    @media screen(sm) {
       @apply text-22;
     }
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let text: string
+  export let text: string;
 </script>
 
 <!--
@@ -34,11 +34,11 @@
 
         @apply text-14 bg-gray-900/90;
 
-        @screen ty {
+        @media screen(ty) {
           @apply text-base;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-18;
         }
       }

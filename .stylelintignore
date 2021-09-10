@@ -4,6 +4,7 @@ node_modules/
 docs/
 static/
 
-# npm/yarn
-package-lock.json
-yarn.lock
+# IDE
+.vscode/
+
+**/*.cjs

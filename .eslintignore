@@ -1,6 +1,16 @@
-# Build and artifacts
-docs
-static
+node_modules/
+.yarn/
+.svelte-kit/
+docs/
+static/
+
+# npm/yarn
+package.json
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
 
 # Ignore these file types, usually config, or shpecial
 **/*.json

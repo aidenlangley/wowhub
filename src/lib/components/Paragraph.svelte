@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let justify = false
+  export let justify = false;
 </script>
 
 <p class:text-justify={justify}>
@@ -16,18 +16,18 @@
       color: theme('colors.white');
     }
 
-    @screen md {
+    @media screen (md) {
       letter-spacing: theme('letterSpacing.tight');
 
       @apply text-18;
     }
 
-    @screen lg {
+    @media screen (lg) {
       padding-bottom: theme('padding.2');
       padding-top: theme('padding.2');
     }
 
-    @screen xl {
+    @media screen (xl) {
       line-height: theme('lineHeight.relaxed');
 
       @apply text-20;

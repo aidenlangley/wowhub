@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Link from '../link/Link.svelte'
+  import Link from '../link/Link.svelte';
 </script>
 
 <!--
@@ -56,15 +56,15 @@
 
       @apply text-20;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-24;
       }
 
-      @screen md {
+      @media screen(md) {
         @apply text-28;
       }
 
-      @screen lg {
+      @media screen(lg) {
         @apply text-36;
       }
 
@@ -73,11 +73,11 @@
 
         @apply text-24;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-32;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-48;
         }
       }
@@ -88,11 +88,11 @@
 
         @apply text-28;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-36;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-64;
         }
       }
@@ -103,11 +103,11 @@
 
         @apply text-26;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-34;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-48;
         }
       }
@@ -118,11 +118,11 @@
 
         @apply text-22;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-30;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-56;
         }
       }
@@ -133,11 +133,11 @@
 
         @apply text-28;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-36;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-56;
         }
       }
@@ -148,11 +148,11 @@
 
         @apply text-26;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-34;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-56;
         }
 
@@ -167,11 +167,11 @@
 
         @apply text-32;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-40;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-64;
         }
       }
@@ -182,11 +182,11 @@
 
         @apply text-28;
 
-        @screen sm {
+        @media screen(sm) {
           @apply text-36;
         }
 
-        @screen lg {
+        @media screen(lg) {
           @apply text-56;
         }
       }

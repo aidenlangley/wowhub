@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { TranslateDirection } from '$lib/layout/translate/types.d'
-  import Icon from '$lib/media/Icon.svelte'
-  import type { Member } from '$store/types.d'
-  import { UserCircle } from 'svelte-hero-icons'
-  import { fade } from 'svelte/transition'
-  import Heading from '../heading/Heading.svelte'
-  import Paragraph from '../Paragraph.svelte'
+  import { TranslateDirection } from '$lib/layout/translate/types.d';
+  import Icon from '$lib/media/Icon.svelte';
+  import type { Member } from '$store/types.d';
+  import { UserCircle } from 'svelte-hero-icons';
+  import { fade } from 'svelte/transition';
+  import Heading from '../heading/Heading.svelte';
+  import Paragraph from '../Paragraph.svelte';
 
-  export let member: Member
-  export let right = false
+  export let member: Member;
+  export let right = false;
 
-  let showPepeha = false
+  let showPepeha = false;
 </script>
 
 <section class="member" class:right>
@@ -41,7 +41,7 @@
     {#if member.pepeha}
       <button
         on:click={() => {
-          showPepeha = !showPepeha
+          showPepeha = !showPepeha;
         }}
       >
         show pepeha
@@ -69,7 +69,7 @@
     transition-duration: 500ms;
     transition-timing-function: theme('transitionTimingFunction.in-out');
 
-    @screen sm {
+    @media screen(sm) {
       align-items: center;
       gap: theme('gap.3');
       grid-template-areas:
@@ -89,7 +89,7 @@
       }
     }
 
-    @screen lg {
+    @media screen(lg) {
       gap: theme('gap.4');
       grid-template-columns: 2fr 3fr;
 
@@ -99,7 +99,7 @@
     }
 
     & > div.name {
-      @screen sm {
+      @media screen(sm) {
         grid-area: name;
       }
     }
@@ -128,11 +128,11 @@
         @apply object-top;
       }
 
-      @screen ty {
+      @media screen(ty) {
         max-height: theme('height.64');
       }
 
-      @screen sm {
+      @media screen(sm) {
         grid-area: img;
         height: 100%;
         max-width: theme('width.96');
@@ -151,22 +151,22 @@
         color: theme('colors.gray.300');
       }
 
-      @screen sm {
+      @media screen(sm) {
         grid-area: tags;
 
         @apply text-20;
       }
 
-      @screen md {
+      @media screen(md) {
         letter-spacing: theme('letterSpacing.tight');
       }
 
-      @screen lg {
+      @media screen(lg) {
         padding-left: theme('padding.2');
         padding-right: theme('padding.2');
       }
 
-      @screen xl {
+      @media screen(xl) {
         font-size: theme('fontSize.26');
       }
     }

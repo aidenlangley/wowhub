@@ -1,9 +1,9 @@
 <script lang="ts">
-  import Heading3 from '$components/heading/Heading3.svelte'
-  import Link from '$components/link/Link.svelte'
-  import Icon from '$media/Icon.svelte'
-  import { info } from '$store/info'
-  import { ExternalLink, Mail, Phone } from 'svelte-hero-icons'
+  import Heading3 from '$components/heading/Heading3.svelte';
+  import Link from '$components/link/Link.svelte';
+  import Icon from '$media/Icon.svelte';
+  import { info } from '$store/info';
+  import { ExternalLink, Mail, Phone } from 'svelte-hero-icons';
 </script>
 
 <!--
@@ -45,7 +45,7 @@
   div.headings {
     padding-top: theme('padding.4');
 
-    @screen sm {
+    @media screen(sm) {
       border-color: theme('colors.gray.200');
       border-style: dotted;
       border-top-width: theme('borderWidth.8');

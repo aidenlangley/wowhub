@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { GradientColour } from '../types.d'
-  import type { SkewDirection } from './types.d'
+  import type { GradientColour } from '../types.d';
+  import type { SkewDirection } from './types.d';
 
-  export let id: string
-  export let direction: SkewDirection
-  export let colour: GradientColour
+  export let id: string;
+  export let direction: SkewDirection;
+  export let colour: GradientColour;
 </script>
 
 <!--
@@ -35,7 +35,7 @@
 
         @apply drop-shadow;
 
-        @screen sm {
+        @media screen(sm) {
           border-bottom-width: theme('borderWidth.8');
           border-radius: theme('borderRadius.3xl');
         }
@@ -58,17 +58,17 @@
       padding-top: theme('padding.12');
       z-index: 1;
 
-      @screen sm {
+      @media screen(sm) {
         padding-bottom: theme('padding.14');
         padding-top: theme('padding.14');
       }
 
-      @screen md {
+      @media screen(md) {
         padding-bottom: theme('padding.16');
         padding-top: theme('padding.16');
       }
 
-      @screen lg {
+      @media screen(lg) {
         padding-bottom: theme('padding.20');
         padding-top: theme('padding.20');
       }

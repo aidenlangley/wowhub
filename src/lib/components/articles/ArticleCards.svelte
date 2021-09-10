@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Article } from './types'
-  import ArticleCard from './ArticleCard.svelte'
+  import ArticleCard from './ArticleCard.svelte';
+  import type { Article } from './types';
 
-  export let articles: Article[]
+  export let articles: Article[];
 </script>
 
 <!--
@@ -24,7 +24,7 @@
     padding-top: theme('padding.2');
     row-gap: theme('gap.2');
 
-    @screen sm {
+    @media screen(sm) {
       @apply text-18;
     }
   }

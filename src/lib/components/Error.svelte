@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { BackgroundColour } from '$lib/layout/translate/types.d'
-  import { GradientColour } from '$lib/layout/types.d'
-  import Heading from './heading/Heading.svelte'
+  import { BackgroundColour } from '$lib/layout/translate/types.d';
+  import { GradientColour } from '$lib/layout/types.d';
+  import Heading from './heading/Heading.svelte';
 </script>
 
 <section class="column pad-x">
@@ -26,11 +26,11 @@
 
       @apply text-26;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-40;
       }
 
-      @screen lg {
+      @media screen(lg) {
         @apply text-56;
       }
     }
@@ -40,7 +40,7 @@
 
       @apply text-20;
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-28;
       }
     }

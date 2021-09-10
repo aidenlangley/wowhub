@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { page } from '$app/stores'
-  import Tooltip from '$components/Tooltip.svelte'
-  import { routes } from '$store/routes'
+  import { page } from '$app/stores';
+  import Tooltip from '$components/Tooltip.svelte';
+  import { routes } from '$store/routes';
 </script>
 
 <!--
@@ -37,7 +37,7 @@
     place-items: center;
     place-self: center;
 
-    @screen ty {
+    @media screen(ty) {
       column-gap: 0.5rem; /* 8px */
     }
 
@@ -47,23 +47,23 @@
 
       @apply text-base;
 
-      @screen ty {
+      @media screen(ty) {
         @apply text-22;
       }
 
-      @screen sm {
+      @media screen(sm) {
         @apply text-26;
       }
 
-      @screen md {
+      @media screen(md) {
         @apply text-28;
       }
 
-      @screen lg {
+      @media screen(lg) {
         @apply text-30;
       }
 
-      @screen xl {
+      @media screen(xl) {
         @apply text-38;
       }
 
@@ -87,23 +87,23 @@
 
           @apply text-20;
 
-          @screen ty {
+          @media screen(ty) {
             @apply text-24;
           }
 
-          @screen sm {
+          @media screen(sm) {
             @apply text-28;
           }
 
-          @screen md {
+          @media screen(md) {
             @apply text-30;
           }
 
-          @screen lg {
+          @media screen(lg) {
             @apply text-32;
           }
 
-          @screen xl {
+          @media screen(xl) {
             @apply text-40;
           }
         }
