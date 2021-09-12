@@ -34,37 +34,31 @@
 </div>
 
 <style lang="postcss" global>
-  @import '../app.postcss';
+  @import '../app.css';
 
-  body {
-    min-width: 360px;
+  .root main {
+    background-blend-mode: difference;
+    background-color: theme('backgroundColor.white');
+    background-position: top;
+    transition-duration: 300ms;
+    transition-property: background-color;
   }
 
-  div.root {
-    & > main {
-      background-blend-mode: difference;
-      background-color: theme('backgroundColor.white');
-      background-position: top;
-      transition-duration: 300ms;
-      transition-property: background-color;
+  .root main .opacity-provider {
+    @apply bg-white/80;
+  }
 
-      & > div.opacity-provider {
-        @apply bg-white/80;
+  .root main .opacity-provider > * {
+    transition-duration: 500ms;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
+  }
 
-        & > * {
-          transition-duration: 500ms;
-          transition-timing-function: theme('transitionTimingFunction.in-out');
-        }
-      }
-    }
+  .root.dark main {
+    background-blend-mode: hard-light;
+    background-color: theme('colors.gray.900');
+  }
 
-    &.dark > main {
-      background-blend-mode: hard-light;
-      background-color: theme('colors.gray.900');
-
-      & > div.opacity-provider {
-        @apply bg-black/70;
-      }
-    }
+  .root.dark main .opacity-provider {
+    @apply bg-black/70;
   }
 </style>

@@ -1,0 +1,48 @@
+@layer utilities {
+  :root {
+    --pad-y: 2.5rem;
+    --gaps-y: 1rem;
+  }
+
+  .pad-y {
+    padding-bottom: var(--pad-y);
+    padding-top: var(--pad-y);
+  }
+
+  .gaps-y {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: var(--gaps-y);
+  }
+}
+
+@media screen(sm) {
+  :root {
+    --pad-y: 3rem;
+    --pad-x: 2.5rem;
+    --gaps-y: 1.5rem;
+  }
+
+  @layer utilities {
+    .pad-x {
+      padding-left: var(--pad-x);
+      padding-right: var(--pad-x);
+    }
+  }
+}
+
+@media screen(md) {
+  :root {
+    --pad-y: 3.5rem;
+    --pad-x: 3rem;
+    --gaps-y: 2rem;
+  }
+}
+
+@media screen(lg) {
+  :root {
+    --pad-y: 4rem;
+    --pad-x: 3.5rem;
+    --gaps-y: 3rem;
+  }
+}

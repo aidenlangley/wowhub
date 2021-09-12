@@ -1,0 +1,70 @@
+/* First line; :nth-child(3n + 1) means every 3rd child, starting from 1 */
+.services > :nth-child(3n + 1) {
+  --left-font-size: 3.5rem;
+  --left-line-height: 1;
+  --right-font-size: 2rem;
+  --right-line-height: 2.25rem;
+
+  align-items: flex-end;
+  font-weight: theme('fontWeight.medium');
+  letter-spacing: theme('letterSpacing.tighter');
+  vertical-align: text-bottom;
+}
+
+.services > :nth-child(3n + 1) > :first-child {
+  color: theme('colors.gray.800');
+  font-family: theme('fontFamily.serif');
+  font-size: var(--left-font-size);
+  line-height: var(--left-line-height);
+}
+
+:global(.dark .services > :nth-child(3n + 1) > :first-child) & {
+  color: theme('colors.gray.200');
+}
+
+.services > :nth-child(3n + 1) > :last-child {
+  color: theme('colors.purple.500');
+  font-size: var(--right-font-size);
+  line-height: var(--right-line-height);
+}
+
+@media screen(ty) {
+  .services > :nth-child(3n + 1) {
+    --left-font-size: 4rem;
+    --left-line-height: 1;
+    --right-font-size: 2.25rem;
+    --right-line-height: 2.5rem;
+  }
+}
+
+@media screen(sm) {
+  .services > :nth-child(3n + 1) {
+    --left-font-size: 4.5rem;
+    --left-line-height: 1;
+    --right-font-size: 2.5rem;
+    --right-line-height: 2.5rem;
+  }
+}
+
+@media screen(md) {
+  .services > :nth-child(3n + 1) {
+    --left-font-size: 6rem;
+    --left-line-height: 1;
+    --right-font-size: 3rem;
+    --right-line-height: 1;
+  }
+}
+
+@media screen(lg) {
+  .services > :nth-child(3n + 1) {
+    --right-font-size: 3.5rem;
+    --right-line-height: 1;
+  }
+}
+
+@media screen(xl) {
+  .services > :nth-child(3n + 1) {
+    --right-font-size: 4rem;
+    --right-line-height: 1;
+  }
+}

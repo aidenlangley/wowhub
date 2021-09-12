@@ -1,0 +1,19 @@
+@import './css/1st-line.css';
+@import './css/2nd-line.css';
+@import './css/3rd-line.css';
+
+.services {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.services > * {
+  /* Applies to all lines */
+  display: flex;
+  justify-content: center;
+}
+
+/* `x` axis spacing */
+.services > * > :first-child {
+  margin-right: theme('margin.1');
+}

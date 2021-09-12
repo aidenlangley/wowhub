@@ -1,0 +1,81 @@
+/* First line; :nth-child(3n + 2) means every 3rd child, starting from 1 */
+.services > :nth-child(3n + 2) {
+  --left-font-size: 1.875rem;
+  --left-line-height: 2rem;
+  --right-font-size: 3rem;
+  --right-line-height: 1;
+
+  align-items: center;
+  vertical-align: middle;
+}
+
+.services > :nth-child(3n + 2) > :first-child {
+  color: theme('colors.orange.500');
+  font-weight: theme('fontWeight.bold');
+  letter-spacing: theme('letterSpacing.tight');
+  text-decoration: underline;
+  font-size: var(--left-font-size);
+  line-height: var(--left-line-height);
+}
+
+.services > :nth-child(3n + 2) > :last-child {
+  color: theme('colors.green.500');
+  font-family: theme('fontFamily.serif');
+  font-weight: theme('fontWeight.bold');
+  letter-spacing: theme('letterSpacing.tighter');
+  font-size: var(--right-font-size);
+  line-height: var(--right-line-height);
+}
+
+@media screen(ty) {
+  .services > :nth-child(3n + 2) {
+    --left-font-size: 2.125rem;
+    --left-line-height: 2.25rem;
+    --right-font-size: 3.5rem;
+    --right-line-height: 1;
+  }
+}
+
+@media screen(sm) {
+  .services > :nth-child(3n + 2) {
+    --left-font-size: 2.375rem;
+    --left-line-height: 2.5rem;
+    --right-font-size: 4rem;
+    --right-line-height: 1;
+  }
+
+  .services > :nth-child(3n + 2) > :first-child {
+    letter-spacing: theme('letterSpacing.normal');
+  }
+}
+
+@media screen(md) {
+  .services > :nth-child(3n + 2) {
+    --left-font-size: 2.625rem;
+    --left-line-height: 2.5rem;
+    --right-font-size: 4.5rem;
+    --right-line-height: 1;
+  }
+
+  .services > :nth-child(3n + 2) > :first-child {
+    letter-spacing: theme('letterSpacing.tighter');
+  }
+}
+
+@media screen(lg) {
+  .services > :nth-child(3n + 2) {
+    --left-font-size: 3rem;
+    --left-line-height: 1;
+    --right-font-size: 6rem;
+    --right-line-height: 1;
+  }
+}
+
+@media screen(xl) {
+  .services > :nth-child(3n + 2) {
+    --left-font-size: 3.5rem;
+    --left-line-height: 1;
+    --right-font-size: 8rem;
+    --right-line-height: 1;
+  }
+}
