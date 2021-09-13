@@ -4,11 +4,11 @@
     grid-template-columns: 0 auto 0;
     padding-left: theme('padding.4');
     padding-right: theme('padding.4');
-
-    & > * {
-      grid-column-start: 2;
-    }
   }
+}
+
+.column > * {
+  grid-column-start: 2;
 }
 
 @media screen(sm) {

@@ -16,3 +16,7 @@
 @import './lib/layout/column.css';
 @import './lib/layout/gradient.css';
 @import './lib/layout/translate/translate.css';
+
+html {
+  min-width: 360px;
+}
