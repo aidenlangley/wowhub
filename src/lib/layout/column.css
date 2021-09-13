@@ -1,7 +1,7 @@
 @layer utilities {
   .column {
     display: grid;
-    grid-template-columns: 0 auto 0;
+    grid-template-columns: auto;
     padding-left: theme('padding.4');
     padding-right: theme('padding.4');
   }

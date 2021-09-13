@@ -16,8 +16,8 @@
 -->
 <UnderConstruction />
 
-<div class="root gaps-y">
-  <section class="pad-y pad-x">
+<div class="gaps-y">
+  <section id="kaimahi" class="pad-y pad-x">
     <TeamMemberCards />
   </section>
 </div>

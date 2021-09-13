@@ -30,7 +30,7 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="root column gaps-y">
+<div class="column gaps-y">
   <section id="banner" class="pad-y">
     <Banner white={$state.dark} />
   </section>
@@ -75,6 +75,9 @@
   .video {
     /* Place & size */
     place-self: center;
+    height: max-content;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 
     /* Styles */
     border-radius: theme('borderRadius.lg');
@@ -90,5 +93,7 @@
   .video iframe {
     /* Hides the original square border */
     border-radius: theme('borderRadius.md');
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { team } from '$store/team'
-  import Heading from '../heading/Heading.svelte'
-  import TeamMemberCard from './TeamMemberCard.svelte'
+  import { team } from '$store/team';
+  import Heading from '../heading/Heading.svelte';
+  import TeamMemberCard from './TeamMemberCard.svelte';
 </script>
 
 <!--
@@ -9,12 +9,14 @@
   Wraps a list of `TeamMemberCard`. No background on `< sm` screens, but colour
   kicks in `> sm`. Requires 2 divs for a two-tone rotated look.
 -->
-<div class="heading column">
+
+<section id="heading" class="heading column">
   <Heading>
     <span>Mātou tīma he hui mai!</span>
     <span class="small">Meet our team!</span>
   </Heading>
-</div>
+</section>
+
 <div class="root">
   <div class="inner column gradient-gray pad-y gaps-y">
     {#each $team as member, index}
@@ -28,7 +30,7 @@
 </div>
 
 <style lang="postcss">
-  div.heading {
+  .heading {
     @apply place-items-center;
 
     & > :global(*) {
@@ -51,6 +53,29 @@
         }
       }
     }
+  }
+
+  .heading > :global(*) {
+    z-index: 1;
+  }
+
+  .heading > :global(* h1) {
+    display: inline-grid;
+  }
+
+  .heading > :global(* h1 > .small) {
+    --font-size: 1.25rem;
+    --line-height: 1.75rem;
+
+    @media screen(sm) {
+      --font-size: 1.75rem;
+      --line-height: 2rem;
+    }
+
+    font-family: theme('fontFamily.mono');
+    font-weight: theme('fontWeight.medium');
+    letter-spacing: theme('letterSpacing.tighter');
+    text-align: end;
   }
 
   div.root {
