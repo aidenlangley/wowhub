@@ -9,24 +9,24 @@ export const team: Readable<Member[]> = readable([
     tags: ['founder', 'peer support', 'tuakana'],
     pepeha: [
       'Ko wai au?',
-      'Ko Whakapoungakau tōku Maunga',
-      'Ko Kaituna tōku Awa',
+      'Ko Whakapoungakau tōku maunga',
+      'Ko Kaituna tōku awa',
       'Ko Ruamata tōku marae',
       'Ko Ngāti Pikiao, Ngāti Whakaue ōku hapū',
-      'Ko Te Arawa tōku Iwi',
+      'Ko Te Arawa tōku iwi',
       'Ko Te Arawa tōku waka',
       'Ko Jane Beamsley ahau',
     ],
     about: [
       `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she
       has no ties to Kaikohe, she was brought up by her Te Arawa
-      whakapapa, her grandfathers whakapapa, Ngati Te Roroa and Kahungunu.`,
+      whakapapa, her grandfathers whakapapa; Ngati Te Roroa and Kahungunu.`,
       `Jane is of Māori and pakeha descent and she shares personal lived
       experience; mainting mental wellbeing, as well as alcohol and drug
       addiction.`,
-      `Her recovery journey has brought her to kaikohe and she
-      wanted to give back and share the gifts of recovery to others who
-      maybe struggling. She couldn’t do this journey alone. He waka eke noa!`,
+      `Her recovery journey has brought her to Kaikohe and she
+      wanted to give back and share the gifts of recovery with others who
+      may be struggling. She couldn’t do this journey alone. He waka eke noa!`,
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/jane.jpg`,
@@ -42,11 +42,11 @@ export const team: Readable<Member[]> = readable([
       is now very passionate about helping the next addict in their recovery.`,
     ],
     pepeha: [
-      'Ko Hikurangi tōku Maunga',
+      'Ko Hikurangi tōku maunga',
       'Ko Ngātokimatawhaorua tōku waka',
       'Ko Matawaia tōku marae',
       'Ko Ngāti Hine tōku hapu',
-      'Ko Ngāpuhi tōku Iwi',
+      'Ko Ngāpuhi tōku iwi',
       'Ko Deeann Herkt Kopa ahau',
     ],
     frontline: true,
@@ -65,12 +65,12 @@ export const team: Readable<Member[]> = readable([
       Whanau Charitable Trust; Freedom Whare help whanau with housing solutions.`,
     ],
     pepeha: [
-      'Ko Maungaemiemi tōku Maunga, ko Whangaroa tōku Maunga',
+      'Ko Maungaemiemi tōku maunga, ko Whangaroa tōku maunga',
       'Ko Kaingapipiwai tōku awa',
       'Ko Mātaatua tōku waka',
       'Ko Pupuke tōku marae',
       'Ko Te Huia tōku whare tūpuna',
-      'Ko Ngapuhi tōku Iwi',
+      'Ko Ngapuhi tōku iwi',
       'Ko Ngāti Pakahi tōku hapu',
       'Ko Aaron Toki tōku hoa rangatira',
       'Ko Shannyn, ko Rawiri, ko Julian, ko Fern āku tamariki',
@@ -114,11 +114,11 @@ export const team: Readable<Member[]> = readable([
       `Just like the rest of our team, she also has lived experience with AOD.`,
     ],
     pepeha: [
-      'Ko Moehau tōku Maunga',
+      'Ko Moehau tōku maunga',
       'Ko Ti Kapa & Tainui tōku waka',
       'Ko Mainai tōku marae',
       'Ko Ngāti Pukenga, Ngāti Whanaunga tōku hapu',
-      'Ko Maru Tuahu tōku Iwi',
+      'Ko Maru Tuahu tōku iwi',
       'Ko Kamina McSheffrey ahau',
     ],
     frontline: true,
@@ -147,10 +147,10 @@ export const team: Readable<Member[]> = readable([
       view of health and wellness.`,
     ],
     pepeha: [
-      'Ko Mauao tōku Maunga',
+      'Ko Mauao tōku maunga',
       'Ko Tauranga Moana tōku Kainga whenua',
-      'Ko Wairoa tāku Awa',
-      'Ko Ngāti Ranginui raua, ko Ngāiterangi tōku Iwi',
+      'Ko Wairoa tāku awa',
+      'Ko Ngāti Ranginui raua, ko Ngāiterangi tōku iwi',
       'Ko Noreen Ahau.',
     ],
     frontline: true,
