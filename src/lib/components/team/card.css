@@ -1,0 +1,199 @@
+.member {
+  --gaps: theme('gap.4');
+  --name-size: theme('fontSize.36');
+  --name-row: 2.75rem; /* This is slightly more than --name-size. */
+
+  display: grid;
+  grid-template-areas:
+    'header '
+    'blurb  ';
+  gap: var(--gaps);
+
+  /*
+  Transitions so things move and animate when pepeha shows and screen changes
+  size
+  */
+  transition-duration: 500ms;
+  transition-timing-function: theme('transitionTimingFunction.in-out');
+}
+
+header {
+  display: grid;
+  grid-area: header;
+  grid-template-areas:
+    'img    '
+    'name   '
+    'titles ';
+  gap: var(--gaps);
+  align-self: flex-end;
+}
+
+header .img {
+  grid-area: img;
+}
+
+header .img > img,
+header .img > :global(svg) {
+  max-height: theme('height.48');
+  width: 100%;
+}
+
+header .img > img {
+  border-radius: theme('borderRadius.DEFAULT');
+  box-shadow: theme('dropShadow.md');
+  object-fit: cover;
+}
+
+header .img > img.tall {
+  object-position: top;
+}
+
+header .img > :global(svg) {
+  color: theme('colors.gray.700');
+}
+
+header .name {
+  grid-area: name;
+}
+
+header .name :global(h1) {
+  font-size: var(--name-size);
+  line-height: var(--name-size);
+}
+
+header .titles {
+  grid-area: titles;
+  color: theme('colors.gray.700');
+  font-family: theme('fontFamily.mono');
+  letter-spacing: theme('letterSpacing.tighter');
+  align-self: center;
+
+  @apply text-18;
+}
+
+header button {
+  display: none;
+}
+
+.blurb {
+  grid-area: blurb;
+  display: inline-grid;
+  grid-template-areas:
+    'about  '
+    'pepeha ';
+  gap: var(--gaps);
+}
+
+.blurb .about {
+  grid-area: about;
+}
+
+.blurb .pepeha {
+  grid-area: pepeha;
+}
+
+@media screen(ty) {
+  .member {
+    --col-left: 19rem;
+    --col-right: 1fr;
+  }
+
+  .member.right {
+    justify-items: end;
+  }
+
+  header {
+    grid-template-columns: var(--col-left) var(--col-right);
+    grid-template-rows: repeat(auto-fit, minmax(var(--name-row), 1fr));
+    grid-template-areas:
+      'img  name  '
+      'img  titles'
+      'img  btn   ';
+  }
+
+  .right header {
+    grid-template-columns: var(--col-right) var(--col-left);
+    grid-template-areas:
+      'name   img'
+      'titles img'
+      'btn    img';
+  }
+
+  header .name {
+    align-self: flex-end;
+  }
+
+  .right header .name {
+    justify-self: end;
+    text-align: end;
+  }
+
+  header .titles {
+    @apply text-base;
+  }
+
+  .right header .titles {
+    text-align: end;
+  }
+
+  header button {
+    /* Display */
+    display: block;
+    grid-area: btn;
+    justify-self: flex-start;
+    align-self: flex-end;
+
+    /* Button styling */
+    border-color: theme('colors.green.300');
+    border-radius: theme('borderRadius.DEFAULT');
+    padding: theme('padding.2');
+
+    /* Font styling */
+    color: theme('colors.white');
+    font-family: theme('fontFamily.mono');
+    font-weight: theme('fontWeight.medium');
+
+    @apply bg-green-700/80;
+  }
+
+  .right header button {
+    justify-self: self-end;
+  }
+
+  .right .blurb {
+    text-align: end;
+  }
+
+  .blurb .pepeha {
+    display: none;
+  }
+
+  .blurb .pepeha.show {
+    display: block;
+  }
+}
+
+@media screen(wide) {
+  header {
+    grid-template-areas:
+      'img  name    pepeha'
+      'img  titles  pepeha'
+      'img  btn     pepeha';
+  }
+
+  header button {
+    display: none;
+  }
+
+  .blurb .pepeha {
+    display: block;
+  }
+}
+
+:global(.dark) header .img > :global(svg) {
+  color: theme('colors.green.300');
+}
+
+:global(.dark) header .titles {
+  color: theme('colors.gray.300');
+}

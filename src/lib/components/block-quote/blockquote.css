@@ -1,0 +1,24 @@
+blockquote {
+  border-color: theme('colors.green.500');
+  padding: theme('padding.2');
+  font-family: theme('fontFamily.mono');
+  letter-spacing: theme('letterSpacing.tight');
+  line-height: theme('lineHeight.snug');
+  color: theme('colors.gray.800');
+
+  @apply bg-green-200/30;
+}
+
+blockquote:not(.right) {
+  border-left-width: theme('borderWidth.2');
+}
+
+blockquote.right {
+  border-right-width: theme('borderWidth.2');
+}
+
+:global(.dark) blockquote {
+  color: theme('colors.gray.200');
+
+  @apply bg-green-800/30;
+}

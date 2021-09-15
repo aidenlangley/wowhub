@@ -1,187 +1,89 @@
 <script lang="ts">
-  import { TranslateDirection } from '$lib/layout/translate/types.d';
-  import Icon from '$lib/media/Icon.svelte';
+  import BlockQuote from '$components/block-quote/BlockQuote.svelte';
+  import Heading from '$components/heading/Heading.svelte';
+  import Paragraph from '$components/Paragraph.svelte';
+  import { TranslateDirection } from '$layout/translate/types.d';
+  import Icon from '$media/Icon.svelte';
   import type { Member } from '$store/types.d';
   import { UserCircle } from 'svelte-hero-icons';
-  import { fade } from 'svelte/transition';
-  import Heading from '../heading/Heading.svelte';
-  import Paragraph from '../Paragraph.svelte';
+  // import { fly } from 'svelte/transition';
 
   export let member: Member;
   export let right = false;
 
+  const hasPepeha = member.pepeha && member.pepeha.length > 0;
   let showPepeha = false;
 </script>
 
-<section class="member" class:right>
-  {#if member.imgSrc}
-    <img
-      src={member.imgSrc}
-      alt="image of {member.name}"
-      class:tall={member.tallImg}
-    />
-  {:else}
-    <Icon src={UserCircle} solid size="100%" />
-  {/if}
-  <div class="name">
-    <Heading
-      direction={right
-        ? TranslateDirection.BottomLeft
-        : TranslateDirection.BottomRight}
-    >
-      {member.name}
-    </Heading>
-  </div>
-  <h2 class="tags">
-    <span>
+<article class="member" class:right>
+  <header>
+    <!-- Image, if applicable. -->
+    <div class="img">
+      {#if member.imgSrc}
+        <img
+          src={member.imgSrc}
+          alt="image of {member.name}"
+          class:tall={member.tallImg}
+        />
+      {:else}
+        <Icon src={UserCircle} solid size="100%" />
+      {/if}
+    </div>
+
+    <!-- Ingoa. -->
+    <section class="name">
+      <Heading
+        direction={right
+          ? TranslateDirection.BottomLeft
+          : TranslateDirection.BottomRight}
+      >
+        {member.name}
+      </Heading>
+    </section>
+
+    <!-- Basically titles. -->
+    <h2 class="titles">
       {member.tags.join(', ')}
-    </span>
-  </h2>
-  <div class="blurb">
-    {#if member.pepeha}
+    </h2>
+
+    <!-- A toggle to show pepeha. -->
+    {#if hasPepeha}
       <button
         on:click={() => {
           showPepeha = !showPepeha;
         }}
+        aria-label="open pepeha"
       >
-        show pepeha
+        {showPepeha ? 'Hide' : 'Show'} Pepeha
       </button>
-      {#if showPepeha}
-        <div class="pepeha" in:fade>
-          <!-- {#each member.pepeha as line}
-            <p>{line}</p>
-          {/each} -->
-          <Paragraph>{member.pepeha.join(', ')}</Paragraph>
-        </div>
-      {/if}
     {/if}
-    {#each member.about as line}
-      <Paragraph>{line}</Paragraph>
-    {/each}
-  </div>
-</section>
+  </header>
+
+  <!-- Quick blurb in te reo English. -->
+  <section class="blurb">
+    <article class="about">
+      {#each member.about as line}
+        <Paragraph>{line}</Paragraph>
+      {/each}
+    </article>
+
+    <!--
+    Pepeha! Sometimes quite long, hard to fit, so it's toggled in the blurb.
+  -->
+    {#if hasPepeha}
+      <article class="pepeha" class:show={showPepeha}>
+        <!-- in:fly={{ y: -100, duration: 300 }} out:fly={{ y: -100, duration: 300 }} -->
+        <BlockQuote {right}>
+          <!-- Actual pepeha -->
+          {#each member.pepeha as line}
+            <p>{line}</p>
+          {/each}
+        </BlockQuote>
+      </article>
+    {/if}
+  </section>
+</article>
 
 <style lang="postcss">
-  section.member {
-    display: inline-grid;
-    grid-auto-flow: row;
-    row-gap: theme('gap.2');
-    transition-duration: 500ms;
-    transition-timing-function: theme('transitionTimingFunction.in-out');
-
-    @media screen(sm) {
-      align-items: center;
-      gap: theme('gap.3');
-      grid-template-areas:
-        'img  name  '
-        'img  tags  '
-        'img  blurb ';
-      grid-template-columns: 1fr 2fr;
-
-      &.right {
-        grid-template-areas:
-          'name   img '
-          'tags   img '
-          'blurb  img ';
-        grid-template-columns: 2fr 1fr;
-        justify-items: right;
-        text-align: right;
-      }
-    }
-
-    @media screen(lg) {
-      gap: theme('gap.4');
-      grid-template-columns: 2fr 3fr;
-
-      &.right {
-        grid-template-columns: 3fr 2fr;
-      }
-    }
-
-    & > div.name {
-      @media screen(sm) {
-        grid-area: name;
-      }
-    }
-
-    & > img {
-      border-radius: theme('borderRadius.DEFAULT');
-      box-shadow: theme('dropShadow.md');
-      object-fit: cover;
-    }
-
-    & :global(svg) {
-      color: theme('colors.gray.700');
-
-      @nest :global(.dark) & {
-        color: theme('colors.green.300');
-      }
-    }
-
-    & > img,
-    & :global(svg) {
-      max-height: theme('height.48');
-      place-self: center;
-      width: 100%;
-
-      &.tall {
-        @apply object-top;
-      }
-
-      @media screen(ty) {
-        max-height: theme('height.64');
-      }
-
-      @media screen(sm) {
-        grid-area: img;
-        height: 100%;
-        max-width: theme('width.96');
-      }
-    }
-
-    & > h2.tags {
-      align-self: end;
-      color: theme('colors.gray.700');
-      font-family: theme('fontFamily.mono');
-      letter-spacing: theme('letterSpacing.tighter');
-
-      @apply text-18;
-
-      @nest :global(.dark) & {
-        color: theme('colors.gray.300');
-      }
-
-      @media screen(sm) {
-        grid-area: tags;
-
-        @apply text-20;
-      }
-
-      @media screen(md) {
-        letter-spacing: theme('letterSpacing.tight');
-      }
-
-      @media screen(lg) {
-        padding-left: theme('padding.2');
-        padding-right: theme('padding.2');
-      }
-
-      @media screen(xl) {
-        font-size: theme('fontSize.26');
-      }
-    }
-
-    & > div.blurb {
-      font-weight: theme('fontWeight.light');
-      grid-area: blurb;
-
-      & > button {
-        font-family: theme('fontFamily.mono');
-      }
-
-      & > div.pepeha {
-        padding-bottom: theme('padding.2');
-      }
-    }
-  }
+  @import './card.css';
 </style>

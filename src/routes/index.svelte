@@ -82,7 +82,7 @@
     /* Styles */
     border-radius: theme('borderRadius.lg');
     border-width: theme('borderWidth.2');
-    border-color: theme('colors.green.300');
+    border-color: theme('colors.green.700');
     box-shadow: theme('boxShadow.lg');
   }
 
