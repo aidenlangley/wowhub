@@ -156,13 +156,13 @@ export const team: Readable<Member[]> = readable([
     frontline: true,
     imgSrc: `${assets}/images/people/noreen.jpg`,
   },
-  {
-    name: 'Aiden 💻',
-    tags: ['software engineer', 'tuakana'],
-    about: [],
-    pepeha: [],
-    frontline: true,
-    imgSrc: `${assets}/images/people/aiden.jpg`,
-    tallImg: true,
-  },
+  // {
+  //   name: 'Aiden 💻',
+  //   tags: ['software engineer', 'tuakana'],
+  //   about: [],
+  //   pepeha: [],
+  //   frontline: true,
+  //   imgSrc: `${assets}/images/people/aiden.jpg`,
+  //   tallImg: true,
+  // },
 ]);
