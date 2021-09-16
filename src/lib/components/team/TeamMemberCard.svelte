@@ -74,8 +74,7 @@
       <article
         class="pepeha"
         class:show={showPepeha}
-        in:fly={{ y: -100, duration: 300 }}
-        out:fly={{ y: -100, duration: 300 }}
+        transition:fly={{ y: -100, duration: 300 }}
       >
         <BlockQuote {right}>
           <!-- Actual pepeha -->

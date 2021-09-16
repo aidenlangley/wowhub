@@ -1,5 +1,4 @@
 <script lang="ts">
-  import UnderConstruction from '$components/Error.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import TeamMemberCards from '$components/team/TeamMemberCards.svelte';
   import { seo } from '$store/seo';
@@ -15,8 +14,6 @@
   @component
   Meet the team.
 -->
-<UnderConstruction />
-
 <article id="kaimahi">
   <!-- Fancy heading. -->
   <header class="heading column">

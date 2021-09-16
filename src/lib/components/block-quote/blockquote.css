@@ -1,20 +1,18 @@
 blockquote {
-  border-color: theme('colors.green.500');
+  /* Text styling */
+  color: theme('colors.gray.900');
+  font-family: theme('fontFamily.serif');
+
+  /* Style box */
   padding: theme('padding.2');
-  font-family: theme('fontFamily.mono');
-  letter-spacing: theme('letterSpacing.tight');
-  line-height: theme('lineHeight.snug');
-  color: theme('colors.gray.800');
-}
+  border-top-width: theme('borderWidth.4');
+  border-bottom-width: theme('borderWidth.DEFAULT');
+  border-color: theme('colors.green.500');
 
-blockquote:not(.right) {
-  border-left-width: theme('borderWidth.2');
-}
-
-blockquote.right {
-  border-right-width: theme('borderWidth.2');
+  @apply bg-gray-100/30;
 }
 
 :global(.dark) blockquote {
   color: theme('colors.gray.200');
+  @apply bg-gray-900/30;
 }

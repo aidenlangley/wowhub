@@ -64,11 +64,10 @@ header .name :global(h1) {
 header .titles {
   grid-area: titles;
   color: theme('colors.gray.700');
-  font-family: theme('fontFamily.mono');
-  letter-spacing: theme('letterSpacing.tighter');
+  font-family: theme('fontFamily.serif');
   align-self: center;
 
-  @apply text-18;
+  @apply text-20;
 }
 
 header button {
@@ -97,11 +96,11 @@ header button {
     'pepeha '
     'about  ';
   gap: var(--gaps);
-  font-weight: theme('fontWeight.light');
 }
 
 .blurb .about {
   grid-area: about;
+  font-weight: theme('fontWeight.light');
 }
 
 .blurb .pepeha {
@@ -161,6 +160,12 @@ header button {
   }
 }
 
+@media screen(lg) {
+  header .titles {
+    @apply text-20;
+  }
+}
+
 @media screen(wide) {
   .member {
     --name-size: theme('fontSize.56');
@@ -184,10 +189,6 @@ header button {
   header .name :global(h1) {
     font-size: var(--name-size);
     line-height: var(--name-size);
-  }
-
-  header .titles {
-    @apply text-20;
   }
 }
 

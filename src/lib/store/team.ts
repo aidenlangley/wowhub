@@ -6,7 +6,7 @@ import type { Member } from './types.d';
 export const team: Readable<Member[]> = readable([
   {
     name: 'Jane 🌊',
-    tags: ['founder', 'peer support', 'tuakana'],
+    tags: ['founder', 'peer support', 'tuākana'],
     pepeha: [
       'Ko wai au?',
       'Ko Whakapoungakau te maunga',
@@ -33,7 +33,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Dee 🔥',
-    tags: ['kaimanāki', 'peer support', 'tuakana'],
+    tags: ['kaimanāki', 'peer support', 'tuākana'],
     pepeha: [
       'Ko Hikurangi te maunga',
       'Ko Ngātokimatawhaorua te waka',
@@ -74,10 +74,9 @@ export const team: Readable<Member[]> = readable([
     ],
     about: [
       `Rhonda is a registered Nurse and helped establish Whakaoranga Whanau
-      Recovery Hub in March 2020 alongside Jane. She's a mother to her own
-      tamariki and to the Whakaoranga Whanau. Born & bred in Rotorua, Rhonda
-      moved North with her parents at the age of 13 and has lived in Kaikohe
-      ever since.`,
+      Recovery Hub in March 2020 alongside Jane. She's like a mother to the
+      Whakaoranga Whanau too. Born & bred in Rotorua, Rhonda moved North with
+      her parents at the age of 13 and has lived in Kaikohe ever since.`,
       `Rhonda also helps with Freedom Whare as a director of Whakamanamai
       Whanau Charitable Trust; Freedom Whare help whanau with housing
       solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
@@ -88,7 +87,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Stu 💪🏽',
-    tags: ['he waka eke noa', 'aod counsellor', 'mātua'],
+    tags: ['he waka eke noa', 'aod counsellor', 'kaumātua'],
     pepeha: [],
     about: [],
     frontline: true,
@@ -97,7 +96,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Bess 🔥',
-    tags: ['he waka eke noa', 'therapist', 'whaea'],
+    tags: ['he waka eke noa', 'therapist', 'kaumātua'],
     pepeha: [],
     about: [],
     frontline: true,
@@ -138,7 +137,7 @@ export const team: Readable<Member[]> = readable([
 
   {
     name: 'Noreen 🔥',
-    tags: ['kaimanāki', 'peer support', 'tuakana'],
+    tags: ['kaimanāki', 'peer support', 'tuākana'],
     pepeha: [
       'Ko Mauao te maunga',
       'Ko Tauranga Moana tōku Kainga whenua',
@@ -162,7 +161,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Aiden 💻',
-    tags: ['software engineer', 'tuakana'],
+    tags: ['software engineer', 'tuākana'],
     pepeha: [
       'I whanau mai au i Tāmaki',
       'I tupu ake au i London, Ingarangi',
