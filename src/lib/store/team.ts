@@ -33,7 +33,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Dee 🔥',
-    tags: ['kaimanaki', 'peer support', 'tuakana'],
+    tags: ['kaimanāki', 'peer support', 'tuakana'],
     about: [
       `Deeann Herkt is a peer support worker. She's been clean and sober for 6
       years after being addicted to methamphetamine for many years. Dee checked
@@ -138,7 +138,7 @@ export const team: Readable<Member[]> = readable([
 
   {
     name: 'Noreen 🔥',
-    tags: ['kaimanaaki', 'peer support', 'tuakana'],
+    tags: ['kaimanāki', 'peer support', 'tuakana'],
     about: [
       `Wāhine Māori Noreen has been blessed to have survived and overcome some
       of life's tribulations, such as child sexual abuse, abandonment, loss and
