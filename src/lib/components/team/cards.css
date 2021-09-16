@@ -16,7 +16,7 @@
 
 .fill {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   align-items: flex-start;
   gap: theme('gap.4');
   padding: theme('padding.4');
@@ -29,6 +29,12 @@
 
 :global(.dark) .bg .bg-inner {
   border-color: theme('colors.gray.600');
+}
+
+@media screen(ty) {
+  .fill {
+    grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr));
+  }
 }
 
 @media screen(sm) {

@@ -1,6 +1,7 @@
 <script lang="ts">
   export let text: string;
   export let click = false;
+  export let right = false;
 
   let clicked = false;
 </script>
@@ -16,12 +17,13 @@
       clicked = !clicked;
     }}
     class:clicked
+    class:right
     aria-haspopup="true"
   >
     <slot />
   </span>
 {:else}
-  <span data-tooltip={text} aria-haspopup="true">
+  <span data-tooltip={text} class:right aria-haspopup="true">
     <slot />
   </span>
 {/if}

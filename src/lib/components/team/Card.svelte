@@ -48,7 +48,9 @@
     <!-- A toggle to show pepeha. -->
     {#if hasPepeha}
       <button class="button" aria-label="show pepeha tooltip">
-        <Tooltip text={member.pepeha.join('.\n') + '.'} click>Pepeha</Tooltip>
+        <Tooltip text={member.pepeha.join('.\n') + '.'} click {right}>
+          Pepeha
+        </Tooltip>
       </button>
     {/if}
   </header>
