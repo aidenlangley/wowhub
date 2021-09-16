@@ -39,7 +39,7 @@ export const team: Readable<Member[]> = readable([
       years after being addicted to methamphetamine for many years. Dee checked
       herself into treatment & completed her programme in 2015 and is now very
       passionate about helping the next addict in their recovery.`,
-      `Another strong wahine, she is always there to rescue her whanau, and
+      `Another strong wāhine, she is always there to rescue her whanau, and
       support and teach Māoritanga via waiata & himene especially.`,
     ],
     pepeha: [
@@ -65,8 +65,7 @@ export const team: Readable<Member[]> = readable([
       ever since.`,
       `Rhonda also helps with Freedom Whare as a director of Whakamanamai
       Whanau Charitable Trust; Freedom Whare help whanau with housing
-      solutions.`,
-      `She's a busy, and strong, wahine to put it mildly.`,
+      solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
     ],
     pepeha: [
       'Ko Maungaemiemi tōku maunga',
@@ -141,7 +140,7 @@ export const team: Readable<Member[]> = readable([
     name: 'Noreen 🔥',
     tags: ['kaimanaaki', 'peer support', 'tuakana'],
     about: [
-      `Wahine Māori Noreen has been blessed to have survived and overcome some
+      `wāhine Māori Noreen has been blessed to have survived and overcome some
       of life's tribulations, such as child sexual abuse, abandonment, loss and
       violence. She has experienced her fair share of grief and emotional
       trauma.`,
