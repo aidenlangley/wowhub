@@ -40,7 +40,7 @@ export const team: Readable<Member[]> = readable([
       herself into treatment & completed her programme in 2015 and is now very
       passionate about helping the next addict in their recovery.`,
       `Another strong wāhine, she is always there to rescue her whanau, and
-      support and teach Māoritanga via waiata & himene especially.`,
+      support and teach Māoritanga via waiata & hīmene especially.`,
     ],
     pepeha: [
       'Ko Hikurangi tōku maunga',
