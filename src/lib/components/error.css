@@ -1,0 +1,33 @@
+.message {
+  font-family: theme('fontFamily.mono');
+  letter-spacing: theme('letterSpacing.tighter');
+}
+
+.message > h1 {
+  font-weight: theme('fontWeight.black');
+  padding-bottom: theme('padding.2');
+
+  @apply text-26;
+}
+
+.message > h1 > small {
+  font-weight: theme('fontWeight.medium');
+
+  @apply text-20;
+}
+
+@media screen(sm) {
+  .message > h1 {
+    @apply text-40;
+  }
+
+  .message > h1 > small {
+    @apply text-28;
+  }
+}
+
+@media screen(lg) {
+  .message > h1 {
+    @apply text-56;
+  }
+}

@@ -1,0 +1,30 @@
+p {
+  letter-spacing: theme('letterSpacing.tighter');
+  padding-bottom: theme('padding.1');
+  padding-top: theme('padding.1');
+}
+
+:global(.dark) p {
+  color: theme('colors.white');
+}
+
+@media screen(md) {
+  p {
+    letter-spacing: theme('letterSpacing.tight');
+  }
+}
+
+@media screen(lg) {
+  p {
+    padding-bottom: theme('padding.2');
+    padding-top: theme('padding.2');
+  }
+}
+
+@media screen(xl) {
+  p {
+    line-height: theme('lineHeight.relaxed');
+
+    @apply text-18;
+  }
+}

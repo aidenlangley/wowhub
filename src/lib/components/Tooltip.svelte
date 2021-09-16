@@ -11,37 +11,5 @@
 </span>
 
 <style lang="postcss">
-  span[data-tooltip] {
-    position: relative;
-
-    &:hover,
-    &:focus {
-      &::after {
-        border-color: theme('colors.gray.700');
-        border-radius: theme('borderRadius.DEFAULT');
-        border-width: theme('borderWidth.DEFAULT');
-        color: theme('colors.gray.100');
-        content: attr(data-tooltip);
-        font-family: theme('fontFamily.mono');
-        letter-spacing: theme('letterSpacing.tighter');
-        max-width: theme('maxWidth.xs');
-        padding: theme('padding.2');
-        position: absolute;
-        right: 10%;
-        top: 150%;
-        width: max-content;
-        z-index: 1;
-
-        @apply text-14 bg-gray-900/90;
-
-        @media screen(ty) {
-          @apply text-base;
-        }
-
-        @media screen(lg) {
-          @apply text-18;
-        }
-      }
-    }
-  }
+  @import './tooltip.css';
 </style>
