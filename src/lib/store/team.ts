@@ -34,14 +34,6 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Dee 🔥',
     tags: ['kaimanāki', 'peer support', 'tuakana'],
-    about: [
-      `Deeann Herkt is a peer support worker. She's been clean and sober for 6
-      years after being addicted to methamphetamine for many years. Dee checked
-      herself into treatment & completed her programme in 2015 and is now very
-      passionate about helping the next addict in their recovery.`,
-      `Another strong wāhine, she is always there to rescue her whanau, and
-      support and teach Māoritanga via waiata & hīmene especially.`,
-    ],
     pepeha: [
       'Ko Hikurangi tōku maunga',
       'Ko Ngātokimatawhaorua tōku waka',
@@ -50,6 +42,14 @@ export const team: Readable<Member[]> = readable([
       'Ko Ngāpuhi tōku iwi',
       'Ko Deeann Herkt Kopa ahau',
     ],
+    about: [
+      `Deeann Herkt is a peer support worker. She's been clean and sober for 6
+      years after being addicted to methamphetamine for many years. Dee checked
+      herself into treatment & completed her programme in 2015 and is now very
+      passionate about helping the next addict in their recovery.`,
+      `Another strong wāhine, she is always there to rescue her whanau, and
+      support and teach Māoritanga via waiata & hīmene especially.`,
+    ],
     frontline: true,
     imgSrc: `${assets}/images/people/dee.jpg`,
     tallImg: true,
@@ -57,16 +57,6 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Rhonda 🔥',
     tags: ['manager', 'co-founder', 'nurse', 'trustee'],
-    about: [
-      `Rhonda is a registered Nurse and helped establish Whakaoranga Whanau
-      Recovery Hub in March 2020 alongside Jane. She's a mother to her own
-      tamariki and to the Whakaoranga Whanau. Born & bred in Rotorua, Rhonda
-      moved North with her parents at the age of 13 and has lived in Kaikohe
-      ever since.`,
-      `Rhonda also helps with Freedom Whare as a director of Whakamanamai
-      Whanau Charitable Trust; Freedom Whare help whanau with housing
-      solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
-    ],
     pepeha: [
       'Ko Maungaemiemi tōku maunga',
       'Ko Whangaroa tōku moana',
@@ -82,6 +72,16 @@ export const team: Readable<Member[]> = readable([
       'Ko Kaikohe tōku kainga noho',
       'Ko Rhonda Zielinski ahau',
     ],
+    about: [
+      `Rhonda is a registered Nurse and helped establish Whakaoranga Whanau
+      Recovery Hub in March 2020 alongside Jane. She's a mother to her own
+      tamariki and to the Whakaoranga Whanau. Born & bred in Rotorua, Rhonda
+      moved North with her parents at the age of 13 and has lived in Kaikohe
+      ever since.`,
+      `Rhonda also helps with Freedom Whare as a director of Whakamanamai
+      Whanau Charitable Trust; Freedom Whare help whanau with housing
+      solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
+    ],
     frontline: true,
     imgSrc: `${assets}/images/people/rhonda.jpg`,
     tallImg: true,
@@ -89,8 +89,8 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Stu 💪🏽',
     tags: ['he waka eke noa', 'aod counsellor', 'mātua'],
-    about: [],
     pepeha: [],
+    about: [],
     frontline: true,
     imgSrc: `${assets}/images/people/stu-bess.jpg`,
     tallImg: true,
@@ -98,8 +98,8 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Bess 🔥',
     tags: ['he waka eke noa', 'therapist', 'whaea'],
-    about: [],
     pepeha: [],
+    about: [],
     frontline: true,
     imgSrc: `${assets}/images/people/stu-bess.jpg`,
     tallImg: true,
@@ -107,6 +107,14 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Kamina 🔥',
     tags: ['administration', 'logistics'],
+    pepeha: [
+      'Ko Moehau tōku maunga',
+      'Ko Ti Kapa & Tainui tōku waka',
+      'Ko Mainai tōku marae',
+      'Ko Ngāti Pukenga, Ngāti Whanaunga tōku hapu',
+      'Ko Maru Tuahu tōku iwi',
+      'Ko Kamina McSheffrey ahau',
+    ],
     about: [
       `Kamina has been living in Kaikohe for 3 years now, her grandmother was
       born in Waima. Just like the rest of our team, she also has lived
@@ -116,14 +124,6 @@ export const team: Readable<Member[]> = readable([
       head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
       been working in administration & office management for 15 years in
       Auckland.`,
-    ],
-    pepeha: [
-      'Ko Moehau tōku maunga',
-      'Ko Ti Kapa & Tainui tōku waka',
-      'Ko Mainai tōku marae',
-      'Ko Ngāti Pukenga, Ngāti Whanaunga tōku hapu',
-      'Ko Maru Tuahu tōku iwi',
-      'Ko Kamina McSheffrey ahau',
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/kamina.jpg`,
@@ -139,6 +139,13 @@ export const team: Readable<Member[]> = readable([
   {
     name: 'Noreen 🔥',
     tags: ['kaimanāki', 'peer support', 'tuakana'],
+    pepeha: [
+      'Ko Mauao tōku maunga',
+      'Ko Tauranga Moana tōku Kainga whenua',
+      'Ko Wairoa tāku awa',
+      'Ko Ngāti Ranginui raua, ko Ngāiterangi tōku iwi',
+      'Ko Noreen Ahau.',
+    ],
     about: [
       `Wāhine Māori Noreen has been blessed to have survived and overcome some
       of life's tribulations, such as child sexual abuse, abandonment, loss and
@@ -150,19 +157,24 @@ export const team: Readable<Member[]> = readable([
       trauma by sharing her experience and knowledge of health and wellbeing,
       particularly using the Māori world view of health and wellness.`,
     ],
-    pepeha: [
-      'Ko Mauao tōku maunga',
-      'Ko Tauranga Moana tōku Kainga whenua',
-      'Ko Wairoa tāku awa',
-      'Ko Ngāti Ranginui raua, ko Ngāiterangi tōku iwi',
-      'Ko Noreen Ahau.',
-    ],
     frontline: true,
     imgSrc: `${assets}/images/people/noreen.jpg`,
   },
   {
     name: 'Aiden 💻',
     tags: ['software engineer', 'tuakana'],
+    pepeha: [
+      'I whanau mai au i Tāmaki',
+      'I tupu ake au i London, Ingarangi',
+      'Ko Whakatere te maunga',
+      'Ko Tāheke te awa',
+      'Ko Ngāpuhi te iwi',
+      'Ko Ngāti Pākau te hapu',
+      'Ko Tāhekeroa te marae',
+      'Ko Pehi, ko Jack, ko Langley ōku whanau',
+      'Ko kaipūkaha rorohiko ahau',
+      'Ko Aiden Langley ahau',
+    ],
     about: [
       `Aiden has been described as more of a walker than a talker, so don't
       expect much charisma from him. Aiden wrote this website, manages the IT
@@ -173,18 +185,6 @@ export const team: Readable<Member[]> = readable([
       `He has been diagnosed with ADHD and has a mild form of Tourette's, so if
       you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
       have played a large part in his life too.`,
-    ],
-    pepeha: [
-      'I whanau mai au ki Tāmaki, ki Greenlane',
-      'I tupu ake au ki tāwāhi, ki London',
-      'Ko Ngāpuhi te iwi',
-      'Ko Ngāti Pākau te hapu',
-      'Ko Pehi, ko Jack, ko Langley te whanau',
-      'Ko Whakatere Peak te maunga',
-      'Ko Tāheke te awa',
-      'Ko Tāhekeroa te marae',
-      'Ko kaipūkaha rorohiko',
-      'Ko Aiden Langley ahau',
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/aiden.jpg`,
