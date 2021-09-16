@@ -140,7 +140,7 @@ export const team: Readable<Member[]> = readable([
     name: 'Noreen 🔥',
     tags: ['kaimanaaki', 'peer support', 'tuakana'],
     about: [
-      `wāhine Māori Noreen has been blessed to have survived and overcome some
+      `Wāhine Māori Noreen has been blessed to have survived and overcome some
       of life's tribulations, such as child sexual abuse, abandonment, loss and
       violence. She has experienced her fair share of grief and emotional
       trauma.`,
