@@ -26,7 +26,7 @@
   line-height: var(--right-line-height);
 }
 
-:global(.dark .services > :nth-child(3n) > :last-child) & {
+:global(.dark .services > :nth-child(3n) > :last-child) {
   color: theme('colors.gray.400');
 }
 

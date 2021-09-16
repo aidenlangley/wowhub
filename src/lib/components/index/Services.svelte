@@ -1,23 +1,26 @@
 <script lang="ts">
+  /* Comments indiciate line:left/right */
   const buzzWords = [
-    'māori',
-    'kaupapa',
-    'community',
-    'serenity',
-    'roopu',
-    'tinana',
-    'recovery',
-    'addiction',
-    'hollistic',
-    'wairua',
-    'hinengaro',
-    'aod',
-    'whānau',
-    'wellness',
-    'tailored',
-    'for you',
-    'anger management',
-    'ora',
+    'māori' /* 1:1 */,
+    'kaupapa' /* 1:2 */,
+    'community' /* 2:1 */,
+    'serenity' /* 2:2 */,
+    'roopu' /* 3:1 */,
+    'tinana' /* 3:2 */,
+
+    'wairua' /* 1:1 */,
+    'addiction' /* 1:2 */,
+    'hollistic' /* 2:1 */,
+    'recovery' /* 2:2 */,
+    'hinengaro' /* 3:1 */,
+    'aod' /* 3:2 */,
+
+    'whānau' /* 1:1 */,
+    'wellness' /* 1:2 */,
+    'tailored' /* 2:1 */,
+    'for you' /* 2:2 */,
+    'anger management' /* 3:1 */,
+    'ora' /* 3:2 */,
   ];
 
   const length = buzzWords.length;
@@ -67,5 +70,8 @@
 </div>
 
 <style lang="postcss">
-  @import './index-services.css';
+  @import './services/services.css';
+  @import './services/1st-line.css';
+  @import './services/2nd-line.css';
+  @import './services/3rd-line.css';
 </style>

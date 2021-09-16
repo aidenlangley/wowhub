@@ -1,7 +1,3 @@
-@import './css/1st-line.css';
-@import './css/2nd-line.css';
-@import './css/3rd-line.css';
-
 .services {
   display: grid;
   grid-auto-flow: row;

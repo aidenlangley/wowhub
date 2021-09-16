@@ -1,4 +1,4 @@
-import { readable } from 'svelte/store'
+import { readable } from 'svelte/store';
 
 export const forms = readable({
   forms: [
@@ -9,4 +9,4 @@ export const forms = readable({
       url: 'https://forms.gle/9BSJcMKjP1XgjCaP9',
     },
   ],
-})
+});

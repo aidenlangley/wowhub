@@ -1,10 +1,10 @@
 <script lang="ts">
-  import BannerWhite from '$images/banner-white.png'
-  import Banner from '$images/banner.png'
-  import { blur } from 'svelte/transition'
+  import BannerWhite from '$images/banner-white.png';
+  import Banner from '$images/banner.png';
+  import { blur } from 'svelte/transition';
 
-  export let white = false
-  const alt = 'wowhub banner'
+  export let white = false;
+  const alt = 'wowhub banner';
 </script>
 
 {#if !white}

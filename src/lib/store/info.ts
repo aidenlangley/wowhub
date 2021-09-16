@@ -1,4 +1,4 @@
-import { readable } from 'svelte/store'
+import { readable } from 'svelte/store';
 
 export const info = readable({
   phone: '+6494010975',
@@ -13,4 +13,4 @@ export const info = readable({
       url: 'https://forms.gle/9BSJcMKjP1XgjCaP9',
     },
   ],
-})
+});

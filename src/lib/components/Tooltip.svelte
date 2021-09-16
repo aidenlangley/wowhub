@@ -4,6 +4,7 @@
   export let right = false;
 
   let clicked = false;
+  const toggle = () => (clicked = !clicked);
 </script>
 
 <!--
@@ -13,9 +14,7 @@
 {#if click}
   <span
     data-tooltip={text}
-    on:click={() => {
-      clicked = !clicked;
-    }}
+    on:click={toggle}
     class:clicked
     class:right
     aria-haspopup="true"

@@ -1,6 +1,6 @@
-import type { Readable } from 'svelte/store'
-import { readable } from 'svelte/store'
-import type { Route } from './types.d'
+import type { Readable } from 'svelte/store';
+import { readable } from 'svelte/store';
+import type { Route } from './types.d';
 
 export const routes: Readable<Route[]> = readable([
   {
@@ -19,8 +19,8 @@ export const routes: Readable<Route[]> = readable([
     translation: 'our friends',
   },
   {
-    name: 'panui & docs',
+    name: 'panui',
     path: '/news',
     translation: 'news',
   },
-])
+]);

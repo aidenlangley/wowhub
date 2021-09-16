@@ -2,10 +2,7 @@
   "compilerOptions": {
     "moduleResolution": "node",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "DOM"
-    ],
+    "lib": ["es2020", "DOM"],
     "target": "es2019",
     /**
 		svelte-preprocess cannot figure out whether you have a value or a type, so
@@ -26,46 +23,19 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
-      "$lib": [
-        "src/lib"
-      ],
-      "$lib/*": [
-        "src/lib/*"
-      ],
-      "$components": [
-        "src/lib/components"
-      ],
-      "$components/*": [
-        "src/lib/components/*"
-      ],
-      "$layout": [
-        "src/lib/layout"
-      ],
-      "$layout/*": [
-        "src/lib/layout/*"
-      ],
-      "$media": [
-        "src/lib/media"
-      ],
-      "$media/*": [
-        "src/lib/media/*"
-      ],
-      "$store": [
-        "src/lib/store"
-      ],
-      "$store/*": [
-        "src/lib/store/*"
-      ],
-      "$images": [
-        "static/images"
-      ],
-      "$images/*": [
-        "static/images/*"
-      ],
+      "$lib": ["src/lib"],
+      "$lib/*": ["src/lib/*"],
+      "$components": ["src/lib/components"],
+      "$components/*": ["src/lib/components/*"],
+      "$layout": ["src/lib/layout"],
+      "$layout/*": ["src/lib/layout/*"],
+      "$media": ["src/lib/media"],
+      "$media/*": ["src/lib/media/*"],
+      "$store": ["src/lib/store"],
+      "$store/*": ["src/lib/store/*"],
+      "$images": ["static/images"],
+      "$images/*": ["static/images/*"]
     }
   },
-  "include": [
-    "src/**/*.svelte",
-    "src/**/*.ts",
-  ]
+  "include": ["src/**/*.svelte", "src/**/*.ts"]
 }

@@ -10,7 +10,7 @@ Relative paths for images are tricky, so this is how they generally need to be h
 
 ```ts
 import { assets } from '$app/paths';
-export const src = `${assets}/path.png`
+export const src = `${assets}/path.png`;
 ```
 
 ### mdsvex
@@ -18,6 +18,7 @@ export const src = `${assets}/path.png`
 Svelte Markdown, allows writing .md files AND .svelte code in the same files. Neat, huh? Adder can be found [here](https://github.com/svelte-add/mdsvex).
 
 #### 23/08/2021
+
 I have installed but not used this at the time of writing.
 
 ### Tailwind CSS

@@ -2,9 +2,9 @@
   /*
   import { Phone } from 'svelte-hero-icons';
   */
-  export let src: any // eslint-disable-line @typescript-eslint/no-explicit-any
-  export let solid = false
-  export let size = '22'
+  export let src: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  export let solid = false;
+  export let size = '22';
 
   if (size !== '100%') {
     if (
@@ -13,14 +13,14 @@
       size.slice(-1) != '%'
     ) {
       try {
-        size = parseInt(size) + 'px'
+        size = parseInt(size) + 'px';
       } catch (error) {
-        size = '100%'
+        size = '100%';
       }
     }
   }
 
-  const style = `heroicon ${!solid ? 'outline' : 'solid'}`
+  const style = `heroicon ${!solid ? 'outline' : 'solid'}`;
 </script>
 
 {#if !solid}

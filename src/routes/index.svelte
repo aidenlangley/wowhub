@@ -1,10 +1,11 @@
 <script lang="ts" context="module">
   import type { Article } from '$components/articles/types.d';
-  import IndexBlurb from '$components/index/IndexBlurb.svelte';
-  import IndexLatestNews from '$components/index/IndexLatestNews.svelte';
-  import IndexQuickLinks from '$components/index/IndexQuickLinks.svelte';
-  import IndexSerenityPrayer from '$components/index/IndexSerenityPrayer.svelte';
-  import IndexWhakatauki from '$components/index/IndexWhakatauki.svelte';
+  import Blurb from '$lib/components/index/Blurb.svelte';
+  import LatestNews from '$lib/components/index/LatestNews.svelte';
+  import QuickLinks from '$lib/components/index/QuickLinks.svelte';
+  import SerenityPrayer from '$lib/components/index/SerenityPrayer.svelte';
+  import Services from '$lib/components/index/Services.svelte';
+  import Whakatauki from '$lib/components/index/Whakatauki.svelte';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
@@ -37,7 +38,7 @@
 
   <!-- Visual break after banner via dotted border. -->
   <section id="quick-links">
-    <IndexQuickLinks />
+    <QuickLinks />
   </section>
 
   <section id="video" class="video">
@@ -50,25 +51,25 @@
 
   {#if news}
     <section id="news" in:fade>
-      <IndexLatestNews {news} />
+      <LatestNews {news} />
     </section>
   {/if}
 </div>
 
 <section id="blurb" class="pad-y pad-x">
-  <IndexBlurb />
+  <Blurb />
 </section>
 
 <section id="serenity-prayer" class="column" aria-hidden="true">
-  <IndexSerenityPrayer />
+  <SerenityPrayer />
 </section>
 
 <section id="whakatauki" class="pad-y pad-x">
-  <IndexWhakatauki />
+  <Whakatauki />
 </section>
 
 <section id="services" aria-hidden="true">
-  <!-- <IndexServices /> -->
+  <Services />
 </section>
 
 <style lang="postcss">

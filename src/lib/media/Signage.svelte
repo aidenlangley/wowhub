@@ -1,10 +1,10 @@
 <script lang="ts">
-  import SignageWhite from '$images/signage-white.png'
-  import Signage from '$images/signage.png'
-  import { blur } from 'svelte/transition'
+  import SignageWhite from '$images/signage-white.png';
+  import Signage from '$images/signage.png';
+  import { blur } from 'svelte/transition';
 
-  export let white = false
-  const alt = 'wowhub signage'
+  export let white = false;
+  const alt = 'wowhub signage';
 </script>
 
 {#if !white}

@@ -18,14 +18,14 @@
   line-height: var(--left-line-height);
 }
 
-:global(.dark .services > :nth-child(3n + 1) > :first-child) & {
-  color: theme('colors.gray.200');
-}
-
 .services > :nth-child(3n + 1) > :last-child {
   color: theme('colors.purple.500');
   font-size: var(--right-font-size);
   line-height: var(--right-line-height);
+}
+
+:global(.dark .services > :nth-child(3n + 1) > :first-child) {
+  color: theme('colors.gray.200');
 }
 
 @media screen(ty) {

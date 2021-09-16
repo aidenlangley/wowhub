@@ -6,18 +6,11 @@ span[data-tooltip]:not(.clicked) {
   content: '';
 }
 
+/* For small screens, go right. */
 span[data-tooltip]::after {
   position: absolute;
   left: -35%;
   top: 150%;
-}
-
-@media screen(ty) {
-  span[data-tooltip]::after {
-    position: absolute;
-    right: 10%;
-    top: 150%;
-  }
 }
 
 span[data-tooltip].right::after {
@@ -29,22 +22,35 @@ span[data-tooltip].right::after {
 span[data-tooltip]:hover::after,
 span[data-tooltip]:focus::after,
 span[data-tooltip].clicked::after {
+  z-index: 1;
+
+  /* Border styling */
   border-color: theme('colors.gray.700');
   border-radius: theme('borderRadius.DEFAULT');
   border-width: theme('borderWidth.DEFAULT');
+  padding: theme('padding.2');
+
+  /* Text styling */
   color: theme('colors.gray.100');
   content: attr(data-tooltip);
   font-family: theme('fontFamily.mono');
   letter-spacing: theme('letterSpacing.tighter');
-  max-width: theme('maxWidth.xs');
-  padding: theme('padding.2');
-  width: max-content;
-  z-index: 1;
+  text-align: start;
 
-  @apply text-14 bg-gray-900/90;
+  /* Size accordingly */
+  max-width: theme('maxWidth.xs');
+  width: max-content;
+
+  @apply text-base bg-gray-900/90;
 }
 
 @media screen(ty) {
+  span[data-tooltip]::after {
+    position: absolute;
+    right: 10%;
+    top: 150%;
+  }
+
   span[data-tooltip]:hover::after,
   span[data-tooltip]:focus::after {
     @apply text-base;

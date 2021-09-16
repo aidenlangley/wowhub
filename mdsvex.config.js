@@ -1,7 +1,7 @@
-import domStringify from 'rehype-dom-stringify'
-import externalLinks from 'rehype-external-links'
-import footnotes from 'remark-footnotes'
-import gfm from 'remark-gfm'
+import domStringify from 'rehype-dom-stringify';
+import externalLinks from 'rehype-external-links';
+import footnotes from 'remark-footnotes';
+import gfm from 'remark-gfm';
 
 const config = {
   extensions: ['.svelte.md', '.md', '.svx'],
@@ -13,6 +13,6 @@ const config = {
   layout: {
     _: './src/lib/components/articles/Article.svelte',
   },
-}
+};
 
-export default config
+export default config;

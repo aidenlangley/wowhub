@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { seo } from '$lib/store/seo'
+  import { seo } from '$lib/store/seo';
 </script>
 
 <!--

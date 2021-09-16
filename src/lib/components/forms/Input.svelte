@@ -1,18 +1,18 @@
 <script lang="ts">
-  import Icon, { QuestionMarkCircle } from 'svelte-hero-icons'
-  import Tooltip from '../Tooltip.svelte'
-  import { Input } from './types'
+  import Icon, { QuestionMarkCircle } from 'svelte-hero-icons';
+  import Tooltip from '../Tooltip.svelte';
+  import { Input } from './types';
 
-  export let type: Input = Input.Text
-  export let id: string = null
-  export let label: string = null
-  export let tooltip: string = null
+  export let type: Input = Input.Text;
+  export let id: string = null;
+  export let label: string = null;
+  export let tooltip: string = null;
 
   // Text, number, range, email, etc.
-  export let value: string | number = null
+  export let value: string | number = null;
 
   // Radio
-  export let options: [] = null
+  export let options: [] = null;
 </script>
 
 <div class="p-1 flex flex-col space-y-1">

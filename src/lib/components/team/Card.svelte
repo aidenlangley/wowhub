@@ -11,7 +11,6 @@
   export let right = false;
 
   const hasPepeha = member.pepeha && member.pepeha.length > 0;
-  let showPepeha = false;
 </script>
 
 <article class="member" class:right>
