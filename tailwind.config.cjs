@@ -20,7 +20,8 @@ const config = {
       md: em(768),
       lg: em(1024),
       xl: em(1280),
-      wide: em(1920),
+      wide: em(1600),
+      xwide: em(1920),
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],

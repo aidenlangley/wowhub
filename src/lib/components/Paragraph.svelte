@@ -16,21 +16,19 @@
       color: theme('colors.white');
     }
 
-    @media screen (md) {
+    @media screen(md) {
       letter-spacing: theme('letterSpacing.tight');
-
-      @apply text-18;
     }
 
-    @media screen (lg) {
+    @media screen(lg) {
       padding-bottom: theme('padding.2');
       padding-top: theme('padding.2');
     }
 
-    @media screen (xl) {
+    @media screen(xl) {
       line-height: theme('lineHeight.relaxed');
 
-      @apply text-20;
+      @apply text-18;
     }
   }
 </style>

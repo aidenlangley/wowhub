@@ -6,7 +6,7 @@
   import Icon from '$media/Icon.svelte';
   import type { Member } from '$store/types.d';
   import { UserCircle } from 'svelte-hero-icons';
-  // import { fly } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
 
   export let member: Member;
   export let right = false;
@@ -70,9 +70,13 @@
     <!--
     Pepeha! Sometimes quite long, hard to fit, so it's toggled in the blurb.
   -->
-    {#if hasPepeha}
-      <article class="pepeha" class:show={showPepeha}>
-        <!-- in:fly={{ y: -100, duration: 300 }} out:fly={{ y: -100, duration: 300 }} -->
+    {#if hasPepeha && showPepeha}
+      <article
+        class="pepeha"
+        class:show={showPepeha}
+        in:fly={{ y: -100, duration: 300 }}
+        out:fly={{ y: -100, duration: 300 }}
+      >
         <BlockQuote {right}>
           <!-- Actual pepeha -->
           {#each member.pepeha as line}
@@ -85,5 +89,5 @@
 </article>
 
 <style lang="postcss">
-  @import './card.css';
+  @import './team-member-card.css';
 </style>
