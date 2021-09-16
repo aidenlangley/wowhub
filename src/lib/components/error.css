@@ -10,7 +10,7 @@
   @apply text-26;
 }
 
-.message > h1 > small {
+.message > small {
   font-weight: theme('fontWeight.medium');
 
   @apply text-20;
@@ -21,7 +21,7 @@
     @apply text-40;
   }
 
-  .message > h1 > small {
+  .message > small {
     @apply text-28;
   }
 }

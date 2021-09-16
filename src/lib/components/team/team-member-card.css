@@ -87,25 +87,15 @@ header button {
   font-family: theme('fontFamily.mono');
   font-weight: theme('fontWeight.medium');
 
+  /* Since it's a tooltip, do cursor stuff */
+  cursor: help;
+
   @apply bg-green-700/80;
 }
 
 .blurb {
   grid-area: blurb;
-  display: inline-grid;
-  grid-template-areas:
-    'pepeha '
-    'about  ';
-  gap: var(--gaps);
-}
-
-.blurb .about {
-  grid-area: about;
   font-weight: theme('fontWeight.light');
-}
-
-.blurb .pepeha {
-  grid-area: pepeha;
 }
 
 @media screen(ty) {

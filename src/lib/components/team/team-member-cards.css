@@ -45,7 +45,6 @@
   }
 
   .fill {
-    /* gap: theme('gap.8'); */
     padding: theme('padding.8');
   }
 }

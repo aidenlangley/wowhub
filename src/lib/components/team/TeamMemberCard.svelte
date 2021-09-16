@@ -54,30 +54,11 @@
   </header>
 
   <!-- Quick blurb in te reo English. -->
-  <section class="blurb">
-    <article class="about">
-      {#each member.about as line}
-        <Paragraph>{line}</Paragraph>
-      {/each}
-    </article>
-
-    <!--
-      Pepeha! Sometimes quite long, hard to fit, so it's toggled in the blurb.
-    -->
-    <!-- {#if hasPepeha && showPepeha}
-      <article
-        class="pepeha"
-        class:show={showPepeha}
-        transition:fly={{ y: -100, duration: 300 }}
-      >
-        <BlockQuote {right}>
-          {#each member.pepeha as line}
-            <p>{line}</p>
-          {/each}
-        </BlockQuote>
-      </article>
-    {/if} -->
-  </section>
+  <article class="blurb">
+    {#each member.about as line}
+      <Paragraph>{line}</Paragraph>
+    {/each}
+  </article>
 </article>
 
 <style lang="postcss">
