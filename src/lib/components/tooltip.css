@@ -3,7 +3,8 @@ span[data-tooltip] {
 }
 
 span[data-tooltip]:hover::after,
-span[data-tooltip]:focus::after {
+span[data-tooltip]:focus::after,
+span[data-tooltip].clicked::after {
   border-color: theme('colors.gray.700');
   border-radius: theme('borderRadius.DEFAULT');
   border-width: theme('borderWidth.DEFAULT');

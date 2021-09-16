@@ -1,0 +1,51 @@
+.bg {
+  /* Underneath bg-inner and children */
+  z-index: 0;
+
+  /* Styles */
+  background-color: theme('colors.green.300');
+  border-color: theme('colors.green.500');
+}
+
+.bg .bg-inner {
+  border-bottom-width: theme('borderWidth.DEFAULT');
+  border-color: theme('colors.gray.300');
+  border-radius: theme('borderRadius.DEFAULT');
+  border-top-width: theme('borderWidth.DEFAULT');
+}
+
+.fill {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  align-items: flex-start;
+  gap: theme('gap.4');
+  padding: theme('padding.4');
+}
+
+:global(.dark) .bg {
+  background-color: theme('colors.green.800');
+  border-color: theme('colors.green.600');
+}
+
+:global(.dark) .bg .bg-inner {
+  border-color: theme('colors.gray.600');
+}
+
+@media screen(sm) {
+  .bg {
+    border-radius: theme('borderRadius.DEFAULT');
+    border-width: theme('borderWidth.DEFAULT');
+    transform: rotate(-0.5deg); /* Need to rotate less as the list grows... */
+  }
+
+  .bg .bg-inner {
+    background-image: theme('backgroundImage.gradient-to-b');
+    border-width: theme('borderWidth.DEFAULT');
+    transform: rotate(0.5deg);
+  }
+
+  .fill {
+    /* gap: theme('gap.8'); */
+    padding: theme('padding.8');
+  }
+}

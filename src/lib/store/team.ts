@@ -8,7 +8,6 @@ export const team: Readable<Member[]> = readable([
     name: 'Jane 🌊',
     tags: ['founder', 'peer support', 'tuākana'],
     pepeha: [
-      'Ko wai au?',
       'Ko Whakapoungakau te maunga',
       'Ko Kaituna te awa',
       'Ko Ruamata te marae',
@@ -104,38 +103,6 @@ export const team: Readable<Member[]> = readable([
     tallImg: true,
   },
   {
-    name: 'Kamina 🔥',
-    tags: ['administration', 'logistics'],
-    pepeha: [
-      'Ko Moehau te maunga',
-      'Ko Ti Kapa & Tainui te waka',
-      'Ko Mainai te marae',
-      'Ko Ngāti Pukenga, Ngāti Whanaunga te hapu',
-      'Ko Maru Tuahu te iwi',
-      'Ko Kamina McSheffrey ahau',
-    ],
-    about: [
-      `Kamina has been living in Kaikohe for 3 years now, her grandmother was
-      born in Waima. Just like the rest of our team, she also has lived
-      experience with AOD struggles.`,
-      `She's a qualified kaiako for Te Ataarangi, total immersion  te reo Māori.
-      She has worked for Te Whare Wānanga o Awanuiarangi, Hamilton, she was
-      head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
-      been working in administration & office management for 15 years in
-      Auckland.`,
-    ],
-    frontline: true,
-    imgSrc: `${assets}/images/people/kamina.jpg`,
-  },
-  {
-    name: 'Lisa 👩‍⚕️',
-    tags: ['clinical lead', 'mental health'],
-    about: [],
-    frontline: true,
-    // imgSrc: `${assets}/images/people/lisa.jpg`,
-  },
-
-  {
     name: 'Noreen 🔥',
     tags: ['kaimanāki', 'peer support', 'tuākana'],
     pepeha: [
@@ -158,6 +125,30 @@ export const team: Readable<Member[]> = readable([
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/noreen.jpg`,
+  },
+  {
+    name: 'Kamina 🔥',
+    tags: ['administration', 'logistics'],
+    pepeha: [
+      'Ko Moehau te maunga',
+      'Ko Ti Kapa & Tainui te waka',
+      'Ko Mainai te marae',
+      'Ko Ngāti Pukenga, Ngāti Whanaunga te hapu',
+      'Ko Maru Tuahu te iwi',
+      'Ko Kamina McSheffrey ahau',
+    ],
+    about: [
+      `Kamina has been living in Kaikohe for 3 years now, her grandmother was
+      born in Waima. Just like the rest of our team, she also has lived
+      experience with AOD struggles.`,
+      `She's a qualified kaiako for Te Ataarangi, total immersion  te reo Māori.
+      She has worked for Te Whare Wānanga o Awanuiarangi, Hamilton, she was
+      head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
+      been working in administration & office management for 15 years in
+      Auckland.`,
+    ],
+    frontline: true,
+    imgSrc: `${assets}/images/people/kamina.jpg`,
   },
   {
     name: 'Aiden 💻',
@@ -189,5 +180,12 @@ export const team: Readable<Member[]> = readable([
     frontline: true,
     imgSrc: `${assets}/images/people/aiden.jpg`,
     tallImg: true,
+  },
+  {
+    name: 'Lisa 👩‍⚕️',
+    tags: ['clinical lead', 'mental health'],
+    about: [],
+    frontline: true,
+    // imgSrc: `${assets}/images/people/lisa.jpg`,
   },
 ]);

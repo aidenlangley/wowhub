@@ -1,12 +1,11 @@
 <script lang="ts">
-  import BlockQuote from '$components/block-quote/BlockQuote.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import Paragraph from '$components/Paragraph.svelte';
   import { TranslateDirection } from '$layout/translate/types.d';
   import Icon from '$media/Icon.svelte';
   import type { Member } from '$store/types.d';
   import { UserCircle } from 'svelte-hero-icons';
-  import { fly } from 'svelte/transition';
+  import Tooltip from '../Tooltip.svelte';
 
   export let member: Member;
   export let right = false;
@@ -48,13 +47,8 @@
 
     <!-- A toggle to show pepeha. -->
     {#if hasPepeha}
-      <button
-        on:click={() => {
-          showPepeha = !showPepeha;
-        }}
-        aria-label="open pepeha"
-      >
-        {showPepeha ? 'Hide' : 'Show'} Pepeha
+      <button class="button" aria-label="show pepeha tooltip">
+        <Tooltip text={member.pepeha.join('.\n') + '.'} click>Pepeha</Tooltip>
       </button>
     {/if}
   </header>
@@ -68,22 +62,21 @@
     </article>
 
     <!--
-    Pepeha! Sometimes quite long, hard to fit, so it's toggled in the blurb.
-  -->
-    {#if hasPepeha && showPepeha}
+      Pepeha! Sometimes quite long, hard to fit, so it's toggled in the blurb.
+    -->
+    <!-- {#if hasPepeha && showPepeha}
       <article
         class="pepeha"
         class:show={showPepeha}
         transition:fly={{ y: -100, duration: 300 }}
       >
         <BlockQuote {right}>
-          <!-- Actual pepeha -->
           {#each member.pepeha as line}
             <p>{line}</p>
           {/each}
         </BlockQuote>
       </article>
-    {/if}
+    {/if} -->
   </section>
 </article>
 

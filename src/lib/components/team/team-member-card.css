@@ -8,6 +8,7 @@
     'header '
     'blurb  ';
   gap: var(--gaps);
+  padding: var(--gaps);
 
   /*
   Transitions so things move and animate when pepeha shows and screen changes
