@@ -56,7 +56,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Rhonda 🔥',
-    tags: ['manager', 'co-founder', 'nurse', 'trustee'],
+    tags: ['manager', 'co-founder', 'nāhi', 'trustee'],
     pepeha: [
       'Ko Maungaemiemi tōku maunga',
       'Ko Whangaroa tōku moana',
@@ -161,7 +161,7 @@ export const team: Readable<Member[]> = readable([
   },
   {
     name: 'Aiden 💻',
-    tags: ['software engineer', 'tuākana'],
+    tags: ['kaipūkaha rorohiko', 'tuākana'],
     pepeha: [
       'I whanau mai au i Tāmaki',
       'I tupu ake au i London, Ingarangi',
