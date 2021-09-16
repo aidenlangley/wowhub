@@ -62,5 +62,5 @@
 </article>
 
 <style lang="postcss">
-  @import './team-member-card.css';
+  @import './card.css';
 </style>

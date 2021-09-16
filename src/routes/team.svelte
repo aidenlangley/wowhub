@@ -1,6 +1,6 @@
 <script lang="ts">
   import Heading from '$components/heading/Heading.svelte';
-  import TeamMemberCards from '$components/team/TeamMemberCards.svelte';
+  import Cards from '$components/team/Cards.svelte';
   import { seo } from '$store/seo';
 
   $seo = {
@@ -25,7 +25,7 @@
 
   <!-- Member cards rendered here. -->
   <section id="members" class="pad-x gaps-y">
-    <TeamMemberCards />
+    <Cards />
   </section>
 </article>
 
