@@ -1,11 +1,11 @@
 <script lang="ts" context="module">
   import type { Article } from '$components/articles/types.d';
-  import Blurb from '$lib/components/index/Blurb.svelte';
-  import LatestNews from '$lib/components/index/LatestNews.svelte';
-  import QuickLinks from '$lib/components/index/QuickLinks.svelte';
-  import SerenityPrayer from '$lib/components/index/SerenityPrayer.svelte';
-  import Services from '$lib/components/index/Services.svelte';
-  import Whakatauki from '$lib/components/index/Whakatauki.svelte';
+  import Blurb from '$components/index/Blurb.svelte';
+  import LatestNews from '$components/index/LatestNews.svelte';
+  import QuickLinks from '$components/index/QuickLinks.svelte';
+  import SerenityPrayer from '$components/index/SerenityPrayer.svelte';
+  import Services from '$components/index/Services.svelte';
+  import Whakatauki from '$components/index/Whakatauki.svelte';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';

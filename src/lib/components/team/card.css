@@ -104,10 +104,6 @@ header button {
     --col-right: 1fr;
   }
 
-  .member.right {
-    justify-items: end;
-  }
-
   header {
     grid-template-columns: var(--col-left) var(--col-right);
     grid-template-rows: repeat(auto-fit, minmax(var(--name-row), 1fr));
