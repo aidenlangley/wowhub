@@ -30,30 +30,5 @@
 </article>
 
 <style lang="postcss">
-  .heading {
-    place-items: center;
-  }
-
-  .heading > :global(*) {
-    z-index: 1;
-  }
-
-  .heading > :global(* h1) {
-    display: inline-grid;
-  }
-
-  .heading > :global(* h1 > .small) {
-    --font-size: 1.25rem;
-    --line-height: 1.75rem;
-
-    @media screen(sm) {
-      --font-size: 1.75rem;
-      --line-height: 2rem;
-    }
-
-    font-family: theme('fontFamily.mono');
-    font-weight: theme('fontWeight.medium');
-    letter-spacing: theme('letterSpacing.tighter');
-    text-align: end;
-  }
+  @import './team.css';
 </style>

@@ -8,40 +8,44 @@ footer {
   padding: theme('padding.2');
   place-content: center end;
   place-items: center end;
+}
 
-  @nest :global(.dark) & {
-    background-color: theme('colors.black');
-    border-color: theme('colors.gray.800');
+:global(.dark) footer {
+  background-color: theme('colors.black');
+  border-color: theme('colors.gray.800');
+}
+
+footer > a {
+  align-items: center;
+  color: theme('colors.gray.300');
+  column-gap: theme('gap.2');
+  display: inline-grid;
+  font-family: theme('fontFamily.mono');
+  grid-auto-flow: column;
+  justify-content: start;
+  letter-spacing: theme('letterSpacing.tight');
+}
+
+footer > a:hover,
+footer > a:focus {
+  color: theme('colors.gray.100');
+}
+
+footer svg {
+  max-height: theme('height.6');
+  max-width: theme('height.6');
+}
+
+@media screen(sm) {
+  footer svg {
+    max-height: theme('height.7');
+    max-width: theme('height.7');
   }
+}
 
-  & > a {
-    align-items: center;
-    color: theme('colors.gray.300');
-    column-gap: theme('gap.2');
-    display: inline-grid;
-    font-family: theme('fontFamily.mono');
-    grid-auto-flow: column;
-    justify-content: start;
-    letter-spacing: theme('letterSpacing.tight');
-
-    &:hover,
-    &:focus {
-      color: theme('colors.gray.100');
-    }
-  }
-
-  & svg {
-    max-height: theme('height.6');
-    max-width: theme('height.6');
-
-    @media screen(sm) {
-      max-height: theme('height.7');
-      max-width: theme('height.7');
-    }
-
-    @media screen(lg) {
-      max-height: theme('height.8');
-      max-width: theme('height.8');
-    }
+@media screen(lg) {
+  footer svg {
+    max-height: theme('height.8');
+    max-width: theme('height.8');
   }
 }

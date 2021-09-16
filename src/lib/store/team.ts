@@ -180,8 +180,8 @@ export const team: Readable<Member[]> = readable([
       expect much charisma from him. Aiden wrote this website, manages the IT
       infrastructure and is our resident geek. 🤓`,
       `He was born in Tāmaki but moved with his parents to London at a young age
-      where he spent 20+ years growing up. His Māori family comes from Tāheke
-      and he lives in Kaikohe these days.`,
+      where he spent 20+ years growing up. His whanau originates from Tāheke &
+      Waima. He lives in Kaikohe these days.`,
       `He has been diagnosed with ADHD and has a mild form of Tourette's, so if
       you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
       have played a large part in his life too.`,

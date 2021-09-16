@@ -20,58 +20,5 @@
 </div>
 
 <style lang="postcss">
-  div.skewed-grid {
-    display: grid;
-    grid-template-areas: 'skewed';
-
-    & > div.skewed-bg {
-      grid-area: skewed;
-      z-index: 0;
-
-      &.skew-left,
-      &.skew-right {
-        border-bottom-width: theme('borderWidth.4');
-        border-top-width: theme('borderWidth.2');
-
-        @apply drop-shadow;
-
-        @media screen(sm) {
-          border-bottom-width: theme('borderWidth.8');
-          border-radius: theme('borderRadius.3xl');
-        }
-      }
-
-      &.skew-left {
-        background-image: theme('backgroundImage.gradient-to-bl');
-        transform: skewY(-1deg);
-      }
-
-      &.skew-right {
-        background-image: theme('backgroundImage.gradient-to-br');
-        transform: skewY(1deg);
-      }
-    }
-
-    & > div.content {
-      grid-area: skewed;
-      padding-bottom: theme('padding.12');
-      padding-top: theme('padding.12');
-      z-index: 1;
-
-      @media screen(sm) {
-        padding-bottom: theme('padding.14');
-        padding-top: theme('padding.14');
-      }
-
-      @media screen(md) {
-        padding-bottom: theme('padding.16');
-        padding-top: theme('padding.16');
-      }
-
-      @media screen(lg) {
-        padding-bottom: theme('padding.20');
-        padding-top: theme('padding.20');
-      }
-    }
-  }
+  @import './skew.css';
 </style>

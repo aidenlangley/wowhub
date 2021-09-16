@@ -16,37 +16,5 @@
 </header>
 
 <style lang="postcss">
-  header {
-    background-color: theme('colors.gray.900');
-    border-bottom-width: theme('borderWidth.DEFAULT');
-    border-color: theme('colors.gray.300');
-    color: theme('colors.white');
-    display: grid;
-    grid-template-columns: 0 auto 0;
-    max-height: theme('height.24');
-    padding: theme('padding.4');
-    place-content: center;
-    place-items: center;
-    transition-duration: 1000ms;
-
-    @nest :global(.dark) & {
-      background-color: theme('colors.black');
-      border-color: theme('colors.gray.800');
-    }
-
-    @media screen(ty) {
-      /* 5% auto 5% */
-      grid-template-columns: 1fr 18fr 1fr;
-    }
-
-    @media screen(sm) {
-      padding: theme('padding.5');
-    }
-
-    @media screen(lg) {
-      /* 4% auto 4% */
-      grid-template-columns: 1fr 23fr 1fr;
-      padding: theme('padding.6');
-    }
-  }
+  @import './header.css';
 </style>

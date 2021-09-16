@@ -1,5 +1,4 @@
 <script lang="ts">
-  /* eslint-disable */
   import { assets } from '$app/paths';
   import Header from '$layout/header/Header.svelte';
   import Footer from '$lib/layout/footer/Footer.svelte';
@@ -35,30 +34,5 @@
 
 <style lang="postcss" global>
   @import '../app.css';
-
-  .root main {
-    background-blend-mode: difference;
-    background-color: theme('backgroundColor.white');
-    background-position: top;
-    transition-duration: 300ms;
-    transition-property: background-color;
-  }
-
-  .root main .opacity-provider {
-    @apply bg-white/80;
-  }
-
-  .root main .opacity-provider > * {
-    transition-duration: 500ms;
-    transition-timing-function: theme('transitionTimingFunction.in-out');
-  }
-
-  .root.dark main {
-    background-blend-mode: hard-light;
-    background-color: theme('colors.gray.900');
-  }
-
-  .root.dark main .opacity-provider {
-    @apply bg-black/70;
-  }
+  @import './__layout.css';
 </style>

@@ -72,28 +72,5 @@
 </section>
 
 <style lang="postcss">
-  .video {
-    /* Place & size */
-    place-self: center;
-    height: max-content;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-
-    /* Styles */
-    border-radius: theme('borderRadius.lg');
-    border-width: theme('borderWidth.2');
-    border-color: theme('colors.green.700');
-    box-shadow: theme('boxShadow.lg');
-  }
-
-  :global(.dark) .video {
-    border-color: theme('colors.green.900');
-  }
-
-  .video iframe {
-    /* Hides the original square border */
-    border-radius: theme('borderRadius.md');
-    width: 100%;
-    aspect-ratio: 16 / 9;
-  }
+  @import './index.css';
 </style>
