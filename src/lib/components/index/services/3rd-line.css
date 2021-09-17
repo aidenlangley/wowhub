@@ -4,9 +4,6 @@
   --left-line-height: 2.25rem;
   --right-font-size: 2.5rem;
   --right-line-height: 2.5rem;
-
-  align-items: flex-start;
-  vertical-align: text-top;
 }
 
 .services > :nth-child(3n) > :first-child {

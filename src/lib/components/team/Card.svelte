@@ -1,6 +1,6 @@
 <script lang="ts">
   import Heading from '$components/heading/Heading.svelte';
-  import Paragraph from '$components/Paragraph.svelte';
+  import Paragraph from '$components/paragraph/Paragraph.svelte';
   import Tooltip from '$components/tooltip/Tooltip.svelte';
   import { TranslateDirection } from '$layout/translate/types.d';
   import Icon from '$media/Icon.svelte';
