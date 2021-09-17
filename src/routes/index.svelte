@@ -67,7 +67,7 @@
   <Whakatauki />
 </section>
 
-<section id="services" aria-hidden="true">
+<section id="services" class="pad-y" aria-hidden="true">
   <Services />
 </section>
 

@@ -93,7 +93,7 @@ export const team: Readable<Member[]> = readable([
     tags: ['director', 'life coach'],
     pepeha: [],
     about: [],
-    imgSrc: `${assets}/images/people/te-miringa.1.jpg`,
+    imgSrc: `${assets}/images/people/te-miringa.jpg`,
   },
   {
     name: 'Stu 💪🏽',
