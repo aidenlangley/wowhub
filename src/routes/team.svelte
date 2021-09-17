@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Error from '$components/Error.svelte';
+  import Error from '$components/error/Error.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import Cards from '$components/team/Cards.svelte';
   import { seo } from '$store/seo';
@@ -16,6 +16,8 @@
   @component
   Meet the team.
 -->
+
+<!-- Still working on it. -->
 <Error />
 
 <!-- Frontliners. -->
@@ -35,7 +37,7 @@
 </article>
 
 <!-- Behind the scenes. -->
-<article id="kaimahi">
+<article id="kaimahi-bts">
   <!-- Fancy heading. -->
   <header class="heading column">
     <Heading>
@@ -44,7 +46,7 @@
   </header>
 
   <!-- Member cards rendered here. -->
-  <section id="members" class="pad-x">
+  <section id="members-bts" class="pad-x">
     <Cards team={$team.filter((m) => !m.frontline)} />
   </section>
 </article>

@@ -1,0 +1,92 @@
+span[data-tooltip] {
+  position: relative;
+  display: inline-block;
+}
+
+span[data-tooltip]::after {
+  --initial-pos: 50%;
+  --initial-margin: -50%;
+
+  /* Positioning */
+  position: absolute;
+
+  /* Size accordingly */
+  max-width: 18rem;
+  width: max-content;
+
+  /* test */
+  z-index: 1;
+
+  /* Border styling */
+  border-color: theme('colors.gray.700');
+  border-radius: theme('borderRadius.DEFAULT');
+  border-width: theme('borderWidth.DEFAULT');
+  padding: theme('padding.2');
+
+  /* Text styling */
+  color: theme('colors.gray.100');
+  font-family: theme('fontFamily.mono');
+  letter-spacing: theme('letterSpacing.tight');
+  text-align: start;
+
+  @apply text-14 bg-gray-900/90;
+}
+
+span[data-tooltip].toggled::after {
+  content: attr(data-tooltip);
+}
+
+span[data-tooltip].bottom::after,
+span[data-tooltip].top::after {
+  left: var(--initial-pos);
+  margin-left: var(--initial-margin);
+}
+
+span[data-tooltip].bottom::after {
+  top: 150%;
+}
+
+span[data-tooltip].top::after {
+  bottom: 150%;
+}
+
+@media screen(ty) {
+  span[data-tooltip]:hover::after,
+  span[data-tooltip]:focus::after {
+    content: attr(data-tooltip);
+  }
+
+  span[data-tooltip].left::after,
+  span[data-tooltip].right::after {
+    left: unset;
+    margin-left: unset;
+  }
+
+  span[data-tooltip].left::after {
+    right: 5%;
+  }
+
+  span[data-tooltip].right::after {
+    left: 5%;
+  }
+}
+
+@media screen(sm) {
+  span[data-tooltip].left::after,
+  span[data-tooltip].right::after {
+    max-width: theme('maxWidth.xs');
+  }
+}
+
+@media screen(lg) {
+  span[data-tooltip].left::after,
+  span[data-tooltip].right::after {
+    /* Reset positions - larger screens don't require left & rights */
+    left: var(--initial-pos);
+    margin-left: var(--initial-margin);
+    right: unset;
+
+    /* Increase text readability */
+    @apply text-base;
+  }
+}

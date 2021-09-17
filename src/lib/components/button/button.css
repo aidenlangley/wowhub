@@ -17,59 +17,65 @@
     vertical-align: middle;
 
     @apply text-18;
+  }
 
-    @nest :global(.dark) & {
-      background-color: theme('colors.gray.900');
-      border-color: theme('colors.gray.700');
-      color: theme('colors.white');
-    }
+  .button:hover,
+  .button:focus {
+    background-color: theme('colors.gray.50');
 
-    &:hover,
-    &:focus {
-      background-color: theme('colors.gray.50');
+    @apply drop-shadow;
+  }
 
-      @apply -translate-y-0.5 drop-shadow;
+  :global(.dark) .button {
+    background-color: theme('colors.gray.900');
+    border-color: theme('colors.gray.700');
+    color: theme('colors.white');
+  }
 
-      &:active {
-        @apply translate-y-0 drop-shadow-none;
-      }
+  :global(.dark) .button:hover,
+  :global(.dark) .button:focus {
+    background-color: theme('colors.gray.800');
+  }
 
-      @nest :global(.dark) & {
-        background-color: theme('colors.gray.800');
-        border-color: theme('colors.gray.600');
-      }
-    }
-
-    @media screen(ty) {
+  @media screen(ty) {
+    .button {
       padding: theme('padding.3');
     }
+  }
 
-    @media screen(sm) {
+  @media screen(sm) {
+    .button {
       padding: theme('padding.4');
     }
+  }
 
-    @media screen(md) {
+  @media screen(md) {
+    .button {
       @apply text-20;
     }
+  }
 
-    @media screen(lg) {
+  @media screen(lg) {
+    .button {
       @apply text-22;
     }
+  }
 
-    @media screen(xl) {
+  @media screen(xl) {
+    .button {
       @apply text-24;
     }
+  }
 
-    &.blue {
-      background-color: theme('colors.blue.600');
-      border-color: theme('colors.blue.400');
-      color: theme('colors.white');
+  .button.blue {
+    background-color: theme('colors.blue.600');
+    border-color: theme('colors.blue.400');
+    color: theme('colors.white');
+  }
 
-      &:hover,
-      &:focus {
-        background-color: theme('colors.blue.500');
-        border-color: theme('colors.blue.300');
-      }
-    }
+  .button.blue:hover,
+  .button.blue:focus {
+    background-color: theme('colors.blue.500');
+    border-color: theme('colors.blue.300');
   }
 }

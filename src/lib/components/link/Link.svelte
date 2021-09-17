@@ -14,6 +14,10 @@
 
   const target = !internal ? '_blank' : null;
   const rel = `noopener ${!internal ? 'external' : ''}`;
+
+  let classes = '';
+  classes += button ? 'button' : 'link';
+  classes += button && colour ? ` ${colour}` : '';
 </script>
 
 <!--
@@ -22,13 +26,7 @@
   a button also. `Button` styles are exposed by `Button.svelte` so that they are
   always identical.
 -->
-<a
-  {href}
-  {target}
-  {rel}
-  aria-label={label}
-  class={button ? `button ${colour}` : 'link'}
->
+<a {href} {target} {rel} aria-label={label} class={classes}>
   <slot>
     {href}
   </slot>

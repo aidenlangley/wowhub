@@ -1,11 +1,11 @@
 <script lang="ts">
   import Heading from '$components/heading/Heading.svelte';
   import Paragraph from '$components/Paragraph.svelte';
+  import Tooltip from '$components/tooltip/Tooltip.svelte';
   import { TranslateDirection } from '$layout/translate/types.d';
   import Icon from '$media/Icon.svelte';
   import type { Member } from '$store/types.d';
   import { UserCircle } from 'svelte-hero-icons';
-  import Tooltip from '../Tooltip.svelte';
 
   export let member: Member;
   export let right = false;
@@ -47,9 +47,15 @@
     <!-- A toggle to show pepeha. -->
     {#if hasPepeha}
       <button class="button" aria-label="show pepeha tooltip">
-        <Tooltip text={member.pepeha.join('.\n') + '.'} click {right}>
-          Pepeha
-        </Tooltip>
+        {#if right}
+          <Tooltip text={member.pepeha.join('.\n') + '.'} toggles right>
+            Pepeha
+          </Tooltip>
+        {:else}
+          <Tooltip text={member.pepeha.join('.\n') + '.'} toggles left>
+            Pepeha
+          </Tooltip>
+        {/if}
       </button>
     {/if}
   </header>

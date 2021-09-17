@@ -107,7 +107,7 @@ export const team: Readable<Member[]> = readable([
     tags: ['kaimanāki', 'peer support', 'tuākana'],
     pepeha: [
       'Ko Mauao te maunga',
-      'Ko Tauranga Moana tōku Kainga whenua',
+      'Ko Tauranga Moana tōku kainga whenua',
       'Ko Wairoa tāku awa',
       'Ko Ngāti Ranginui raua, ko Ngāiterangi te iwi',
       'Ko Noreen Ahau',
@@ -155,7 +155,7 @@ export const team: Readable<Member[]> = readable([
     tags: ['kaipūkaha rorohiko', 'tuākana'],
     pepeha: [
       'I whanau mai au i Tāmaki',
-      'I tupu ake au i London, Ingarangi',
+      'I tupu ake au i tāwāhi, London, Ingarangi',
       'Ko Whakatere te maunga',
       'Ko Tāheke te awa',
       'Ko Ngātokimatawhaorua te waka',
