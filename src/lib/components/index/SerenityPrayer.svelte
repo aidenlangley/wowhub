@@ -36,7 +36,7 @@
   <Link href="/docs/serenity-prayer" internal>- Serenity Prayer</Link>
 </div>
 
-<style lang="postcss">
+<style>
   div.source {
     padding: theme('padding.1');
     text-align: right;

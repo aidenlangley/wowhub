@@ -21,6 +21,6 @@
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   @import './cards.css';
 </style>

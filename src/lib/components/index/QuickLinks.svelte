@@ -41,7 +41,7 @@
   </Link>
 </div>
 
-<style lang="postcss">
+<style>
   div.headings {
     padding-top: theme('padding.4');
 

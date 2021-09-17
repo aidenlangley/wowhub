@@ -31,7 +31,7 @@
   </div>
 </Skew>
 
-<style lang="postcss">
+<style>
   .blurb > :global(p) {
     color: theme('colors.white');
   }

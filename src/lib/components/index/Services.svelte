@@ -69,7 +69,7 @@
   {/each}
 </div>
 
-<style lang="postcss">
+<style>
   @import './services/services.css';
   @import './services/1st-line.css';
   @import './services/2nd-line.css';

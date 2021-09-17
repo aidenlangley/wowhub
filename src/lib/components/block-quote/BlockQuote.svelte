@@ -6,6 +6,6 @@
   <slot />
 </blockquote>
 
-<style lang="postcss">
+<style>
   @import './blockquote.css';
 </style>

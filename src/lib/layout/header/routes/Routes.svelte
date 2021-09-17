@@ -28,6 +28,6 @@
   </ol>
 </nav>
 
-<style lang="postcss">
+<style>
   @import './routes.css';
 </style>

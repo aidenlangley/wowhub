@@ -6,6 +6,6 @@
   <slot />
 </p>
 
-<style lang="postcss">
+<style>
   @import './paragraph.css';
 </style>

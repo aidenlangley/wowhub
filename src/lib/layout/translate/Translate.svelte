@@ -9,6 +9,6 @@
   <slot />
 </div>
 
-<style lang="postcss">
+<style>
   @import './translate.css';
 </style>

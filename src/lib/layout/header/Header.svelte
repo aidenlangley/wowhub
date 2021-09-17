@@ -15,6 +15,6 @@
   <DarkToggle />
 </header>
 
-<style lang="postcss">
+<style>
   @import './header.css';
 </style>

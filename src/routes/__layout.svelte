@@ -32,7 +32,7 @@
   <Footer />
 </div>
 
-<style lang="postcss" global>
+<style global>
   @import '../app.css';
   @import './__layout.css';
 </style>

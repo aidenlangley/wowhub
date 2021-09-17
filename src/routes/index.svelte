@@ -71,6 +71,6 @@
   <Services />
 </section>
 
-<style lang="postcss">
+<style>
   @import './index.css';
 </style>

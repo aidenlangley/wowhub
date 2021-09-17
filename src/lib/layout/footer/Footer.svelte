@@ -27,6 +27,6 @@
   </a>
 </footer>
 
-<style lang="postcss">
+<style>
   @import './footer.css';
 </style>

@@ -44,7 +44,7 @@
   {/if}
 </button>
 
-<style lang="postcss">
+<style>
   button {
     vertical-align: middle;
   }

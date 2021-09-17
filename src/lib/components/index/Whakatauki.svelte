@@ -37,7 +37,7 @@
   </div>
 </Skew>
 
-<style lang="postcss">
+<style>
   * {
     color: theme('colors.white');
   }

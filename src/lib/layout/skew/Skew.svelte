@@ -19,6 +19,6 @@
   </div>
 </div>
 
-<style lang="postcss">
+<style>
   @import './skew.css';
 </style>

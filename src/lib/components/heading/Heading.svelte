@@ -17,7 +17,7 @@
   </h1>
 </Translate>
 
-<style lang="postcss">
+<style>
   h1 {
     border-radius: theme('borderRadius.DEFAULT');
     font-family: theme('fontFamily.serif');

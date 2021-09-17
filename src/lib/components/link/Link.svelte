@@ -32,6 +32,6 @@
   </slot>
 </a>
 
-<style lang="postcss">
+<style>
   @import './link.css';
 </style>

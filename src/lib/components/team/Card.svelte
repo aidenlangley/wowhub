@@ -68,6 +68,6 @@
   </article>
 </article>
 
-<style lang="postcss">
+<style>
   @import './card.css';
 </style>
