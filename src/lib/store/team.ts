@@ -4,6 +4,9 @@ import { readable } from 'svelte/store';
 import type { Member } from './types.d';
 
 export const team: Readable<Member[]> = readable([
+  /**
+   * PRIMARY TEAM
+   */
   {
     name: 'Jane 🌊',
     tags: ['founder', 'peer support', 'tuākana'],
@@ -84,6 +87,13 @@ export const team: Readable<Member[]> = readable([
     frontline: true,
     imgSrc: `${assets}/images/people/rhonda.jpg`,
     tallImg: true,
+  },
+  {
+    name: 'Te Miringa 🔥',
+    tags: ['director', 'life coach'],
+    pepeha: [],
+    about: [],
+    imgSrc: `${assets}/images/people/te-miringa.1.jpg`,
   },
   {
     name: 'Stu 💪🏽',
@@ -187,5 +197,27 @@ export const team: Readable<Member[]> = readable([
     about: [],
     frontline: true,
     // imgSrc: `${assets}/images/people/lisa.jpg`,
+  },
+
+  /**
+   * BEHIND THE SCENES
+   */
+  {
+    name: 'Doug',
+    tags: ['trustee', 'director of whanau ora', 'founder of influence gym'],
+    about: [],
+    imgSrc: `${assets}/images/people/doug.jpg`,
+  },
+  {
+    name: 'Craig',
+    tags: ['trustee'],
+    about: [],
+    // imgSrc: `${assets}/images/people/.jpg`,
+  },
+  {
+    name: 'Lily',
+    tags: ['trustee'],
+    about: [],
+    // imgSrc: `${assets}/images/people/.jpg`,
   },
 ]);
