@@ -1,50 +1,50 @@
-a.link {
-  align-items: center;
-  column-gap: theme('gap.1');
+.link {
   display: inline-grid;
   grid-auto-flow: column;
+  column-gap: theme('gap.1');
+  align-items: center;
   justify-content: start;
+  color: theme('colors.blue.600');
+}
 
-  &:not(.button) {
-    font-family: theme('fontFamily.mono');
-    font-weight: theme('fontWeight.medium');
+.link:not(button) {
+  font-family: theme('fontFamily.mono');
+  font-weight: theme('fontWeight.medium');
+}
 
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
+.link:hover,
+.link:focus {
+  color: theme('colors.blue.400');
+}
 
-    &:link {
-      color: theme('colors.blue.600');
+.link:visited {
+  color: theme('colors.purple.600');
+}
 
-      @nest :global(.dark) & {
-        color: theme('colors.blue.400');
-      }
+.link:not(button):hover,
+.link:not(button):focus {
+  text-decoration: underline;
+}
 
-      &:visited {
-        color: theme('colors.purple.600');
+.link:visited:hover,
+.link:visited:focus {
+  color: theme('colors.purple.400');
+}
 
-        @nest :global(.dark) & {
-          color: theme('colors.purple.400');
-        }
-      }
+:global(.dark) .link:link {
+  color: theme('colors.blue.400');
+}
 
-      &:hover,
-      &:focus {
-        color: theme('colors.blue.400');
+:global(.dark) .link:visited {
+  color: theme('colors.purple.400');
+}
 
-        @nest :global(.dark) & {
-          color: theme('colors.blue.200');
-        }
+:global(.dark) .link:hover,
+:global(.dark) .link:focus {
+  color: theme('colors.blue.200');
+}
 
-        &:visited {
-          color: theme('colors.purple.400');
-
-          @nest :global(.dark) & {
-            color: theme('colors.purple.200');
-          }
-        }
-      }
-    }
-  }
+:global(.dark) .link:visited:hover,
+:global(.dark) .link:visited:focus {
+  color: theme('colors.purple.200');
 }

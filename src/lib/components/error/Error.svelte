@@ -15,6 +15,6 @@
   </Heading>
 </section>
 
-<style lang="postcss">
+<style>
   @import './error.css';
 </style>

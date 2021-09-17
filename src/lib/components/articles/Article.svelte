@@ -49,26 +49,6 @@
   </article>
 </div>
 
-<style lang="postcss">
-  /*
-  Limit complexity here. Tailwind directives are okay, nesting is not.
-  Once I remove `tailwindcss/typography`, we're good to use more complex PostCSS
-  enabled code.
-  */
-  div.root > article {
-    max-width: none;
-  }
-
-  div.root > article > header.metadata > small {
-    column-gap: theme('gap.1');
-    display: inline-grid;
-    font-family: theme('fontFamily.mono');
-    grid-auto-flow: column;
-  }
-
-  @screen lg {
-    div.root > article > header.metadata > small {
-      @apply text-18;
-    }
-  }
+<style>
+  @import './article.css';
 </style>

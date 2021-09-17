@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-  import ArticleCards from '$components/articles/ArticleCards.svelte';
+  import Cards from '$components/articles/Cards.svelte';
   import type { Article } from '$components/articles/types.d';
-  import Heading from '$lib/components/heading/Heading.svelte';
+  import Heading from '$components/heading/Heading.svelte';
   import { seo } from '$store/seo';
   import type { Load } from '@sveltejs/kit';
 
@@ -77,12 +77,12 @@
   <!-- News -->
   <section class="gaps-y">
     <Heading>Panui (news)</Heading>
-    <ArticleCards articles={news} />
+    <Cards articles={news} />
   </section>
 
   <!-- Docs -->
   <section class="gaps-y">
     <Heading>Other info</Heading>
-    <ArticleCards articles={docs} />
+    <Cards articles={docs} />
   </section>
 </article>

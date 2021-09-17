@@ -8,7 +8,7 @@
   </span>
 </h3>
 
-<style lang="postcss">
+<style>
   h3 {
     font-weight: theme('fontWeight.light');
     letter-spacing: theme('letterSpacing.tight');
@@ -16,21 +16,23 @@
     padding-top: theme('padding.2');
 
     @apply text-18;
+  }
 
-    @nest :global(.dark) & {
-      color: theme('colors.white');
-    }
+  :global(.dark) h3 {
+    color: theme('colors.white');
+  }
 
-    @media screen(sm) {
+  h3 > span {
+    @apply bg-white/80;
+  }
+
+  :global(.dark) h3 > span {
+    @apply bg-black/80;
+  }
+
+  @media screen(sm) {
+    h3 {
       @apply text-22;
-    }
-
-    & > span {
-      @apply bg-white/80;
-
-      @nest :global(.dark) & {
-        @apply bg-black/80;
-      }
     }
   }
 </style>

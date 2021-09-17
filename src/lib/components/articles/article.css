@@ -1,0 +1,16 @@
+.root > article {
+  max-width: none;
+}
+
+.root > article > .metadata > small {
+  column-gap: theme('gap.1');
+  display: inline-grid;
+  font-family: theme('fontFamily.mono');
+  grid-auto-flow: column;
+}
+
+@screen lg {
+  .root > article > .metadata > small {
+    @apply text-18;
+  }
+}

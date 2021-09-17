@@ -1,0 +1,56 @@
+li {
+  background-color: theme('colors.gray.100');
+  border-color: theme('colors.gray.300');
+  border-radius: theme('borderRadius.DEFAULT');
+  border-width: theme('borderWidth.DEFAULT');
+  box-shadow: theme('boxShadow.DEFAULT');
+  display: grid;
+  padding: theme('padding.4');
+  row-gap: theme('gap.1');
+
+  @apply bg-gray-100/80;
+}
+
+li:hover {
+  @apply bg-gray-50/90;
+}
+
+:global(.dark) li {
+  border-color: theme('colors.gray.700');
+  color: theme('colors.white');
+
+  @apply bg-gray-900/70;
+}
+
+:global(.dark) li:hover {
+  @apply bg-gray-800/80;
+}
+
+li span {
+  letter-spacing: theme('letterSpacing.tighter');
+
+  @apply text-18;
+}
+
+li > small {
+  font-family: theme('fontFamily.mono');
+  letter-spacing: theme('letterSpacing.tighter');
+
+  @apply text-14;
+}
+
+@screen sm {
+  li span {
+    @apply text-20;
+  }
+
+  li > small {
+    @apply text-base;
+  }
+}
+
+@screen md {
+  li span {
+    @apply text-24;
+  }
+}

@@ -50,6 +50,6 @@
   </section>
 </article>
 
-<style lang="postcss">
+<style>
   @import './team.css';
 </style>

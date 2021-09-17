@@ -1,0 +1,12 @@
+ol {
+  display: grid;
+  letter-spacing: theme('letterSpacing.tight');
+  padding-top: theme('padding.2');
+  row-gap: theme('gap.2');
+}
+
+@screen sm {
+  ol {
+    @apply text-18;
+  }
+}
