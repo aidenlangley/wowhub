@@ -48,7 +48,7 @@ export const team: Readable<Member[]> = readable([
       2015 and is now very passionate about helping the next addict in their
       recovery.`,
       `Another strong wāhine, she is always there to rescue her whanau and
-      support and teach Māoritanga via waiata & hīmene especially.`,
+      support and teach Māoritanga via waiata & karakia especially.`,
     ],
     frontline: true,
     imgSrc: `${assets}/images/people/dee.jpg`,
