@@ -1,5 +1,4 @@
 <script lang="ts">
-  import './tooltip-toggles.css';
   import './tooltip.css';
 
   export let text: string;
