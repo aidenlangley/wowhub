@@ -1,7 +1,7 @@
 <script lang="ts">
-  import DarkToggle from '$layout/header/DarkToggle.svelte';
   import Logo from '$media/Logo.svelte';
-  import Routes from './Routes.svelte';
+  import DarkToggle from './DarkToggle.svelte';
+  import Routes from './routes/Routes.svelte';
 </script>
 
 <!--

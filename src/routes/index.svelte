@@ -36,7 +36,6 @@
     <Banner white={$state.dark} />
   </section>
 
-  <!-- Visual break after banner via dotted border. -->
   <section id="quick-links">
     <QuickLinks />
   </section>

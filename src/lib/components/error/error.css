@@ -1,3 +1,7 @@
+section {
+  padding-bottom: theme('padding.8');
+}
+
 .message {
   font-family: theme('fontFamily.mono');
   letter-spacing: theme('letterSpacing.tighter');

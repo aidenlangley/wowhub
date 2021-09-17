@@ -1,9 +1,17 @@
+.root > :global(header) {
+  /* Elevation. Highest. */
+  z-index: 50;
+}
+
 .root main {
+  /* Elevation */
+  z-index: 40;
+
+  /* Background */
   background-blend-mode: difference;
   background-color: theme('backgroundColor.white');
   background-position: top;
-  transition-duration: 300ms;
-  transition-property: background-color;
+  transition: background-color 300ms;
 }
 
 .root main .opacity-provider {

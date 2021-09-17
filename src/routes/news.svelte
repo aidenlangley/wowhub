@@ -61,19 +61,19 @@
   Entry point for `docs` & `news`.
 -->
 
-<!-- Aside for quicker navigation-->
-<aside>
-  <nav>
-    <!-- News -->
-    <ol />
-
-    <!-- Docs -->
-    <ol />
-  </nav>
-</aside>
-
 <!--  Full fat list of news & docs -->
-<div class="root column gaps-y">
+<article id="panui" class="root column pad-y gaps-y">
+  <!-- Aside for quicker navigation-->
+  <!-- <aside>
+    <nav> -->
+  <!-- News -->
+  <!-- <ol /> -->
+
+  <!-- Docs -->
+  <!-- <ol />
+    </nav>
+  </aside> -->
+
   <!-- News -->
   <section class="gaps-y">
     <Heading>Panui (news)</Heading>
@@ -85,4 +85,4 @@
     <Heading>Other info</Heading>
     <ArticleCards articles={docs} />
   </section>
-</div>
+</article>

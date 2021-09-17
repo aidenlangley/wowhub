@@ -75,13 +75,3 @@ nav > ol > li a.active {
     @apply text-32;
   }
 }
-
-@media screen(xl) {
-  nav > ol > li {
-    @apply text-38;
-  }
-
-  nav > ol > li a.active {
-    @apply text-40;
-  }
-}

@@ -5,8 +5,8 @@
   }
 
   .pad-y {
-    padding-bottom: var(--pad-y);
     padding-top: var(--pad-y);
+    padding-bottom: var(--pad-y);
   }
 
   .gaps-y {

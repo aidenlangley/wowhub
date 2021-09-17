@@ -14,7 +14,7 @@
     <h1>Planting the seed of hope...</h1>
     <h2>Sharing gifts of recovery.</h2>
   </div>
-  <div>
+  <div class="blurb">
     <Paragraph justify>
       <b>Whakaoranga Whanau Recovery Hub</b> &
       <b>He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
@@ -32,52 +32,61 @@
 </Skew>
 
 <style lang="postcss">
-  * {
+  .blurb > :global(p) {
     color: theme('colors.white');
   }
 
-  div.headings {
+  .headings {
+    color: theme('colors.white');
     font-weight: theme('fontWeight.medium');
+  }
 
-    & > h1 {
-      padding-bottom: theme('padding.4');
-      text-align: left;
+  .headings > h1 {
+    padding-bottom: theme('padding.4');
+    text-align: left;
 
-      @apply text-28;
+    @apply text-28;
+  }
 
-      @media screen(sm) {
-        font-weight: theme('fontWeight.light');
-      }
+  .headings > h2 {
+    font-family: theme('fontFamily.display');
+    letter-spacing: theme('letterSpacing.tight');
+    text-align: center;
 
-      @media screen(md) {
-        letter-spacing: theme('letterSpacing.tighter');
+    @apply text-48;
+  }
 
-        @apply text-42;
-      }
-
-      @media screen(lg) {
-        @apply text-64;
-      }
+  @media screen(sm) {
+    .headings > h1 {
+      font-weight: theme('fontWeight.light');
     }
 
-    & > h2 {
-      font-family: theme('fontFamily.display');
-      letter-spacing: theme('letterSpacing.tight');
-      text-align: center;
+    .headings > h2 {
+      @apply text-64;
+    }
+  }
 
-      @apply text-48;
+  @media screen(md) {
+    .headings > h1 {
+      letter-spacing: theme('letterSpacing.tighter');
 
-      @media screen(sm) {
-        @apply text-64;
-      }
+      @apply text-42;
+    }
 
-      @media screen(md) {
-        @apply text-72;
-      }
+    .headings > h2 {
+      @apply text-72;
+    }
+  }
 
-      @media screen(xl) {
-        @apply text-128;
-      }
+  @media screen(lg) {
+    .headings > h1 {
+      @apply text-64;
+    }
+  }
+
+  @media screen(xl) {
+    .headings > h2 {
+      @apply text-128;
     }
   }
 </style>

@@ -25,7 +25,7 @@
   <Header />
   <main style="background-image: url({assets}/images/drawing.png);">
     <!-- Primarily an opacity provider `div` -->
-    <div class="opacity-provider pad-y gaps-y">
+    <div class="opacity-provider">
       <slot />
     </div>
   </main>

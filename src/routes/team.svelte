@@ -17,12 +17,11 @@
   Meet the team.
 -->
 
-<!-- Still working on it. -->
-<Error />
+<article id="kaimahi" class="pad-y">
+  <!-- Still working on it. -->
+  <Error />
 
-<!-- Frontliners. -->
-<article id="kaimahi">
-  <!-- Fancy heading. -->
+  <!-- Frontliners. -->
   <header class="heading column">
     <Heading>
       <span>Tātou tīma he hui mai!</span>
@@ -37,7 +36,7 @@
 </article>
 
 <!-- Behind the scenes. -->
-<article id="kaimahi-bts">
+<article id="kaimahi-bts" class="pad-y">
   <!-- Fancy heading. -->
   <header class="heading column">
     <Heading>

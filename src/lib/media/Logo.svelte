@@ -13,10 +13,8 @@
   <img src={LogoWhite} {alt} in:blur />
 {/if}
 
-<style class="postcss">
-  /* Since it's a tall image, not square, we'll hack it up a lil. */
+<style>
   img {
-    padding-bottom: theme('padding.2');
-    padding-top: theme('padding.2');
+    max-height: theme('height.12');
   }
 </style>

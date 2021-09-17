@@ -48,4 +48,8 @@
   button {
     vertical-align: middle;
   }
+
+  button :global(svg) {
+    max-height: theme('height.12');
+  }
 </style>

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
-  import Tooltip from '$lib/components/tooltip/Tooltip.svelte';
+  import Tooltip from '$components/tooltip/Tooltip.svelte';
   import { routes } from '$store/routes';
 </script>
 

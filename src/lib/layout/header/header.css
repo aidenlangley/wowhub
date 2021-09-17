@@ -1,15 +1,23 @@
 header {
-  background-color: theme('colors.gray.900');
-  border-bottom-width: theme('borderWidth.DEFAULT');
-  border-color: theme('colors.gray.300');
-  color: theme('colors.white');
+  /* Grid */
   display: grid;
   grid-template-columns: 0 auto 0;
-  max-height: theme('height.24');
-  padding: theme('padding.4');
-  place-content: center;
   place-items: center;
-  transition-duration: 1000ms;
+  place-content: center;
+
+  /* Size */
+  padding: theme('padding.4');
+
+  /* Colours */
+  background-color: theme('colors.gray.900');
+  color: theme('colors.white');
+
+  /* Border */
+  border-bottom-width: theme('borderWidth.DEFAULT');
+  border-color: theme('colors.gray.300');
+
+  /* Fancy stuff */
+  transition: all 500ms;
 }
 
 :global(.dark) header {
@@ -24,16 +32,15 @@ header {
   }
 }
 
-@media screen(sm) {
+/* @media screen(sm) {
   header {
     padding: theme('padding.5');
   }
-}
+} */
 
 @media screen(lg) {
   header {
     /* 4% auto 4% */
     grid-template-columns: 1fr 23fr 1fr;
-    padding: theme('padding.6');
   }
 }
