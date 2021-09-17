@@ -17,11 +17,11 @@ export const team: Readable<Member[]> = readable([
       'Ko Jane Beamsley ahau',
     ],
     about: [
-      `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she
-      has no ties to Kaikohe, she was brought up by her Te Arawa
-      whakapapa, her grandfathers whakapapa; Ngati Te Roroa and Kahungunu.`,
+      `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she has
+      no ties to Kaikohe, she was brought up by her grandfathers Te Arawa
+      whakapapa, Ngati Te Roroa and Kahungunu.`,
       `Jane is of Māori and pakeha descent and she shares personal lived
-      experience; mainting mental wellbeing, as well as alcohol and drug
+      experience; maintaining mental wellbeing, as well as alcohol and drug
       addiction.`,
       `Her recovery journey has brought her to Kaikohe and she
       wanted to give back and share the gifts of recovery with others who
@@ -42,11 +42,12 @@ export const team: Readable<Member[]> = readable([
       'Ko Deeann Herkt Kopa ahau',
     ],
     about: [
-      `Deeann Herkt is a peer support worker. She's been clean and sober for 6
-      years after being addicted to methamphetamine for many years. Dee checked
-      herself into treatment & completed her programme in 2015 and is now very
-      passionate about helping the next addict in their recovery.`,
-      `Another strong wāhine, she is always there to rescue her whanau, and
+      `Ka Kaimanāki ia Deeann Herkt; Dee is a peer support worker. She's been
+      clean and sober for 6 years after being addicted to methamphetamine for
+      many years. Dee checked herself into treatment, completed her programme in
+      2015 and is now very passionate about helping the next addict in their
+      recovery.`,
+      `Another strong wāhine, she is always there to rescue her whanau and
       support and teach Māoritanga via waiata & hīmene especially.`,
     ],
     frontline: true,
@@ -177,7 +178,6 @@ export const team: Readable<Member[]> = readable([
       you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
       have played a large part in his life too.`,
     ],
-    frontline: true,
     imgSrc: `${assets}/images/people/aiden.jpg`,
     tallImg: true,
   },
