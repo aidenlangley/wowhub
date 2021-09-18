@@ -1,3 +1,8 @@
+.wconstraint {
+  justify-self: center;
+  max-width: 64rem;
+}
+
 .video {
   /* Place & size */
   place-self: center;

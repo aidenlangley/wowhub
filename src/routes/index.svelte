@@ -32,7 +32,7 @@
 -->
 <article>
   <div class="column pad-y gaps-y">
-    <section id="banner" class="no-mobile pad-y">
+    <section id="banner" class="no-mobile pad-y wconstraint">
       <Banner white={$state.dark} />
     </section>
 

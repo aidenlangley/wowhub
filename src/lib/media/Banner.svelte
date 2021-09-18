@@ -11,11 +11,5 @@
 <img src={bannerWhite} {alt} class={white ? 'show' : 'hide'} />
 
 <style>
-  .hide {
-    display: none;
-  }
-
-  .show {
-    display: block;
-  }
+  @import './banner.css';
 </style>
