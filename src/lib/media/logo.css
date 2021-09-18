@@ -1,0 +1,17 @@
+img {
+  max-height: theme('height.10');
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media screen(ty) {
+  img {
+    max-height: theme('height.12');
+  }
+}

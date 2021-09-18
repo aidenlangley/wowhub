@@ -11,21 +11,5 @@
 <img src={logoWhite} {alt} class={white ? 'show' : 'hide'} />
 
 <style>
-  img {
-    max-height: theme('height.10');
-  }
-
-  .hide {
-    display: none;
-  }
-
-  .show {
-    display: block;
-  }
-
-  @media screen(ty) {
-    img {
-      max-height: theme('height.12');
-    }
-  }
+  @import './logo.css';
 </style>
