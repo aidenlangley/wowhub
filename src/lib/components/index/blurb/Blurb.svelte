@@ -11,45 +11,25 @@
 -->
 <Skew id="blurb" direction={SkewDirection.Left} colour={GradientColour.Green}>
   <article class="blurb">
-    <Paragraph justify>
+    <Paragraph>
       <b>Whakaoranga Whanau Recovery Hub</b> &
       <b>He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
       service in Kaikohe. We're a team of passionate individuals who have lived experience.
     </Paragraph>
-    <Paragraph justify>
+    <Paragraph>
       We work together and collaborate with other health providers to
       strengthen, educate and empower individuals to reach their full potential.
     </Paragraph>
-    <Paragraph justify>
+    <Paragraph>
       You can find us at <b>135 Broadway, Kaikohe</b>, Monday to Friday, 10am
       until 3pm.
     </Paragraph>
-    <Paragraph justify>
+    <Paragraph>
       You can contact peer support, tātou kaimanāki, at <b
         >support@wowhub.co.nz</b
       >, and for Freedom Whare related queries, you can email
       <b>info@freedomwhare.co.nz</b>.
     </Paragraph>
-    <ul class="forms">
-      <li>
-        <a
-          href="https://forms.gle/DgHAF9GvwVhKPzjA6"
-          target="_blank"
-          rel="noopener external"
-        >
-          Whakaoranga Whanau Recovery Hub Registration Form
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://forms.gle/MT22azTPYCyum3St9"
-          target="_blank"
-          rel="noopener external"
-        >
-          Freedom Whare Registration of Interest Form
-        </a>
-      </li>
-    </ul>
   </article>
 </Skew>
 

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Link from '$components/link/Link.svelte';
   import Facebook from '$media/Facebook.svelte';
   import GoogleMaps from '$media/GoogleMaps.svelte';
   import { info } from '$store/info';
@@ -46,11 +47,22 @@
     </a>
   </div>
   <div class="info">
-    <p>
-      <span>{$info.email}</span> |
-      <span>{$info.phone.replace('+64', '0')}</span>
-      <span>or register below</span>
-    </p>
+    <ul>
+      <li>
+        <span>{$info.email}</span> |
+        <span>{$info.phone.replace('+64', '0')}</span>
+      </li>
+      <li>
+        <Link href="https://forms.gle/DgHAF9GvwVhKPzjA6">
+          Whakaoranga Whanau Registration Form
+        </Link>
+      </li>
+      <li>
+        <Link href="https://forms.gle/MT22azTPYCyum3St9">
+          Freedom Whare Registration Form
+        </Link>
+      </li>
+    </ul>
   </div>
 </article>
 
