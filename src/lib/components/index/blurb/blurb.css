@@ -1,0 +1,3 @@
+.blurb > :global(p) {
+  color: theme('colors.white');
+}

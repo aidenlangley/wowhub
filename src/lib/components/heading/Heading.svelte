@@ -18,41 +18,5 @@
 </Translate>
 
 <style>
-  h1 {
-    border-radius: theme('borderRadius.DEFAULT');
-    font-family: theme('fontFamily.serif');
-    font-weight: theme('fontWeight.medium');
-    padding: theme('padding.1');
-
-    @apply text-28;
-  }
-
-  @media screen(sm) {
-    h1 {
-      font-weight: theme('fontWeight.bold');
-      padding: theme('padding.2');
-    }
-  }
-
-  @media screen(md) {
-    h1 {
-      padding: theme('padding.3');
-
-      @apply text-40;
-    }
-  }
-
-  @media screen(lg) {
-    h1 {
-      padding: theme('padding.4');
-
-      @apply text-56;
-    }
-  }
-
-  @media screen(xl) {
-    h1 {
-      @apply text-64;
-    }
-  }
+  @import './heading.css';
 </style>

@@ -28,7 +28,5 @@
 </Skew>
 
 <style>
-  .blurb > :global(p) {
-    color: theme('colors.white');
-  }
+  @import './blurb.css';
 </style>

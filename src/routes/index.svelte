@@ -1,12 +1,12 @@
 <script lang="ts" context="module">
   import type { Article } from '$components/articles/types.d';
-  import Blurb from '$components/index/Blurb.svelte';
+  import Blurb from '$components/index/blurb/Blurb.svelte';
   import LatestNews from '$components/index/LatestNews.svelte';
+  import LinksInfo from '$components/index/links-info/LinksInfo.svelte';
   import MissionStatement from '$components/index/mission-statement/MissionStatement.svelte';
-  import SerenityPrayer from '$components/index/SerenityPrayer.svelte';
+  import SerenityPrayer from '$lib/components/index/serenity-prayer/SerenityPrayer.svelte';
   import Services from '$components/index/Services.svelte';
-  import Whakatauki from '$components/index/Whakatauki.svelte';
-  import LinksInfo from '$lib/components/index/links-info/LinksInfo.svelte';
+  import Whakatauki from '$lib/components/index/whakatauki/Whakatauki.svelte';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';

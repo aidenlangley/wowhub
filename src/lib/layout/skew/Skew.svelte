@@ -14,7 +14,7 @@
 -->
 <div id="{id}-skewed-bg" class="skewed-grid">
   <div class="skewed-bg {direction} {colour}" />
-  <div class="content column pad-y gaps-y">
+  <div class="content column">
     <slot />
   </div>
 </div>

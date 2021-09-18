@@ -1,0 +1,62 @@
+.whakatauki :global(*) {
+  color: theme('colors.white');
+}
+
+.headings {
+  font-family: theme('fontFamily.serif');
+}
+
+.headings h1 {
+  font-style: italic;
+  font-weight: theme('fontWeight.medium');
+  letter-spacing: theme('letterSpacing.tight');
+  padding-bottom: theme('padding.4');
+
+  @apply text-34;
+}
+
+.headings h2 {
+  color: theme('colors.gray.200');
+  text-align: right;
+
+  @apply text-22;
+}
+
+@media screen(sm) {
+  .headings h1 {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: theme('gap.2');
+    text-align: center;
+
+    @apply text-42;
+  }
+
+  .headings h2 {
+    text-align: center;
+  }
+}
+
+@media screen(md) {
+  .headings h1 {
+    @apply text-44;
+  }
+}
+
+@media screen(lg) {
+  .headings h1 {
+    @apply text-56;
+  }
+
+  .headings h2 {
+    font-weight: theme('fontWeight.light');
+
+    @apply text-32;
+  }
+}
+
+@media screen(xl) {
+  .headings h1 {
+    @apply text-72;
+  }
+}

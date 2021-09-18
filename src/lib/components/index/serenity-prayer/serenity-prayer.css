@@ -1,0 +1,140 @@
+.source {
+  padding: theme('padding.1');
+  text-align: right;
+}
+
+.passage {
+  text-align: center;
+}
+
+:global(.dark) .passage {
+  color: theme('colors.white');
+}
+
+.passage > p {
+  font-family: theme('fontFamily.serif');
+  font-weight: theme('fontWeight.light');
+  letter-spacing: theme('letterSpacing.tighter');
+
+  @apply text-20;
+}
+
+.passage > p > .god {
+  font-weight: theme('fontWeight.medium');
+
+  @apply text-24;
+}
+
+.passage > p > .serenity {
+  color: theme('colors.blue.500');
+  font-weight: theme('fontWeight.bold');
+
+  @apply text-28;
+}
+
+.passage > p > .accept {
+  color: theme('colors.green.500');
+  font-weight: theme('fontWeight.bold');
+
+  @apply text-26;
+}
+
+.passage > p > .cannot-change {
+  color: theme('colors.orange.500');
+  font-weight: theme('fontWeight.medium');
+
+  @apply text-22;
+}
+
+.passage > p > .courage {
+  color: theme('colors.red.500');
+  font-weight: theme('fontWeight.black');
+
+  @apply text-28;
+}
+
+.passage > p > .change {
+  color: theme('colors.gray.600');
+  font-weight: theme('fontWeight.bold');
+
+  @apply text-26;
+}
+
+:global(.dark) .passage > p > .change {
+  color: theme('colors.gray.400');
+}
+
+.passage > p > .wisdom {
+  color: theme('colors.purple.500');
+  font-weight: theme('fontWeight.black');
+
+  @apply text-32;
+}
+
+.passage > p > .difference {
+  color: theme('colors.yellow.500');
+  font-weight: theme('fontWeight.medium');
+
+  @apply text-28;
+}
+
+@media screen(sm) {
+  .passage > p {
+    @apply text-24;
+  }
+
+  .passage > p > .god {
+    @apply text-32;
+  }
+
+  .passage > p > .serenity,
+  .passage > p > .courage,
+  .passage > p > .difference {
+    @apply text-36;
+  }
+
+  .passage > p > .accept {
+    @apply text-26;
+  }
+
+  .passage > p > .cannot-change {
+    @apply text-30;
+  }
+
+  .passage > p > .change {
+    @apply text-34;
+  }
+
+  .passage > p > .wisdom {
+    @apply text-40;
+  }
+}
+
+@media screen(md) {
+  .passage > p {
+    @apply text-28;
+  }
+}
+
+@media screen(lg) {
+  .passage > p {
+    @apply text-36;
+  }
+
+  .passage > p > .god,
+  .passage > p > .accept {
+    @apply text-48;
+  }
+
+  .passage > p > .serenity,
+  .passage > p > .wisdom {
+    @apply text-64;
+  }
+
+  .passage > p > .cannot-change,
+  .passage > p > .courage,
+  .passage > p > .change,
+  .passage > p > .difference {
+    @apply text-56;
+  }
+}
