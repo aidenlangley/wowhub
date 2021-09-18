@@ -19,10 +19,31 @@
   max-width: theme('height.8');
 }
 
+.buttons :global(*:hover),
+.buttons :global(*:focus) {
+  opacity: 90%;
+  @apply drop-shadow;
+}
+
+.buttons :global(svg:hover),
+.buttons :global(svg:focus) {
+  color: theme('colors.green.700');
+}
+
 p {
+  color: theme('colors.gray.800');
   font-family: theme('fontFamily.mono');
   font-weight: theme('fontWeight.medium');
   letter-spacing: theme('letterSpacing.tight');
+}
+
+:global(.dark) * {
+  color: theme('colors.gray.200');
+}
+
+:global(.dark) .buttons :global(svg:hover),
+:global(.dark) .buttons :global(svg:focus) {
+  color: theme('colors.green.300');
 }
 
 @media screen(ty) {
