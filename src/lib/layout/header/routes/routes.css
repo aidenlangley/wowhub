@@ -9,7 +9,7 @@ nav > ol {
 
 nav > ol > li {
   font-weight: theme('fontWeight.medium');
-  letter-spacing: theme('letterSpacing.tighter');
+  letter-spacing: theme('letterSpacing.tight');
 
   @apply text-base;
 }
@@ -26,7 +26,7 @@ nav > ol > li a.active {
   border-color: theme('colors.green.300');
   color: theme('colors.black');
   font-weight: theme('fontWeight.bold');
-  letter-spacing: theme('letterSpacing.tighter');
+  letter-spacing: theme('letterSpacing.tight');
   pointer-events: none;
 
   @apply text-20;

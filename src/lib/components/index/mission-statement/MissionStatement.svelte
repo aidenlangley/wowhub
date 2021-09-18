@@ -1,5 +1,6 @@
 <script lang="ts">
   import Logo from '$lib/media/Logo.svelte';
+  import { state } from '$store/dark';
 
   export let white = true;
   const classes = 'headings' + (white ? ' white' : '');
@@ -8,7 +9,7 @@
 <div class={classes}>
   <h1>
     <div class="mobile">
-      {#if white}
+      {#if white || $state.dark}
         <Logo white />
       {:else}
         <Logo />
