@@ -20,7 +20,6 @@
     title: 'Whakaoranga Whanau Recovery Hub',
     description: `He Waka Eke Noa te Tai Tokerau. Learn about our community AOD
     & recovery services`,
-    robots: 'none',
   };
 
   export let news: Article[];

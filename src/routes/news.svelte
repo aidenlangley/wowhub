@@ -49,7 +49,6 @@
     title: 'News & other resources',
     description: `A news stream of blogs & updates from the Whakaoranga Whanau &
     He Waka Eke Noa Te Tai Tokerau; news & updates from the community`,
-    robots: 'none',
   };
 
   export let news: Article[];

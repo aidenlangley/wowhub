@@ -17,7 +17,7 @@ export interface Member {
 export interface Seo {
   title: string;
   description: string;
-  robots: string;
+  robots?: string;
 }
 
 export interface Form {

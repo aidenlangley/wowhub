@@ -9,7 +9,6 @@
     title: 'Meet the team',
     description: `Ngā kaimahi. Tātou tīma he hui mai! Those in front and behind
     the scenes`,
-    robots: 'none',
   };
 </script>
 
