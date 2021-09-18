@@ -70,8 +70,8 @@
 </div>
 
 <style>
-  @import './services/services.css';
-  @import './services/1st-line.css';
-  @import './services/2nd-line.css';
-  @import './services/3rd-line.css';
+  @import './services.css';
+  @import './1st-line.css';
+  @import './2nd-line.css';
+  @import './3rd-line.css';
 </style>

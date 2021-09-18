@@ -4,9 +4,9 @@
   import LatestNews from '$components/index/LatestNews.svelte';
   import LinksInfo from '$components/index/links-info/LinksInfo.svelte';
   import MissionStatement from '$components/index/mission-statement/MissionStatement.svelte';
-  import SerenityPrayer from '$lib/components/index/serenity-prayer/SerenityPrayer.svelte';
-  import Services from '$components/index/Services.svelte';
-  import Whakatauki from '$lib/components/index/whakatauki/Whakatauki.svelte';
+  import SerenityPrayer from '$components/index/serenity-prayer/SerenityPrayer.svelte';
+  import Services from '$components/index/services/Services.svelte';
+  import Whakatauki from '$components/index/whakatauki/Whakatauki.svelte';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
@@ -32,49 +32,51 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="column pad-y gaps-y">
-  <section id="banner" class="no-mobile pad-y">
-    <Banner white={$state.dark} />
-  </section>
-
-  <section id="mission-statement">
-    <MissionStatement white={false} />
-  </section>
-
-  <section id="links-info">
-    <LinksInfo />
-  </section>
-
-  <section id="video" class="video">
-    <iframe
-      title="Beating Addiction Together"
-      src="https://tehiku.nz/embed/11829"
-      allowfullscreen
-    />
-  </section>
-
-  {#if news}
-    <section id="news" in:fade>
-      <LatestNews {news} />
+<article>
+  <div class="column pad-y gaps-y">
+    <section id="banner" class="no-mobile pad-y">
+      <Banner white={$state.dark} />
     </section>
-  {/if}
-</div>
 
-<section id="blurb" class="pad-y pad-x">
-  <Blurb />
-</section>
+    <section id="mission-statement">
+      <MissionStatement white={false} />
+    </section>
 
-<section id="serenity-prayer" class="column" aria-hidden="true">
-  <SerenityPrayer />
-</section>
+    <section id="links-info">
+      <LinksInfo />
+    </section>
 
-<section id="whakatauki" class="pad-y pad-x">
-  <Whakatauki />
-</section>
+    <section id="video" class="video">
+      <iframe
+        title="Beating Addiction Together"
+        src="https://tehiku.nz/embed/11829"
+        allowfullscreen
+      />
+    </section>
 
-<section id="services" class="pad-y" aria-hidden="true">
-  <Services />
-</section>
+    {#if news}
+      <section id="news" in:fade>
+        <LatestNews {news} />
+      </section>
+    {/if}
+  </div>
+
+  <section id="blurb" class="pad-y pad-x">
+    <Blurb />
+  </section>
+
+  <section id="serenity-prayer" class="column" aria-hidden="true">
+    <SerenityPrayer />
+  </section>
+
+  <section id="whakatauki" class="pad-y pad-x">
+    <Whakatauki />
+  </section>
+
+  <section id="services" class="pad-y" aria-hidden="true">
+    <Services />
+  </section>
+</article>
 
 <style>
   @import './index.css';

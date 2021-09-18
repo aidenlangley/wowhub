@@ -14,6 +14,6 @@
   @component
   Friends and affiliates.
 -->
-<article id="tātou-hoa" class="pad-y">
+<article class="pad-y">
   <UnderConstruction />
 </article>

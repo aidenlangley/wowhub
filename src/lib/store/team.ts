@@ -1,4 +1,12 @@
-import { assets } from '$app/paths';
+import aiden from '$images/people/aiden.jpg';
+import dee from '$images/people/dee.jpg';
+import doug from '$images/people/doug.jpg';
+import jane from '$images/people/jane.jpg';
+import kamina from '$images/people/kamina.jpg';
+import noreen from '$images/people/noreen.jpg';
+import rhonda from '$images/people/rhonda.jpg';
+import stuBess from '$images/people/stu-bess.jpg';
+import teMiringa from '$images/people/te-miringa.jpg';
 import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
 import type { Member } from './types.d';
@@ -31,7 +39,7 @@ export const team: Readable<Member[]> = readable([
       may be struggling. She couldn’t do this journey alone. He waka eke noa!`,
     ],
     frontline: true,
-    imgSrc: `${assets}/images/people/jane.jpg`,
+    img: jane,
   },
   {
     name: 'Dee 🔥',
@@ -54,7 +62,7 @@ export const team: Readable<Member[]> = readable([
       support and teach Māoritanga via waiata & karakia especially.`,
     ],
     frontline: true,
-    imgSrc: `${assets}/images/people/dee.jpg`,
+    img: dee,
     tallImg: true,
   },
   {
@@ -85,7 +93,7 @@ export const team: Readable<Member[]> = readable([
       solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
     ],
     frontline: true,
-    imgSrc: `${assets}/images/people/rhonda.jpg`,
+    img: rhonda,
     tallImg: true,
   },
   {
@@ -93,7 +101,7 @@ export const team: Readable<Member[]> = readable([
     tags: ['director', 'life coach'],
     pepeha: [],
     about: [],
-    imgSrc: `${assets}/images/people/te-miringa.jpg`,
+    img: teMiringa,
   },
   {
     name: 'Stu 💪🏽',
@@ -101,7 +109,7 @@ export const team: Readable<Member[]> = readable([
     pepeha: [],
     about: [],
     frontline: true,
-    imgSrc: `${assets}/images/people/stu-bess.jpg`,
+    img: stuBess,
     tallImg: true,
   },
   {
@@ -110,7 +118,7 @@ export const team: Readable<Member[]> = readable([
     pepeha: [],
     about: [],
     frontline: true,
-    imgSrc: `${assets}/images/people/stu-bess.jpg`,
+    img: stuBess,
     tallImg: true,
   },
   {
@@ -135,7 +143,7 @@ export const team: Readable<Member[]> = readable([
       particularly using the Māori world view of health and wellness.`,
     ],
     frontline: true,
-    imgSrc: `${assets}/images/people/noreen.jpg`,
+    img: noreen,
   },
   {
     name: 'Kamina 🔥',
@@ -159,7 +167,7 @@ export const team: Readable<Member[]> = readable([
       Auckland.`,
     ],
     frontline: true,
-    imgSrc: `${assets}/images/people/kamina.jpg`,
+    img: kamina,
   },
   {
     name: 'Aiden 💻',
@@ -188,7 +196,7 @@ export const team: Readable<Member[]> = readable([
       you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
       have played a large part in his life too.`,
     ],
-    imgSrc: `${assets}/images/people/aiden.jpg`,
+    img: aiden,
     tallImg: true,
   },
   {
@@ -196,7 +204,7 @@ export const team: Readable<Member[]> = readable([
     tags: ['clinical lead', 'mental health'],
     about: [],
     frontline: true,
-    // imgSrc: `${assets}/images/people/lisa.jpg`,
+    // img: lisa`,
   },
 
   /**
@@ -206,18 +214,18 @@ export const team: Readable<Member[]> = readable([
     name: 'Doug',
     tags: ['trustee', 'director of whanau ora', 'founder of influence gym'],
     about: [],
-    imgSrc: `${assets}/images/people/doug.jpg`,
+    img: doug,
   },
   {
     name: 'Craig',
     tags: ['trustee'],
     about: [],
-    // imgSrc: `${assets}/images/people/.jpg`,
+    // img: craig,
   },
   {
     name: 'Lily',
     tags: ['trustee'],
     about: [],
-    // imgSrc: `${assets}/images/people/.jpg`,
+    // img: lily,
   },
 ]);

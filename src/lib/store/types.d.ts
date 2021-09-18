@@ -10,7 +10,7 @@ export interface Member {
   about: string[];
   pepeha?: string[];
   frontline?: boolean;
-  imgSrc?: string;
+  img?: string;
   tallImg?: boolean;
 }
 

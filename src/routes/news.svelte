@@ -62,7 +62,7 @@
 -->
 
 <!--  Full fat list of news & docs -->
-<article id="panui" class="root column pad-y gaps-y">
+<article class="root column pad-y gaps-y">
   <!-- Aside for quicker navigation-->
   <!-- <aside>
     <nav> -->
@@ -75,14 +75,18 @@
   </aside> -->
 
   <!-- News -->
-  <section class="gaps-y">
-    <Heading>Panui (news)</Heading>
+  <article class="gaps-y">
+    <header>
+      <Heading>Panui (news)</Heading>
+    </header>
     <Cards articles={news} />
-  </section>
+  </article>
 
   <!-- Docs -->
-  <section class="gaps-y">
-    <Heading>Other info</Heading>
+  <article class="gaps-y">
+    <header>
+      <Heading>Other info</Heading>
+    </header>
     <Cards articles={docs} />
-  </section>
+  </article>
 </article>

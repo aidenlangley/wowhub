@@ -1,7 +1,7 @@
 <script lang="ts">
   import { assets } from '$app/paths';
+  import Footer from '$layout/footer/Footer.svelte';
   import Header from '$layout/header/Header.svelte';
-  import Footer from '$lib/layout/footer/Footer.svelte';
   import Seo from '$lib/Seo.svelte';
   import { state } from '$store/dark';
 

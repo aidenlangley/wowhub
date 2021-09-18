@@ -17,9 +17,9 @@
   <header>
     <!-- Image, if applicable. -->
     <div class="img">
-      {#if member.imgSrc}
+      {#if member.img}
         <img
-          src={member.imgSrc}
+          src={member.img}
           alt="image of {member.name}"
           class:tall={member.tallImg}
         />

@@ -14,15 +14,15 @@
   direction={SkewDirection.Right}
   colour={GradientColour.Green}
 >
-  <div class="whakatauki gaps-y">
-    <div class="headings">
+  <article class="whakatauki gaps-y">
+    <header>
       <h1>
         <span>E hara taku toa i te toa takitahi,</span>
         <span>engari he toa takitini</span>
       </h1>
       <h2>"My strength is not that of a single warrior, but that of many"</h2>
-    </div>
-    <div>
+    </header>
+    <section>
       <Paragraph justify>
         A favourite whakatauki of ours that embodies our ideals perfectly. A
         strong individual empowers us all.
@@ -36,8 +36,8 @@
         When Taumarere is in need, Hokianga will answer the call, and vice
         versa.
       </Paragraph>
-    </div>
-  </div>
+    </section>
+  </article>
 </Skew>
 
 <style>

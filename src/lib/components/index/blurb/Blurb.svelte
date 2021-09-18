@@ -10,7 +10,7 @@
   Short mission statement and about us.
 -->
 <Skew id="blurb" direction={SkewDirection.Left} colour={GradientColour.Green}>
-  <div class="blurb">
+  <article class="blurb">
     <Paragraph justify>
       <b>Whakaoranga Whanau Recovery Hub</b> &
       <b>He Waka Eke Noa te Tai Tokerau</b> is a kaupapa Māori AOD community support
@@ -24,7 +24,13 @@
       You can find us at <b>135 Broadway, Kaikohe</b>, Monday to Friday, 10am
       until 3pm.
     </Paragraph>
-  </div>
+    <Paragraph justify>
+      You can contact peer support, tātou kaimanāki, at <b
+        >support@wowhub.co.nz</b
+      >, and for Freedom Whare related queries, you can email
+      <b>info@freedomwhare.co.nz</b>.
+    </Paragraph>
+  </article>
 </Skew>
 
 <style>
