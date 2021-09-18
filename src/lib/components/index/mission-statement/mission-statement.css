@@ -1,9 +1,6 @@
 .headings {
   font-weight: theme('fontWeight.light');
-}
-
-:global(.dark) .headings:not(.white) {
-  color: theme('colors.gray.100');
+  @apply drop-shadow-lg;
 }
 
 .headings.white {
@@ -20,12 +17,24 @@
   @apply text-28;
 }
 
+:global(.dark) .headings > h1 {
+  color: theme('colors.gray.100');
+}
+
 .headings > h2 {
   font-family: theme('fontFamily.display');
   letter-spacing: theme('letterSpacing.tight');
   text-align: center;
 
   @apply text-48;
+}
+
+.headings:not(.white) > h2 {
+  color: theme('colors.green.800');
+}
+
+:global(.dark) .headings:not(.white) > h2 {
+  color: theme('colors.green.300');
 }
 
 @media screen(sm) {
