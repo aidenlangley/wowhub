@@ -12,7 +12,7 @@
 
 <style>
   img {
-    max-height: theme('height.12');
+    max-height: theme('height.10');
   }
 
   .hide {
@@ -21,5 +21,11 @@
 
   .show {
     display: block;
+  }
+
+  @media screen(ty) {
+    img {
+      max-height: theme('height.12');
+    }
   }
 </style>
