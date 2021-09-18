@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  row-gap: theme('gap.4');
+  text-align: center;
+
+  /* Border & background */
+  padding: theme('padding.4');
+}
+
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  padding: theme('padding.2');
+}
+
+.buttons * {
+  max-height: theme('height.8');
+  max-width: theme('height.8');
+}
+
+p {
+  font-family: theme('fontFamily.mono');
+  font-weight: theme('fontWeight.medium');
+  letter-spacing: theme('letterSpacing.tight');
+}
+
+@media screen(ty) {
+  .wrapper {
+    /* max-width: max-content; */
+    justify-items: flex-end;
+  }
+
+  .buttons {
+    place-items: initial;
+    column-gap: theme('gap.8');
+  }
+}

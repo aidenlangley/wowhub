@@ -22,3 +22,9 @@
   width: 100%;
   aspect-ratio: 16 / 9;
 }
+
+@media screen(sm) {
+  .mobile {
+    display: block;
+  }
+}

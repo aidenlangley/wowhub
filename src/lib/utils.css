@@ -14,13 +14,31 @@
     grid-auto-flow: row;
     row-gap: var(--gaps-y);
   }
+
+  .mobile {
+    display: block;
+  }
+
+  .no-mobile {
+    display: none;
+  }
+}
+
+@media screen(ty) {
+  .mobile {
+    display: none;
+  }
+
+  .no-mobile {
+    display: block;
+  }
 }
 
 @media screen(sm) {
   :root {
-    --pad-y: 3rem;
+    --pad-y: 2.75rem;
     --pad-x: 2.5rem;
-    --gaps-y: 1.5rem;
+    --gaps-y: 1.25rem;
   }
 
   @layer utilities {
@@ -33,16 +51,16 @@
 
 @media screen(md) {
   :root {
-    --pad-y: 3.5rem;
-    --pad-x: 3rem;
-    --gaps-y: 2rem;
+    --pad-y: 3rem;
+    --pad-x: 2.75rem;
+    --gaps-y: 1.5rem;
   }
 }
 
 @media screen(lg) {
   :root {
-    --pad-y: 4rem;
-    --pad-x: 3.5rem;
-    --gaps-y: 3rem;
+    --pad-y: 3.25rem;
+    --pad-x: 3rem;
+    --gaps-y: 1.5rem;
   }
 }

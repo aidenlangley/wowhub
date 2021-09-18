@@ -2,10 +2,11 @@
   import type { Article } from '$components/articles/types.d';
   import Blurb from '$components/index/Blurb.svelte';
   import LatestNews from '$components/index/LatestNews.svelte';
-  import QuickLinks from '$components/index/QuickLinks.svelte';
+  import MissionStatement from '$components/index/mission-statement/MissionStatement.svelte';
   import SerenityPrayer from '$components/index/SerenityPrayer.svelte';
   import Services from '$components/index/Services.svelte';
   import Whakatauki from '$components/index/Whakatauki.svelte';
+  import LinksInfo from '$lib/components/index/links-info/LinksInfo.svelte';
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
@@ -31,13 +32,17 @@
   Landing page. Has to catch the users attention and give them information as
   quickly as possible.
 -->
-<div class="column gaps-y">
-  <section id="banner" class="pad-y">
+<div class="column pad-y gaps-y">
+  <section id="banner" class="no-mobile pad-y">
     <Banner white={$state.dark} />
   </section>
 
-  <section id="quick-links">
-    <QuickLinks />
+  <section id="mission-statement">
+    <MissionStatement white={false} />
+  </section>
+
+  <section id="links-info">
+    <LinksInfo />
   </section>
 
   <section id="video" class="video">
