@@ -10,7 +10,6 @@
   import Banner from '$media/Banner.svelte';
   import { state } from '$store/dark';
   import { seo } from '$store/seo';
-  import { fade } from 'svelte/transition';
   import { loadNews as load } from './news.svelte';
 
   export { load };
@@ -19,8 +18,8 @@
 <script lang="ts">
   $seo = {
     title: 'Whakaoranga Whanau Recovery Hub',
-    description:
-      'He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services',
+    description: `He Waka Eke Noa te Tai Tokerau. Learn about our community AOD
+    & recovery services`,
     robots: 'none',
   };
 
@@ -54,8 +53,8 @@
       />
     </section>
 
-    {#if news}
-      <section id="news" in:fade>
+    {#if news && news.length > 0}
+      <section id="news">
         <LatestNews {news} />
       </section>
     {/if}

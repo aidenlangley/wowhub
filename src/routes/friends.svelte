@@ -3,9 +3,9 @@
   import { seo } from '$store/seo';
 
   $seo = {
-    title: 'Tātou Hoa',
-    description:
-      'We only make up a fraction of the tangata who are here to help. Meet tātou hoa (our friends)!',
+    title: 'Our friends',
+    description: `Tātou hoa. We only make up a fraction of the tangata who are
+    here to help. Meet our friends!`,
     robots: 'none',
   };
 </script>

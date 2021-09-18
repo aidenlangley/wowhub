@@ -6,8 +6,9 @@
   import { team } from '$store/team';
 
   $seo = {
-    title: 'Ngā kaimahi',
-    description: 'Meet the staff; those in front and behind the scenes',
+    title: 'Meet the team',
+    description: `Ngā kaimahi. Tātou tīma he hui mai! Those in front and behind
+    the scenes`,
     robots: 'none',
   };
 </script>
