@@ -9,11 +9,7 @@
 <div class={classes}>
   <h1>
     <div class="mobile">
-      {#if white || $state.dark}
-        <Logo white />
-      {:else}
-        <Logo />
-      {/if}
+      <Logo white={$state.dark} />
     </div>
     <span>Planting the seed of hope...</span>
   </h1>
