@@ -1,20 +1,25 @@
 <script lang="ts">
   import logoWhite from '$images/logo-white.png';
   import logo from '$images/logo.png';
-  import { blur } from 'svelte/transition';
 
   export let white = false;
   const alt = 'wowhub logo';
 </script>
 
-{#if !white}
-  <img src={logo} {alt} in:blur />
-{:else}
-  <img src={logoWhite} {alt} in:blur />
-{/if}
+<!-- CSS shows and hides so that both images can be rendered, and cached. -->
+<img src={logo} {alt} class={!white ? 'show' : 'hide'} />
+<img src={logoWhite} {alt} class={white ? 'show' : 'hide'} />
 
 <style>
   img {
     max-height: theme('height.12');
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .show {
+    display: block;
   }
 </style>
