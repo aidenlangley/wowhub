@@ -24,7 +24,7 @@
           class:tall={member.tallImg}
         />
       {:else}
-        <Icon src={UserCircle} solid size="100%" />
+        <Icon src={UserCircle} solid />
       {/if}
     </div>
 

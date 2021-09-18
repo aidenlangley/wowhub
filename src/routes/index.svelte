@@ -63,7 +63,7 @@
     <Blurb />
   </section>
 
-  <section id="serenity-prayer" class="column" aria-hidden="true">
+  <section id="serenity-prayer" class="column">
     <SerenityPrayer />
   </section>
 

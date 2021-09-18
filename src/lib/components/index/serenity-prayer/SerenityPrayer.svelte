@@ -8,7 +8,7 @@
 -->
 
 <article>
-  <section class="passage">
+  <section class="passage" aria-hidden="true">
     <p>
       <span class="god">God,</span>
       grant me the

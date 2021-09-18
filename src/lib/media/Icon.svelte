@@ -4,21 +4,6 @@
   */
   export let src: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   export let solid = false;
-  export let size = '';
-
-  if (size !== '100%') {
-    if (
-      size.slice(-1) != 'x' &&
-      size.slice(-1) != 'm' &&
-      size.slice(-1) != '%'
-    ) {
-      try {
-        size = parseInt(size) + 'px';
-      } catch (error) {
-        size = '100%';
-      }
-    }
-  }
 
   const style = `heroicon ${!solid ? 'outline' : 'solid'}`;
 </script>
@@ -30,8 +15,6 @@
     fill="none"
     stroke="currentColor"
     class={style}
-    height={size}
-    width={size}
     aria-hidden="true"
   >
     {#each src[1] ?? [] as att}
@@ -44,8 +27,6 @@
     viewBox="0 0 20 20"
     fill="currentColor"
     class={style}
-    height={size}
-    width={size}
     aria-hidden="true"
   >
     {#each src[0] ?? [] as att}
@@ -53,3 +34,7 @@
     {/each}
   </svg>
 {/if}
+
+<style>
+  @import './icon.css';
+</style>
