@@ -4,7 +4,7 @@
   */
   export let src: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   export let solid = false;
-  export let size = '22';
+  export let size = '';
 
   if (size !== '100%') {
     if (

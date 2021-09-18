@@ -2,8 +2,9 @@
   import Link from '$components/link/Link.svelte';
   import Facebook from '$media/Facebook.svelte';
   import GoogleMaps from '$media/GoogleMaps.svelte';
+  import Icon from '$media/Icon.svelte';
   import { info } from '$store/info';
-  import Icon, { Mail, Phone } from 'svelte-hero-icons';
+  import { Mail, Phone } from 'svelte-hero-icons';
 </script>
 
 <!--

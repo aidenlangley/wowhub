@@ -44,13 +44,13 @@
       <LinksInfo />
     </section>
 
-    <section id="video" class="video">
+    <article id="video" class="video">
       <iframe
         title="Beating Addiction Together"
         src="https://tehiku.nz/embed/11829"
         allowfullscreen
       />
-    </section>
+    </article>
 
     {#if news && news.length > 0}
       <section id="news">

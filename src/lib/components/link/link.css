@@ -4,7 +4,7 @@
   column-gap: theme('gap.1');
   align-items: center;
   justify-content: start;
-  color: theme('colors.blue.600');
+  color: theme('colors.blue.700');
 }
 
 .link:not(button) {
@@ -14,7 +14,7 @@
 
 .link:hover,
 .link:focus {
-  color: theme('colors.blue.400');
+  color: theme('colors.blue.500');
 }
 
 .link:visited {
