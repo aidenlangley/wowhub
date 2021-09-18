@@ -1,3 +1,26 @@
 .blurb > :global(p) {
   color: theme('colors.white');
 }
+
+.forms {
+  padding-top: theme('padding.4');
+  text-align: center;
+}
+
+li {
+  padding-bottom: theme('padding.2');
+}
+
+a {
+  color: theme('colors.yellow.300');
+  font-family: theme('fontFamily.mono');
+  font-weight: theme('fontWeight.medium');
+
+  @apply text-20;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  color: theme('colors.yellow.200');
+}

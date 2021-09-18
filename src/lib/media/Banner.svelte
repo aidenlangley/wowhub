@@ -1,6 +1,6 @@
 <script lang="ts">
-  import BannerWhite from '$images/banner-white.png';
-  import Banner from '$images/banner.png';
+  import bannerWhite from '$images/banner-white.png';
+  import banner from '$images/banner.png';
   import { blur } from 'svelte/transition';
 
   export let white = false;
@@ -8,7 +8,7 @@
 </script>
 
 {#if !white}
-  <img src={Banner} {alt} in:blur />
+  <img src={banner} {alt} in:blur />
 {:else}
-  <img src={BannerWhite} {alt} in:blur />
+  <img src={bannerWhite} {alt} in:blur />
 {/if}

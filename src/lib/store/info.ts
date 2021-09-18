@@ -5,12 +5,4 @@ export const info = readable({
   email: 'info@wowhub.co.nz',
   facebookGroup: 'https://www.facebook.com/groups/510722916364116',
   google: 'https://goo.gl/maps/WrvBZvvEy1SKGqVS7',
-  forms: [
-    {
-      title: 'registration',
-      description:
-        'register your interest in Whakaoranga Whanau Recovery Hub services',
-      url: 'https://forms.gle/9BSJcMKjP1XgjCaP9',
-    },
-  ],
 });

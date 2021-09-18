@@ -30,6 +30,26 @@
       >, and for Freedom Whare related queries, you can email
       <b>info@freedomwhare.co.nz</b>.
     </Paragraph>
+    <ul class="forms">
+      <li>
+        <a
+          href="https://forms.gle/DgHAF9GvwVhKPzjA6"
+          target="_blank"
+          rel="noopener external"
+        >
+          Whakaoranga Whanau Recovery Hub Registration Form
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://forms.gle/MT22azTPYCyum3St9"
+          target="_blank"
+          rel="noopener external"
+        >
+          Freedom Whare Registration of Interest Form
+        </a>
+      </li>
+    </ul>
   </article>
 </Skew>
 

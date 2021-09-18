@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { assets } from '$app/paths';
+  import drawing from '$images/drawing.png';
   import Footer from '$layout/footer/Footer.svelte';
   import Header from '$layout/header/Header.svelte';
   import Seo from '$lib/Seo.svelte';
@@ -23,7 +23,7 @@
 
 <div class="root" class:dark>
   <Header />
-  <main style="background-image: url({assets}/images/drawing.png);">
+  <main style="background-image: url({drawing});">
     <!-- Primarily an opacity provider `div` -->
     <div class="opacity-provider">
       <slot />

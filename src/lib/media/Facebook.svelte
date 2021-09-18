@@ -1,7 +1,7 @@
 <script lang="ts">
-  import LogoBlack from '$images/facebook/logo-black.png';
-  import LogoWhite from '$images/facebook/logo-white.png';
-  import Logo from '$images/facebook/logo.png';
+  import logoBlack from '$images/facebook/logo-black.png';
+  import logoWhite from '$images/facebook/logo-white.png';
+  import logo from '$images/facebook/logo.png';
   import { blur } from 'svelte/transition';
 
   export let white = false;
@@ -10,9 +10,9 @@
 </script>
 
 {#if !white && !black}
-  <img src={Logo} {alt} in:blur />
+  <img src={logo} {alt} in:blur />
 {:else if white}
-  <img src={LogoWhite} {alt} in:blur />
+  <img src={logoWhite} {alt} in:blur />
 {:else if black}
-  <img src={LogoBlack} {alt} in:blur />
+  <img src={logoBlack} {alt} in:blur />
 {/if}

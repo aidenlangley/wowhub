@@ -49,6 +49,7 @@
     <p>
       <span>{$info.email}</span> |
       <span>{$info.phone.replace('+64', '0')}</span>
+      <span>or register below</span>
     </p>
   </div>
 </article>
