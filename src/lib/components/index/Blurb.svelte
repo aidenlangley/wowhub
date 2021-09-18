@@ -3,7 +3,6 @@
   import Skew from '$layout/skew/Skew.svelte';
   import { SkewDirection } from '$layout/skew/types.d';
   import { GradientColour } from '$layout/types.d';
-  import MissionStatement from './mission-statement/MissionStatement.svelte';
 </script>
 
 <!--
@@ -11,7 +10,6 @@
   Short mission statement and about us.
 -->
 <Skew id="blurb" direction={SkewDirection.Left} colour={GradientColour.Green}>
-  <MissionStatement />
   <div class="blurb">
     <Paragraph justify>
       <b>Whakaoranga Whanau Recovery Hub</b> &
