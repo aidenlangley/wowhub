@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import path from 'path';
+import image from 'svelte-image';
 import preprocess from 'svelte-preprocess';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -14,6 +15,7 @@ const config = {
       postcss: true,
     }),
     mdsvex(mdsvexConfig),
+    image(),
   ],
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
