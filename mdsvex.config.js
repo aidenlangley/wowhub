@@ -1,4 +1,4 @@
-import externalLinks from 'rehype-external-links';
+import links from 'rehype-external-links';
 import footnotes from 'remark-footnotes';
 import gfm from 'remark-gfm';
 import images from 'remark-images';
@@ -9,7 +9,7 @@ const config = {
     dashes: 'oldschool',
   },
   remarkPlugins: [gfm, images, footnotes],
-  rehypePlugins: [externalLinks],
+  rehypePlugins: [links],
   layout: {
     _: './src/lib/components/articles/Article.svelte',
   },

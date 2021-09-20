@@ -1,7 +1,7 @@
 <script lang="ts">
   import { info } from '$stores/info';
   import Facebook from '../../facebook/Facebook.svelte';
-  import GoogleMaps from '../../GoogleMaps.svelte';
+  import GoogleMaps from '../../google/Maps.svelte';
   import Link from '../../link/Link.svelte';
 </script>
 
