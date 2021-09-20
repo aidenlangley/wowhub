@@ -16,7 +16,7 @@ const config = {
     }),
     image({
       processFolders: ['images'],
-    }),
+    }) /* https://github.com/matyunya/svelte-image */,
     mdsvex(mdsvexConfig),
   ],
   kit: {
