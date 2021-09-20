@@ -1,9 +1,6 @@
 /* Base styles */
 @import 'tailwindcss/base';
 
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Inter:wght@100;300;400;500;700;900&family=Permanent+Marker&family=Roboto+Slab:wght@100;300;400;500;700;900&display=swap');
-
 /* Components */
 @import 'tailwindcss/components';
 @import './lib/components/components.css';
