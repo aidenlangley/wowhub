@@ -1,1 +1,0 @@
-import"../chunks/vendor-5f0af076.js";import"../chunks/Heading-abfb5fae.js";export{N as default,b as load,a as loadDocs,l as loadNews}from"../chunks/news-acf6d0a5.js";import"../chunks/singletons-ff603286.js";
