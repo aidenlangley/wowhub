@@ -1,5 +1,6 @@
 <script lang="ts" context="module">
   import type { Article } from '$components/articles/types.d';
+  import Banner from '$components/banner/Banner.svelte';
   import Blurb from '$components/index/blurb/Blurb.svelte';
   import LatestNews from '$components/index/LatestNews.svelte';
   import LinksInfo from '$components/index/links-info/LinksInfo.svelte';
@@ -7,7 +8,6 @@
   import SerenityPrayer from '$components/index/serenity-prayer/SerenityPrayer.svelte';
   import Services from '$components/index/services/Services.svelte';
   import Whakatauki from '$components/index/whakatauki/Whakatauki.svelte';
-  import Banner from '$media/Banner.svelte';
   import { state } from '$stores/dark';
   import SvelteSeo from 'svelte-seo';
   import { loadNews as load } from './news.svelte';

@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Paragraph from '$components/paragraph/Paragraph.svelte';
-  import Skew from '$layout/skew/Skew.svelte';
-  import { SkewDirection } from '$layout/skew/types.d';
-  import { GradientColour } from '$layout/types.d';
+  import Paragraph from '../../paragraph/Paragraph.svelte';
+  import Skew from '../../skew/Skew.svelte';
+  import { SkewDirection } from '../../skew/types';
+  import { GradientColour } from '../../types';
 </script>
 
 <!--

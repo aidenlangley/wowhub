@@ -6,8 +6,7 @@ static/
 
 # npm/yarn
 package.json
-package-lock.json
-yarn.lock
+pnpm-lock.yaml
 
 # IDE
 .vscode/

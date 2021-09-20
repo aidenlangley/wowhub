@@ -1,6 +1,4 @@
 <script lang="ts">
-  import './tooltip.css';
-
   export let text: string;
 
   /* Positional params */
@@ -49,3 +47,7 @@
     <slot />
   </span>
 {/if}
+
+<style>
+  @import './tooltip.css';
+</style>

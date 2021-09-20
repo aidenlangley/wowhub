@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { BackgroundColour, TranslateDirection } from './types.d';
+  import type { BackgroundColour, TranslateDirection } from './types';
 
   export let direction: TranslateDirection;
   export let colour: BackgroundColour;

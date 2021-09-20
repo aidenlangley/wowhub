@@ -1,7 +1,6 @@
-import { Readable, readable } from 'svelte/store';
-import type { Form } from './types';
+import { readable } from 'svelte/store';
 
-export const forms: Readable<Form[]> = readable([
+export const forms = readable([
   {
     title: 'Whakaoranga Whanau Recovery Hub Registration',
     description:

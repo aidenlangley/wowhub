@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Cards from '$components/articles/Cards.svelte';
-  import type { Article } from '$components/articles/types.d';
-  import Heading3 from '$components/heading/Heading3.svelte';
+  import Cards from '../articles/Cards.svelte';
+  import type { Article } from '../articles/types.d';
+  import Heading3 from '../heading/Heading3.svelte';
 
   export let news: Article[];
 </script>

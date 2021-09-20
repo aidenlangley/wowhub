@@ -5,6 +5,9 @@ node_modules/
 docs/
 static/
 
+# Package manager
+pnpm-lock.yaml
+
 # IDE
 .vscode/
 

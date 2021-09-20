@@ -1,7 +1,7 @@
 <script lang="ts">
+  import Footer from '$components/footer/Footer.svelte';
+  import Header from '$components/header/Header.svelte';
   import drawing from '$images/drawing.png';
-  import Footer from '$layout/footer/Footer.svelte';
-  import Header from '$layout/header/Header.svelte';
   import { state } from '$stores/dark';
 
   $: dark = $state.dark;

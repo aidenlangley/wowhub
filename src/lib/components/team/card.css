@@ -14,7 +14,9 @@
   Transitions so things move and animate when pepeha shows and screen changes
   size
   */
-  @apply transition-all duration-300 ease-in-out;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
 }
 
 header {

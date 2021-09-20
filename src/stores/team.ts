@@ -2,16 +2,13 @@ import aiden from '$images/people/aiden.jpg';
 import dee from '$images/people/dee.jpg';
 import doug from '$images/people/doug.jpg';
 import jane from '$images/people/jane.jpg';
-import kamina from '$images/people/kamina.jpg';
 import noreen from '$images/people/noreen.jpg';
 import rhonda from '$images/people/rhonda.jpg';
 import stuBess from '$images/people/stu-bess.jpg';
 import teMiringa from '$images/people/te-miringa.jpg';
-import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
-import type { TeamMember } from './types.d';
 
-export const team: Readable<TeamMember[]> = readable([
+export const team = readable([
   /**
    * PRIMARY TEAM
    */
@@ -145,30 +142,30 @@ export const team: Readable<TeamMember[]> = readable([
     frontline: true,
     img: noreen,
   },
-  {
-    name: 'Kamina 🔥',
-    tags: ['administration', 'logistics'],
-    pepeha: [
-      'Ko Moehau te maunga',
-      'Ko Ti Kapa & Tainui te waka',
-      'Ko Mainai te marae',
-      'Ko Ngāti Pukenga, Ngāti Whanaunga te hapu',
-      'Ko Maru Tuahu te iwi',
-      'Ko Kamina McSheffrey ahau',
-    ],
-    about: [
-      `Kamina has been living in Kaikohe for 3 years now, her grandmother was
-      born in Waima. Just like the rest of our team, she also has lived
-      experience with AOD struggles.`,
-      `She's a qualified kaiako for Te Ataarangi, total immersion  te reo Māori.
-      She has worked for Te Whare Wānanga o Awanuiarangi, Hamilton, she was
-      head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
-      been working in administration & office management for 15 years in
-      Auckland.`,
-    ],
-    frontline: true,
-    img: kamina,
-  },
+  // {
+  //   name: 'Kamina 🔥',
+  //   tags: ['administration', 'logistics'],
+  //   pepeha: [
+  //     'Ko Moehau te maunga',
+  //     'Ko Ti Kapa & Tainui te waka',
+  //     'Ko Mainai te marae',
+  //     'Ko Ngāti Pukenga, Ngāti Whanaunga te hapu',
+  //     'Ko Maru Tuahu te iwi',
+  //     'Ko Kamina McSheffrey ahau',
+  //   ],
+  //   about: [
+  //     `Kamina has been living in Kaikohe for 3 years now, her grandmother was
+  //     born in Waima. Just like the rest of our team, she also has lived
+  //     experience with AOD struggles.`,
+  //     `She's a qualified kaiako for Te Ataarangi, total immersion  te reo Māori.
+  //     She has worked for Te Whare Wānanga o Awanuiarangi, Hamilton, she was
+  //     head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
+  //     been working in administration & office management for 15 years in
+  //     Auckland.`,
+  //   ],
+  //   frontline: true,
+  //   img: kamina,
+  // },
   {
     name: 'Aiden 💻',
     tags: ['kaipūkaha rorohiko', 'tuākana'],

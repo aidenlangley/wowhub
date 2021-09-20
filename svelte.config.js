@@ -32,14 +32,10 @@ const config = {
       resolve: {
         alias: {
           $components: path.resolve('./src/lib/components'),
-          $layout: path.resolve('./src/lib/layout'),
-          $media: path.resolve('./src/lib/media'),
+          $css: path.resolve('./src/lib/css'),
           $stores: path.resolve('./src/stores'),
-          $images: path.resolve('./static/images'),
+          $images: path.resolve('./images'),
         },
-      },
-      optimizeDeps: {
-        include: ['svelte-hero-icons'],
       },
     },
   },

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import Logo from '$media/Logo.svelte';
-  import DarkToggle from './DarkToggle.svelte';
+  import DarkToggle from '../DarkToggle.svelte';
+  import Logo from '../logo/Logo.svelte';
   import Routes from './routes/Routes.svelte';
 </script>
 

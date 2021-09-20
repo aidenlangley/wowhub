@@ -1,14 +1,14 @@
 <script lang="ts">
-  import Translate from '$layout/translate/Translate.svelte';
+  import Translate from '../translate/Translate.svelte';
   import type {
     BackgroundColour,
     TranslateDirection,
-  } from '$layout/translate/types.d';
+  } from '../translate/types';
   import {
     BackgroundColour as backgroundColour,
     TranslateDirection as translateColour,
-  } from '$layout/translate/types.d';
-  import { GradientColour } from '$layout/types.d';
+  } from '../translate/types';
+  import { GradientColour } from '../types';
 
   export let direction: TranslateDirection = translateColour.BottomRight;
   export let bg: BackgroundColour = backgroundColour.Green;
