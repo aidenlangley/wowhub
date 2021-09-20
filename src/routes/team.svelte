@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Error from '$components/error/Error.svelte';
-  import Heading from '$components/heading/Heading.svelte';
-  import Cards from '$components/team/Cards.svelte';
+  import Error from '$comp/error/Error.svelte';
+  import Heading from '$comp/heading/Heading.svelte';
+  import Cards from '$comp/team/Cards.svelte';
   import { team } from '$stores/team';
   import SvelteSeo from 'svelte-seo';
 </script>

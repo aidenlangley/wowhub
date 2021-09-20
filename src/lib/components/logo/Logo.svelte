@@ -1,6 +1,6 @@
 <script lang="ts">
-  import logoWhite from '$images/logo-white.png';
-  import logo from '$images/logo.png';
+  import logoWhite from '$img/logo-white.png';
+  import logo from '$img/logo.png';
 
   export let white = false;
   const alt = 'wowhub logo';

@@ -14,9 +14,7 @@ const config = {
     preprocess({
       postcss: true,
     }),
-    image({
-      processFolders: ['images'],
-    }) /* https://github.com/matyunya/svelte-image */,
+    image() /* https://github.com/matyunya/svelte-image */,
     mdsvex(mdsvexConfig),
   ],
   kit: {
@@ -31,12 +29,10 @@ const config = {
     vite: {
       resolve: {
         alias: {
-          $components: path.resolve('./src/lib/components'),
-          $cmpnts: path.resolve('./src/lib/components'),
+          $comp: path.resolve('./src/lib/components'),
           $css: path.resolve('./src/lib/css'),
           $stores: path.resolve('./src/stores'),
           $img: path.resolve('./src/images'),
-          $images: path.resolve('./static/images'),
         },
       },
     },

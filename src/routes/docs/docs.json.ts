@@ -1,4 +1,4 @@
-import type { Article } from '$components/articles/types.d'
+import type { Article } from '$comp/articles/types.d'
 
 export async function get(): Promise<{
   body: { docs: Article[] }

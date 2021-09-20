@@ -1,5 +1,5 @@
 <script lang="ts">
-  import logo from '$images/google/maps.png';
+  import logo from '$img/google/maps.png';
 
   const alt = 'google maps logo';
 </script>

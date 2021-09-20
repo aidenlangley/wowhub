@@ -1,5 +1,5 @@
 <script lang="ts">
-  import UnderConstruction from '$components/error/Error.svelte';
+  import UnderConstruction from '$comp/error/Error.svelte';
   import SvelteSeo from 'svelte-seo';
 </script>
 

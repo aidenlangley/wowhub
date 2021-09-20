@@ -16,9 +16,9 @@
 </script>
 
 <script lang="ts">
-  import Heading from '$components/heading/Heading.svelte';
-  import { BackgroundColour } from '$components/translate/types';
-  import { GradientColour } from '$components/types';
+  import Heading from '$comp/heading/Heading.svelte';
+  import { BackgroundColour } from '$comp/translate/types';
+  import { GradientColour } from '$comp/types';
 
   export let status: string;
   export let error: string;

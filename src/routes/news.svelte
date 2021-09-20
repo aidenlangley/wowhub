@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-  import Cards from '$components/articles/Cards.svelte';
-  import type { Article } from '$components/articles/types.d';
-  import Heading from '$components/heading/Heading.svelte';
+  import Cards from '$comp/articles/Cards.svelte';
+  import type { Article } from '$comp/articles/types.d';
+  import Heading from '$comp/heading/Heading.svelte';
   import type { Load } from '@sveltejs/kit';
   import SvelteSeo from 'svelte-seo';
 

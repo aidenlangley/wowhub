@@ -1,11 +1,11 @@
-import aiden from '$images/people/aiden.jpg';
-import dee from '$images/people/dee.jpg';
-import doug from '$images/people/doug.jpg';
-import jane from '$images/people/jane.jpg';
-import noreen from '$images/people/noreen.jpg';
-import rhonda from '$images/people/rhonda.jpg';
-import stuBess from '$images/people/stu-bess.jpg';
-import teMiringa from '$images/people/te-miringa.jpg';
+import aiden from '$img/people/aiden.jpg';
+import dee from '$img/people/dee.jpg';
+import doug from '$img/people/doug.jpg';
+import jane from '$img/people/jane.jpg';
+import noreen from '$img/people/noreen.jpg';
+import rhonda from '$img/people/rhonda.jpg';
+import stuBess from '$img/people/stu-bess.jpg';
+import teMiringa from '$img/people/te-miringa.jpg';
 import { readable } from 'svelte/store';
 
 export const team = readable([

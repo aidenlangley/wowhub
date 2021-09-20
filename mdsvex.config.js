@@ -4,7 +4,7 @@ import gfm from 'remark-gfm';
 import images from 'remark-images';
 
 const config = {
-  extensions: ['.svelte.md', '.md', '.svx'],
+  extensions: ['.svx'],
   smartypants: {
     dashes: 'oldschool',
   },
