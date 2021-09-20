@@ -13,6 +13,8 @@ const rem = (px) => `${round(px / 16)}rem`;
 const config = {
   mode: 'jit',
   purge: ['./src/**/*.{html,css,js,ts,svelte,postcss,svx}'],
+  darkMode: 'class' /* media follows OS, class follows normal conventions */,
+  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
   theme: {
     screens: {
       ty: em(514),
@@ -164,8 +166,6 @@ const config = {
       }),
     },
   },
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
-  darkMode: 'class' /* media follows OS, class follows normal conventions */,
   variants: {
     extend: {
       typography: ['dark'],

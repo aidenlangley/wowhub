@@ -7,3 +7,14 @@ static/
 
 # IDE
 .vscode/
+
+# Not CSS, but VS Code plugin still wants to lint them
+**/*.js
+**/*.cjs
+**/*.ts
+**/*.md
+**/*.svx
+**/*.json
+
+# Other
+LICENSE

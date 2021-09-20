@@ -32,12 +32,6 @@ header {
   }
 }
 
-/* @media screen(sm) {
-  header {
-    padding: theme('padding.5');
-  }
-} */
-
 @media screen(lg) {
   header {
     /* 4% auto 4% */

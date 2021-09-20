@@ -1,13 +1,17 @@
 <script lang="ts">
   import Translate from '$layout/translate/Translate.svelte';
-  import {
+  import type {
     BackgroundColour,
     TranslateDirection,
   } from '$layout/translate/types.d';
+  import {
+    BackgroundColour as backgroundColour,
+    TranslateDirection as translateColour,
+  } from '$layout/translate/types.d';
   import { GradientColour } from '$layout/types.d';
 
-  export let direction: TranslateDirection = TranslateDirection.BottomRight;
-  export let bg: BackgroundColour = BackgroundColour.Green;
+  export let direction: TranslateDirection = translateColour.BottomRight;
+  export let bg: BackgroundColour = backgroundColour.Green;
   export let fg: GradientColour = GradientColour.Green;
 </script>
 
