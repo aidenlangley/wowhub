@@ -27,6 +27,8 @@
       "$comp/*": ["src/lib/components"],
       "$css": ["src/lib/css"],
       "$css/*": ["src/lib/css/*"],
+      "$types": ["src/lib/types"],
+      "$types/*": ["src/lib/types/*"],
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
       "$img": ["src/images"],

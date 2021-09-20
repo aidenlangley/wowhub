@@ -1,7 +1,7 @@
 <script lang="ts">
+  import { GradientColour } from '$types/Gradient';
+  import { BackgroundColour } from '$types/Translate';
   import Heading from '../heading/Heading.svelte';
-  import { BackgroundColour } from '../translate/types';
-  import { GradientColour } from '../types';
 </script>
 
 <section id="under-construction-notice" class="column pad-x">

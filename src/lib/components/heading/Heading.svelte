@@ -1,18 +1,16 @@
 <script lang="ts">
-  import Translate from '../translate/Translate.svelte';
-  import type {
-    BackgroundColour,
-    TranslateDirection,
-  } from '../translate/types';
+  import type { GradientColour } from '$types/Gradient';
+  import { GradientColour as gradientColour } from '$types/Gradient';
+  import type { BackgroundColour, TranslateDirection } from '$types/Translate';
   import {
     BackgroundColour as backgroundColour,
     TranslateDirection as translateColour,
-  } from '../translate/types';
-  import { GradientColour } from '../types';
+  } from '$types/Translate';
+  import Translate from '../translate/Translate.svelte';
 
   export let direction: TranslateDirection = translateColour.BottomRight;
   export let bg: BackgroundColour = backgroundColour.Green;
-  export let fg: GradientColour = GradientColour.Green;
+  export let fg: GradientColour = gradientColour.Green;
 </script>
 
 <Translate {direction} colour={bg}>

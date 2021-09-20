@@ -1,8 +1,8 @@
 <script>
+  import { GradientColour } from '$types/Gradient';
+  import { SkewDirection } from '$types/Skew';
   import Paragraph from '../../paragraph/Paragraph.svelte';
   import Skew from '../../skew/Skew.svelte';
-  import { SkewDirection } from '../../skew/types';
-  import { GradientColour } from '../../types';
 </script>
 
 <!--

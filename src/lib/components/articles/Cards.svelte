@@ -1,6 +1,6 @@
 <script lang="ts">
+  import type { Article } from '$types/Article';
   import Card from './Card.svelte';
-  import type { Article } from './types.d';
 
   export let articles: Article[];
 </script>

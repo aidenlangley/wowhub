@@ -1,6 +1,6 @@
 <script lang="ts">
+  import type { Article } from '$types/Article';
   import Cards from '../articles/Cards.svelte';
-  import type { Article } from '../articles/types.d';
   import Heading3 from '../heading/Heading3.svelte';
 
   export let news: Article[];

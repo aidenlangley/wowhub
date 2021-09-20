@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { GradientColour } from '../types';
-  import type { SkewDirection } from './types';
+  import type { GradientColour } from '$types/Gradient';
+  import type { SkewDirection } from '$types/Skew';
 
   export let id: string;
   export let direction: SkewDirection;
