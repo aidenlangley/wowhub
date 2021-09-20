@@ -1,0 +1,11 @@
+{
+  "name": "Whakaoranga Whanau Recovery Hub",
+  "short_name": "wowhub",
+  "description": "He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services",
+  "icons": [
+    {
+      "src": "icon.ico",
+      "sizes": "256x256"
+    }
+  ]
+}
