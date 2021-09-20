@@ -5,6 +5,9 @@
   import type { Load } from '@sveltejs/kit';
   import SvelteSeo from 'svelte-seo';
 
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
   export const loadDocs: Load = async ({
     fetch,
   }): Promise<{ props: { docs: Article[] } }> => {
@@ -17,6 +20,9 @@
     };
   };
 
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
   export const loadNews: Load = async ({
     fetch,
   }): Promise<{ props: { news: Article[] } }> => {
@@ -29,6 +35,9 @@
     };
   };
 
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
   export const load: Load = async ({
     fetch,
   }): Promise<{ props: { news: Article[]; docs: Article[] } }> => {

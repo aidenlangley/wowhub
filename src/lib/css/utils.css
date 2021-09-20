@@ -15,11 +15,13 @@
     row-gap: var(--gaps-y);
   }
 
-  .mobile {
+  .mobile,
+  .show {
     display: block;
   }
 
-  .no-mobile {
+  .no-mobile,
+  .hide {
     display: none;
   }
 }

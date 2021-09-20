@@ -1,5 +1,7 @@
 <script lang="ts" context="module">
-  /* eslint-disable */
+  /**
+   * @type {import('@sveltejs/kit').Load}
+   */
   export function load({
     status,
     error,

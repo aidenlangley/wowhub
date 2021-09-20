@@ -32,8 +32,10 @@ const config = {
       resolve: {
         alias: {
           $components: path.resolve('./src/lib/components'),
+          $cmpnts: path.resolve('./src/lib/components'),
           $css: path.resolve('./src/lib/css'),
           $stores: path.resolve('./src/stores'),
+          $img: path.resolve('./src/images'),
           $images: path.resolve('./static/images'),
         },
       },

@@ -25,12 +25,16 @@
     "paths": {
       "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
+      "$cmpnts": ["src/lib/components"],
+      "$cmpnts/*": ["src/lib/components"],
       "$components": ["src/lib/components"],
       "$components/*": ["src/lib/components/*"],
       "$css": ["src/lib/css"],
       "$css/*": ["src/lib/css/*"],
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
+      "$img": ["src/images"],
+      "$img/*": ["src/images/*"],
       "$images": ["static/images"],
       "$images/*": ["static/images/*"]
     }

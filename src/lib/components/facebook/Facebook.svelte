@@ -1,7 +1,7 @@
 <script lang="ts">
-  import logoBlack from '$images/facebook/logo-black.png';
-  import logoWhite from '$images/facebook/logo-white.png';
-  import logo from '$images/facebook/logo.png';
+  import logoBlack from '$img/facebook/logo-black.png';
+  import logoWhite from '$img/facebook/logo-white.png';
+  import logo from '$img/facebook/logo.png';
   import { blur } from 'svelte/transition';
 
   export let white = false;
