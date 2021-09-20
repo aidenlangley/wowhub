@@ -18,7 +18,7 @@
 }
 
 .link:visited {
-  color: theme('colors.purple.600');
+  color: theme('colors.purple.700');
 }
 
 .link:not(button):hover,
