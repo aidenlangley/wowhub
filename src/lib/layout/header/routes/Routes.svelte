@@ -1,7 +1,29 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import Tooltip from '$components/tooltip/Tooltip.svelte';
-  import { routes } from '$store/routes';
+
+  const routes = [
+    {
+      name: 'kainga',
+      path: '/',
+      translation: 'home',
+    },
+    {
+      name: 'ngā kaimahi',
+      path: '/team',
+      translation: 'the team / workers',
+    },
+    {
+      name: 'tātou hoa',
+      path: '/friends',
+      translation: 'our friends',
+    },
+    {
+      name: 'panui',
+      path: '/news',
+      translation: 'news',
+    },
+  ];
 </script>
 
 <!--
@@ -11,14 +33,13 @@
 -->
 <nav>
   <ol>
-    {#each $routes as { name, path, translation } (path)}
+    {#each routes as { name, path, translation } (path)}
       <li>
         <Tooltip text={translation}>
           <a
             href={path}
             aria-label="{name} ({translation})"
             class:active={$page.path === path}
-            sveltekit:prefetch
           >
             {name}
           </a>

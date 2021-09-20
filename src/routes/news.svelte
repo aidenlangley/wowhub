@@ -2,8 +2,8 @@
   import Cards from '$components/articles/Cards.svelte';
   import type { Article } from '$components/articles/types.d';
   import Heading from '$components/heading/Heading.svelte';
-  import { seo } from '$store/seo';
   import type { Load } from '@sveltejs/kit';
+  import SvelteSeo from 'svelte-seo';
 
   export const loadDocs: Load = async ({
     fetch,
@@ -45,21 +45,20 @@
 </script>
 
 <script lang="ts">
-  $seo = {
-    title: 'News & other resources',
-    description: `A news stream of blogs & updates from the Whakaoranga Whanau &
-    He Waka Eke Noa Te Tai Tokerau; news & updates from the community`,
-  };
-
   export let news: Article[];
   export let docs: Article[];
 </script>
+
+<SvelteSeo
+  title="News & other resources"
+  description={`A news stream of blogs & updates from the Whakaoranga Whanau &
+    He Waka Eke Noa Te Tai Tokerau; news & updates from the community`}
+/>
 
 <!--
   @component
   Entry point for `docs` & `news`.
 -->
-
 <!--  Full fat list of news & docs -->
 <article class="root column pad-y gaps-y">
   <!-- Aside for quicker navigation-->

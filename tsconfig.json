@@ -31,8 +31,8 @@
       "$layout/*": ["src/lib/layout/*"],
       "$media": ["src/lib/media"],
       "$media/*": ["src/lib/media/*"],
-      "$store": ["src/lib/store"],
-      "$store/*": ["src/lib/store/*"],
+      "$stores": ["src/stores"],
+      "$stores/*": ["src/stores/*"],
       "$images": ["static/images"],
       "$images/*": ["static/images/*"]
     }

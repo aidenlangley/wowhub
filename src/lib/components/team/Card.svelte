@@ -4,10 +4,10 @@
   import Tooltip from '$components/tooltip/Tooltip.svelte';
   import { TranslateDirection } from '$layout/translate/types.d';
   import Icon from '$media/Icon.svelte';
-  import type { Member } from '$store/types.d';
+  import type { TeamMember } from '$stores/types.d';
   import { UserCircle } from 'svelte-hero-icons';
 
-  export let member: Member;
+  export let member: TeamMember;
   export let right = false;
 
   const hasPepeha = member.pepeha && member.pepeha.length > 0;

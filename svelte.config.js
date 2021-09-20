@@ -14,8 +14,10 @@ const config = {
     preprocess({
       postcss: true,
     }),
+    image({
+      processFolders: ['images'],
+    }),
     mdsvex(mdsvexConfig),
-    image(),
   ],
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
@@ -32,7 +34,7 @@ const config = {
           $components: path.resolve('./src/lib/components'),
           $layout: path.resolve('./src/lib/layout'),
           $media: path.resolve('./src/lib/media'),
-          $store: path.resolve('./src/lib/store'),
+          $stores: path.resolve('./src/stores'),
           $images: path.resolve('./static/images'),
         },
       },

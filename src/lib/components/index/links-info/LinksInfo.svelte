@@ -3,7 +3,7 @@
   import Facebook from '$media/Facebook.svelte';
   import GoogleMaps from '$media/GoogleMaps.svelte';
   import Icon from '$media/Icon.svelte';
-  import { info } from '$store/info';
+  import { info } from '$stores/info';
   import { Mail, Phone } from 'svelte-hero-icons';
 </script>
 

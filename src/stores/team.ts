@@ -9,9 +9,9 @@ import stuBess from '$images/people/stu-bess.jpg';
 import teMiringa from '$images/people/te-miringa.jpg';
 import type { Readable } from 'svelte/store';
 import { readable } from 'svelte/store';
-import type { Member } from './types.d';
+import type { TeamMember } from './types.d';
 
-export const team: Readable<Member[]> = readable([
+export const team: Readable<TeamMember[]> = readable([
   /**
    * PRIMARY TEAM
    */

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon, { QuestionMarkCircle } from 'svelte-hero-icons';
   import Tooltip from '../tooltip/Tooltip.svelte';
-  import { Input } from './types';
+  import { Input } from './types.d';
 
   export let type: Input = Input.Text;
   export let id: string = null;

@@ -1,6 +1,6 @@
 <script lang="ts">
   import Logo from '$lib/media/Logo.svelte';
-  import { state } from '$store/dark';
+  import { state } from '$stores/dark';
 
   export let white = true;
   const classes = 'headings' + (white ? ' white' : '');

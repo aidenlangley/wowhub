@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { set, state } from '$store/dark';
+  import { set, state } from '$stores/dark';
   import Icon, { Moon, Sun } from 'svelte-hero-icons';
   import { fade } from 'svelte/transition';
 

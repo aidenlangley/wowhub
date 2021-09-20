@@ -1,8 +1,8 @@
 <script lang="ts">
-  import type { Member } from '$store/types';
+  import type { TeamMember } from '$stores/types.d';
   import Card from './Card.svelte';
 
-  export let team: Member[];
+  export let team: TeamMember[];
 </script>
 
 <!--

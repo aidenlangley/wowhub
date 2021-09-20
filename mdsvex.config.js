@@ -1,15 +1,15 @@
-import domStringify from 'rehype-dom-stringify';
 import externalLinks from 'rehype-external-links';
 import footnotes from 'remark-footnotes';
 import gfm from 'remark-gfm';
+import images from 'remark-images';
 
 const config = {
   extensions: ['.svelte.md', '.md', '.svx'],
   smartypants: {
     dashes: 'oldschool',
   },
-  remarkPlugins: [footnotes, gfm],
-  rehypePlugins: [externalLinks, domStringify],
+  remarkPlugins: [gfm, images, footnotes],
+  rehypePlugins: [externalLinks],
   layout: {
     _: './src/lib/components/articles/Article.svelte',
   },

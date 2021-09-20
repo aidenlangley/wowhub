@@ -2,8 +2,7 @@
   import drawing from '$images/drawing.png';
   import Footer from '$layout/footer/Footer.svelte';
   import Header from '$layout/header/Header.svelte';
-  import Seo from '$lib/Seo.svelte';
-  import { state } from '$store/dark';
+  import { state } from '$stores/dark';
 
   $: dark = $state.dark;
 </script>
@@ -11,16 +10,11 @@
 <!--
   @component
   Default layout.
-  - Inject Seo component.
   - Adds root element for controlling `dark` class.
   - Injects `Header` & `Footer`.
   - Grabs background image from assets and layers another div below to provide
     opacity.
 -->
-
-<!-- `svelte:head` with `title` & `meta` tags. -->
-<Seo />
-
 <div class="root" class:dark>
   <Header />
   <main style="background-image: url({drawing});">

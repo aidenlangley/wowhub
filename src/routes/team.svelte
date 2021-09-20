@@ -2,21 +2,20 @@
   import Error from '$components/error/Error.svelte';
   import Heading from '$components/heading/Heading.svelte';
   import Cards from '$components/team/Cards.svelte';
-  import { seo } from '$store/seo';
-  import { team } from '$store/team';
-
-  $seo = {
-    title: 'Meet the team',
-    description: `Ngā kaimahi. Tātou tīma he hui mai! Those in front and behind
-    the scenes`,
-  };
+  import { team } from '$stores/team';
+  import SvelteSeo from 'svelte-seo';
 </script>
+
+<SvelteSeo
+  title="Meet the team"
+  description={`Ngā kaimahi. Tātou tīma he hui mai! Those in front and behind
+    the scenes`}
+/>
 
 <!--
   @component
   Meet the team.
 -->
-
 <article id="kaimahi" class="pad-y">
   <!-- Still working on it. -->
   <Error />

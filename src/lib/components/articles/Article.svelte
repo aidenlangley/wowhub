@@ -1,18 +1,14 @@
 <!-- Cannot be ts because of lack of support from `mdsvex` -->
 <script>
-  import { seo } from '$lib/store/seo';
+  import SvelteSeo from 'svelte-seo';
 
   export let title;
   export let description;
   export let date = null;
   export let author = null;
-
-  $seo = {
-    title,
-    description,
-    robots: 'none',
-  };
 </script>
+
+<SvelteSeo {title} {description} />
 
 <!--
   @component

@@ -8,22 +8,22 @@
   import Services from '$components/index/services/Services.svelte';
   import Whakatauki from '$components/index/whakatauki/Whakatauki.svelte';
   import Banner from '$media/Banner.svelte';
-  import { state } from '$store/dark';
-  import { seo } from '$store/seo';
+  import { state } from '$stores/dark';
+  import SvelteSeo from 'svelte-seo';
   import { loadNews as load } from './news.svelte';
 
   export { load };
 </script>
 
 <script lang="ts">
-  $seo = {
-    title: 'Whakaoranga Whanau Recovery Hub',
-    description: `He Waka Eke Noa te Tai Tokerau. Learn about our community AOD
-    & recovery services`,
-  };
-
   export let news: Article[];
 </script>
+
+<SvelteSeo
+  title="Whakaoranga Whanau Recovery Hub"
+  description={`He Waka Eke Noa te Tai Tokerau. Learn about our community AOD
+    & recovery services`}
+/>
 
 <!--
   @component

@@ -1,10 +1,4 @@
-export interface Route {
-  name: string;
-  path: string;
-  translation: string;
-}
-
-export interface Member {
+export interface TeamMember {
   name: string;
   tags: string[];
   about: string[];
@@ -12,12 +6,6 @@ export interface Member {
   frontline?: boolean;
   img?: string;
   tallImg?: boolean;
-}
-
-export interface Seo {
-  title: string;
-  description: string;
-  robots?: string;
 }
 
 export interface Form {
