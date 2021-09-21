@@ -26,8 +26,8 @@ export const team = readable([
     ],
     about: [
       `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she has
-      no ties to Kaikohe, she was brought up by her grandfathers Te Arawa
-      whakapapa, Ngati Te Roroa and Kahungunu.`,
+      no ties to Kaikohe, she was brought up by by her Te Arawa whakapapa, but
+      her granfathers' roots are with Ngati Te Roroa and Ngāti Kahungunu.`,
       `Jane is of Māori and pakeha descent and she shares personal lived
       experience; maintaining mental wellbeing, as well as alcohol and drug
       addiction.`,
