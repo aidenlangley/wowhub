@@ -1,7 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import path from 'path';
-import image from 'svelte-image';
 import preprocess from 'svelte-preprocess';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -14,9 +13,6 @@ const config = {
     preprocess({
       postcss: true,
     }),
-    image({
-      processFolders: ['images/people'],
-    }) /* https://github.com/matyunya/svelte-image */,
     mdsvex(mdsvexConfig),
   ],
   kit: {
