@@ -5,7 +5,7 @@
     'kaupapa' /* 1:2 */,
     'community' /* 2:1 */,
     'serenity' /* 2:2 */,
-    'roopu' /* 3:1 */,
+    'rōpū' /* 3:1 */,
     'tinana' /* 3:2 */,
 
     'wairua' /* 1:1 */,
