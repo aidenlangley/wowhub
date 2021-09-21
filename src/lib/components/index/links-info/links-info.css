@@ -17,12 +17,6 @@
   max-width: theme('height.8');
 }
 
-.buttons svg {
-  /* This is a Chrome hack. Works fine on FF without. */
-  height: 100%;
-  width: 100%;
-}
-
 .buttons :global(img:hover),
 .buttons :global(img:focus),
 .buttons svg:hover,
