@@ -14,7 +14,10 @@ const config = {
     preprocess({
       postcss: true,
     }),
-    image() /* https://github.com/matyunya/svelte-image */,
+    image({
+      sizes: [400, 800, 1200],
+      breakpoints: [375, 768, 1024],
+    }) /* https://github.com/matyunya/svelte-image */,
     mdsvex(mdsvexConfig),
   ],
   kit: {
