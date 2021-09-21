@@ -1,17 +1,7 @@
 .bg {
-  /* Underneath bg-inner and children */
-  z-index: 0;
-
-  /* Styles */
-  background-color: theme('colors.green.300');
-  border-color: theme('colors.green.500');
-}
-
-.bg .bg-inner {
+  border-top-width: theme('borderWidth.DEFAULT');
   border-bottom-width: theme('borderWidth.DEFAULT');
   border-color: theme('colors.gray.300');
-  border-radius: theme('borderRadius.DEFAULT');
-  border-top-width: theme('borderWidth.DEFAULT');
 }
 
 .fill {
@@ -23,12 +13,7 @@
 }
 
 :global(.dark) .bg {
-  background-color: theme('colors.green.800');
-  border-color: theme('colors.green.600');
-}
-
-:global(.dark) .bg .bg-inner {
-  border-color: theme('colors.gray.600');
+  border-color: theme('colors.gray.700');
 }
 
 @media screen(ty) {
@@ -39,15 +24,34 @@
 
 @media screen(sm) {
   .bg {
+    /* Underneath bg-inner and children */
+    z-index: 0;
+
+    /* Styles */
+    background-color: theme('colors.green.300');
+    border-color: theme('colors.green.500');
     border-radius: theme('borderRadius.DEFAULT');
     border-width: theme('borderWidth.DEFAULT');
-    transform: rotate(-0.5deg); /* Need to rotate less as the list grows... */
+
+    /* Need to rotate less as the list grows... */
+    transform: rotate(-0.5deg);
   }
 
   .bg .bg-inner {
     background-image: theme('backgroundImage.gradient-to-b');
     border-width: theme('borderWidth.DEFAULT');
+    border-color: theme('colors.gray.300');
+    border-radius: theme('borderRadius.DEFAULT');
     transform: rotate(0.5deg);
+  }
+
+  :global(.dark) .bg {
+    background-color: theme('colors.green.800');
+    border-color: theme('colors.green.600');
+  }
+
+  :global(.dark) .bg .bg-inner {
+    border-color: theme('colors.gray.600');
   }
 
   .fill {
