@@ -3,7 +3,15 @@
   "name": "Whakaoranga Whanau Recovery Hub",
   "short_name": "wowhub",
   "description": "He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services",
+  "start_url": "/",
+  "background_color": "white",
+  "theme_color": "#037756",
+  "display": "minimal-ui",
   "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "256x256"
+    },
     {
       "src": "icon.ico",
       "sizes": "256x256"
