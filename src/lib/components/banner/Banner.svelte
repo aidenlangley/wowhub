@@ -16,3 +16,10 @@
 {:else}
   <img src={bannerWhite} {alt} in:blur />
 {/if}
+
+<style>
+  img {
+    width: 1440;
+    height: 273;
+  }
+</style>

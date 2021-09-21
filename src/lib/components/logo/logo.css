@@ -1,6 +1,13 @@
 img:not(.large) {
+  height: 64;
+  width: 64;
   max-height: theme('height.10');
 }
+
+/* img.large {
+  height: 512;
+  width: 512;
+} */
 
 .hide {
   display: none;
