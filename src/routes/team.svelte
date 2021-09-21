@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Error from '$comp/error/Error.svelte';
   import Heading from '$comp/heading/Heading.svelte';
   import TeamMemberCards from '$comp/team/TeamMemberCards.svelte';
   import { team } from '$stores/team';
@@ -17,9 +16,6 @@
   Meet the team.
 -->
 <article id="kaimahi" class="pad-y">
-  <!-- Still working on it. -->
-  <Error />
-
   <!-- Frontliners. -->
   <header class="heading column">
     <Heading>

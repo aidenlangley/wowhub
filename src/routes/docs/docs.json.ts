@@ -8,10 +8,12 @@ export async function get(): Promise<{
 
   for (const slug in modules) {
     const { metadata } = await modules[slug]()
-    docs.push({
-      ...metadata,
-      slug: `docs/${slug}`.replace('./', '').replace('.svx', '')
-    })
+    if (!slug.includes('_')) {
+      docs.push({
+        ...metadata,
+        slug: `docs/${slug}`.replace('./', '').replace('.svx', '')
+      })
+    }
   }
 
   return {

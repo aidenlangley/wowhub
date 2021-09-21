@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { Article } from '$types/Article';
+  import Heading3 from '../../heading/Heading3.svelte';
   import ArticleCard from '../card/ArticleCard.svelte';
 
   export let articles: Article[];
@@ -15,6 +16,8 @@
       <ArticleCard {article} />
     {/each}
   </ol>
+{:else}
+  <Heading3>Kaua panui. Aroha mai!</Heading3>
 {/if}
 
 <style>
