@@ -2,7 +2,7 @@ import aiden from '$img/people/aiden.jpg';
 import dee from '$img/people/dee.jpg';
 import doug from '$img/people/doug.jpg';
 import jane from '$img/people/jane.jpg';
-// import lily from '$img/people/lily.jpg';
+import lily from '$img/people/lily.jpg';
 import noreen from '$img/people/noreen.jpg';
 import rhonda from '$img/people/rhonda.jpg';
 import stuBess from '$img/people/stu-bess.jpg';
@@ -215,6 +215,6 @@ export const team = readable([
     name: 'Lily',
     tags: ['trustee of whakaoranga whanau'],
     about: [],
-    // img: lily,
+    img: lily,
   },
 ]);
