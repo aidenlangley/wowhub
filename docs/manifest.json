@@ -9,12 +9,8 @@
   "display": "minimal-ui",
   "icons": [
     {
-      "src": "icon.png",
-      "sizes": "256x256"
-    },
-    {
-      "src": "icon.ico",
-      "sizes": "256x256"
+      "src": "static/images/icon/icon-512.png",
+      "sizes": "512x512"
     }
   ]
 }
