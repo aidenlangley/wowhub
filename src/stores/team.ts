@@ -2,6 +2,7 @@ import aiden from '$img/people/aiden.jpg';
 import dee from '$img/people/dee.jpg';
 import doug from '$img/people/doug.jpg';
 import jane from '$img/people/jane.jpg';
+// import lily from '$img/people/lily.jpg';
 import noreen from '$img/people/noreen.jpg';
 import rhonda from '$img/people/rhonda.jpg';
 import stuBess from '$img/people/stu-bess.jpg';
@@ -143,30 +144,6 @@ export const team = readable([
     frontline: true,
     img: noreen,
   },
-  // {
-  //   name: 'Kamina 🔥',
-  //   tags: ['administration', 'logistics'],
-  //   pepeha: [
-  //     'Ko Moehau te maunga',
-  //     'Ko Ti Kapa & Tainui te waka',
-  //     'Ko Mainai te marae',
-  //     'Ko Ngāti Pukenga, Ngāti Whanaunga te hapu',
-  //     'Ko Maru Tuahu te iwi',
-  //     'Ko Kamina McSheffrey ahau',
-  //   ],
-  //   about: [
-  //     `Kamina has been living in Kaikohe for 3 years now, her grandmother was
-  //     born in Waima. Just like the rest of our team, she also has lived
-  //     experience with AOD struggles.`,
-  //     `She's a qualified kaiako for Te Ataarangi, total immersion  te reo Māori.
-  //     She has worked for Te Whare Wānanga o Awanuiarangi, Hamilton, she was
-  //     head kaiako for Tūmatauenga Kōhanga Reo in Linton, Palmerston North & has
-  //     been working in administration & office management for 15 years in
-  //     Auckland.`,
-  //   ],
-  //   frontline: true,
-  //   img: kamina,
-  // },
   {
     name: 'Aiden 💻',
     tags: ['kaipūkaha rorohiko', 'tuākana'],
@@ -193,16 +170,13 @@ export const team = readable([
       `He has been diagnosed with ADHD and has a mild form of Tourette's, so if
       you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
       have played a large part in his life too.`,
+      `You will probably see Aiden frequently, he runs ka kura rorohiko for te
+      kaimahi, and hopefully for the rōpū in the near future, but he prefers to
+      assume the stance of being 'behind the scenes' for the reasons mentioned
+      above.`,
     ],
     img: aiden,
     tallImg: true,
-  },
-  {
-    name: 'Lisa 👩‍⚕️',
-    tags: ['clinical lead', 'mental health'],
-    about: [],
-    frontline: true,
-    // img: lisa`,
   },
 
   /**
@@ -210,18 +184,31 @@ export const team = readable([
    */
   {
     name: 'Doug',
-    tags: [
-      'trustee of whakamanamai and freedom whare',
-      'director of whanau ora',
-      'founder of influence gym',
+    tags: ['trustee of whakamanamai and freedom whare'],
+    about: [
+      `Doug Healey is the founder of Influence Gym, which stretches the nation.
+      Rhonda runs the Influence gym here in Kaikohe. Doug is also director of
+      Whanau Ora Community Clinic.`,
+      `A successful entrepreneur, a lot has been written about Doug on the
+      internet already so we won't go into too much detail here! But rest
+      assured, Doug is a community focused individual with talent and is one
+      piece that makes up the backbone of Whakaoranga Whanau Recovery Hub & it's
+      siblings.`,
     ],
-    about: [],
     img: doug,
   },
   {
     name: 'Craig',
     tags: ['trustee of whakamanamai & freedom whare'],
-    about: [],
+    about: [
+      `Craig Zielinski' skill lies in agriculture and industrial flavoured
+      trade. He is a big part of Freedom Whare, and also Whakamanamai Charitable
+      Trust.`,
+      `As he's also a Zielinski, kaha nui ia Craig, e kaha nui te Zielinski
+      whanau. A lot of the large scale investment and planning is conducted by
+      Craig in accordance with Rhonda & ngā tīma.`,
+      `Whenever we need a professional, Craig's phone rings.`,
+    ],
     // img: craig,
   },
   {
