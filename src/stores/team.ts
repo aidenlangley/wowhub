@@ -157,7 +157,7 @@ export const team = readable([
       'Ko Ngāti Pākau te hapu',
       'Ko Tāhekeroa te marae',
       'Ko Pehi, ko Jack, ko Langley ōku whanau',
-      'Ko kaipūkaha rorohiko',
+      "Ko kaipūkaha rorohiko 'au",
       'Ko Aiden Langley ahau',
     ],
     about: [
