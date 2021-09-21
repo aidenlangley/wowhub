@@ -1,8 +1,8 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "Whakaoranga Whanau Recovery Hub",
   "short_name": "wowhub",
-  "description": "He Waka Eke Noa te Tai Tokerau. Learn about our community AOD & recovery services",
+  "description": "Planting the seed of hope... Sharing gifts of recovery. Learn more about the Whakaoranga Whanau & He Waka Eke Noa Te Tai Tokerau here.",
   "start_url": "/",
   "background_color": "white",
   "theme_color": "#037756",
