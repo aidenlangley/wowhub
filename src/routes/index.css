@@ -9,10 +9,11 @@
   place-items: center;
   height: max-content;
   width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .video iframe {
-  /* Hides the original square border */
+  height: max-content;
   width: 100%;
   aspect-ratio: 16 / 9;
 
