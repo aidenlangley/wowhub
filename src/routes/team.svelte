@@ -1,7 +1,7 @@
 <script lang="ts">
   import Error from '$comp/error/Error.svelte';
   import Heading from '$comp/heading/Heading.svelte';
-  import Cards from '$comp/team/Cards.svelte';
+  import TeamMemberCards from '$comp/team/TeamMemberCards.svelte';
   import { team } from '$stores/team';
   import SvelteSeo from 'svelte-seo';
 </script>
@@ -30,7 +30,7 @@
 
   <!-- Member cards rendered here. -->
   <section id="members" class="pad-x">
-    <Cards team={$team.filter((m) => m.frontline)} />
+    <TeamMemberCards team={$team.filter((m) => m.frontline)} />
   </section>
 </article>
 
@@ -45,7 +45,7 @@
 
   <!-- Member cards rendered here. -->
   <section id="members-bts" class="pad-x">
-    <Cards team={$team.filter((m) => !m.frontline)} />
+    <TeamMemberCards team={$team.filter((m) => !m.frontline)} />
   </section>
 </article>
 

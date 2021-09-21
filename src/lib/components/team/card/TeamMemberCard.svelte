@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { TeamMember } from '$types/TeamMember';
   import { TranslateDirection } from '$types/Translate';
-  import Heading from '../heading/Heading.svelte';
-  import Paragraph from '../paragraph/Paragraph.svelte';
-  import Tooltip from '../tooltip/Tooltip.svelte';
+  import Heading from '../../heading/Heading.svelte';
+  import Paragraph from '../../paragraph/Paragraph.svelte';
+  import Tooltip from '../../tooltip/Tooltip.svelte';
 
   export let member: TeamMember;
   const { name, tags, about, pepeha, img, tallImg } = member;
@@ -76,5 +76,5 @@
 </article>
 
 <style>
-  @import './card.css';
+  @import './team-member-card.css';
 </style>

@@ -5,4 +5,4 @@ export interface TeamMemberCardsProps {
   team: TeamMember[];
 }
 
-export default class Foo extends SvelteComponentTyped<TeamMemberCardsProps> {}
+export default class TeamMemberCards extends SvelteComponentTyped<TeamMemberCardsProps> {}

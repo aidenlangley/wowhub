@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { TeamMember } from '$types/TeamMember';
-  import Card from './Card.svelte';
+  import TeamMemberCard from './card/TeamMemberCard.svelte';
 
   export let team: TeamMember[];
 </script>
@@ -13,14 +13,14 @@
   <div class="bg-inner gradient-gray fill pad-y gaps-y">
     {#each team as member, index}
       {#if index % 2 !== 0}
-        <Card {member} />
+        <TeamMemberCard {member} />
       {:else}
-        <Card {member} right />
+        <TeamMemberCard {member} right />
       {/if}
     {/each}
   </div>
 </div>
 
 <style>
-  @import './cards.css';
+  @import './team-member-cards.css';
 </style>

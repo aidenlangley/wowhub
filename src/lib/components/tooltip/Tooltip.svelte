@@ -1,16 +1,9 @@
 <script lang="ts">
   export let text: string;
-
-  /* Positional params */
   export let bottom = true;
   export let top = false;
   export let left = false;
   export let right = false;
-
-  /*
-  On mobile screens, a tooltip doesn't function quite right, so we allow
-  toggling the tooltip via click
-  */
   export let toggles = false;
 
   let toggled = false;

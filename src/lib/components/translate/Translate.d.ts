@@ -6,4 +6,4 @@ export interface TranslateProps {
   colour: BackgroundColour;
 }
 
-export default class Foo extends SvelteComponentTyped<TranslateProps> {}
+export default class Translate extends SvelteComponentTyped<TranslateProps> {}

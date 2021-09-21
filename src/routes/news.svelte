@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
-  import Cards from '$comp/articles/Cards.svelte';
-  import type { Article } from '$comp/articles/types.d';
+  import ArticleCards from '$comp/articles/cards/ArticleCards.svelte';
   import Heading from '$comp/heading/Heading.svelte';
+  import type { Article } from '$types/Article';
   import type { Load } from '@sveltejs/kit';
   import SvelteSeo from 'svelte-seo';
 
@@ -86,7 +86,7 @@
     <header>
       <Heading>Panui (news)</Heading>
     </header>
-    <Cards articles={news} />
+    <ArticleCards articles={news} />
   </article>
 
   <!-- Docs -->
@@ -94,6 +94,6 @@
     <header>
       <Heading>Other info</Heading>
     </header>
-    <Cards articles={docs} />
+    <ArticleCards articles={docs} />
   </article>
 </article>

@@ -4,4 +4,4 @@ export interface BannerProps {
   white: boolean;
 }
 
-export default class Foo extends SvelteComponentTyped<BannerProps> {}
+export default class Banner extends SvelteComponentTyped<BannerProps> {}

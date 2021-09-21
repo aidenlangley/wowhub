@@ -5,4 +5,4 @@ export interface FacebookProps {
   black: boolean;
 }
 
-export default class Foo extends SvelteComponentTyped<FacebookProps> {}
+export default class Facebook extends SvelteComponentTyped<FacebookProps> {}
