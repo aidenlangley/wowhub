@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": ["$tsc-watch"],
+      "label": "npm: dev",
+      "detail": "svelte-kit dev"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": ["$eslint-compact", "$eslint-stylish", "$tsc"],
+      "label": "npm: build",
+      "detail": "npm run check && npm run lint && svelte-kit build"
+    },
+    {
+      "type": "npm",
+      "script": "preview",
+      "problemMatcher": ["$tsc-watch"],
+      "label": "npm: preview",
+      "detail": "svelte-kit preview"
+    },
+    {
+      "type": "npm",
+      "script": "build:deploy",
+      "group": "build",
+      "problemMatcher": ["$eslint-compact", "$eslint-stylish", "$tsc"],
+      "label": "npm: build:deploy",
+      "detail": "npm run build && npm run deploy"
+    },
+    {
+      "type": "npm",
+      "script": "lint",
+      "problemMatcher": ["$eslint-compact", "$eslint-stylish", "$tsc"],
+      "label": "npm: lint",
+      "detail": "npm run check && prettier --check --plugin-search-dir=. . && eslint . && stylelint ."
+    },
+    {
+      "type": "npm",
+      "script": "prettier:format",
+      "problemMatcher": ["$tsc"],
+      "label": "npm: prettier:format",
+      "detail": "prettier --write . --plugin-search-dir=. ."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  /* Package management */
+  "eslint.packageManager": "pnpm",
+  "stylelint.packageManager": "pnpm",
+
+  /* Stylelinting instead */
+  "css.validate": false,
+  "tailwindCSS.validate": false,
+
+  /* Hiding some files that we don't edit */
+  "files.exclude": {
+    "docs/": true,
+    "pnpm-lock.yaml": true
+  }
+}

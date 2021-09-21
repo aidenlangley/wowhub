@@ -32,7 +32,9 @@
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
       "$img": ["src/images"],
-      "$img/*": ["src/images/*"]
+      "$img/*": ["src/images/*"],
+      "$static": ["static"],
+      "$static/*": ["static/*"]
     }
   },
   "include": ["src/**/*.svelte", "src/**/*.ts"]

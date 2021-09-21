@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { mdsvex } from 'mdsvex';
 import path from 'path';
-import image from 'svelte-image';
+// import image from 'svelte-image';
 import preprocess from 'svelte-preprocess';
 import mdsvexConfig from './mdsvex.config.js';
 
@@ -14,10 +14,14 @@ const config = {
     preprocess({
       postcss: true,
     }),
-    image({
-      sizes: [400, 800, 1200],
-      breakpoints: [375, 768, 1024],
-    }) /* https://github.com/matyunya/svelte-image */,
+    /*
+    https://github.com/matyunya/svelte-image
+    Not really used atm, requires images in /static, not what I want
+    */
+    // image({
+    //   sizes: [400, 800, 1200],
+    //   breakpoints: [375, 768, 1024],
+    // }),
     mdsvex(mdsvexConfig),
   ],
   kit: {
@@ -37,6 +41,7 @@ const config = {
           $types: path.resolve('./src/lib/types'),
           $stores: path.resolve('./src/stores'),
           $img: path.resolve('./src/images'),
+          $static: path.resolve('./static'),
         },
       },
     },
