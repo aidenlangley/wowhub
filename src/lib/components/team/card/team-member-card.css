@@ -47,10 +47,6 @@ header .img > img {
   object-fit: cover;
 }
 
-header .img > img.tall {
-  object-position: top;
-}
-
 header .img > :global(svg) {
   color: theme('colors.gray.700');
 }

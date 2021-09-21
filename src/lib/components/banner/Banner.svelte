@@ -11,8 +11,6 @@
   @component
   Whakaoranga Whanau Recovery Hub banner, text + logo.
 -->
-
-<!-- CSS shows and hides so that both images can be rendered, and cached. -->
 {#if !white}
   <img src={banner} {alt} in:blur />
 {:else}

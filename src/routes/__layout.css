@@ -1,4 +1,5 @@
 .root main {
+  background-image: url('../../static/images/bg/drawing-1080p.png');
   background-blend-mode: difference;
   background-color: theme('backgroundColor.white');
   background-position: top;
@@ -21,4 +22,22 @@
 
 .root.dark main .opacity-provider {
   @apply bg-black/70;
+}
+
+@media screen(lg) {
+  .root main {
+    background-image: url('../../static/images/bg/drawing-1440p.png');
+  }
+}
+
+@media screen(wide) {
+  .root main {
+    background-image: url('../../static/images/bg/drawing-2160p.png');
+  }
+}
+
+@media screen(xwide) {
+  .root main {
+    background-image: url('../../static/images/bg/drawing.png');
+  }
 }

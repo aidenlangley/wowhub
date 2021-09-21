@@ -31,10 +31,10 @@
       "$types/*": ["src/lib/types/*"],
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
-      "$img": ["src/images"],
-      "$img/*": ["src/images/*"],
       "$static": ["static"],
-      "$static/*": ["static/*"]
+      "$static/*": ["static/*"],
+      "$img": ["static/images"],
+      "$img/*": ["static/images/*"]
     }
   },
   "include": ["src/**/*.svelte", "src/**/*.ts"]

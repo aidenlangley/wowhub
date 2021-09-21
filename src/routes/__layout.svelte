@@ -1,7 +1,6 @@
 <script lang="ts">
   import Footer from '$comp/footer/Footer.svelte';
   import Header from '$comp/header/Header.svelte';
-  import drawing from '$img/drawing.png';
   import { state } from '$stores/dark';
 
   $: dark = $state.dark;
@@ -14,10 +13,12 @@
   - Injects `Header` & `Footer`.
   - Grabs background image from assets and layers another div below to provide
     opacity.
+  - Background image scales at breakpoints to avoid large network payloads. No
+    use loading w2560px background for a w360px display.
 -->
 <div class="root" class:dark>
   <Header />
-  <main style="background-image: url({drawing});">
+  <main>
     <!-- Primarily an opacity provider `div` -->
     <div class="opacity-provider">
       <slot />

@@ -4,10 +4,10 @@ description: 'A brief guide on how to use Google Workspace, with gifs'
 ---
 
 <script>
-  import gcNewAccount from './google-workspace/google-chrome-new-profile.gif';
-  import managedBookmarks from './google-workspace/managed-bookmarks.png';
-  import googleDrive from './google-workspace/google-drive.gif';
-  import docsToDrive from './google-workspace/docs-to-drive.gif';
+  import gcNewAccount from '$img/docs/google-workspace/google-chrome-new-profile.gif';
+  import managedBookmarks from '$img/docs/google-workspace/managed-bookmarks.png';
+  import googleDrive from '$img/docs/google-workspace/google-drive.gif';
+  import docsToDrive from '$img/docs/google-workspace/docs-to-drive.gif';
 </script>
 
 # {title}

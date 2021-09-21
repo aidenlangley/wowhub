@@ -6,7 +6,7 @@
   import Tooltip from '../../tooltip/Tooltip.svelte';
 
   export let member: TeamMember;
-  const { name, tags, about, pepeha, img, tallImg } = member;
+  const { name, tags, about, pepeha, imgSrc } = member;
   export let right = false;
 
   const hasPepeha = pepeha && pepeha.length > 0;
@@ -20,8 +20,14 @@
   <header>
     <!-- Image, if applicable. -->
     <div class="img">
-      {#if img}
-        <img src={img} alt="image of {name}" class:tall={tallImg} />
+      {#if imgSrc}
+        <!--
+          Height depends on info next to imgSrc.
+          Usual size is w384px h240px however.
+          I have optmised these myself in Krita. Files in Google Drive, if you
+          have the know how.
+        -->
+        <img src={imgSrc} alt="image of {name}" />
       {:else}
         <svg
           xmlns="http://www.w3.org/2000/svg"
