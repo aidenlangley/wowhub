@@ -21,8 +21,8 @@
 
 <SvelteSeo
   title="Whakaoranga Whanau Recovery Hub"
-  description={`He Waka Eke Noa te Tai Tokerau. Learn about our community AOD
-    & recovery services`}
+  description={`Planting the seed of hope... Sharing gifts of recovery. Learn
+    more about the Whakaoranga Whanau & He Waka Eke Noa Te Tai Tokerau here.`}
 />
 
 <!--

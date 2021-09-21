@@ -31,8 +31,6 @@
       "$types/*": ["src/lib/types/*"],
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
-      "$static": ["static"],
-      "$static/*": ["static/*"],
       "$img": ["static/images"],
       "$img/*": ["static/images/*"]
     }

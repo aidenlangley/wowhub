@@ -11,7 +11,7 @@
     {
       name: 'ngā kaimahi',
       path: '/team',
-      translation: 'the team / workers',
+      translation: 'the team',
     },
     {
       name: 'tātou hoa',
@@ -38,7 +38,7 @@
         <Tooltip text={translation}>
           <a
             href={path}
-            aria-label="{name} ({translation})"
+            aria-label="link to {translation} page"
             class:active={$page.path === path}
           >
             {name}

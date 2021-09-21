@@ -1,5 +1,5 @@
 .root main {
-  background-image: url('../../static/images/bg/drawing-1080p.png');
+  background-image: url('/images/bg/drawing-1080p.png');
   background-blend-mode: difference;
   background-color: theme('backgroundColor.white');
   background-position: top;
@@ -26,18 +26,18 @@
 
 @media screen(lg) {
   .root main {
-    background-image: url('../../static/images/bg/drawing-1440p.png');
+    background-image: url('/images/bg/drawing-1440p.png');
   }
 }
 
 @media screen(wide) {
   .root main {
-    background-image: url('../../static/images/bg/drawing-2160p.png');
+    background-image: url('/images/bg/drawing-2160p.png');
   }
 }
 
 @media screen(xwide) {
   .root main {
-    background-image: url('../../static/images/bg/drawing.png');
+    background-image: url('/images/bg/drawing.png');
   }
 }
