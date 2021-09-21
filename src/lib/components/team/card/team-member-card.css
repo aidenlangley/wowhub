@@ -42,6 +42,8 @@ header .img > :global(svg) {
 }
 
 header .img > img {
+  height: 960;
+  width: 720;
   border-radius: theme('borderRadius.DEFAULT');
   box-shadow: theme('dropShadow.md');
   object-fit: cover;
