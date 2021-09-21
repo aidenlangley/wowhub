@@ -26,14 +26,15 @@ export const team = readable([
     ],
     about: [
       `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she has
-      no ties to Kaikohe, she was brought up by by her Te Arawa whakapapa, but
-      her granfathers' roots are with Ngati Te Roroa and Ngāti Kahungunu.`,
-      `Jane is of Māori and pakeha descent and she shares personal lived
-      experience; maintaining mental wellbeing, as well as alcohol and drug
-      addiction.`,
-      `Her recovery journey has brought her to Kaikohe and she
-      wanted to give back and share the gifts of recovery with others who
-      may be struggling. She couldn’t do this journey alone. He waka eke noa!`,
+      no immediate ties to Kaikohe, she was brought up by by her Te Arawa
+      whakapapa, but her granfathers' roots are with Ngati Te Roroa and Ngāti
+      Kahungunu.`,
+      `She shares personal lived experience; maintaining mental wellbeing, as
+      well as alcohol and drug addiction. Her recovery journey had brought her
+      to Kaikohe and she wanted to give back and share the gifts of recovery
+      with others who may be struggling. She couldn’t do this journey alone.
+      He waka eke noa!`,
+      `Jane has saved many lives, and we are forever grateful for her service.`,
     ],
     frontline: true,
     img: jane,
@@ -95,7 +96,7 @@ export const team = readable([
   },
   {
     name: 'Te Miringa 🔥',
-    tags: ['director', 'life coach'],
+    tags: ['trustee of whakamanamai & freedom whare', 'life coach'],
     pepeha: [],
     about: [],
     img: teMiringa,
@@ -209,19 +210,23 @@ export const team = readable([
    */
   {
     name: 'Doug',
-    tags: ['trustee', 'director of whanau ora', 'founder of influence gym'],
+    tags: [
+      'trustee of whakamanamai and freedom whare',
+      'director of whanau ora',
+      'founder of influence gym',
+    ],
     about: [],
     img: doug,
   },
   {
     name: 'Craig',
-    tags: ['trustee'],
+    tags: ['trustee of whakamanamai & freedom whare'],
     about: [],
     // img: craig,
   },
   {
     name: 'Lily',
-    tags: ['trustee'],
+    tags: ['trustee of whakaoranga whanau'],
     about: [],
     // img: lily,
   },
