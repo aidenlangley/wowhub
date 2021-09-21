@@ -28,3 +28,15 @@
     </ul>
   </article>
 </article>
+
+<style lang="postcss">
+  ul {
+    font-family: theme('fontFamily.mono');
+    font-weight: theme('fontWeight.medium');
+    letter-spacing: theme('letterSpacing.tight');
+  }
+
+  :global(.dark) ul {
+    color: theme('colors.white');
+  }
+</style>
