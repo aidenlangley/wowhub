@@ -1,4 +1,4 @@
-import type { Article } from '$comp/articles/types.d';
+import type { Article } from '$types/Article';
 
 export async function get(): Promise<{
   body: { news: Article[] };

@@ -1,5 +1,4 @@
 <script lang="ts" context="module">
-  import type { Article } from '$comp/articles/types.d';
   import Banner from '$comp/banner/Banner.svelte';
   import Blurb from '$comp/index/blurb/Blurb.svelte';
   import LatestNews from '$comp/index/LatestNews.svelte';
@@ -9,6 +8,7 @@
   import Services from '$comp/index/services/Services.svelte';
   import Whakatauki from '$comp/index/whakatauki/Whakatauki.svelte';
   import { state } from '$stores/dark';
+  import type { Article } from '$types/Article';
   import SvelteSeo from 'svelte-seo';
   import { loadNews as load } from './news.svelte';
 
