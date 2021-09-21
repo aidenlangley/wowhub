@@ -61,6 +61,6 @@
 
 @media screen(xl) {
   .headings > h2 {
-    @apply text-128;
+    @apply text-96;
   }
 }
