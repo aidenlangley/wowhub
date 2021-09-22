@@ -4,7 +4,7 @@ export interface LogoProps {
   /**
    * Large for 512x512, otherwise 64x64.
    */
-  // large: false;
+  large: false;
   white: boolean;
 }
 

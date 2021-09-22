@@ -27,7 +27,7 @@
           I have optmised these myself in Krita. Files in Google Drive, if you
           have the know how.
         -->
-        <img src={imgSrc} alt="image of {name}" />
+        <img src={imgSrc} alt="image of {name}" height="960" width="720" />
       {:else}
         <svg
           xmlns="http://www.w3.org/2000/svg"
