@@ -31,8 +31,8 @@
       "$types/*": ["src/lib/types/*"],
       "$stores": ["src/stores"],
       "$stores/*": ["src/stores/*"],
-      "$img": ["static/images"],
-      "$img/*": ["static/images/*"]
+      "$img": ["src/images"],
+      "$img/*": ["src/images/*"]
     }
   },
   "include": ["src/**/*.svelte", "src/**/*.ts"]

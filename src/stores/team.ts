@@ -1,3 +1,13 @@
+import aiden from '$img/people/aiden.jpg';
+import craig from '$img/people/craig.jpg';
+import dee from '$img/people/dee.jpg';
+import doug from '$img/people/doug.jpg';
+import jane from '$img/people/jane.jpg';
+import lily from '$img/people/lily.jpg';
+import noreen from '$img/people/noreen.jpg';
+import rhonda from '$img/people/rhonda.jpg';
+import stuBess from '$img/people/stu-bess.jpg';
+import teMiringa from '$img/people/te-miringa.jpg';
 import { readable } from 'svelte/store';
 
 export const team = readable([
@@ -29,7 +39,7 @@ export const team = readable([
       `Jane has saved many lives, and we are forever grateful for her service.`,
     ],
     frontline: true,
-    imgSrc: '/images/people/jane.jpg',
+    imgSrc: jane,
   },
   {
     name: 'Dee 🔥',
@@ -52,7 +62,7 @@ export const team = readable([
       support and teach Māoritanga via waiata & karakia especially.`,
     ],
     frontline: true,
-    imgSrc: '/images/people/dee.jpg',
+    imgSrc: dee,
   },
   {
     name: 'Rhonda 🔥',
@@ -82,14 +92,14 @@ export const team = readable([
       solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
     ],
     frontline: true,
-    imgSrc: '/images/people/rhonda.jpg',
+    imgSrc: rhonda,
   },
   {
     name: 'Te Miringa 🔥',
     tags: ['trustee of whakamanamai & freedom whare', 'life coach'],
     pepeha: [],
     about: [],
-    imgSrc: '/images/people/te-miringa.jpg',
+    imgSrc: teMiringa,
   },
   {
     name: 'Stu 💪🏽',
@@ -97,7 +107,7 @@ export const team = readable([
     pepeha: [],
     about: [],
     frontline: true,
-    imgSrc: '/images/people/stu-bess.jpg',
+    imgSrc: stuBess,
   },
   {
     name: 'Bess 🔥',
@@ -105,7 +115,7 @@ export const team = readable([
     pepeha: [],
     about: [],
     frontline: true,
-    imgSrc: '/images/people/stu-bess.jpg',
+    imgSrc: stuBess,
   },
   {
     name: 'Noreen 🔥',
@@ -129,7 +139,7 @@ export const team = readable([
       particularly using the Māori world view of health and wellness.`,
     ],
     frontline: true,
-    imgSrc: '/images/people/noreen.jpg',
+    imgSrc: noreen,
   },
   {
     name: 'Aiden 💻',
@@ -162,7 +172,7 @@ export const team = readable([
       assume the stance of being 'behind the scenes' for the reasons mentioned
       above.`,
     ],
-    imgSrc: '/images/people/aiden.jpg',
+    imgSrc: aiden,
   },
 
   /**
@@ -181,7 +191,7 @@ export const team = readable([
       piece that makes up the backbone of Whakaoranga Whanau Recovery Hub & it's
       siblings.`,
     ],
-    imgSrc: '/images/people/doug.jpg',
+    imgSrc: doug,
   },
   {
     name: 'Craig',
@@ -195,12 +205,12 @@ export const team = readable([
       Craig in accordance with Rhonda & ngā tīma.`,
       `Whenever we need a professional, Craig's phone rings.`,
     ],
-    imgSrc: '/images/people/craig.jpg',
+    imgSrc: craig,
   },
   {
     name: 'Lily',
     tags: ['trustee of whakaoranga whanau'],
     about: [],
-    imgSrc: '/images/people/lily.jpg',
+    imgSrc: lily,
   },
 ]);

@@ -31,7 +31,7 @@ const config = {
           $css: path.resolve('./src/lib/css'),
           $types: path.resolve('./src/lib/types'),
           $stores: path.resolve('./src/stores'),
-          $img: path.resolve('./static/images'),
+          $img: path.resolve('./src/images'),
         },
       },
     },
