@@ -81,6 +81,6 @@
   </section>
 </article>
 
-<style>
+<style global>
   @import './index.css';
 </style>
