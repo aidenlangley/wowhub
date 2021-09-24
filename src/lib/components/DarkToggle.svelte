@@ -25,7 +25,7 @@
   on:pointerleave={blur}
 >
   {#if dark}
-    <span class:text-yellow-300={focused} in:fade={{ duration: 200 }}>
+    <div class:text-yellow-300={focused} in:fade={{ duration: 200 }}>
       {#if focused}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,9 +59,9 @@
           />
         </svg>
       {/if}
-    </span>
+    </div>
   {:else}
-    <span class:text-blue-300={focused} in:fade={{ duration: 200 }}>
+    <div class:text-blue-300={focused} in:fade={{ duration: 200 }}>
       {#if focused}
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@
           />
         </svg>
       {/if}
-    </span>
+    </div>
   {/if}
 </button>
 
