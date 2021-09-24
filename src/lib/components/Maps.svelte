@@ -4,4 +4,4 @@
   const alt = 'google maps logo';
 </script>
 
-<img src={logo} {alt} height="64" width="64" />
+<img src={logo} {alt} width="64" height="64" />

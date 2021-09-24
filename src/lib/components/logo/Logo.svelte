@@ -8,8 +8,8 @@
   export let white = false;
 
   const alt = 'wowhub logo';
-  const height = !large ? 64 : 512;
   const width = !large ? 64 : 512;
+  const height = !large ? 64 : 512;
 </script>
 
 <!--
@@ -23,23 +23,21 @@
   CSS shows and hides so that both images can be rendered alongside each other.
 -->
 {#if !large}
-  <img src={logo} {alt} {height} {width} class={!white ? 'show' : 'hide'} />
-  <img src={logoWhite} {alt} {height} {width} class={white ? 'show' : 'hide'} />
+  <img src={logo} {alt} {width} {height} class={!white ? 'show' : 'hide'} />
+  <img src={logoWhite} {alt} {width} {height} class={white ? 'show' : 'hide'} />
 {:else}
   <img
     src={logoLarge}
     {alt}
-    {height}
     {width}
+    {height}
     class={!white ? 'show' : 'hide'}
-    class:large
   />
   <img
     src={logoWhiteLarge}
     {alt}
-    {height}
     {width}
+    {height}
     class={white ? 'show' : 'hide'}
-    class:large
   />
 {/if}

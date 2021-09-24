@@ -5,8 +5,8 @@
 
   export let white = false;
   const alt = 'wowhub banner';
-  const height = 273;
   const width = 1440;
+  const height = 273;
 </script>
 
 <!--
@@ -14,7 +14,7 @@
   Whakaoranga Whanau Recovery Hub banner, text + logo.
 -->
 {#if !white}
-  <img src={banner} {alt} {height} {width} in:blur />
+  <img src={banner} {alt} {width} {height} in:blur />
 {:else}
-  <img src={bannerWhite} {alt} {height} {width} in:blur />
+  <img src={bannerWhite} {alt} {width} {height} in:blur />
 {/if}
