@@ -17,10 +17,10 @@
 -->
 <article id="kaimahi" class="pad-y">
   <!-- Frontliners. -->
-  <header class="heading column">
+  <header class="column">
     <Heading>
       <span>Tātou tīma he hui mai!</span>
-      <span class="small">Meet our team!</span>
+      <small>Meet our team!</small>
     </Heading>
   </header>
 
@@ -33,7 +33,7 @@
 <!-- Behind the scenes. -->
 <article id="kaimahi-bts" class="pad-y">
   <!-- Fancy heading. -->
-  <header class="heading column">
+  <header class="column">
     <Heading>
       <span>Behind the scenes...</span>
     </Heading>
@@ -45,6 +45,33 @@
   </section>
 </article>
 
-<style>
-  @import './team.css';
+<style lang="postcss">
+  header {
+    place-items: center;
+  }
+
+  header > :global(*) {
+    z-index: 1;
+  }
+
+  header :global(h1) {
+    display: inline-grid;
+  }
+
+  header :global(h1 small) {
+    --font-size: 1.25rem;
+    --line-height: 1.75rem;
+
+    font-family: theme('fontFamily.mono');
+    font-weight: theme('fontWeight.medium');
+    letter-spacing: theme('letterSpacing.tighter');
+    text-align: end;
+  }
+
+  @media screen(sm) {
+    header :global(h1 small) {
+      --font-size: 1.75rem;
+      --line-height: 2rem;
+    }
+  }
 </style>

@@ -1,14 +1,17 @@
-const imports = require('postcss-import');
 const tailwindcss = require('tailwindcss');
-const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
+const imports = require('postcss-import');
+const presetenv = require('postcss-preset-env');
+
+const mode = process.env.NODE_ENV;
+const dev = mode === 'development';
 
 const config = {
   plugins: [
-    imports,
-    tailwindcss,
-    autoprefixer,
-    process.env.NODE_ENV !== 'development' &&
+    imports(),
+    tailwindcss(),
+    presetenv(),
+    !dev &&
       cssnano({
         preset: 'default',
       }),

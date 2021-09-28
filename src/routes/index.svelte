@@ -81,6 +81,30 @@
   </section>
 </article>
 
-<style global>
-  @import './index.css';
+<style lang="postcss" global>
+  @import 'lazyframe/dist/lazyframe.css';
+
+  .wconstraint {
+    justify-self: center;
+    max-width: 64rem;
+  }
+
+  .video {
+    /* Place & size */
+    place-self: center;
+    place-items: center;
+    height: max-content;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .video iframe {
+    height: max-content;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    /* Styles */
+    border-radius: theme('borderRadius.md');
+    box-shadow: theme('boxShadow.lg');
+  }
 </style>

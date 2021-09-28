@@ -76,7 +76,7 @@
   <!-- Quick blurb in te reo English. -->
   <article class="blurb">
     {#each about as line}
-      <Paragraph>{line}</Paragraph>
+      <Paragraph justify>{line}</Paragraph>
     {/each}
   </article>
 </article>

@@ -35,7 +35,50 @@
   <Footer />
 </div>
 
-<style global>
+<style lang="postcss" global>
   @import '../app.css';
-  @import './__layout.css';
+
+  .root main {
+    background-image: url('../images/bg/drawing-1080p.webp');
+    background-blend-mode: difference;
+    background-color: theme('backgroundColor.white');
+    background-position: top;
+    transition: background-color 300ms;
+  }
+
+  .root main .opacity-provider {
+    @apply bg-white/80;
+  }
+
+  .root main .opacity-provider > * {
+    transition-duration: 500ms;
+    transition-timing-function: theme('transitionTimingFunction.in-out');
+  }
+
+  .root.dark main {
+    background-blend-mode: hard-light;
+    background-color: theme('colors.gray.900');
+  }
+
+  .root.dark main .opacity-provider {
+    @apply bg-black/70;
+  }
+
+  @media screen(lg) {
+    .root main {
+      background-image: url('../images/bg/drawing-1440p.webp');
+    }
+  }
+
+  @media screen(wide) {
+    .root main {
+      background-image: url('../images/bg/drawing-2160p.webp');
+    }
+  }
+
+  @media screen(xwide) {
+    .root main {
+      background-image: url('../images/bg/drawing.webp');
+    }
+  }
 </style>

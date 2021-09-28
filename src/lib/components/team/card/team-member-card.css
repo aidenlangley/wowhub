@@ -111,6 +111,14 @@ header button {
       'img  btn   ';
   }
 
+  header .name {
+    align-self: end;
+  }
+
+  header .titles {
+    @apply text-base;
+  }
+
   .right header {
     grid-template-columns: var(--col-right) var(--col-left);
     grid-template-areas:
@@ -119,28 +127,21 @@ header button {
       'btn    img';
   }
 
-  header .name {
-    align-self: flex-end;
-  }
-
   .right header .name {
     justify-self: end;
     text-align: end;
   }
 
-  header .titles {
-    @apply text-base;
-  }
-
   .right header .titles {
     text-align: end;
+    justify-self: end;
   }
 
   .right header button {
-    justify-self: self-end;
+    justify-self: end;
   }
 
-  .right .blurb {
+  .right article.blurb :global(p) {
     text-align: end;
   }
 }

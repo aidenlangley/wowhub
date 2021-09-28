@@ -8,11 +8,11 @@ const config = {
   smartypants: {
     dashes: 'oldschool',
   },
-  remarkPlugins: [gfm, images, footnotes],
-  rehypePlugins: [links],
   layout: {
     _: './src/lib/components/articles/Article.svelte',
   },
+  remarkPlugins: [gfm, images, footnotes],
+  rehypePlugins: [links],
 };
 
 export default config;
