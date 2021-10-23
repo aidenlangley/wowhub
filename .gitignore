@@ -3,6 +3,9 @@
 .netlify/
 public/
 
+# Ignoring docs whilst I migrate to netlify
+docs/
+
 # Package managers
 node_modules/
 .pnpm-store/
