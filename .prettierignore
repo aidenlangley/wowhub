@@ -1,7 +1,8 @@
 node_modules/
 .svelte-kit/
-docs/
+.netlify/
 static/
+public/
 
-# npm/yarn
+# Package manager
 pnpm-lock.yaml

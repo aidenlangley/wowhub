@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { TeamMember } from '$types/TeamMember';
+  import type { TeamMember } from '$models/TeamMember';
   import TeamMemberCard from './card/TeamMemberCard.svelte';
 
   export let team: TeamMember[];

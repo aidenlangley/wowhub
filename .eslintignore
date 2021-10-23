@@ -1,10 +1,10 @@
 node_modules/
-.yarn/
 .svelte-kit/
-docs/
+.netlify/
 static/
+public/
 
-# npm/yarn
+# Package manager
 package.json
 pnpm-lock.yaml
 

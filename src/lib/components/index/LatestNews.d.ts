@@ -1,4 +1,4 @@
-import type { Article } from '$types/Article';
+import type { Article } from 'src/lib/models/Article';
 import { SvelteComponentTyped } from 'svelte';
 
 export interface LatestNewsProps {

@@ -1,6 +1,6 @@
 <script lang="ts">
-  import type { TeamMember } from '$types/TeamMember';
-  import { TranslateDirection } from '$types/Translate';
+  import type { TeamMember } from '$models/TeamMember';
+  import { TranslateDirection } from '$models/Translate';
   import Heading from '../../heading/Heading.svelte';
   import Paragraph from '../../paragraph/Paragraph.svelte';
   import Tooltip from '../../tooltip/Tooltip.svelte';

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { Article } from '$types/Article';
+  import type { Article } from '$models/Article';
   import Link from '../../link/Link.svelte';
 
   export let article: Article;

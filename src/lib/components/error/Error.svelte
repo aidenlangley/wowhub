@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { GradientColour } from '$types/Gradient';
-  import { BackgroundColour } from '$types/Translate';
+  import { GradientColour } from '$models/Gradient';
+  import { BackgroundColour } from '$models/Translate';
   import Heading from '../heading/Heading.svelte';
 </script>
 

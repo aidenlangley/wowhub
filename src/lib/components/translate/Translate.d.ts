@@ -1,4 +1,4 @@
-import { BackgroundColour, TranslateDirection } from '$types/Translate';
+import { BackgroundColour, TranslateDirection } from 'src/lib/models/Translate';
 import { SvelteComponentTyped } from 'svelte';
 
 export interface TranslateProps {

@@ -1,5 +1,5 @@
-import { GradientColour } from '$types/Gradient';
-import { SkewDirection } from '$types/Skew';
+import { GradientColour } from 'src/lib/models/Gradient';
+import { SkewDirection } from 'src/lib/models/Skew';
 import { SvelteComponentTyped } from 'svelte';
 
 export interface SkewProps {

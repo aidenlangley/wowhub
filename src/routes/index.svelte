@@ -7,8 +7,8 @@
   import SerenityPrayer from '$comp/index/serenity-prayer/SerenityPrayer.svelte';
   import Services from '$comp/index/services/Services.svelte';
   import Whakatauki from '$comp/index/whakatauki/Whakatauki.svelte';
+  import type { Article } from '$models/Article';
   import { state } from '$stores/dark';
-  import type { Article } from '$types/Article';
   import SvelteSeo from 'svelte-seo';
   import { loadNews as load } from './news.svelte';
 

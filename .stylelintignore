@@ -1,15 +1,16 @@
 .git/
-node_modules/
-.yarn/
 .svelte-kit/
-docs/
+.netlify/
 static/
+public/
 
 # Package manager
+node_modules/
 pnpm-lock.yaml
 
 # IDE
 .vscode/
+.devcontainer/
 
 # Not CSS, but VS Code plugin still wants to lint them
 **/*.js
@@ -18,6 +19,7 @@ pnpm-lock.yaml
 **/*.md
 **/*.svx
 **/*.json
+**/*.yaml
 
 # Other
 LICENSE

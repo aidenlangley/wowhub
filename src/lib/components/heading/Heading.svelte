@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { GradientColour } from '$types/Gradient';
-  import { GradientColour as gradientColour } from '$types/Gradient';
-  import type { BackgroundColour, TranslateDirection } from '$types/Translate';
+  import type { GradientColour } from '$models/Gradient';
+  import { GradientColour as gradientColour } from '$models/Gradient';
+  import type { BackgroundColour, TranslateDirection } from '$models/Translate';
   import {
     BackgroundColour as backgroundColour,
     TranslateDirection as translateColour,
-  } from '$types/Translate';
+  } from '$models/Translate';
   import Translate from '../translate/Translate.svelte';
 
   export let direction: TranslateDirection = translateColour.BottomRight;
