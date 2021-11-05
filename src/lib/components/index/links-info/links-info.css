@@ -52,12 +52,15 @@ li {
 @media screen(ty) {
   .wrapper {
     justify-items: flex-end;
-    text-align: end;
   }
 
   .buttons {
     place-items: initial;
     column-gap: theme('gap.8');
+  }
+
+  .info {
+    text-align: right;
   }
 
   li {
