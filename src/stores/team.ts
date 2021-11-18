@@ -1,13 +1,9 @@
 import aiden from '$img/people/aiden.jpg';
-import craig from '$img/people/craig.jpg';
 import dee from '$img/people/dee.jpg';
-import doug from '$img/people/doug.jpg';
 import jane from '$img/people/jane.jpg';
-import lily from '$img/people/lily.jpg';
 import noreen from '$img/people/noreen.jpg';
 import rhonda from '$img/people/rhonda.jpg';
 import stuBess from '$img/people/stu-bess.jpg';
-import teMiringa from '$img/people/te-miringa.jpg';
 import { readable } from 'svelte/store';
 
 export const team = readable([
@@ -38,7 +34,6 @@ export const team = readable([
       He waka eke noa!`,
       `Jane has saved many lives, and we are forever grateful for her service.`,
     ],
-    frontline: true,
     imgSrc: jane,
   },
   {
@@ -61,7 +56,6 @@ export const team = readable([
       `Another strong wāhine, she is always there to rescue her whanau and
       support and teach Māoritanga via waiata & karakia especially.`,
     ],
-    frontline: true,
     imgSrc: dee,
   },
   {
@@ -91,22 +85,20 @@ export const team = readable([
       Whanau Charitable Trust; Freedom Whare help whanau with housing
       solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
     ],
-    frontline: true,
     imgSrc: rhonda,
   },
-  {
-    name: 'Te Miringa 🔥',
-    tags: ['trustee of whakamanamai & freedom whare', 'life coach'],
-    pepeha: [],
-    about: [],
-    imgSrc: teMiringa,
-  },
+  // {
+  //   name: 'Te Miringa 🔥',
+  //   tags: ['trustee of whakamanamai & freedom whare', 'life coach'],
+  //   pepeha: [],
+  //   about: [],
+  //   imgSrc: teMiringa,
+  // },
   {
     name: 'Stu 💪🏽',
     tags: ['he waka eke noa', 'aod counsellor', 'kaumātua'],
     pepeha: [],
     about: [],
-    frontline: true,
     imgSrc: stuBess,
   },
   {
@@ -114,7 +106,6 @@ export const team = readable([
     tags: ['he waka eke noa', 'therapist', 'kaumātua'],
     pepeha: [],
     about: [],
-    frontline: true,
     imgSrc: stuBess,
   },
   {
@@ -138,7 +129,6 @@ export const team = readable([
       trauma by sharing her experience and knowledge of health and wellbeing,
       particularly using the Māori world view of health and wellness.`,
     ],
-    frontline: true,
     imgSrc: noreen,
   },
   {
@@ -172,45 +162,13 @@ export const team = readable([
       assume the stance of being 'behind the scenes' for the reasons mentioned
       above.`,
     ],
-    imgSrc: aiden,
-  },
-
-  /**
-   * BEHIND THE SCENES
-   */
-  {
-    name: 'Doug',
-    tags: ['trustee of whakamanamai and freedom whare'],
-    about: [
-      `Doug Healey is the founder of Influence Gym, which stretches the nation.
-      Rhonda runs the Influence gym here in Kaikohe. Doug is also director of
-      Whanau Ora Community Clinic.`,
-      `A successful entrepreneur, a lot has been written about Doug on the
-      internet already so we won't go into too much detail here! But rest
-      assured, Doug is a community focused individual with talent and is one
-      piece that makes up the backbone of Whakaoranga Whanau Recovery Hub & it's
-      siblings.`,
-    ],
-    imgSrc: doug,
+    imgSrc: aiden
   },
   {
-    name: 'Craig',
-    tags: ['trustee of whakamanamai & freedom whare'],
-    about: [
-      `Craig Zielinski' skill lies in agriculture and industrial flavoured
-      trade. He is a big part of Freedom Whare, and also Whakamanamai Charitable
-      Trust.`,
-      `As he's also a Zielinski, kaha nui ia Craig, e kaha nui te Zielinski
-      whanau. A lot of the large scale investment and planning is conducted by
-      Craig in accordance with Rhonda & ngā tīma.`,
-      `Whenever we need a professional, Craig's phone rings.`,
-    ],
-    imgSrc: craig,
-  },
-  {
-    name: 'Lily',
-    tags: ['trustee of whakaoranga whanau'],
+    name: 'Shannyn 📚',
+    tags: [''],
+    pepeha: [],
     about: [],
-    imgSrc: lily,
-  },
+    // imgSrc:
+  }
 ]);

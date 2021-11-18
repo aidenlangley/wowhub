@@ -26,22 +26,7 @@
 
   <!-- Member cards rendered here. -->
   <section id="members" class="pad-x">
-    <TeamMemberCards team={$team.filter((m) => m.frontline)} />
-  </section>
-</article>
-
-<!-- Behind the scenes. -->
-<article id="kaimahi-bts" class="pad-y">
-  <!-- Fancy heading. -->
-  <header class="column">
-    <Heading>
-      <span>Behind the scenes...</span>
-    </Heading>
-  </header>
-
-  <!-- Member cards rendered here. -->
-  <section id="members-bts" class="pad-x">
-    <TeamMemberCards team={$team.filter((m) => !m.frontline)} />
+    <TeamMemberCards team={$team} />
   </section>
 </article>
 
