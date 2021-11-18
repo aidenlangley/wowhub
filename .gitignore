@@ -4,7 +4,7 @@
 public/
 
 # Ignoring docs whilst I migrate to netlify
-docs/
+# docs/
 
 # Package managers
 node_modules/

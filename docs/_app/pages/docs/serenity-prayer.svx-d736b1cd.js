@@ -1,0 +1,13 @@
+import{S as W,i as X,s as Y,B as L,j as Z,m as ee,o as te,p as ae,q as D,x as ne,u as oe,v as re,a0 as J,e as r,t as m,k as Q,c as i,a as x,g as f,d as o,n as U,f as b,F as n,G as ie}from"../../chunks/vendor-0e7822ec.js";import{A as se}from"../../chunks/Article-0c80217f.js";function le(v){let e,_,h,s,a,l,g,y,u,$,q,w,A,K,R,C,B,E,c,P,S,j,I,O,T,G;return{c(){e=r("h1"),_=m(N),h=Q(),s=r("p"),a=m(V),l=m(":"),g=Q(),y=r("blockquote"),u=r("p"),$=m("God, grant me the serenity "),q=r("br"),w=m(`
+To accept the things I cannot change `),A=r("br"),K=m(`
+Courage to change the things I can `),R=r("br"),C=m(`
+And the wisdom to know the difference`),B=Q(),E=r("blockquote"),c=r("p"),P=m("E te Atua, tukua mai he ng\u0101kau mahaki ki ahua "),S=r("br"),j=m(`
+Kia tou tonu te rangimarie i roto i ng\u0101 uauatanga `),I=r("br"),O=m(`
+Me te kaha ki te whakatika i ng\u0101 marotanga kia matou, `),T=r("br"),G=m(`
+Kia marama hokinga rereketanga`)},l(t){e=i(t,"H1",{});var p=x(e);_=f(p,N),p.forEach(o),h=U(t),s=i(t,"P",{});var M=x(s);a=f(M,V),l=f(M,":"),M.forEach(o),g=U(t),y=i(t,"BLOCKQUOTE",{});var H=x(y);u=i(H,"P",{});var k=x(u);$=f(k,"God, grant me the serenity "),q=i(k,"BR",{}),w=f(k,`
+To accept the things I cannot change `),A=i(k,"BR",{}),K=f(k,`
+Courage to change the things I can `),R=i(k,"BR",{}),C=f(k,`
+And the wisdom to know the difference`),k.forEach(o),H.forEach(o),B=U(t),E=i(t,"BLOCKQUOTE",{});var z=x(E);c=i(z,"P",{});var d=x(c);P=f(d,"E te Atua, tukua mai he ng\u0101kau mahaki ki ahua "),S=i(d,"BR",{}),j=f(d,`
+Kia tou tonu te rangimarie i roto i ng\u0101 uauatanga `),I=i(d,"BR",{}),O=f(d,`
+Me te kaha ki te whakatika i ng\u0101 marotanga kia matou, `),T=i(d,"BR",{}),G=f(d,`
+Kia marama hokinga rereketanga`),d.forEach(o),z.forEach(o)},m(t,p){b(t,e,p),n(e,_),b(t,h,p),b(t,s,p),n(s,a),n(s,l),b(t,g,p),b(t,y,p),n(y,u),n(u,$),n(u,q),n(u,w),n(u,A),n(u,K),n(u,R),n(u,C),b(t,B,p),b(t,E,p),n(E,c),n(c,P),n(c,S),n(c,j),n(c,I),n(c,O),n(c,T),n(c,G)},p:ie,d(t){t&&o(e),t&&o(h),t&&o(s),t&&o(g),t&&o(y),t&&o(B),t&&o(E)}}}function ue(v){let e,_;const h=[v[0],F];let s={$$slots:{default:[le]},$$scope:{ctx:v}};for(let a=0;a<h.length;a+=1)s=L(s,h[a]);return e=new se({props:s}),{c(){Z(e.$$.fragment)},l(a){ee(e.$$.fragment,a)},m(a,l){te(e,a,l),_=!0},p(a,[l]){const g=l&1?ae(h,[l&1&&D(a[0]),l&0&&D(F)]):{};l&2&&(g.$$scope={dirty:l,ctx:a}),e.$set(g)},i(a){_||(ne(e.$$.fragment,a),_=!0)},o(a){oe(e.$$.fragment,a),_=!1},d(a){re(e,a)}}}const F={title:"Serenity Prayer",description:"Serenity Prayer in teo reo English & M\u0101ori"},{title:N,description:V}=F;function ce(v,e,_){return v.$$set=h=>{_(0,e=L(L({},e),J(h)))},e=J(e),[e]}class _e extends W{constructor(e){super();X(this,e,ce,ue,Y,{})}}export{_e as default,F as metadata};
