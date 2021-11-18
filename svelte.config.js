@@ -38,7 +38,7 @@ const config = {
      * Giving Netlify a shot...
      * https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify
      */
-    //  adapter: adapter(),
+    // adapter: adapter(),
 
     vite: {
       resolve: {
