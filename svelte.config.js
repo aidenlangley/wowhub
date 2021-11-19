@@ -1,5 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
-// import adapter from '@sveltejs/adapter-netlify'
+// import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-netlify';
 import { mdsvex } from 'mdsvex';
 import path from 'path';
 import preprocess from 'svelte-preprocess';
@@ -28,17 +28,17 @@ const config = {
      * Opted for static adapter
      * https://kit.svelte.dev/docs#adapters
      */
-    adapter: adapter({
-      pages: 'docs',
-      assets: 'docs',
-      fallback: null,
-    }),
+    // adapter: adapter({
+    //   pages: 'docs',
+    //   assets: 'docs',
+    //   fallback: null,
+    // }),
 
     /**
      * Giving Netlify a shot...
      * https://github.com/sveltejs/kit/tree/master/packages/adapter-netlify
      */
-    // adapter: adapter(),
+    adapter: adapter(),
 
     vite: {
       resolve: {

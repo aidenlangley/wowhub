@@ -1,8 +1,10 @@
-node_modules/
 .svelte-kit/
 .netlify/
 static/
 public/
 
 # Package manager
+node_modules/
+package.json
+pnpm-store/
 pnpm-lock.yaml

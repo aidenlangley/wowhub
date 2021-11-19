@@ -1,11 +1,11 @@
-node_modules/
 .svelte-kit/
 .netlify/
 static/
 public/
 
 # Package manager
-package.json
+node_modules/
+pnpm-store/
 pnpm-lock.yaml
 
 # IDE
