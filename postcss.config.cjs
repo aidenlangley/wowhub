@@ -13,9 +13,9 @@ const config = {
     presetenv(),
     !dev &&
       cssnano({
-        preset: 'default',
-      }),
-  ],
+        preset: 'default'
+      })
+  ]
 };
 
 module.exports = config;

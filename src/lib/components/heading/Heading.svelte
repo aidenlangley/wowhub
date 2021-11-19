@@ -4,7 +4,7 @@
   import type { BackgroundColour, TranslateDirection } from '$models/Translate';
   import {
     BackgroundColour as backgroundColour,
-    TranslateDirection as translateColour,
+    TranslateDirection as translateColour
   } from '$models/Translate';
   import Translate from '../translate/Translate.svelte';
 

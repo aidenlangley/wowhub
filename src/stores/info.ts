@@ -9,5 +9,5 @@ export const info = readable({
   google: 'https://goo.gl/maps/WrvBZvvEy1SKGqVS7',
 
   /* Freedom Whare */
-  emailFreedomWhare: 'info@freedomwhare.co.nz',
+  emailFreedomWhare: 'info@freedomwhare.co.nz'
 });

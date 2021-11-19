@@ -20,7 +20,7 @@
     'tailored' /* 2:1 */,
     'for you' /* 2:2 */,
     'anger management' /* 3:1 */,
-    'ora' /* 3:2 */,
+    'ora' /* 3:2 */
   ];
 
   const length = buzzWords.length;

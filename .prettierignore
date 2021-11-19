@@ -9,3 +9,7 @@ node_modules/
 package.json
 .pnpm-store/
 pnpm-lock.yaml
+
+# IDE
+.vscode/
+.devcontainer/

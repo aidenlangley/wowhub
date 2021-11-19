@@ -11,6 +11,7 @@ pnpm-lock.yaml
 
 # IDE
 .vscode/
+.devcontainer/
 
 # Ignore these file types, usually config, or shpecial
 **/*.json

@@ -6,23 +6,23 @@
     {
       name: 'kainga',
       path: '/',
-      translation: 'home',
+      translation: 'home'
     },
     {
       name: 'ngā kaimahi',
       path: '/team',
-      translation: 'the team',
+      translation: 'the team'
     },
     {
       name: 'tātou hoa',
       path: '/friends',
-      translation: 'our friends',
+      translation: 'our friends'
     },
     {
       name: 'panui',
       path: '/news',
-      translation: 'news',
-    },
+      translation: 'news'
+    }
   ];
 </script>
 

@@ -29,7 +29,7 @@
           {#if date}
             <time datetime={date}>
               posted {new Date(date).toLocaleString('en-NZ', {
-                timeZone: 'Pacific/Auckland',
+                timeZone: 'Pacific/Auckland'
               })}
             </time>
           {/if}

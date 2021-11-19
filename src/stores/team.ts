@@ -20,7 +20,7 @@ export const team = readable([
       'Ko Ngāti Pikiao, Ngāti Whakaue ōku hapū',
       'Ko Te Arawa te iwi',
       'Ko Te Arawa te waka',
-      'Ko Jane Beamsley ahau',
+      'Ko Jane Beamsley ahau'
     ],
     about: [
       `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she has
@@ -32,9 +32,9 @@ export const team = readable([
       to Kaikohe and she wanted to give back and share the gifts of recovery
       with others who may be struggling. She couldn’t do this journey alone.
       He waka eke noa!`,
-      `Jane has saved many lives, and we are forever grateful for her service.`,
+      `Jane has saved many lives, and we are forever grateful for her service.`
     ],
-    imgSrc: jane,
+    imgSrc: jane
   },
   {
     name: 'Dee 🔥',
@@ -45,7 +45,7 @@ export const team = readable([
       'Ko Matawaia te marae',
       'Ko Ngāti Hine te hapu',
       'Ko Ngāpuhi te iwi',
-      'Ko Deeann Herkt Kopa ahau',
+      'Ko Deeann Herkt Kopa ahau'
     ],
     about: [
       `Ka Kaimanāki ia Deeann Herkt; Dee is a peer support worker. She's been
@@ -54,9 +54,9 @@ export const team = readable([
       2015 and is now very passionate about helping the next addict in their
       recovery.`,
       `Another strong wāhine, she is always there to rescue her whanau and
-      support and teach Māoritanga via waiata & karakia especially.`,
+      support and teach Māoritanga via waiata & karakia especially.`
     ],
-    imgSrc: dee,
+    imgSrc: dee
   },
   {
     name: 'Rhonda 🔥',
@@ -74,7 +74,7 @@ export const team = readable([
       'Ko Shannyn, ko Rawiri, ko Julian, ko Fern āku tamariki',
       'Ko nāhi ahau',
       'Ko Kaikohe te kainga noho',
-      'Ko Rhonda Zielinski ahau',
+      'Ko Rhonda Zielinski ahau'
     ],
     about: [
       `Rhonda is a registered Nurse and helped establish Whakaoranga Whanau
@@ -83,9 +83,9 @@ export const team = readable([
       her parents at the age of 13 and has lived in Kaikohe ever since.`,
       `Rhonda also helps with Freedom Whare as a director of Whakamanamai
       Whanau Charitable Trust; Freedom Whare help whanau with housing
-      solutions. Kaha nui ia Rhonda & very busy to put it mildly.`,
+      solutions. Kaha nui ia Rhonda & very busy to put it mildly.`
     ],
-    imgSrc: rhonda,
+    imgSrc: rhonda
   },
   // {
   //   name: 'Te Miringa 🔥',
@@ -99,14 +99,14 @@ export const team = readable([
     tags: ['he waka eke noa', 'aod counsellor', 'kaumātua'],
     pepeha: [],
     about: [],
-    imgSrc: stuBess,
+    imgSrc: stuBess
   },
   {
     name: 'Bess 🔥',
     tags: ['he waka eke noa', 'therapist', 'kaumātua'],
     pepeha: [],
     about: [],
-    imgSrc: stuBess,
+    imgSrc: stuBess
   },
   {
     name: 'Noreen 🔥',
@@ -116,7 +116,7 @@ export const team = readable([
       'Ko Tauranga Moana tōku kainga whenua',
       'Ko Wairoa tāku awa',
       'Ko Ngāti Ranginui raua, ko Ngāiterangi te iwi',
-      'Ko Noreen Ahau',
+      'Ko Noreen Ahau'
     ],
     about: [
       `Wāhine Māori Noreen has been blessed to have survived and overcome some
@@ -127,9 +127,9 @@ export const team = readable([
       her mental health all of her life. Now being clean and sober, as well as a
       Christian, she has a heart to help other people through their grief and
       trauma by sharing her experience and knowledge of health and wellbeing,
-      particularly using the Māori world view of health and wellness.`,
+      particularly using the Māori world view of health and wellness.`
     ],
-    imgSrc: noreen,
+    imgSrc: noreen
   },
   {
     name: 'Aiden 💻',
@@ -145,7 +145,7 @@ export const team = readable([
       'Ko Tāhekeroa te marae',
       'Ko Pehi, ko Jack, ko Langley ōku whanau',
       "Ko kaipūkaha rorohiko 'au",
-      'Ko Aiden Langley ahau',
+      'Ko Aiden Langley ahau'
     ],
     about: [
       `Aiden has been described as more of a walker than a talker, so don't
@@ -160,7 +160,7 @@ export const team = readable([
       `You will probably see Aiden frequently, he runs ka kura rorohiko for te
       kaimahi, and hopefully for the rōpū in the near future, but he prefers to
       assume the stance of being 'behind the scenes' for the reasons mentioned
-      above.`,
+      above.`
     ],
     imgSrc: aiden
   },
@@ -168,7 +168,7 @@ export const team = readable([
     name: 'Shannyn 📚',
     tags: [''],
     pepeha: [],
-    about: [],
+    about: []
     // imgSrc:
   }
 ]);

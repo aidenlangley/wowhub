@@ -9,14 +9,14 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export const loadDocs: Load = async ({
-    fetch,
+    fetch
   }): Promise<{ props: { docs: Article[] } }> => {
     const docs = await (await fetch('/docs/docs.json')).json();
 
     return {
       props: {
-        docs: docs.docs,
-      },
+        docs: docs.docs
+      }
     };
   };
 
@@ -24,14 +24,14 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export const loadNews: Load = async ({
-    fetch,
+    fetch
   }): Promise<{ props: { news: Article[] } }> => {
     const news = await (await fetch('/news/news.json')).json();
 
     return {
       props: {
-        news: news.news,
-      },
+        news: news.news
+      }
     };
   };
 
@@ -39,7 +39,7 @@
    * @type {import('@sveltejs/kit').Load}
    */
   export const load: Load = async ({
-    fetch,
+    fetch
   }): Promise<{ props: { news: Article[]; docs: Article[] } }> => {
     const news = await (await fetch('/news/news.json')).json();
     const docs = await (await fetch('/docs/docs.json')).json();
@@ -47,8 +47,8 @@
     return {
       props: {
         news: news.news,
-        docs: docs.docs,
-      },
+        docs: docs.docs
+      }
     };
   };
 </script>

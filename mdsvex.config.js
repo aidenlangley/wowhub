@@ -6,13 +6,13 @@ import images from 'remark-images';
 const config = {
   extensions: ['.svx'],
   smartypants: {
-    dashes: 'oldschool',
+    dashes: 'oldschool'
   },
   layout: {
-    _: './src/lib/components/articles/Article.svelte',
+    _: './src/lib/components/articles/Article.svelte'
   },
   remarkPlugins: [gfm, images, footnotes],
-  rehypePlugins: [links],
+  rehypePlugins: [links]
 };
 
 export default config;

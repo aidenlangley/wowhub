@@ -4,13 +4,13 @@
    */
   export function load({
     status,
-    error,
+    error
   }): { props: { error: any; status: any } } {
     return {
       props: {
         error: error.message,
-        status,
-      },
+        status
+      }
     };
   }
 </script>

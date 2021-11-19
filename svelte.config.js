@@ -15,9 +15,9 @@ const config = {
    */
   preprocess: [
     preprocess({
-      postcss: true,
+      postcss: true
     }),
-    mdsvex(mdsvexConfig),
+    mdsvex(mdsvexConfig)
   ],
 
   kit: {
@@ -47,11 +47,11 @@ const config = {
           $css: path.resolve('./src/lib/css'),
           $models: path.resolve('./src/lib/models'),
           $stores: path.resolve('./src/stores'),
-          $img: path.resolve('./src/images'),
-        },
-      },
-    },
-  },
+          $img: path.resolve('./src/images')
+        }
+      }
+    }
+  }
 };
 
 export default config;

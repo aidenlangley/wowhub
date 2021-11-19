@@ -11,14 +11,14 @@ export async function get(): Promise<{
     if (!slug.includes('_')) {
       news.push({
         ...metadata,
-        slug: `news/${slug}`.replace('./', '').replace('.svx', ''),
+        slug: `news/${slug}`.replace('./', '').replace('.svx', '')
       });
     }
   }
 
   return {
     body: {
-      news: news.sort((x, y) => y.date.getTime() - x.date.getTime()),
-    },
+      news: news.sort((x, y) => y.date.getTime() - x.date.getTime())
+    }
   };
 }

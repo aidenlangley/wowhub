@@ -43,7 +43,7 @@
     display: inline-grid;
   }
 
-  header :global(h1 small) {
+  header small {
     --font-size: 1.25rem;
     --line-height: 1.75rem;
 

@@ -23,13 +23,13 @@ const config = {
       lg: em(1024),
       xl: em(1280),
       wide: em(1600),
-      xwide: em(1920),
+      xwide: em(1920)
     },
     fontFamily: {
       sans: ['Inter', ...defaultTheme.fontFamily.sans],
       serif: ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
       mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
-      display: ['"Permanent Marker"', ...defaultTheme.fontFamily.serif],
+      display: ['"Permanent Marker"', ...defaultTheme.fontFamily.serif]
     },
     extend: {
       fontSize: {
@@ -63,17 +63,17 @@ const config = {
         64: [rem(64), '1'],
         72: [rem(72), '1'],
         96: [rem(96), '1'],
-        128: [rem(128), '1'],
+        128: [rem(128), '1']
       },
       borderWidth: {
         10: '10px',
         12: '12px',
         14: '14px',
-        16: '16px',
+        16: '16px'
       },
       colors: {
         gray: colors.warmGray,
-        orange: colors.orange,
+        orange: colors.orange
       },
       typography: (theme) => ({
         sm: {
@@ -83,9 +83,9 @@ const config = {
                 'colors.gray.50',
                 defaultTheme.colors.gray[50]
               ),
-              borderLeftWidth: theme('borderWidth.2'),
-            },
-          },
+              borderLeftWidth: theme('borderWidth.2')
+            }
+          }
         },
         DEFAULT: {
           css: {
@@ -93,8 +93,8 @@ const config = {
             letterSpacing: theme(
               'letterSpacing.tight',
               defaultTheme.letterSpacing.tight
-            ),
-          },
+            )
+          }
         },
         dark: {
           css: {
@@ -102,57 +102,57 @@ const config = {
             a: {
               color: theme('colors.green.300'),
               '&:hover': {
-                color: theme('colors.green.200'),
-              },
+                color: theme('colors.green.200')
+              }
             },
             strong: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             'ul > li::before': {
-              backgroundColor: theme('colors.gray.700'),
+              backgroundColor: theme('colors.gray.700')
             },
             blockquote: {
               color: theme('colors.gray.200'),
-              borderLeftColor: theme('colors.green.800'),
+              borderLeftColor: theme('colors.green.800')
             },
             h1: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             h2: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             h3: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             h4: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             'figure figcaption': {
-              color: theme('colors.gray.200'),
+              color: theme('colors.gray.200')
             },
             code: {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             'a code': {
-              color: theme('colors.gray.100'),
+              color: theme('colors.gray.100')
             },
             thead: {
               color: theme('colors.gray.200'),
-              borderBottomColor: theme('colors.gray.800'),
+              borderBottomColor: theme('colors.gray.800')
             },
             'tbody tr': {
-              borderBottomColor: theme('colors.gray.700'),
-            },
-          },
-        },
-      }),
-    },
+              borderBottomColor: theme('colors.gray.700')
+            }
+          }
+        }
+      })
+    }
   },
   variants: {
     extend: {
-      typography: ['dark'],
-    },
-  },
+      typography: ['dark']
+    }
+  }
 };
 
 module.exports = config;
