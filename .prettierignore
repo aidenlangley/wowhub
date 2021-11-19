@@ -1,6 +1,7 @@
 .svelte-kit/
 .netlify/
 static/
+docs/
 public/
 
 # Package manager
