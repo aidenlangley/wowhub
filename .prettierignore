@@ -6,5 +6,5 @@ public/
 # Package manager
 node_modules/
 package.json
-pnpm-store/
+.pnpm-store/
 pnpm-lock.yaml

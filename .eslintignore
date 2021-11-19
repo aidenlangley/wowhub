@@ -5,7 +5,7 @@ public/
 
 # Package manager
 node_modules/
-pnpm-store/
+.pnpm-store/
 pnpm-lock.yaml
 
 # IDE
