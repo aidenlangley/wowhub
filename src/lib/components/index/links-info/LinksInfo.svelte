@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { forms } from '$stores/forms';
   import { info } from '$stores/info';
   import Facebook from '../../Facebook.svelte';
   import Link from '../../link/Link.svelte';
@@ -81,26 +82,11 @@
         <span>{$info.email}</span> |
         <span>{$info.phone.replace('+64', '0')}</span>
       </li>
-      <li>
-        <Link href="https://forms.gle/DgHAF9GvwVhKPzjA6">
-          Whakaoranga Whanau Registration Form
-        </Link>
-      </li>
-      <li>
-        <Link href="https://forms.gle/DgHAF9GvwVhKPzjA6">
-          AOD Education & Counselling Enrolment Form
-        </Link>
-      </li>
-      <li>
-        <Link href="https://forms.gle/DgHAF9GvwVhKPzjA6">
-          Angry Birds (Anger Management) Enrolment Form
-        </Link>
-      </li>
-      <li>
-        <Link href="https://forms.gle/MT22azTPYCyum3St9">
-          Freedom Whare Registration Form
-        </Link>
-      </li>
+      {#each $forms as form}
+        <li>
+          <Link href={form.url}>{form.title}</Link>
+        </li>
+      {/each}
     </ul>
   </div>
 </article>
