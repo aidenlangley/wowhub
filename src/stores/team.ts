@@ -151,16 +151,11 @@ export const team = readable([
       `Aiden has been described as more of a walker than a talker, so don't
       expect much charisma from him. Aiden wrote this website, manages the IT
       infrastructure and is our resident geek. 🤓`,
-      `He was born in Tāmaki but moved with his parents to London at a young age
-      where he spent 20+ years growing up. His whanau originates from Tāheke &
-      Waima. He lives in Kaikohe these days.`,
-      `He has been diagnosed with ADHD and has a mild form of Tourette's, so if
-      you ever meet him, you'll have to excuse any surprises. Drugs and alcohol
-      have played a large part in his life too.`,
-      `You will probably see Aiden frequently, he runs ka kura rorohiko for te
-      kaimahi, and hopefully for the rōpū in the near future, but he prefers to
-      assume the stance of being 'behind the scenes' for the reasons mentioned
-      above.`
+      `He was born in Auckland but moved with his parents to London at a young
+      age where he spent 20+ years growing up. His whanau originates from Tāheke
+      & Waima. He lives in Kaikohe these days.`,
+      `You will probably see Aiden around, he runs ka kura rorohiko for the
+      kaimahi, and hopefully for the rōpū in the near future.`
     ],
     imgSrc: aiden
   },
