@@ -13,7 +13,6 @@ export async function get(): Promise<{
         ...metadata,
         slug: `docs/${slug}`.replace('./', '').replace('.svx', '')
       })
-      console.log(docs);
     }
   }
 
