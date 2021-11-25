@@ -42,14 +42,14 @@ footer svg {
 
 @media screen(sm) {
   footer svg {
-    max-height: theme('height.7');
-    max-width: theme('height.7');
+    max-height: theme('height.6');
+    max-width: theme('height.6');
   }
 }
 
 @media screen(lg) {
   footer :global(svg) {
-    max-height: theme('height.8');
-    max-width: theme('height.8');
+    max-height: theme('height.6');
+    max-width: theme('height.6');
   }
 }
