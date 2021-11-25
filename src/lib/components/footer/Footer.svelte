@@ -1,16 +1,21 @@
+<script>
+  import SvelteKit from '$comp/logo/SvelteKit.svelte';
+</script>
+
 <!--
   @component
   `Footer` contains information regarding the other businesses associated with
   wowhub (loosely.)
 -->
 <footer>
+  <div class="start" />
   <a
     href="https://github.com/aidenlangley"
     target="_blank"
     rel="noopener external"
     aria-label="link to website authors' GitHub page"
   >
-    by aidenlangley
+    <SvelteKit />| by aidenlangley
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

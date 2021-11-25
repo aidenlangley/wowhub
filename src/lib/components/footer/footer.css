@@ -10,6 +10,10 @@ footer {
   place-items: center end;
 }
 
+footer .start {
+  display: inline-grid;
+}
+
 :global(.dark) footer {
   background-color: theme('colors.black');
   border-color: theme('colors.gray.800');
@@ -44,7 +48,7 @@ footer svg {
 }
 
 @media screen(lg) {
-  footer svg {
+  footer :global(svg) {
     max-height: theme('height.8');
     max-width: theme('height.8');
   }
