@@ -161,7 +161,14 @@ export const team = readable([
   },
   {
     name: 'Shannyn 📚',
-    tags: [''],
+    tags: ['front of house'],
+    pepeha: [],
+    about: []
+    // imgSrc:
+  },
+  {
+    name: 'Bells 🛠️',
+    tags: ['mahi rangatira'],
     pepeha: [],
     about: []
     // imgSrc:

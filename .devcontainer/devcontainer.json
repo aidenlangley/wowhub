@@ -1,13 +1,15 @@
 {
   "name": "sveltekit/wowhub.co.nz",
-  "runArgs": ["--init", "--userns=keep-id"],
+  "runArgs": [
+    "--init",
+    "--userns=keep-id"
+  ],
   "build": {
     "dockerfile": "Dockerfile",
     "args": {
-      "VARIANT": "14"
+      "VARIANT": "16"
     }
   },
-
   "extensions": [
     "bungcip.better-toml",
     "christian-kohler.npm-intellisense",
@@ -23,10 +25,11 @@
     "xabikos.javascriptsnippets",
     "yzhang.markdown-all-in-one"
   ],
-
   "settings": {
-    "editor.rulers": [80, 100],
-
+    "editor.rulers": [
+      80,
+      100
+    ],
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -34,15 +37,12 @@
       ".*.*ignore": "ignore",
       "*.svx": "mdx"
     },
-
     "terminal.integrated.defaultProfile.linux": "zsh",
-
     "html.format.endWithNewline": true,
     "html.format.indentHandlebars": true,
     "html.format.wrapLineLength": 80,
     "svelte.enable-ts-plugin": true,
     "javascript.format.semicolons": "remove",
-
     "tailwindCSS.includeLanguages": {
       "svelte": "html"
     },
@@ -50,26 +50,31 @@
     "editor.quickSuggestions": {
       "strings": true
     },
-
     "[svelte]": {
       "editor.defaultFormatter": "svelte.svelte-vscode"
     },
-
     "eslint.alwaysShowStatus": true,
-    "eslint.probe": ["javascript", "typescript", "svelte"],
-
+    "eslint.probe": [
+      "javascript",
+      "typescript",
+      "svelte"
+    ],
     "css.validate": false,
     "stylelint.configFile": ".stylelintrc",
     "stylelint.reportNeedlessDisables": true,
-    "stylelint.snippet": ["css", "postcss", "svelte"]
+    "stylelint.snippet": [
+      "css",
+      "postcss",
+      "svelte"
+    ]
   },
-
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
   "remoteUser": "node",
   "containerUser": "node",
-
   "workspaceMount": "src=${localWorkspaceFolder},dst=/workspace,type=bind,Z",
   "workspaceFolder": "/workspace",
-
-  "postCreateCommand": "bash -c -c 'pnpm install'"
+  "postCreateCommand": "bash -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash'",
+  "postStartCommand": "bash -c 'nvm install; pnpm install'"
 }

@@ -14,9 +14,9 @@
       translation: 'the team'
     },
     {
-      name: 'tātou hoa',
-      path: '/friends',
-      translation: 'our friends'
+      name: 'tātou hōtaka',
+      path: '/programmes',
+      translation: 'programmes'
     },
     {
       name: 'panui',
