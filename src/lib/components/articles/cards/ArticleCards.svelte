@@ -17,7 +17,7 @@
     {/each}
   </ol>
 {:else}
-  <Heading3>Kaua panui. Aroha mai!</Heading3>
+  <Heading3>Kaua panui, aroha mai!</Heading3>
 {/if}
 
 <style>
