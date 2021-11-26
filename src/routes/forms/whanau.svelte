@@ -2,10 +2,12 @@
   import InputText from '$comp/forms/InputText.svelte';
 
   let forename: string;
-  $: forename;
-  console.log(forename);
+  let surname: string;
 </script>
 
 <form name="whanau" method="post" data-netlify="true">
-  <InputText label="First Name" text={forename} />
+  <section id="personal-details">
+    <InputText label="First Name" text={forename} />
+    <InputText label="Last Name" text={surname} />
+  </section>
 </form>
