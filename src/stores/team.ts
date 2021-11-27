@@ -1,4 +1,5 @@
 import aiden from '$img/people/aiden.jpg';
+import bells from '$img/people/bells.jpg';
 import dee from '$img/people/dee.jpg';
 import jane from '$img/people/jane.jpg';
 import noreen from '$img/people/noreen.jpg';
@@ -48,11 +49,10 @@ export const team = readable([
       'Ko Deeann Herkt Kopa ahau'
     ],
     about: [
-      `Ka Kaimanāki ia Deeann Herkt; Dee is a peer support worker. She's been
-      clean and sober for 6 years after being addicted to methamphetamine for
-      many years. Dee checked herself into treatment, completed her programme in
-      2015 and is now very passionate about helping the next addict in their
-      recovery.`,
+      `Ka Kaimanāki ia Deeann Herkt; Dee is a peer support worker. She got
+      clean and sober after being addicted to methamphetamine for many years.
+      Dee checked herself into treatment, completed her programme in 2015 and is
+      now very passionate about helping the next addict in their recovery.`,
       `Another strong wāhine, she is always there to rescue her whanau and
       support and teach Māoritanga via waiata & karakia especially.`
     ],
@@ -168,9 +168,28 @@ export const team = readable([
   },
   {
     name: 'Bells 🛠️',
-    tags: ['mahi rangatira'],
-    pepeha: [],
-    about: []
-    // imgSrc:
+    tags: ['mahi rangatira', 'tuākana'],
+    pepeha: [
+      'Ko Tautoro tōku maunga',
+      'Ko Kereru tōku roto/awa',
+      'Ko Mahuhukiterangi tōku marae',
+      'Ko Ngātokimatawhaorua tōku waka',
+      'Ko Ngāti Rangi, Ngāti Moerewa tōku hapu',
+      'Ko Ngāpuhi tōku iwi',
+      'Ko Rihari tōku whanau',
+      'Ko Edwin raua ko Vera ōku matua',
+      'Ko Isabella tōku ingoa',
+    ],
+    about: [
+      `Isabella, or Bellz, has been in recovery for last 2 years as of 2021,
+      and she's been clean from meth for just as long. Bellz has come a long way
+      in her journey from knocking on prison's door as a criminal in the justice
+      system, to thriving and becoming the best person she can be.`,
+      `She's a proud member of the Whakaoranga Whanau - she's got goals to
+      achieve, she has heaps of energy and really enjoys life. You'll catch
+      Bellz running the 'Mahi Rangatira' program where we keep everybody busy
+      and do some mahi together.`
+    ],
+    imgSrc: bells
   }
 ]);

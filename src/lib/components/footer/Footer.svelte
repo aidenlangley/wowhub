@@ -15,7 +15,7 @@
     rel="noopener external"
     aria-label="link to website authors' GitHub page"
   >
-    <SvelteKit />| by aidenlangley
+    <SvelteKit />| aidenlangley
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"

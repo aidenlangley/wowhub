@@ -11,6 +11,7 @@
     }
   },
   "extensions": [
+    "bradlc.vscode-tailwindcss",
     "bungcip.better-toml",
     "christian-kohler.npm-intellisense",
     "davidanson.vscode-markdownlint",
@@ -19,6 +20,7 @@
     "eg2.vscode-npm-script",
     "esbenp.prettier-vscode",
     "naumovs.color-highlight",
+    "streetsidesoftware.code-spell-checker",
     "streetsidesoftware.code-spell-checker",
     "stylelint.vscode-stylelint",
     "svelte.svelte-vscode",
@@ -66,6 +68,14 @@
       "css",
       "postcss",
       "svelte"
+    ],
+    "cSpell.words": [
+      "Kereru",
+      "mahi",
+      "Mahuhukiterangi",
+      "Moerewa",
+      "Rangi",
+      "Rihari"
     ]
   },
   "forwardPorts": [
