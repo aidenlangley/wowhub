@@ -84,7 +84,7 @@
       </li>
       {#each $forms as form}
         <li>
-          <Link href={form.url}>{form.title}</Link>
+          <Link href={form.url} internal>{form.title}</Link>
         </li>
       {/each}
     </ul>

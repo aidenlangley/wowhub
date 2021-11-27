@@ -1,0 +1,18 @@
+h4 {
+  font-weight: theme('fontWeight.light');
+  letter-spacing: theme('letterSpacing.tight');
+  padding-bottom: theme('padding.2');
+  padding-top: theme('padding.2');
+}
+
+:global(.dark) h4 {
+  color: theme('colors.white');
+}
+
+h4 > span {
+  @apply bg-white/80;
+}
+
+:global(.dark) h4 > span {
+  @apply bg-black/80;
+}

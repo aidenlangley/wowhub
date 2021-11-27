@@ -1,6 +1,6 @@
 <script lang="ts">
   export let label: string;
-  export let text: string;
+  export let email: string;
   export let placeholder = '';
   export let hideLabel = false;
   export let id = label.toLowerCase().split(' ').join('-');
@@ -10,5 +10,5 @@
   {#if !hideLabel}
     <label for={id}>{label}</label>
   {/if}
-  <input type="text" name={id} {id} bind:value={text} {placeholder} />
+  <input type="email" name={id} {id} bind:value={email} {placeholder} />
 </div>
