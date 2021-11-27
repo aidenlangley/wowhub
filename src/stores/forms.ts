@@ -3,18 +3,18 @@ import { readable } from 'svelte/store';
 export const forms = readable([
   {
     title: 'Whakaoranga Whanau Registration',
-    url: '/reg/whanau'
+    url: 'https://forms.gle/ixuMZHkJeApyYMVd6'
   },
   {
     title: 'Angry Birds Enrollment',
-    url: '/reg/angry-birds'
+    url: 'https://forms.gle/xoLobfziBcRFZbc9A'
   },
   {
     title: 'AOD Education & Counsel Enrollment',
-    url: '/reg/aod'
+    url: 'https://forms.gle/CWD8APGsRKy3bmGb7'
   },
   {
     title: 'Whare 2 the Whenua Interest Form',
-    url: '/reg/whare2whenua'
+    url: 'https://forms.gle/j9TkR4Nfo4CoAfJ49'
   }
 ]);

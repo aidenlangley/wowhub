@@ -95,7 +95,7 @@
 
 <form
   name="whanau"
-  method="post"
+  method="POST"
   data-netlify="true"
   class="column pad-y gaps-y"
 >
@@ -231,19 +231,19 @@
   <section id="emergency-address">
     <InputText
       label="Line 1"
-      text={address.line1}
+      text={emergencyAddress.line1}
       placeholder="123 Street Name"
       hideLabel
     />
     <InputText
       label="Line 2"
-      text={address.line2}
+      text={emergencyAddress.line2}
       placeholder="Line 2"
       hideLabel
     />
     <section id="emergency-city-postcode" class="city-postcode">
-      <InputText label="City" text={address.city} placeholder="City" />
-      <InputText label="Postcode" text={address.postcode} placeholder="1234" />
+      <InputText label="City" text={emergencyAddress.city} placeholder="City" />
+      <InputText label="Postcode" text={emergencyAddress.postcode} placeholder="1234" />
     </section>
   </section>
 
@@ -351,10 +351,6 @@
 <style lang="postcss">
   @media screen(ty) {
     section.name {
-      display: flex;
-    }
-
-    section.city-postcode {
       display: flex;
     }
   }
