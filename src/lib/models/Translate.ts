@@ -6,5 +6,6 @@ export enum TranslateDirection {
 export enum BackgroundColour {
   Green = 'translate-green',
   Red = 'translate-red',
-  Yellow = 'translate-yellow'
+  Yellow = 'translate-yellow',
+  Blue = 'translate-blue'
 }

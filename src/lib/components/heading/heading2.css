@@ -4,7 +4,7 @@ h1 {
   font-weight: theme('fontWeight.medium');
   padding: theme('padding.1');
 
-  @apply text-28;
+  @apply text-20;
 }
 
 @media screen(sm) {
@@ -18,7 +18,7 @@ h1 {
   h1 {
     padding: theme('padding.3');
 
-    @apply text-40;
+    @apply text-24;
   }
 }
 
@@ -26,6 +26,6 @@ h1 {
   h1 {
     padding: theme('padding.4');
 
-    @apply text-56;
+    @apply text-32;
   }
 }

@@ -2,10 +2,12 @@
   import InputCheckbox from '$comp/forms/InputCheckbox.svelte';
   import InputDate from '$comp/forms/InputDate.svelte';
   import InputEmail from '$comp/forms/InputEmail.svelte';
+  import InputNumber from '$comp/forms/InputNumber.svelte';
   import InputPhone from '$comp/forms/InputPhone.svelte';
   import InputSelect from '$comp/forms/InputSelect.svelte';
   import InputText from '$comp/forms/InputText.svelte';
   import Heading from '$comp/heading/Heading.svelte';
+  import Heading2 from '$comp/heading/Heading2.svelte';
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Heading4 from '$comp/heading/Heading4.svelte';
   import SvelteSeo from 'svelte-seo';
@@ -43,6 +45,19 @@
     'Kapahaka & waiata'
   ];
   let selectedServices: string[];
+
+  const ethnicities = [
+    'NZ Māori',
+    'NZ European',
+    'Samoan',
+    'Tongan',
+    'Cook Island Māori',
+    'Niuean'
+  ];
+
+  let iwi: string;
+  let children: number;
+  let msdClientNo: number;
 </script>
 
 <SvelteSeo
@@ -58,8 +73,9 @@
   class="column pad-y gaps-y"
 >
   <Heading>Whakaoranga Whanau Registration</Heading>
+
+  <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
-    <Heading3>Personal Details</Heading3>
     <section id="name" class="name">
       <InputSelect
         label="Title"
@@ -110,8 +126,6 @@
       />
     </section>
 
-    <Heading4>Contact Details</Heading4>
-
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
       {#each referrals as referredBy}
@@ -127,6 +141,27 @@
       {/each}
     </section>
   </section>
+
+  <section id="ehtnicity">
+    <Heading4>Ethnicity</Heading4>
+    {#each ethnicities as ethnicity}
+      <InputCheckbox label={ethnicity} group={ethnicities} />
+    {/each}
+  </section>
+
+  <InputText label="Iwi / Hapū" text={iwi} placeholder="Iwi / hapū" />
+  <InputNumber
+    label="Children / Dependents"
+    text={children}
+    placeholder="123"
+  />
+  <InputNumber
+    label="MSD Client No."
+    text={msdClientNo}
+    placeholder="123 456 789"
+  />
+
+  <button type="submit" class="button blue">Submit</button>
 </form>
 
 <style lang="postcss">
