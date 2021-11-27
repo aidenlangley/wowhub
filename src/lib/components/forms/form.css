@@ -1,0 +1,21 @@
+label {
+  display: none;
+  color: theme('colors.gray.900');
+}
+
+:global(.dark) label {
+  color: theme('colors.gray.100');
+}
+
+input {
+  opacity: 0.8;
+  background-color: theme('colors.gray.50');
+  border-radius: theme('borderRadius.md');
+  border-color: theme('colors.gray.300');
+}
+
+:global(.dark) input {
+  background-color: theme('colors.gray.800');
+  color: theme('colors.gray.100');
+  border-color: theme('colors.gray.700');
+}
