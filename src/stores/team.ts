@@ -1,16 +1,15 @@
 import aiden from '$img/people/aiden.jpg';
 import bells from '$img/people/bells.jpg';
+// import bess from '$img/people/bess.jpg';
 import dee from '$img/people/dee.jpg';
 import jane from '$img/people/jane.jpg';
 import noreen from '$img/people/noreen.jpg';
 import rhonda from '$img/people/rhonda.jpg';
+// import shan from '$img/people/shan.jpg';
 import stuBess from '$img/people/stu-bess.jpg';
 import { readable } from 'svelte/store';
 
 export const team = readable([
-  /**
-   * PRIMARY TEAM
-   */
   {
     name: 'Jane 🌊',
     tags: ['founder', 'peer support', 'tuākana'],
@@ -98,14 +97,14 @@ export const team = readable([
     name: 'Stu 💪🏽',
     tags: ['he waka eke noa', 'aod counsellor', 'kaumātua'],
     pepeha: [],
-    about: [],
+    about: [``],
     imgSrc: stuBess
   },
   {
     name: 'Bess 🔥',
     tags: ['he waka eke noa', 'therapist', 'kaumātua'],
     pepeha: [],
-    about: [],
+    about: [``],
     imgSrc: stuBess
   },
   {
@@ -144,7 +143,7 @@ export const team = readable([
       'Ko Ngāti Pākau te hapu',
       'Ko Tāhekeroa te marae',
       'Ko Pehi, ko Jack, ko Langley ōku whanau',
-      "Ko kaipūkaha rorohiko 'au",
+      'Ko kaipūkaha rorohiko ahau',
       'Ko Aiden Langley ahau'
     ],
     about: [
@@ -163,7 +162,7 @@ export const team = readable([
     name: 'Shannyn 📚',
     tags: ['front of house'],
     pepeha: [],
-    about: []
+    about: [``]
     // imgSrc:
   },
   {
