@@ -54,7 +54,8 @@
     'Samoan',
     'Tongan',
     'Cook Island Māori',
-    'Niuean'
+    'Niuean',
+    'Other'
   ];
 
   let iwi: string;
@@ -196,7 +197,7 @@
   <InputText
     label="Probation officer name (if applicable)"
     text={probationOfficer}
-    placeholder="John Smith"
+    placeholder="Smith John"
   />
   <InputRadio
     label="Do you have a bank account?"
@@ -325,10 +326,10 @@
     It's also important for you to understand that, should we believe you to be
     at risk of harming yourself, or others, we will act to keep you & them safe.
     We will always try to talk about this with you first, but will act in any
-    case, as this is part of our ethical practise.
+    case, as this is part of our ethical practice.
   </Paragraph>
   <Paragraph>
-    All kaimahi are supervised in their practise and they do discuss their mahi
+    All kaimahi are supervised in their practice and they do discuss their mahi
     with their supervisor, however in this process your identity is not
     disclosed. The purpose of supervision is to focus on practice, the ensure
     that we are providing a safe and efficient service to you.
