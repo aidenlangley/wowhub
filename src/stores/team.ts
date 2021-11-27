@@ -178,7 +178,7 @@ export const team = readable([
       'Ko Ngāpuhi tōku iwi',
       'Ko Rihari tōku whanau',
       'Ko Edwin raua ko Vera ōku matua',
-      'Ko Isabella tōku ingoa',
+      'Ko Isabella tōku ingoa'
     ],
     about: [
       `Isabella, or Bellz, has been in recovery for last 2 years as of 2021,
