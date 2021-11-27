@@ -110,6 +110,8 @@
       />
     </section>
 
+    <Heading4>Contact Details</Heading4>
+
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
       {#each referrals as referredBy}
