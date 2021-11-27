@@ -3,7 +3,4 @@
   "npm.packageManager": "pnpm",
   "eslint.packageManager": "pnpm",
   "stylelint.packageManager": "pnpm",
-  /* Stylelinting instead */
-  "css.validate": false,
-  "tailwindCSS.validate": false
 }
