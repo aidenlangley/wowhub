@@ -38,7 +38,7 @@
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <input type="hidden" name="form-name" value="WWRH Registration" />
+  <input type="hidden" name="form-name" value="Angry Birds Registrations" />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
