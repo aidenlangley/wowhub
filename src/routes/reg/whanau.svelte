@@ -29,8 +29,8 @@
   {name}
   method="POST"
   data-netlify="true"
-  action="/reg/thank-you/"
-  netlify-honeypot="wwrh-bot-field"
+  data-netlify-recaptcha="true"
+  netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>{name}</Heading>
@@ -258,21 +258,23 @@
 
   <Heading3>Declaration of Agreement & Understanding</Heading3>
   <InputCheckbox
-    id="declare-understanding"
     label={`I have read & understand the engagement agreement.`}
     required
   />
   <InputCheckbox
-    id="declare-rights"
     label={`I am aware of my rights under the Code of Health & Disability Services Consumer Rights.`}
     required
   />
 
   <section id="honeypot" class="honeypot">
     <label>
-      Don’t fill this out if you’re human: <input name="wwrh-bot-field" />
+      Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </section>
+
+  <div data-netlify-recaptcha="true">
+    <!-- Netlify will inject recaptcha here. -->
+  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>

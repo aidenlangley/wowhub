@@ -24,8 +24,7 @@
   name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
-  action="/reg/thank-you/"
-  netlify-honeypot="angry-birds-bot-field"
+  netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>{name}</Heading>
@@ -40,110 +39,90 @@
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
     <section id="name" class="name">
-      <InputText
-        id="angry-birds-forename"
-        label="Forename"
-        placeholder="First name"
-        required
-      />
-      <InputText
-        id="angry-birds-surname"
-        label="Surname"
-        placeholder="Last name"
-        required
-      />
+      <InputText label="Forename" placeholder="First name" required />
+      <InputText label="Surname" placeholder="Last name" required />
     </section>
 
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
-      <InputPhone
-        id="angry-birds-phone"
-        label="Phone"
-        placeholder="012345679"
-        required
-      />
-      <InputEmail
-        id="angry-birds-email"
-        label="Email"
-        placeholder="you@email.com (optional)"
-      />
+      <InputPhone label="Phone" placeholder="012345679" required />
+      <InputEmail label="Email" placeholder="you@email.com (optional)" />
       <InputText
-        id="angry-birds-fbmsg"
         label="Facebook Messenger"
         placeholder="Name on Facebook (optional)"
       />
     </section>
-
-    <Heading2>Engagement Agreement</Heading2>
-    <Paragraph>
-      This agreement sets the terms of our work together in regards to the
-      support services with Whakaoranga Whānau Recovery Hub.
-    </Paragraph>
-    <Paragraph>
-      During your time with the Whakaoranga Whānau Recovery Hub...
-    </Paragraph>
-
-    <Heading3>Group Safety</Heading3>
-    <Paragraph>
-      No violence or threats of violence towards staff or other group members
-      will be tolerated. It is very important that you view the group as a safe
-      place to share your experiences and feelings without fear of harm.
-    </Paragraph>
-
-    <Heading3>Confidentiality</Heading3>
-    <Paragraph>
-      Anything you share with us will remain confidential to the Whakaoranga
-      Whānau Recovery Hub and organisations involved in your care, for example
-      your GP, Corrections or Ministry of Social Development.
-    </Paragraph>
-
-    <Heading3>Attendance</Heading3>
-    <Paragraph>
-      There are 3 compulsory sessions that you must attend - the first session
-      is one of them. If you miss any of these compulsory sessions, you will not
-      graduate. You must attend at least 80% of the sessions to graduate. If you
-      miss 2 sessions, you will risk being discharged from the cohort, however,
-      you will have the option of enrolling in the next cohort.
-    </Paragraph>
-
-    <Heading3>Absence</Heading3>
-    <Paragraph>
-      If you are unable to attend your weekly session for any reason, you need
-      to call or notify the group leaders, or somebody from Whakaoranga Whanau
-      Recovery Hub. If you are more than 30 minutes late to a session without
-      notifying us, then don't turn up at all.
-    </Paragraph>
-
-    <Heading3>Classes</Heading3>
-    <Paragraph>
-      Classes will be held weekly on Wednesday from 11.30am to 5pm.
-    </Paragraph>
-
-    <Heading3>Information</Heading3>
-    <Paragraph>
-      There will be 10 weekly sessions on Tuesday, from 10am to 5pm. You must be
-      19 years of older to attend this program. No children are to be present
-      during class, unless prior arrangements have been made.
-    </Paragraph>
-
-    <Heading3>Declaration of Agreement & Understanding</Heading3>
-    <InputCheckbox
-      id="angry-birds-declare-understanding"
-      label={`I have read & understand the engagement agreement.`}
-      required
-    />
-
-    <section id="honeypot" class="honeypot">
-      <label>
-        Don’t fill this out if you’re human: <input
-          id="angry-birds-bot-field"
-          name="angry-birds-bot-field"
-        />
-      </label>
-    </section>
-
-    <button type="submit" class="button blue">Submit</button>
   </section>
+
+  <Heading2>Engagement Agreement</Heading2>
+  <Paragraph>
+    This agreement sets the terms of our work together in regards to the support
+    services with Whakaoranga Whānau Recovery Hub.
+  </Paragraph>
+  <Paragraph>
+    During your time with the Whakaoranga Whānau Recovery Hub...
+  </Paragraph>
+
+  <Heading3>Group Safety</Heading3>
+  <Paragraph>
+    No violence or threats of violence towards staff or other group members will
+    be tolerated. It is very important that you view the group as a safe place
+    to share your experiences and feelings without fear of harm.
+  </Paragraph>
+
+  <Heading3>Confidentiality</Heading3>
+  <Paragraph>
+    Anything you share with us will remain confidential to the Whakaoranga
+    Whānau Recovery Hub and organisations involved in your care, for example
+    your GP, Corrections or Ministry of Social Development.
+  </Paragraph>
+
+  <Heading3>Attendance</Heading3>
+  <Paragraph>
+    There are 3 compulsory sessions that you must attend - the first session is
+    one of them. If you miss any of these compulsory sessions, you will not
+    graduate. You must attend at least 80% of the sessions to graduate. If you
+    miss 2 sessions, you will risk being discharged from the cohort, however,
+    you will have the option of enrolling in the next cohort.
+  </Paragraph>
+
+  <Heading3>Absence</Heading3>
+  <Paragraph>
+    If you are unable to attend your weekly session for any reason, you need to
+    call or notify the group leaders, or somebody from Whakaoranga Whanau
+    Recovery Hub. If you are more than 30 minutes late to a session without
+    notifying us, then don't turn up at all.
+  </Paragraph>
+
+  <Heading3>Classes</Heading3>
+  <Paragraph>
+    Classes will be held weekly on Wednesday from 11.30am to 5pm.
+  </Paragraph>
+
+  <Heading3>Information</Heading3>
+  <Paragraph>
+    There will be 10 weekly sessions on Tuesday, from 10am to 5pm. You must be
+    19 years of older to attend this program. No children are to be present
+    during class, unless prior arrangements have been made.
+  </Paragraph>
+
+  <Heading3>Declaration of Agreement & Understanding</Heading3>
+  <InputCheckbox
+    label={`I have read & understand the engagement agreement.`}
+    required
+  />
+
+  <section id="honeypot" class="honeypot">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </section>
+
+  <div data-netlify-recaptcha="true">
+    <!-- Netlify will inject recaptcha here. -->
+  </div>
+
+  <button type="submit" class="button blue">Submit</button>
 </form>
 
 <style lang="postcss">
