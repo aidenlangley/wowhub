@@ -13,15 +13,15 @@
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
   import SvelteSeo from 'svelte-seo';
 
-  const name = 'AOD Registration';
+  const name = 'Manu Pukuriri (Angry Birds) Enrollment';
   const description =
-    "Register for He Waka Aotearoa's AOD Education & Counselling course.";
+    "Register for He Waka Aotearoa's Anger Management course.";
 </script>
 
 <SvelteSeo title={name} {description} />
 
 <form
-  {name}
+  name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
@@ -34,7 +34,7 @@
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <input type="hidden" name="form-name" value={name} />
+  <input type="hidden" name="form-name" value="Angry Birds Registration" />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
@@ -75,6 +75,15 @@
     Anything you share with us will remain confidential to the Whakaoranga
     Whānau Recovery Hub and organisations involved in your care, for example
     your GP, Corrections or Ministry of Social Development.
+  </Paragraph>
+
+  <Heading3>Attendance</Heading3>
+  <Paragraph>
+    There are 3 compulsory sessions that you must attend - the first session is
+    one of them. If you miss any of these compulsory sessions, you will not
+    graduate. You must attend at least 80% of the sessions to graduate. If you
+    miss 2 sessions, you will risk being discharged from the cohort, however,
+    you will have the option of enrolling in the next cohort.
   </Paragraph>
 
   <Heading3>Absence</Heading3>

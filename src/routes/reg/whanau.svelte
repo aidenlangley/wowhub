@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import InputCheckbox from '$comp/forms/InputCheckbox.svelte';
   import InputDate from '$comp/forms/InputDate.svelte';
@@ -12,54 +16,31 @@
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Heading4 from '$comp/heading/Heading4.svelte';
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
-  import { WhanauRegistration } from '$models/forms/Whanau';
   import SvelteSeo from 'svelte-seo';
 
-  // Contrust & destructure form model
-  const form = new WhanauRegistration();
-  let {
-    person,
-    referredBy,
-    selectedServices,
-    maori,
-    legal,
-    smokerStatus,
-    bankAccountStatus,
-    photoIdStatus,
-    internetAccessStatus,
-    bankAccount,
-    medicalCenterName
-  } = form;
-  let {
-    title,
-    forename,
-    surname,
-    dob,
-    contactDetails,
-    address,
-    children,
-    emergencyContact
-  } = person;
-  let { phoneNumber, emailAddress, fbMsgName } = contactDetails;
-  let { iwi } = maori;
-  let { msdClientNo, lawyerName, probationOfficerName } = legal;
+  const name = 'Whakaoranga Whanau Registration';
+  const description = `Planting the seed of hope... Sharing gifts of recovery.
+  Register with the Whakaoranga Whanau here.`;
 </script>
 
-<SvelteSeo
-  title="Whakaoranga Whanau Registration"
-  description={`Planting the seed of hope... Sharing gifts of recovery. Register
-  with the Whakaoranga Whanau here.`}
-/>
+<SvelteSeo title={name} {description} />
 
 <form
-  name="WWRH Registration"
+  {name}
   method="POST"
   data-netlify="true"
+  data-netlify-recaptcha="true"
   netlify-honeypot="bot-field"
-  action="/reg/thank-you"
   class="column pad-y gaps-y"
 >
-  <Heading>Whakaoranga Whanau Registration</Heading>
+  <Heading>{name}</Heading>
+  <Paragraph>{description}</Paragraph>
+
+  <!--
+    This is supposed to happen automatically, but I can see no evidence of it
+    working, so I'm manually adding it.
+  -->
+  <input type="hidden" name="form-name" value={name} />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
@@ -67,55 +48,40 @@
       <InputSelect
         label="Title"
         options={['Mr', 'Miss', 'Mrs', 'Ms']}
-        selected={title}
+        required
       />
-      <InputText label="Forename" text={forename} placeholder="First name" />
-      <InputText label="Surname" text={surname} placeholder="Last name" />
+      <InputText label="Forename" placeholder="First name" required />
+      <InputText label="Surname" placeholder="Last name" required />
     </section>
-    <InputDate label="Date of birth" date={dob} />
+    <InputDate label="Date of birth" />
 
     <Heading3>Address</Heading3>
     <section id="address">
       <InputText
-        label="Line 1"
-        text={address.line1}
+        label="Address Line 1"
         placeholder="123 Street Name"
         hideLabel
       />
-      <InputText
-        label="Line 2"
-        text={address.line2}
-        placeholder="Line 2"
-        hideLabel
-      />
+      <InputText label="Address Line 2" hideLabel />
       <section id="city-postcode" class="city-postcode">
-        <InputText label="City" text={address.city} placeholder="City" />
-        <InputText
-          label="Postcode"
-          text={address.postcode}
-          placeholder="1234"
-        />
+        <InputText label="City" placeholder="City" />
+        <InputText label="Postcode" placeholder="1234" />
       </section>
     </section>
 
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
-      <InputPhone label="Phone" number={phoneNumber} placeholder="012345679" />
-      <InputEmail
-        label="Email"
-        email={emailAddress}
-        placeholder="you@email.com"
-      />
+      <InputPhone label="Phone" placeholder="012345679" required />
+      <InputEmail label="Email" placeholder="you@email.com (optional)" />
       <InputText
         label="Facebook Messenger"
-        text={fbMsgName}
         placeholder="Name on Facebook (optional)"
       />
     </section>
 
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
-      {#each ['Self', 'Police', 'Corrections / Probation', 'Family Court', 'Rehab / DHB'] as referredBy}
+      {#each ['Referred myself', 'Referred by the police', 'Referred by corrections / probation', 'Referred by the family court', 'Referred by rehab / the DHB'] as referredBy}
         <InputCheckbox label={referredBy} />
       {/each}
     </section>
@@ -129,12 +95,6 @@
     </section>
   </section>
 
-  <InputRadio
-    label="Smoker?"
-    options={['Yes', 'No', 'Used to']}
-    bind:value={smokerStatus}
-  />
-
   <section id="ehtnicity">
     <Heading4>Ethnicity</Heading4>
     {#each ['NZ Māori', 'NZ European', 'Samoan', 'Tongan', 'Cook Island Māori', 'Niuean', 'Other'] as ethnicity}
@@ -142,110 +102,89 @@
     {/each}
   </section>
 
-  <InputText label="Iwi and/or hapū" text={iwi} placeholder="Iwi / hapū" />
-  <InputNumber
-    label="Children / dependents"
-    number={children}
-    placeholder="123"
+  <InputRadio
+    label="Smoker?"
+    options={['Yes, I am a smoker', 'No, not a smoker', 'Used to smoke']}
   />
-  <InputNumber
-    label="MSD client no."
-    number={msdClientNo}
-    placeholder="123 456 789"
-  />
-  <InputNumber
-    label="Bank account no."
-    number={bankAccount}
-    placeholder="123 456 789"
-  />
-  <InputText
-    label="Lawyers name (if applicable)"
-    text={lawyerName}
-    placeholder="John Smith"
-  />
+
+  <InputText label="Iwi and/or hapū" placeholder="Iwi / hapū" />
+  <InputNumber label="Children / dependents" placeholder="123" />
+  <InputNumber label="MSD client no." placeholder="123 456 789" />
+  <InputNumber label="Bank account no." placeholder="123 456 789" />
+  <InputText label="Lawyers name (if applicable)" placeholder="John Smith" />
   <InputText
     label="Probation officer name (if applicable)"
-    text={probationOfficerName}
     placeholder="Smith John"
   />
   <InputRadio
     label="Do you have a bank account?"
-    options={['Yes', 'No']}
-    bind:value={bankAccountStatus}
+    options={['Yes, I have a bank account', "No, I don't have a bank account"]}
   />
   <InputRadio
     label="Do you have photo ID?"
-    options={['Yes', 'No']}
-    bind:value={photoIdStatus}
+    options={['Yes, I have photo ID', "No, I don't have photo ID"]}
   />
   <InputRadio
     label="Do you have access to the internet?"
-    options={['Yes', 'No', 'Sometimes']}
-    bind:value={internetAccessStatus}
+    options={[
+      'Yes, I have access to the internet',
+      "No, I don't have access to the internet",
+      'I sometimes have access to the internet'
+    ]}
   />
 
   <Heading4>Would you like assistance with any of the above?</Heading4>
-  {#each ['Bank Account', 'Photo ID', 'Internet Access'] as assistance}
+  {#each ["I'd like assistance setting up a bank account", "I'd like assistance getting photo ID", "I'd like assistance getting access to the internet"] as assistance}
     <InputCheckbox label={assistance} />
   {/each}
 
   <Heading2>Emergency Contact</Heading2>
   <section id="emergency-contact">
     <InputText
-      label="Name (next of kin, or somebody close to you)"
-      placeholder="Partner, mother..."
+      label="Emergency contact's name"
+      placeholder="Next of kin, or somebody close to you"
+      required
     />
-    <InputText label="Relation to you" placeholder="Brother, sister..." />
+    <InputText
+      label="Emergency contact's relation to you"
+      placeholder="Partner, mother, etc."
+      required
+    />
 
-    <Heading3>Emergency Contact Address</Heading3>
+    <Heading3>Address</Heading3>
     <section id="emergency-address">
       <InputText
-        label="Line 1"
-        text={emergencyContact.address.line1}
+        label="Emergency Contact Address Line 1"
         placeholder="123 Street Name"
         hideLabel
       />
       <InputText
-        label="Line 2"
-        text={emergencyContact.address.line2}
+        label="Emergency Contact Address Line 2"
         placeholder="Line 2"
         hideLabel
       />
       <section id="emergency-city-postcode" class="city-postcode">
-        <InputText
-          label="City"
-          text={emergencyContact.address.city}
-          placeholder="City"
-        />
-        <InputText
-          label="Postcode"
-          text={emergencyContact.address.postcode}
-          placeholder="1234"
-        />
+        <InputText label="Emergency Contact City" placeholder="City" />
+        <InputText label="Emergency Contact Postcode" placeholder="1234" />
       </section>
     </section>
 
-    <Heading3>Emergency Contact Details</Heading3>
+    <Heading3>Contact Details</Heading3>
     <section id="emergency-contact-details">
       <InputPhone
-        label="Phone"
-        number={emergencyContact.contactDetails.phoneNumber}
+        label="Emergency contact phone"
         placeholder="012345679"
+        required
       />
       <InputEmail
-        label="Email"
-        email={emergencyContact.contactDetails.emailAddress}
-        placeholder="you@email.com"
+        label="Emergency contact email address"
+        placeholder="you@email.com (optional)"
       />
     </section>
   </section>
 
   <Heading2>Medical</Heading2>
-  <InputText
-    label="Name of Medical Center"
-    text={medicalCenterName}
-    placeholder="The Doctors"
-  />
+  <InputText label="Name of Medical Center" placeholder="The Doctors" />
 
   <Heading3>Agreement</Heading3>
   <Paragraph>
@@ -257,18 +196,21 @@
     label={`I give consent for Whakaoranga Whānau Recovery Hub to gain access to
       my personal medical records from my GP, DHB & other healthcare service
       providers.`}
+    required
   />
   <InputCheckbox
     id="understand-communication"
     label={`I understand that my healthcare provider may send my health
       information (confidentially) to other health care professionals who are
       directly involved with my health care & treatment.`}
+    required
   />
   <InputCheckbox
     id="understand-confidentiality"
     label={`I understand that my health information will be restricted to
       authorised staff who will specifically access it to enable effective, safe
       & efficient care.`}
+    required
   />
 
   <Heading2>Engagement Agreement</Heading2>
@@ -316,12 +258,12 @@
 
   <Heading3>Declaration of Agreement & Understanding</Heading3>
   <InputCheckbox
-    id="declare-understanding"
     label={`I have read & understand the engagement agreement.`}
+    required
   />
   <InputCheckbox
-    id="declare-rights"
     label={`I am aware of my rights under the Code of Health & Disability Services Consumer Rights.`}
+    required
   />
 
   <section id="honeypot" class="honeypot">
@@ -329,6 +271,10 @@
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </section>
+
+  <div data-netlify-recaptcha="true">
+    <!-- Netlify will inject recaptcha here. -->
+  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>

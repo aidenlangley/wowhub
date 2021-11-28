@@ -3,6 +3,7 @@
   export let email: string;
   export let placeholder = '';
   export let hideLabel = false;
+  export let required = false;
   export let id = label.toLowerCase().split(' ').join('-');
 </script>
 
@@ -10,5 +11,12 @@
   {#if !hideLabel}
     <label for={id}>{label}</label>
   {/if}
-  <input type="email" name={id} {id} bind:value={email} {placeholder} />
+  <input
+    type="email"
+    name={id}
+    {id}
+    bind:value={email}
+    {placeholder}
+    {required}
+  />
 </div>
