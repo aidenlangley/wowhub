@@ -12,79 +12,37 @@
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Heading4 from '$comp/heading/Heading4.svelte';
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
+  import { WhanauRegistration } from '$models/forms/Whanau';
   import SvelteSeo from 'svelte-seo';
 
-  let title: string;
-  let forename: string;
-  let surname: string;
-  let dob: string;
-  let address = {
-    line1: '',
-    line2: '',
-    city: '',
-    postcode: ''
-  };
-  let phoneNumber: string;
-  let emailAddress: string;
-  let fbMsgName: string;
-
-  const referrals = [
-    'Self',
-    'Police',
-    'Corrections / Probation',
-    'Family Court',
-    'Rehab / DHB'
-  ];
-  let referredBy: string[];
-
-  const services = [
-    'AOD Counselling & Education',
-    'AOD Transitional Housing',
-    'Social Services Support',
-    'Advocacy',
-    'Anger Management',
-    'Te reo Māori',
-    'Kapahaka & waiata'
-  ];
-  let selectedServices: string[];
-
-  const ethnicities = [
-    'NZ Māori',
-    'NZ European',
-    'Samoan',
-    'Tongan',
-    'Cook Island Māori',
-    'Niuean',
-    'Other'
-  ];
-
-  let iwi: string;
-  let children: number;
-  let msdClientNo: number;
-  let lawyer: string;
-  let probationOfficer: string;
-  let photoId: string;
-  let internetAccess: string;
-
-  let yesNo = ['Yes', 'No'];
-  let yesNoUsedTo = ['Yes', 'No', 'Used to'];
-  let yesNoSometimes = ['Yes', 'No', 'Sometimes'];
-
-  let smoker: string;
-  let bankAccount: string;
-
-  const assistanceWith = ['Bank Account', 'Photo ID', 'Internet Access'];
-
-  let emergencyAddress = {
-    line1: '',
-    line2: '',
-    city: '',
-    postcode: ''
-  };
-  let emergencyPhoneNumber: string;
-  let emergencyEmailAddress: string;
-
-  let medicalCenter: string;
+  // Contrust & destructure form model
+  const form = new WhanauRegistration();
+  let {
+    person,
+    referredBy,
+    selectedServices,
+    maori,
+    legal,
+    smokerStatus,
+    bankAccountStatus,
+    photoIdStatus,
+    internetAccessStatus,
+    bankAccount,
+    medicalCenterName
+  } = form;
+  let {
+    title,
+    forename,
+    surname,
+    dob,
+    contactDetails,
+    address,
+    children,
+    emergencyContact
+  } = person;
+  let { phoneNumber, emailAddress, fbMsgName } = contactDetails;
+  let { iwi } = maori;
+  let { msdClientNo, lawyerName, probationOfficerName } = legal;
 </script>
 
 <SvelteSeo
@@ -155,7 +113,7 @@
 
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
-      {#each referrals as referredBy}
+      {#each ['Self', 'Police', 'Corrections / Probation', 'Family Court', 'Rehab / DHB'] as referredBy}
         <InputCheckbox label={referredBy} />
       {/each}
     </section>
@@ -163,17 +121,21 @@
       <Heading4>
         I would like to register for these programmes / services...
       </Heading4>
-      {#each services as service}
+      {#each ['AOD Counselling & Education', 'AOD Transitional Housing', 'Social Services Support', 'Advocacy', 'Anger Management', 'Te reo Māori', 'Kapahaka & waiata'] as service}
         <InputCheckbox label={service} />
       {/each}
     </section>
   </section>
 
-  <InputRadio label="Smoker?" options={yesNoUsedTo} bind:value={smoker} />
+  <InputRadio
+    label="Smoker?"
+    options={['Yes', 'No', 'Used to']}
+    bind:value={smokerStatus}
+  />
 
   <section id="ehtnicity">
     <Heading4>Ethnicity</Heading4>
-    {#each ethnicities as ethnicity}
+    {#each ['NZ Māori', 'NZ European', 'Samoan', 'Tongan', 'Cook Island Māori', 'Niuean', 'Other'] as ethnicity}
       <InputCheckbox label={ethnicity} />
     {/each}
   </section>
@@ -189,82 +151,97 @@
     number={msdClientNo}
     placeholder="123 456 789"
   />
+  <InputNumber
+    label="Bank account no."
+    number={bankAccount}
+    placeholder="123 456 789"
+  />
   <InputText
     label="Lawyers name (if applicable)"
-    text={lawyer}
+    text={lawyerName}
     placeholder="John Smith"
   />
   <InputText
     label="Probation officer name (if applicable)"
-    text={probationOfficer}
+    text={probationOfficerName}
     placeholder="Smith John"
   />
   <InputRadio
     label="Do you have a bank account?"
-    options={yesNo}
-    bind:value={bankAccount}
+    options={['Yes', 'No']}
+    bind:value={bankAccountStatus}
   />
   <InputRadio
     label="Do you have photo ID?"
-    options={yesNo}
-    bind:value={photoId}
+    options={['Yes', 'No']}
+    bind:value={photoIdStatus}
   />
   <InputRadio
     label="Do you have access to the internet?"
-    options={yesNoSometimes}
-    bind:value={internetAccess}
+    options={['Yes', 'No', 'Sometimes']}
+    bind:value={internetAccessStatus}
   />
 
   <Heading4>Would you like assistance with any of the above?</Heading4>
-  {#each assistanceWith as assistance}
+  {#each ['Bank Account', 'Photo ID', 'Internet Access'] as assistance}
     <InputCheckbox label={assistance} />
   {/each}
 
   <Heading2>Emergency Contact</Heading2>
-  <InputText
-    label="Name (next of kin, or somebody close to you)"
-    placeholder="Partner, mother..."
-  />
-  <InputText label="Relation to you" placeholder="Brother, sister..." />
+  <section id="emergency-contact">
+    <InputText
+      label="Name (next of kin, or somebody close to you)"
+      placeholder="Partner, mother..."
+    />
+    <InputText label="Relation to you" placeholder="Brother, sister..." />
 
-  <Heading3>Address</Heading3>
-  <section id="emergency-address">
-    <InputText
-      label="Line 1"
-      text={emergencyAddress.line1}
-      placeholder="123 Street Name"
-      hideLabel
-    />
-    <InputText
-      label="Line 2"
-      text={emergencyAddress.line2}
-      placeholder="Line 2"
-      hideLabel
-    />
-    <section id="emergency-city-postcode" class="city-postcode">
-      <InputText label="City" text={emergencyAddress.city} placeholder="City" />
-      <InputText label="Postcode" text={emergencyAddress.postcode} placeholder="1234" />
+    <Heading3>Emergency Contact Address</Heading3>
+    <section id="emergency-address">
+      <InputText
+        label="Line 1"
+        text={emergencyContact.address.line1}
+        placeholder="123 Street Name"
+        hideLabel
+      />
+      <InputText
+        label="Line 2"
+        text={emergencyContact.address.line2}
+        placeholder="Line 2"
+        hideLabel
+      />
+      <section id="emergency-city-postcode" class="city-postcode">
+        <InputText
+          label="City"
+          text={emergencyContact.address.city}
+          placeholder="City"
+        />
+        <InputText
+          label="Postcode"
+          text={emergencyContact.address.postcode}
+          placeholder="1234"
+        />
+      </section>
     </section>
-  </section>
 
-  <Heading3>Contact Details</Heading3>
-  <section id="emergency-contact-details">
-    <InputPhone
-      label="Phone"
-      number={emergencyPhoneNumber}
-      placeholder="012345679"
-    />
-    <InputEmail
-      label="Email"
-      email={emergencyEmailAddress}
-      placeholder="you@email.com"
-    />
+    <Heading3>Emergency Contact Details</Heading3>
+    <section id="emergency-contact-details">
+      <InputPhone
+        label="Phone"
+        number={emergencyContact.contactDetails.phoneNumber}
+        placeholder="012345679"
+      />
+      <InputEmail
+        label="Email"
+        email={emergencyContact.contactDetails.emailAddress}
+        placeholder="you@email.com"
+      />
+    </section>
   </section>
 
   <Heading2>Medical</Heading2>
   <InputText
     label="Name of Medical Center"
-    text={medicalCenter}
+    text={medicalCenterName}
     placeholder="The Doctors"
   />
 
