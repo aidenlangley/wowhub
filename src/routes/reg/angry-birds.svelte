@@ -21,7 +21,7 @@
 />
 
 <form
-  name="AOD Registration"
+  name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
   data-netlify-recaptcha="true"
@@ -29,9 +29,9 @@
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
-  <Heading>AOD Course Enrollment Registration</Heading>
+  <Heading>Manu Pukuriri (Angry Birds) Enrollment</Heading>
   <Paragraph>
-    Register for He Waka Aotearoa's AOD Education & Counselling course.
+    Register for He Waka Aotearoa's Anger Management course.
   </Paragraph>
 
   <!--
@@ -78,6 +78,15 @@
       Anything you share with us will remain confidential to the Whakaoranga
       Whānau Recovery Hub and organisations involved in your care, for example
       your GP, Corrections or Ministry of Social Development.
+    </Paragraph>
+
+    <Heading3>Attendance</Heading3>
+    <Paragraph>
+      There are 3 compulsory sessions that you must attend - the first session
+      is one of them. If you miss any of these compulsory sessions, you will not
+      graduate. You must attend at least 80% of the sessions to graduate. If you
+      miss 2 sessions, you will risk being discharged from the cohort, however,
+      you will have the option of enrolling in the next cohort.
     </Paragraph>
 
     <Heading3>Absence</Heading3>

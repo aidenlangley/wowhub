@@ -29,11 +29,16 @@
   name="WWRH Registration"
   method="POST"
   data-netlify="true"
+  data-netlify-recaptcha="true"
   action="/reg/thank-you/"
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>Whakaoranga Whanau Registration</Heading>
+  <Paragraph>
+    Register to become a part of the Whakaoranga Whanau and get involved in our
+    services.
+  </Paragraph>
 
   <!--
     This is supposed to happen automatically, but I can see no evidence of it
@@ -56,8 +61,12 @@
 
     <Heading3>Address</Heading3>
     <section id="address">
-      <InputText label="Line 1" placeholder="123 Street Name" hideLabel />
-      <InputText label="Line 2" hideLabel />
+      <InputText
+        label="Address Line 1"
+        placeholder="123 Street Name"
+        hideLabel
+      />
+      <InputText label="Address Line 2" hideLabel />
       <section id="city-postcode" class="city-postcode">
         <InputText label="City" placeholder="City" />
         <InputText label="Postcode" placeholder="1234" />
@@ -67,7 +76,7 @@
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
       <InputPhone label="Phone" placeholder="012345679" required />
-      <InputEmail label="Email" placeholder="you@email.com" />
+      <InputEmail label="Email" placeholder="you@email.com (optional)" />
       <InputText
         label="Facebook Messenger"
         placeholder="Name on Facebook (optional)"
@@ -76,7 +85,7 @@
 
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
-      {#each ['Self', 'Police', 'Corrections / Probation', 'Family Court', 'Rehab / DHB'] as referredBy}
+      {#each ['Referred myself', 'Referred by the police', 'Referred by corrections / probation', 'Referred by the family court', 'Referred by rehab / the DHB'] as referredBy}
         <InputCheckbox label={referredBy} />
       {/each}
     </section>
@@ -90,14 +99,17 @@
     </section>
   </section>
 
-  <InputRadio label="Smoker?" options={['Yes', 'No', 'Used to']} />
-
   <section id="ehtnicity">
     <Heading4>Ethnicity</Heading4>
     {#each ['NZ Māori', 'NZ European', 'Samoan', 'Tongan', 'Cook Island Māori', 'Niuean', 'Other'] as ethnicity}
       <InputCheckbox label={ethnicity} />
     {/each}
   </section>
+
+  <InputRadio
+    label="Smoker?"
+    options={['Yes, I am a smoker', 'No, not a smoker', 'Used to smoke']}
+  />
 
   <InputText label="Iwi and/or hapū" placeholder="Iwi / hapū" />
   <InputNumber label="Children / dependents" placeholder="123" />
@@ -108,45 +120,70 @@
     label="Probation officer name (if applicable)"
     placeholder="Smith John"
   />
-  <InputRadio label="Do you have a bank account?" options={['Yes', 'No']} />
-  <InputRadio label="Do you have photo ID?" options={['Yes', 'No']} />
+  <InputRadio
+    label="Do you have a bank account?"
+    options={['Yes, I have a bank account', "No, I don't have a bank account"]}
+  />
+  <InputRadio
+    label="Do you have photo ID?"
+    options={['Yes, I have photo ID', "No, I don't have photo ID"]}
+  />
   <InputRadio
     label="Do you have access to the internet?"
-    options={['Yes', 'No', 'Sometimes']}
+    options={[
+      'Yes, I have access to the internet',
+      "No, I don't have access to the internet",
+      'I sometimes have access to the internet'
+    ]}
   />
 
   <Heading4>Would you like assistance with any of the above?</Heading4>
-  {#each ['Bank Account', 'Photo ID', 'Internet Access'] as assistance}
+  {#each ["I'd like assistance setting up a bank account", "I'd like assistance getting photo ID", "I'd like assistance getting access to the internet"] as assistance}
     <InputCheckbox label={assistance} />
   {/each}
 
   <Heading2>Emergency Contact</Heading2>
   <section id="emergency-contact">
     <InputText
-      label="Name (next of kin, or somebody close to you)"
-      placeholder="Partner, mother..."
+      label="Emergency contact's name"
+      placeholder="Next of kin, or somebody close to you"
       required
     />
     <InputText
-      label="Relation to you"
-      placeholder="Brother, sister..."
+      label="Emergency contact's relation to you"
+      placeholder="Partner, mother, etc."
       required
     />
 
-    <Heading3>Emergency Contact Address</Heading3>
+    <Heading3>Address</Heading3>
     <section id="emergency-address">
-      <InputText label="Line 1" placeholder="123 Street Name" hideLabel />
-      <InputText label="Line 2" placeholder="Line 2" hideLabel />
+      <InputText
+        label="Emergency Contact Address Line 1"
+        placeholder="123 Street Name"
+        hideLabel
+      />
+      <InputText
+        label="Emergency Contact Address Line 2"
+        placeholder="Line 2"
+        hideLabel
+      />
       <section id="emergency-city-postcode" class="city-postcode">
-        <InputText label="City" placeholder="City" />
-        <InputText label="Postcode" placeholder="1234" />
+        <InputText label="Emergency Contact City" placeholder="City" />
+        <InputText label="Emergency Contact Postcode" placeholder="1234" />
       </section>
     </section>
 
-    <Heading3>Emergency Contact Details</Heading3>
+    <Heading3>Contact Details</Heading3>
     <section id="emergency-contact-details">
-      <InputPhone label="Phone" placeholder="012345679" required />
-      <InputEmail label="Email" placeholder="you@email.com" />
+      <InputPhone
+        label="Emergency contact phone"
+        placeholder="012345679"
+        required
+      />
+      <InputEmail
+        label="Emergency contact email address"
+        placeholder="you@email.com (optional)"
+      />
     </section>
   </section>
 
@@ -240,6 +277,9 @@
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </section>
+  <div data-netlify-recaptcha="true">
+    <!-- Netlify will inject captcha -->
+  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>

@@ -7,14 +7,14 @@ export const forms = readable([
   },
   {
     title: 'Angry Birds Enrollment',
-    url: 'https://forms.gle/xoLobfziBcRFZbc9A'
+    url: '/reg/angry-birds'
   },
   {
     title: 'AOD Education & Counsel Enrollment',
-    url: 'https://forms.gle/CWD8APGsRKy3bmGb7'
+    url: '/reg/aod'
   },
   {
     title: 'Whare 2 the Whenua Interest Form',
-    url: 'https://forms.gle/j9TkR4Nfo4CoAfJ49'
+    url: 'https://forms.gle/SjHLi4RRcDwmLuVR9'
   }
 ]);
