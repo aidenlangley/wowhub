@@ -52,9 +52,11 @@
 />
 
 <form
-  name="whanau"
+  name="WWRH Registration"
   method="POST"
   data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/reg/thank-you"
   class="column pad-y gaps-y"
 >
   <Heading>Whakaoranga Whanau Registration</Heading>
@@ -322,10 +324,20 @@
     label={`I am aware of my rights under the Code of Health & Disability Services Consumer Rights.`}
   />
 
+  <section id="honeypot" class="honeypot">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </section>
+
   <button type="submit" class="button blue">Submit</button>
 </form>
 
 <style lang="postcss">
+  .honeypot {
+    visibility: hidden;
+  }
+
   @media screen(ty) {
     section.name {
       display: flex;
