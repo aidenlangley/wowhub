@@ -3,7 +3,7 @@ import { readable } from 'svelte/store';
 export const forms = readable([
   {
     title: 'Whakaoranga Whanau Registration',
-    url: 'https://forms.gle/ixuMZHkJeApyYMVd6'
+    url: '/reg/whanau'
   },
   {
     title: 'Angry Birds Enrollment',

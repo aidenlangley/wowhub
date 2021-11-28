@@ -78,9 +78,20 @@
         label="Title"
         options={['Mr', 'Miss', 'Mrs', 'Ms']}
         selected={title}
+        required
       />
-      <InputText label="Forename" text={forename} placeholder="First name" />
-      <InputText label="Surname" text={surname} placeholder="Last name" />
+      <InputText
+        label="Forename"
+        text={forename}
+        placeholder="First name"
+        required
+      />
+      <InputText
+        label="Surname"
+        text={surname}
+        placeholder="Last name"
+        required
+      />
     </section>
     <InputDate label="Date of birth" date={dob} />
 
@@ -105,7 +116,12 @@
 
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
-      <InputPhone label="Phone" number={phoneNumber} placeholder="012345679" />
+      <InputPhone
+        label="Phone"
+        number={phoneNumber}
+        placeholder="012345679"
+        required
+      />
       <InputEmail
         label="Email"
         email={emailAddress}
@@ -199,8 +215,13 @@
     <InputText
       label="Name (next of kin, or somebody close to you)"
       placeholder="Partner, mother..."
+      required
     />
-    <InputText label="Relation to you" placeholder="Brother, sister..." />
+    <InputText
+      label="Relation to you"
+      placeholder="Brother, sister..."
+      required
+    />
 
     <Heading3>Emergency Contact Address</Heading3>
     <section id="emergency-address">
@@ -236,6 +257,7 @@
         label="Phone"
         number={emergencyContact.contactDetails.phoneNumber}
         placeholder="012345679"
+        required
       />
       <InputEmail
         label="Email"
@@ -262,18 +284,21 @@
     label={`I give consent for Whakaoranga Whānau Recovery Hub to gain access to
       my personal medical records from my GP, DHB & other healthcare service
       providers.`}
+    required
   />
   <InputCheckbox
     id="understand-communication"
     label={`I understand that my healthcare provider may send my health
       information (confidentially) to other health care professionals who are
       directly involved with my health care & treatment.`}
+    required
   />
   <InputCheckbox
     id="understand-confidentiality"
     label={`I understand that my health information will be restricted to
       authorised staff who will specifically access it to enable effective, safe
       & efficient care.`}
+    required
   />
 
   <Heading2>Engagement Agreement</Heading2>
@@ -323,10 +348,12 @@
   <InputCheckbox
     id="declare-understanding"
     label={`I have read & understand the engagement agreement.`}
+    required
   />
   <InputCheckbox
     id="declare-rights"
     label={`I am aware of my rights under the Code of Health & Disability Services Consumer Rights.`}
+    required
   />
 
   <section id="honeypot" class="honeypot">

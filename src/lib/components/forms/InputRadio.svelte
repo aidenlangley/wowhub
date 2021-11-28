@@ -1,7 +1,8 @@
 <script lang="ts">
   export let label: string;
   export let options: string[];
-  export let id = label.replace('?', '').toLowerCase().split(' ').join('-');
+  export let required = false;
+  export let id = label.toLowerCase().split(' ').join('-');
 </script>
 
 <div class="radio">
@@ -13,6 +14,7 @@
         name={id}
         id={`${id}_${option}`}
         bind:value={option}
+        {required}
       />
       <label for={`${id}_${option}`}>{option}</label>
     </div>
