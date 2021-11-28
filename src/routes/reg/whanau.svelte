@@ -16,37 +16,7 @@
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Heading4 from '$comp/heading/Heading4.svelte';
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
-  import { WhanauRegistration } from '$models/forms/Whanau';
   import SvelteSeo from 'svelte-seo';
-
-  // Contrust & destructure form model
-  const form = new WhanauRegistration();
-  let {
-    person,
-    referredBy,
-    selectedServices,
-    maori,
-    legal,
-    smokerStatus,
-    bankAccountStatus,
-    photoIdStatus,
-    internetAccessStatus,
-    bankAccount,
-    medicalCenterName
-  } = form;
-  let {
-    title,
-    forename,
-    surname,
-    dob,
-    contactDetails,
-    address,
-    children,
-    emergencyContact
-  } = person;
-  let { phoneNumber, emailAddress, fbMsgName } = contactDetails;
-  let { iwi } = maori;
-  let { msdClientNo, lawyerName, probationOfficerName } = legal;
 </script>
 
 <SvelteSeo
@@ -77,59 +47,29 @@
       <InputSelect
         label="Title"
         options={['Mr', 'Miss', 'Mrs', 'Ms']}
-        selected={title}
         required
       />
-      <InputText
-        label="Forename"
-        text={forename}
-        placeholder="First name"
-        required
-      />
-      <InputText
-        label="Surname"
-        text={surname}
-        placeholder="Last name"
-        required
-      />
+      <InputText label="Forename" placeholder="First name" required />
+      <InputText label="Surname" placeholder="Last name" required />
     </section>
-    <InputDate label="Date of birth" date={dob} />
+    <InputDate label="Date of birth" />
 
     <Heading3>Address</Heading3>
     <section id="address">
-      <InputText
-        label="Line 1"
-        text={address.line1}
-        placeholder="123 Street Name"
-        hideLabel
-      />
-      <InputText label="Line 2" text={address.line2} hideLabel />
+      <InputText label="Line 1" placeholder="123 Street Name" hideLabel />
+      <InputText label="Line 2" hideLabel />
       <section id="city-postcode" class="city-postcode">
-        <InputText label="City" text={address.city} placeholder="City" />
-        <InputText
-          label="Postcode"
-          text={address.postcode}
-          placeholder="1234"
-        />
+        <InputText label="City" placeholder="City" />
+        <InputText label="Postcode" placeholder="1234" />
       </section>
     </section>
 
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
-      <InputPhone
-        label="Phone"
-        number={phoneNumber}
-        placeholder="012345679"
-        required
-      />
-      <InputEmail
-        label="Email"
-        email={emailAddress}
-        placeholder="you@email.com"
-      />
+      <InputPhone label="Phone" placeholder="012345679" required />
+      <InputEmail label="Email" placeholder="you@email.com" />
       <InputText
         label="Facebook Messenger"
-        text={fbMsgName}
         placeholder="Name on Facebook (optional)"
       />
     </section>
@@ -150,11 +90,7 @@
     </section>
   </section>
 
-  <InputRadio
-    label="Smoker?"
-    options={['Yes', 'No', 'Used to']}
-    bind:value={smokerStatus}
-  />
+  <InputRadio label="Smoker?" options={['Yes', 'No', 'Used to']} />
 
   <section id="ehtnicity">
     <Heading4>Ethnicity</Heading4>
@@ -163,46 +99,20 @@
     {/each}
   </section>
 
-  <InputText label="Iwi and/or hapū" text={iwi} placeholder="Iwi / hapū" />
-  <InputNumber
-    label="Children / dependents"
-    number={children}
-    placeholder="123"
-  />
-  <InputNumber
-    label="MSD client no."
-    number={msdClientNo}
-    placeholder="123 456 789"
-  />
-  <InputNumber
-    label="Bank account no."
-    number={bankAccount}
-    placeholder="123 456 789"
-  />
-  <InputText
-    label="Lawyers name (if applicable)"
-    text={lawyerName}
-    placeholder="John Smith"
-  />
+  <InputText label="Iwi and/or hapū" placeholder="Iwi / hapū" />
+  <InputNumber label="Children / dependents" placeholder="123" />
+  <InputNumber label="MSD client no." placeholder="123 456 789" />
+  <InputNumber label="Bank account no." placeholder="123 456 789" />
+  <InputText label="Lawyers name (if applicable)" placeholder="John Smith" />
   <InputText
     label="Probation officer name (if applicable)"
-    text={probationOfficerName}
     placeholder="Smith John"
   />
-  <InputRadio
-    label="Do you have a bank account?"
-    options={['Yes', 'No']}
-    bind:value={bankAccountStatus}
-  />
-  <InputRadio
-    label="Do you have photo ID?"
-    options={['Yes', 'No']}
-    bind:value={photoIdStatus}
-  />
+  <InputRadio label="Do you have a bank account?" options={['Yes', 'No']} />
+  <InputRadio label="Do you have photo ID?" options={['Yes', 'No']} />
   <InputRadio
     label="Do you have access to the internet?"
     options={['Yes', 'No', 'Sometimes']}
-    bind:value={internetAccessStatus}
   />
 
   <Heading4>Would you like assistance with any of the above?</Heading4>
@@ -225,54 +135,23 @@
 
     <Heading3>Emergency Contact Address</Heading3>
     <section id="emergency-address">
-      <InputText
-        label="Line 1"
-        text={emergencyContact.address.line1}
-        placeholder="123 Street Name"
-        hideLabel
-      />
-      <InputText
-        label="Line 2"
-        text={emergencyContact.address.line2}
-        placeholder="Line 2"
-        hideLabel
-      />
+      <InputText label="Line 1" placeholder="123 Street Name" hideLabel />
+      <InputText label="Line 2" placeholder="Line 2" hideLabel />
       <section id="emergency-city-postcode" class="city-postcode">
-        <InputText
-          label="City"
-          text={emergencyContact.address.city}
-          placeholder="City"
-        />
-        <InputText
-          label="Postcode"
-          text={emergencyContact.address.postcode}
-          placeholder="1234"
-        />
+        <InputText label="City" placeholder="City" />
+        <InputText label="Postcode" placeholder="1234" />
       </section>
     </section>
 
     <Heading3>Emergency Contact Details</Heading3>
     <section id="emergency-contact-details">
-      <InputPhone
-        label="Phone"
-        number={emergencyContact.contactDetails.phoneNumber}
-        placeholder="012345679"
-        required
-      />
-      <InputEmail
-        label="Email"
-        email={emergencyContact.contactDetails.emailAddress}
-        placeholder="you@email.com"
-      />
+      <InputPhone label="Phone" placeholder="012345679" required />
+      <InputEmail label="Email" placeholder="you@email.com" />
     </section>
   </section>
 
   <Heading2>Medical</Heading2>
-  <InputText
-    label="Name of Medical Center"
-    text={medicalCenterName}
-    placeholder="The Doctors"
-  />
+  <InputText label="Name of Medical Center" placeholder="The Doctors" />
 
   <Heading3>Agreement</Heading3>
   <Paragraph>
