@@ -60,7 +60,6 @@
   method="POST"
   data-netlify="true"
   netlify-honeypot="bot-field"
-  action="/reg/thank-you"
   class="column pad-y gaps-y"
 >
   <Heading>Whakaoranga Whanau Registration</Heading>
