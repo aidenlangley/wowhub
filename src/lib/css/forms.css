@@ -1,0 +1,49 @@
+.input {
+  display: grid;
+  gap: theme('gap.1');
+}
+
+.checkbox label,
+.input label,
+.radio label {
+  padding: theme('padding.1');
+  color: theme('colors.gray.900');
+
+  @apply text-14;
+}
+
+:global(.dark) .checkbox label,
+:global(.dark) .input label,
+:global(.dark) .radio label {
+  color: theme('colors.gray.100');
+}
+
+.checkbox input,
+.input input,
+.input select,
+.radio input {
+  opacity: 80%;
+  background-color: theme('colors.gray.50');
+  border-radius: theme('borderRadius.md');
+  border-color: theme('colors.gray.300');
+}
+
+.input input,
+.input select {
+  width: 100%;
+}
+
+:global(.dark) .checkbox input,
+:global(.dark) .input input,
+:global(.dark) .input select,
+:global(.dark) .radio input {
+  background-color: theme('colors.gray.800');
+  color: theme('colors.gray.100');
+  border-color: theme('colors.gray.700');
+}
+
+.checkbox input[type="checkbox"]:checked,
+.radio input[type="radio"]:checked {
+  background-color: theme('colors.blue.400');
+  border: 1px solid theme('colors.blue.700');
+}

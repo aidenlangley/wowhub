@@ -24,11 +24,19 @@
 
     @apply from-gray-200/70 bg-gray-200/70;
   }
+
+  .gradient-blue {
+    border-bottom-color: theme('colors.gray.300');
+    color: theme('colors.white');
+
+    @apply from-blue-400/70 bg-blue-600/90;
+  }
 }
 
 .gradient-green,
 .gradient-yellow,
-.gradient-red {
+.gradient-red,
+.gradient-blue {
   border-top-color: theme('colors.gray.300');
 }
 

@@ -3,23 +3,18 @@ import { readable } from 'svelte/store';
 export const forms = readable([
   {
     title: 'Whakaoranga Whanau Registration',
-    description:
-      'Register your interest in Whakaoranga Whanau Recovery Hub services',
-    url: 'https://forms.gle/9BSJcMKjP1XgjCaP9'
+    url: 'https://forms.gle/ixuMZHkJeApyYMVd6'
   },
   {
     title: 'Angry Birds Enrollment',
-    description: '',
-    url: 'https://forms.gle/Nd4B7t79btkcvR5r9'
+    url: 'https://forms.gle/xoLobfziBcRFZbc9A'
   },
   {
     title: 'AOD Education & Counsel Enrollment',
-    description: '',
-    url: 'https://forms.gle/7WqtPdmuKCbmrKX46'
+    url: 'https://forms.gle/CWD8APGsRKy3bmGb7'
   },
   {
     title: 'Whare 2 the Whenua Interest Form',
-    description: 'Register interest in Freedom Whare housing solutions',
-    url: 'https://forms.gle/MT22azTPYCyum3St9'
+    url: 'https://forms.gle/j9TkR4Nfo4CoAfJ49'
   }
 ]);
