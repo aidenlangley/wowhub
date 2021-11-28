@@ -45,13 +45,13 @@
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
     <section id="name" class="name">
+      <InputText label="Forename" placeholder="First name" required />
+      <InputText label="Surname" placeholder="Last name" required />
       <InputSelect
         label="Title"
         options={['Mr', 'Miss', 'Mrs', 'Ms']}
         required
       />
-      <InputText label="Forename" placeholder="First name" required />
-      <InputText label="Surname" placeholder="Last name" required />
     </section>
     <InputDate label="Date of birth" />
 
