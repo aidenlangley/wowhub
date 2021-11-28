@@ -20,10 +20,10 @@
 
 <SvelteSeo title={name} {description} />
 
+<!-- data-netlify="true" -->
 <form
   name="Angry Birds Registration"
   method="POST"
-  data-netlify="true"
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
