@@ -14,27 +14,22 @@
   import SvelteSeo from 'svelte-seo';
 
   const name = 'AOD Registration';
+  const description =
+    "Register for He Waka Aotearoa's AOD Education & Counselling course.";
 </script>
 
-<SvelteSeo
-  title="Whakaoranga Whanau Registration"
-  description={`Planting the seed of hope... Sharing gifts of recovery. Register
-  with the Whakaoranga Whanau here.`}
-/>
+<SvelteSeo title={name} {description} />
 
 <form
   {name}
   method="POST"
   data-netlify="true"
-  data-netlify-recaptcha="true"
   action="/reg/thank-you/"
   netlify-honeypot="aod-bot-field"
   class="column pad-y gaps-y"
 >
-  <Heading>AOD Course Enrollment Registration</Heading>
-  <Paragraph>
-    Register for He Waka Aotearoa's AOD Education & Counselling course.
-  </Paragraph>
+  <Heading>{name}</Heading>
+  <Paragraph>{description}</Paragraph>
 
   <!--
     This is supposed to happen automatically, but I can see no evidence of it

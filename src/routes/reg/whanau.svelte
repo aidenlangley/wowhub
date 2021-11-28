@@ -18,14 +18,12 @@
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
   import SvelteSeo from 'svelte-seo';
 
-  const name = 'WWRH Registration';
+  const name = 'Whakaoranga Whanau Registration';
+  const description = `Planting the seed of hope... Sharing gifts of recovery.
+  Register with the Whakaoranga Whanau here.`;
 </script>
 
-<SvelteSeo
-  title="Whakaoranga Whanau Registration"
-  description={`Planting the seed of hope... Sharing gifts of recovery. Register
-  with the Whakaoranga Whanau here.`}
-/>
+<SvelteSeo title={name} {description} />
 
 <form
   {name}
@@ -36,11 +34,8 @@
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
-  <Heading>Whakaoranga Whanau Registration</Heading>
-  <Paragraph>
-    Register to become a part of the Whakaoranga Whanau and get involved in our
-    services.
-  </Paragraph>
+  <Heading>{name}</Heading>
+  <Paragraph>{description}</Paragraph>
 
   <!--
     This is supposed to happen automatically, but I can see no evidence of it
@@ -279,6 +274,10 @@
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </section>
+
+  <div data-netlify-recaptcha="true">
+    <!-- Netlify will inject captcha here. -->
+  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>
