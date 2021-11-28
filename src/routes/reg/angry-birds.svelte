@@ -24,9 +24,8 @@
   name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
-  data-netlify-recaptcha="true"
-  action="/reg/thank-you"
   netlify-honeypot="angry-birds-bot-field"
+  action="/reg/thank-you"
   class="column pad-y gaps-y"
 >
   <Heading>{name}</Heading>
@@ -142,10 +141,6 @@
       />
     </label>
   </section>
-
-  <div data-netlify-recaptcha="true">
-    <!-- Netlify will inject recaptcha here. -->
-  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>
