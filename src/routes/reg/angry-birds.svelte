@@ -24,7 +24,8 @@
   name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
-  netlify-honeypot="bot-field"
+  data-netlify-recaptcha="true"
+  netlify-honeypot="angry-birds-bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>{name}</Heading>
@@ -39,15 +40,35 @@
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
     <section id="name" class="name">
-      <InputText label="Forename" placeholder="First name" required />
-      <InputText label="Surname" placeholder="Last name" required />
+      <InputText
+        id="angry-birds-forename"
+        label="Forename"
+        placeholder="First name"
+        required
+      />
+      <InputText
+        id="angry-birds-surname"
+        label="Surname"
+        placeholder="Last name"
+        required
+      />
     </section>
 
     <Heading3>Contact Details</Heading3>
     <section id="contact-details">
-      <InputPhone label="Phone" placeholder="012345679" required />
-      <InputEmail label="Email" placeholder="you@email.com (optional)" />
+      <InputPhone
+        id="angry-birds-phone"
+        label="Phone"
+        placeholder="012345679"
+        required
+      />
+      <InputEmail
+        id="angry-birds-email"
+        label="Email"
+        placeholder="you@email.com (optional)"
+      />
       <InputText
+        id="angry-birds-fbmsg"
         label="Facebook Messenger"
         placeholder="Name on Facebook (optional)"
       />
@@ -108,13 +129,16 @@
 
   <Heading3>Declaration of Agreement & Understanding</Heading3>
   <InputCheckbox
+    id="angry-birds-agreement"
     label={`I have read & understand the engagement agreement.`}
     required
   />
 
   <section id="honeypot" class="honeypot">
     <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
+      Don’t fill this out if you’re human: <input
+        name="angry-birds-bot-field"
+      />
     </label>
   </section>
 

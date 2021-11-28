@@ -81,7 +81,7 @@
 
     <section id="referred-by">
       <Heading4>How did you come to be interested in our services?</Heading4>
-      {#each ['Referred myself', 'Referred by the police', 'Referred by corrections / probation', 'Referred by the family court', 'Referred by rehab / the DHB'] as referredBy}
+      {#each ['Referred myself', 'Referred by the police', 'Referred by corrections or probation', 'Referred by the family court', 'Referred by rehab or the DHB'] as referredBy}
         <InputCheckbox label={referredBy} />
       {/each}
     </section>
@@ -89,7 +89,7 @@
       <Heading4>
         I would like to register for these programmes / services...
       </Heading4>
-      {#each ['AOD Counselling & Education', 'AOD Transitional Housing', 'Social Services Support', 'Advocacy', 'Anger Management', 'Te reo Māori', 'Kapahaka & waiata'] as service}
+      {#each ['AOD Counselling and Education', 'AOD Transitional Housing', 'Social Services Support', 'Advocacy', 'Anger Management', 'Te reo Māori', 'Kapahaka and waiata'] as service}
         <InputCheckbox label={service} />
       {/each}
     </section>
@@ -104,49 +104,49 @@
 
   <InputRadio
     label="Smoker?"
-    options={['Yes, I am a smoker', 'No, not a smoker', 'Used to smoke']}
+    options={['Yes I am a smoker', 'No I am not a smoker', 'Used to smoke']}
   />
 
-  <InputText label="Iwi and/or hapū" placeholder="Iwi / hapū" />
-  <InputNumber label="Children / dependents" placeholder="123" />
+  <InputText label="Iwi or hapū" placeholder="Iwi / hapū" />
+  <InputNumber label="Children or dependents" placeholder="123" />
   <InputNumber label="MSD client no." placeholder="123 456 789" />
   <InputNumber label="Bank account no." placeholder="123 456 789" />
-  <InputText label="Lawyers name (if applicable)" placeholder="John Smith" />
+  <InputText label="Lawyers name" placeholder="(If applicable) John Smith" />
   <InputText
-    label="Probation officer name (if applicable)"
-    placeholder="Smith John"
+    label="Probation officer name"
+    placeholder="(If applicable) Smith John"
   />
   <InputRadio
     label="Do you have a bank account?"
-    options={['Yes, I have a bank account', "No, I don't have a bank account"]}
+    options={['Yes I have a bank account', 'No I do not have a bank account']}
   />
   <InputRadio
     label="Do you have photo ID?"
-    options={['Yes, I have photo ID', "No, I don't have photo ID"]}
+    options={['Yes I have photo ID', 'No I do not have photo ID']}
   />
   <InputRadio
     label="Do you have access to the internet?"
     options={[
-      'Yes, I have access to the internet',
-      "No, I don't have access to the internet",
+      'Yes I have access to the internet',
+      'No I do not have access to the internet',
       'I sometimes have access to the internet'
     ]}
   />
 
   <Heading4>Would you like assistance with any of the above?</Heading4>
-  {#each ["I'd like assistance setting up a bank account", "I'd like assistance getting photo ID", "I'd like assistance getting access to the internet"] as assistance}
+  {#each ['I would like assistance setting up a bank account', 'I would like assistance getting photo ID', 'I would like assistance getting access to the internet'] as assistance}
     <InputCheckbox label={assistance} />
   {/each}
 
   <Heading2>Emergency Contact</Heading2>
   <section id="emergency-contact">
     <InputText
-      label="Emergency contact's name"
+      label="Emergency contact name"
       placeholder="Next of kin, or somebody close to you"
       required
     />
     <InputText
-      label="Emergency contact's relation to you"
+      label="Emergency contact relation to you"
       placeholder="Partner, mother, etc."
       required
     />
@@ -154,18 +154,18 @@
     <Heading3>Address</Heading3>
     <section id="emergency-address">
       <InputText
-        label="Emergency Contact Address Line 1"
+        label="Emergency contact address line 1"
         placeholder="123 Street Name"
         hideLabel
       />
       <InputText
-        label="Emergency Contact Address Line 2"
+        label="Emergency contact address line 2"
         placeholder="Line 2"
         hideLabel
       />
       <section id="emergency-city-postcode" class="city-postcode">
-        <InputText label="Emergency Contact City" placeholder="City" />
-        <InputText label="Emergency Contact Postcode" placeholder="1234" />
+        <InputText label="Emergency contact city" placeholder="City" />
+        <InputText label="Emergency contact postcode" placeholder="1234" />
       </section>
     </section>
 
@@ -258,10 +258,12 @@
 
   <Heading3>Declaration of Agreement & Understanding</Heading3>
   <InputCheckbox
+    id="agree-read-understood"
     label={`I have read & understand the engagement agreement.`}
     required
   />
   <InputCheckbox
+    id="aware-rights"
     label={`I am aware of my rights under the Code of Health & Disability Services Consumer Rights.`}
     required
   />
