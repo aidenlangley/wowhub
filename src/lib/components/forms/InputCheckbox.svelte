@@ -6,6 +6,6 @@
 </script>
 
 <div class="checkbox">
-  <input type="checkbox" name={id} {id} bind:checked />
+  <input type="checkbox" name={id} {id} bind:checked {required} />
   <label for={id}>{label}</label>
 </div>

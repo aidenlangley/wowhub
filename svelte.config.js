@@ -40,6 +40,15 @@ const config = {
      */
     adapter: adapter(),
 
+    /**
+     * Would like to prerender everything - this site is designed as a static
+     * site.
+     */
+    prerender: {
+      crawl: true,
+      onError: 'continue'
+    },
+
     vite: {
       resolve: {
         alias: {
