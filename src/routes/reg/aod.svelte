@@ -112,9 +112,6 @@
         Don’t fill this out if you’re human: <input name="bot-field" />
       </label>
     </section>
-    <div data-netlify-recaptcha="true">
-      <!-- Netlify will inject captcha -->
-    </div>
 
     <button type="submit" class="button blue">Submit</button>
   </section>
