@@ -30,7 +30,7 @@
   method="POST"
   data-netlify="true"
   action="/reg/thank-you/"
-  netlify-honeypot="bot-field"
+  netlify-honeypot="wwrh-bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>{name}</Heading>
@@ -270,7 +270,7 @@
 
   <section id="honeypot" class="honeypot">
     <label>
-      Don’t fill this out if you’re human: <input name="bot-field" />
+      Don’t fill this out if you’re human: <input name="wwrh-bot-field" />
     </label>
   </section>
 

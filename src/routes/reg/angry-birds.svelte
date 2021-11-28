@@ -21,7 +21,7 @@
 <SvelteSeo title={name} {description} />
 
 <form
-  {name}
+  name="Angry Birds Registration"
   method="POST"
   data-netlify="true"
   action="/reg/thank-you/"
@@ -35,7 +35,7 @@
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <!-- <input type="hidden" name="form-name" value={name} /> -->
+  <input type="hidden" name="form-name" value="Angry Birds Registration" />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
