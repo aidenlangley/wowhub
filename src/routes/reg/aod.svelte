@@ -20,7 +20,6 @@
 
 <SvelteSeo title={name} {description} />
 
-<!-- data-netlify="true" -->
 <form
   {name}
   method="POST"
