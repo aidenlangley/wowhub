@@ -190,5 +190,12 @@ export const team = readable([
       and do some mahi together.`
     ],
     imgSrc: bells
-  }
+  },
+  {
+    name: 'Carol',
+    tags: ['Kaimanāki', 'tuākana'],
+    pepeha: [],
+    about: [``]
+    // imgSrc:
+  },
 ]);
