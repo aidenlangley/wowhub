@@ -24,7 +24,5 @@ p {
 @media screen(xl) {
   p {
     line-height: theme('lineHeight.relaxed');
-
-    @apply text-18;
   }
 }
