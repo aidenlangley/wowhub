@@ -30,6 +30,7 @@
   method="POST"
   data-netlify="true"
   data-netlify-recaptcha="true"
+  action="/reg/thank-you"
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
