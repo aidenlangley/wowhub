@@ -1,3 +1,7 @@
+<script lang="ts" context="module">
+  export const prerender = true;
+</script>
+
 <script lang="ts">
   import InputCheckbox from '$comp/forms/InputCheckbox.svelte';
   import InputDate from '$comp/forms/InputDate.svelte';

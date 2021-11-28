@@ -1,4 +1,8 @@
-<script>
+<script lang="ts" context="module">
+  export const prerender = true;
+</script>
+
+<script lang="ts">
   import Heading from '$comp/heading/Heading.svelte';
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Link from '$comp/link/Link.svelte';
