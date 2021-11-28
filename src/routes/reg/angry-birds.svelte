@@ -20,6 +20,7 @@
 
 <SvelteSeo title={name} {description} />
 
+<!-- data-netlify="true" -->
 <form
   name="Angry Birds Registration"
   method="POST"
