@@ -59,10 +59,17 @@
   name="WWRH Registration"
   method="POST"
   data-netlify="true"
+  action="/reg/thank-you/"
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>Whakaoranga Whanau Registration</Heading>
+
+  <!--
+    This is supposed to happen automatically, but I can see no evidence of it
+    working, so I'm manually adding it.
+  -->
+  <input type="hidden" name="form-name" value="WWRH Registration" />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
@@ -85,12 +92,7 @@
         placeholder="123 Street Name"
         hideLabel
       />
-      <InputText
-        label="Line 2"
-        text={address.line2}
-        placeholder="Line 2"
-        hideLabel
-      />
+      <InputText label="Line 2" text={address.line2} hideLabel />
       <section id="city-postcode" class="city-postcode">
         <InputText label="City" text={address.city} placeholder="City" />
         <InputText
