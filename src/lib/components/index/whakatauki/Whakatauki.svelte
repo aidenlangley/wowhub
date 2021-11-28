@@ -25,16 +25,18 @@
     <section>
       <Paragraph justify>
         A favourite whakatauki of ours that embodies our ideals perfectly. A
-        strong individual empowers us all.
+        strong individual empowers us all. Working with te tangata (individual)
+        to empower them in their recovery.
       </Paragraph>
       <Paragraph justify>
-        We take a holistic approach when it comes to treatment. Behind the
-        individual there's roopu, whanau, there's hinengaro, tinana and wairua.
-        Addiction only accounts for a fraction of the recovery process.
+        Within each individual there's a whanau, a hapū, and an iwi. We take a
+        holistic approach to treatment, focusing on Māori models of care like Te
+        Whare Tapa Whā which encompasses taking care of the hinengaroa (mind),
+        wairua (spirit), tinana (body) and whānau (family.)
       </Paragraph>
+      <Paragraph justify />
       <Paragraph justify>
-        When Taumarere is in need, Hokianga will answer the call, and vice
-        versa.
+        He aha te mea nui o te ao, he tangata, he tangata, he tangata.
       </Paragraph>
     </section>
   </article>

@@ -95,14 +95,14 @@ export const team = readable([
   // },
   {
     name: 'Stu 💪🏽',
-    tags: ['he waka eke noa', 'aod counsellor', 'kaumātua'],
+    tags: ['he waka aotearoa', 'aod counsellor', 'kaumātua'],
     pepeha: [],
     about: [``],
     imgSrc: stuBess
   },
   {
     name: 'Bess 🔥',
-    tags: ['he waka eke noa', 'therapist', 'kaumātua'],
+    tags: ['he waka aotearoa', 'therapist', 'kaumātua'],
     pepeha: [],
     about: [``],
     imgSrc: stuBess

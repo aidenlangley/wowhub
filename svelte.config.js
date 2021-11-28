@@ -39,6 +39,12 @@ const config = {
      */
     adapter: adapter(),
 
+    prerender: {
+      enabled: true,
+      crawl: true,
+      onError: 'continue'
+    },
+
     vite: {
       resolve: {
         alias: {
