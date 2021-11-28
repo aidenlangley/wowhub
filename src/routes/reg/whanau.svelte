@@ -17,6 +17,8 @@
   import Heading4 from '$comp/heading/Heading4.svelte';
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
   import SvelteSeo from 'svelte-seo';
+
+  const name = 'WWRH Registration';
 </script>
 
 <SvelteSeo
@@ -26,7 +28,7 @@
 />
 
 <form
-  name="WWRH Registration"
+  {name}
   method="POST"
   data-netlify="true"
   data-netlify-recaptcha="true"
@@ -44,7 +46,7 @@
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <input type="hidden" name="form-name" value="WWRH Registration" />
+  <input type="hidden" name="form-name" value={name} />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">

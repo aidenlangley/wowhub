@@ -12,6 +12,8 @@
   import Heading3 from '$comp/heading/Heading3.svelte';
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
   import SvelteSeo from 'svelte-seo';
+
+  const name = 'AOD Registration';
 </script>
 
 <SvelteSeo
@@ -21,12 +23,12 @@
 />
 
 <form
-  name="AOD Registration"
+  {name}
   method="POST"
   data-netlify="true"
   data-netlify-recaptcha="true"
   action="/reg/thank-you/"
-  netlify-honeypot="bot-field"
+  netlify-honeypot="aod-bot-field"
   class="column pad-y gaps-y"
 >
   <Heading>AOD Course Enrollment Registration</Heading>
@@ -38,7 +40,7 @@
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <input type="hidden" name="form-name" value="AOD Registration" />
+  <input type="hidden" name="form-name" value={name} />
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
@@ -131,7 +133,7 @@
       <label>
         Don’t fill this out if you’re human: <input
           id="aod-bot-field"
-          name="bot-field"
+          name="aod-bot-field"
         />
       </label>
     </section>
