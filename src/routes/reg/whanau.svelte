@@ -29,7 +29,6 @@
   {name}
   method="POST"
   data-netlify="true"
-  data-netlify-recaptcha="true"
   action="/reg/thank-you/"
   netlify-honeypot="bot-field"
   class="column pad-y gaps-y"
@@ -274,10 +273,6 @@
       Don’t fill this out if you’re human: <input name="bot-field" />
     </label>
   </section>
-
-  <div data-netlify-recaptcha="true">
-    <!-- Netlify will inject captcha here. -->
-  </div>
 
   <button type="submit" class="button blue">Submit</button>
 </form>

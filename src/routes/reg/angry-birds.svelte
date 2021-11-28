@@ -13,7 +13,7 @@
   import Paragraph from '$comp/paragraph/Paragraph.svelte';
   import SvelteSeo from 'svelte-seo';
 
-  const name = 'Angry Birds Registration';
+  const name = 'Manu Pukuriri (Angry Birds) Enrollment';
   const description =
     "Register for He Waka Aotearoa's Anger Management course.";
 </script>
@@ -28,14 +28,14 @@
   netlify-honeypot="angry-birds-bot-field"
   class="column pad-y gaps-y"
 >
-  <Heading>Manu Pukuriri (Angry Birds) Enrollment</Heading>
+  <Heading>{name}</Heading>
   <Paragraph>{description}</Paragraph>
 
   <!--
     This is supposed to happen automatically, but I can see no evidence of it
     working, so I'm manually adding it.
   -->
-  <input type="hidden" name="form-name" value={name} />
+  <!-- <input type="hidden" name="form-name" value={name} /> -->
 
   <Heading2>Personal Details</Heading2>
   <section id="personal-details" class="gaps-y">
