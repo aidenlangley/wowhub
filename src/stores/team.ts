@@ -25,7 +25,7 @@ export const team = readable([
     about: [
       `Jane is the founder of Whakaoranga Whanau Recovery Hub. Although she has
       no immediate ties to Kaikohe, she was brought up by by her Te Arawa
-      whakapapa, but her grandfathers' roots are with Ngati Te Roroa and Ngāti
+      whakapapa, but her grandfathers' roots are with Te Roroa and Ngāti
       Kahungunu.`,
       `She shares personal lived experience; maintaining mental wellbeing, as
       well as alcohol and drug addiction. Her recovery journey had brought her
