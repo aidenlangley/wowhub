@@ -31,7 +31,7 @@
       <Paragraph justify>
         Within each individual there's a whanau, a hapū, and an iwi. We take a
         holistic approach to treatment, focusing on Māori models of care like Te
-        Whare Tapa Whā which encompasses taking care of the hinengaroa (mind),
+        Whare Tapa Whā which encompasses taking care of the hinengaro (mind),
         wairua (spirit), tinana (body) and whānau (family.)
       </Paragraph>
       <Paragraph justify />
