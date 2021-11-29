@@ -197,5 +197,5 @@ export const team = readable([
     pepeha: [],
     about: [``]
     // imgSrc:
-  },
+  }
 ]);
