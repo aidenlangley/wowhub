@@ -12,7 +12,7 @@
   copy & paste for larger screens.
 -->
 <article class="wrapper">
-  <div class="buttons">
+  <section class="buttons">
     <a
       href="mailto:{$info.email}"
       target="_blank"
@@ -75,20 +75,18 @@
     >
       <GoogleMaps />
     </a>
-  </div>
-  <div class="info">
-    <ul>
-      <li>
-        <span>{$info.email}</span> |
-        <span>{$info.phone.replace('+64', '0')}</span>
-      </li>
-      {#each $forms as form}
-        <li>
-          <Link href={form.url} internal>{form.title}</Link>
-        </li>
-      {/each}
-    </ul>
-  </div>
+  </section>
+  <section class="info">
+    <span>{$info.email}</span> |
+    <span>{$info.phone.replace('+64', '0')}</span>
+  </section>
+  <section class="forms">
+    {#each $forms as form}
+      <Link href={form.url} internal>
+        {form.title}
+      </Link>
+    {/each}
+  </section>
 </article>
 
 <style>

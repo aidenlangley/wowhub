@@ -6,7 +6,7 @@ import dee from '$img/people/dee.jpg';
 import jane from '$img/people/jane.jpg';
 import noreen from '$img/people/noreen.jpg';
 import rhonda from '$img/people/rhonda.jpg';
-// import shan from '$img/people/shan.jpg';
+import shan from '$img/people/shan.jpg';
 import stuBess from '$img/people/stu-bess.jpg';
 import { readable } from 'svelte/store';
 
@@ -171,8 +171,8 @@ export const team = readable([
       and Te Arawa. She's a whangae to Rhonda Zielinski and Dave Winder, has
       lived in Kaikohe for most of her life, and loves working at the Hub.`,
       `You'll be hard pressed to find a more meticulous character than Shan.`
-    ]
-    // imgSrc:
+    ],
+    imgSrc: shan
   },
   {
     name: 'Bells 🛠️',
