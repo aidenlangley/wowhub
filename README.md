@@ -1,4 +1,4 @@
-# [https://wowhub.co.nz](https://wowhub.co.nz)
+# [https://www.wowhub.co.nz](https://www.wowhub.co.nz)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/03a7a633-299a-4f48-bc4e-eb931a035e4f/deploy-status)](https://app.netlify.com/sites/wowhub/deploys)
 
