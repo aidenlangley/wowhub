@@ -41,8 +41,7 @@ const config = {
 
     prerender: {
       enabled: true,
-      crawl: true,
-      onError: 'continue'
+      crawl: true
     },
 
     vite: {
