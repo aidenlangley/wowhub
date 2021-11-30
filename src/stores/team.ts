@@ -161,7 +161,7 @@ export const team = readable([
   },
   {
     name: 'Shannyn 📚',
-    tags: ['hero', 'front of house'],
+    tags: ['administration', 'front of house'],
     pepeha: [],
     about: [
       `Shannyn is the unsung hero of the Whakaoranga Whanau whose taken on the
