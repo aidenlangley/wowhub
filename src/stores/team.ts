@@ -1,5 +1,6 @@
 import aiden from '$img/people/aiden.jpg';
 import bells from '$img/people/bells.jpg';
+import carol from '$img/people/carol.jpg';
 // import bess from '$img/people/bess.jpg';
 import dee from '$img/people/dee.jpg';
 import jane from '$img/people/jane.jpg';
@@ -160,9 +161,17 @@ export const team = readable([
   },
   {
     name: 'Shannyn 📚',
-    tags: ['front of house'],
+    tags: ['hero', 'front of house'],
     pepeha: [],
-    about: [``]
+    about: [
+      `Shannyn is the unsung hero of the Whakaoranga Whanau whose taken on the
+      demanding role of being front and center handling administration for the
+      Whakaoranga Whanau.`,
+      `She was born in Rotorua and raised in Kaikohe - her roots lie with Ngapuhi
+      and Te Arawa. She's a whangae to Rhonda Zielinski and Dave Winder, has
+      lived in Kaikohe for most of her life, and loves working at the Hub.`,
+      `You'll be hard pressed to find a more meticulous character than Shan.`
+    ]
     // imgSrc:
   },
   {
@@ -194,8 +203,29 @@ export const team = readable([
   {
     name: 'Carol',
     tags: ['Kaimanāki', 'tuākana'],
-    pepeha: [],
-    about: [``]
-    // imgSrc:
+    pepeha: [
+      'Ko Pouerua te maunga',
+      'Ko Waitangi te moana',
+      'Ko Rotoiti te awa',
+      'Ko Haruru te rerenga',
+      'Ko Waitangi/Ngāti Kawa te marae',
+      'Ko Rahiri/Ngāti Kawa te hapū',
+      'Ko Mataatua te waka',
+      'Ko Ngāpuhi te iwi',
+      'Ko Carol Thompson ahau'
+    ],
+    about: [
+      `He kai awhina a Carol Thompson ki te Whakaoranga
+      Whanau Recovery Hub o Kaikohe.`,
+      `Life has been colourful for Carol, she has 1 son and 2 mokopuna and has
+      also struggled with alcohol, drugs & violence. She completed the programs
+      at the Whakaoranga Whanau and which helped her to identify and understand
+      the reasons why mind-altering substances have played such a pivotal role
+      in her life, and pivot she did.`,
+      `Through a change of attitude and the WANT to break the cycle with
+      addictions and unhealthy habits, she now has the drive to live a
+      fulfilling life, not only now, but also for the generations to come.`
+    ],
+    imgSrc: carol
   }
 ]);
