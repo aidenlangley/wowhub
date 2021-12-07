@@ -20,8 +20,8 @@ Afterwards, it's a typical node project. Run `npm/yarn/pnpm install`, scripts
 can be found in `package.json`. We've got a pretty typical setup, `npm run dev`
 to start the dev server, the rest are related to CI/CD & deployment.
 
-Saying that, there is a **`.devcontainer`** provided, which means you don't need
-to run any setup in your local environment if you have `podman` installed. Just
+**Saying that, there is a `.devcontainer` provided, which means you don't need
+to run any setup in your local environment if you have `podman` installed.** Just
 let VS Code, or `podman`, set up a container, and then utilise the container for
 development.
 
