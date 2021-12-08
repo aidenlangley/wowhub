@@ -35,9 +35,17 @@
   color: theme('colors.green.700');
 }
 
+:global(.dark) .buttons {
+  color: theme('colors.white');
+}
+
 :global(.dark) .buttons svg:hover,
 :global(.dark) .buttons svg:focus {
   color: theme('colors.green.300');
+}
+
+:global(.dark) .info {
+  color: theme('colors.white');
 }
 
 @media screen(ty) {
