@@ -12,6 +12,3 @@ node_modules/
 .yarn/
 package-lock.json
 pnpm-lock.yaml
-
-# Dev settings
-.vscode/
