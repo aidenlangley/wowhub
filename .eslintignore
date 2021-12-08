@@ -17,3 +17,5 @@ pnpm-lock.yaml
 **/*.json
 **/*.md
 **/*.svx
+**/*.cjs
+**/*.config.js
