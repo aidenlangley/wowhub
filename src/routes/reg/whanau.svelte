@@ -110,7 +110,6 @@
   <InputText label="Iwi or hapū" placeholder="Iwi / hapū" />
   <InputNumber label="Children or dependents" placeholder="123" />
   <InputNumber label="MSD client no." placeholder="123 456 789" />
-  <InputNumber label="Bank account no." placeholder="123 456 789" />
   <InputText label="Lawyers name" placeholder="(If applicable) John Smith" />
   <InputText
     label="Probation officer name"
