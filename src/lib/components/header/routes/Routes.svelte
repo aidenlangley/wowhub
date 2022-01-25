@@ -39,7 +39,7 @@
           <a
             href={path}
             aria-label="link to {translation} page"
-            class:active={$page.path === path}
+            class:active={$page.url.pathname === path}
           >
             {name}
           </a>
