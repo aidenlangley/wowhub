@@ -1,6 +1,7 @@
 {
   "extends": "./.svelte-kit/tsconfig.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
@@ -12,7 +13,7 @@
     "allowJs": true,
     "checkJs": true,
     "noEmit": true,
-    "noImplicitAny": true,
+    // "noImplicitAny": true,
     "paths": {
       "$lib": [
         "src/lib"
@@ -51,5 +52,13 @@
         "src/images/*"
       ]
     }
-  }
+  },
+  "include": [
+    "../src/**/*.js",
+    "../src/**/*.ts",
+    "../src/**/*.svelte"
+  ],
+  "exclude": [
+    "../node_modules/**"
+  ]
 }

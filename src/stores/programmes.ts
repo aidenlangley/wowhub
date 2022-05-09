@@ -24,6 +24,7 @@ export const programmes = readable([
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.`,
     imgUrl: logo,
-    url: '/programmes/angry-birds'
+    infoUrl: '/programmes/angry-birds',
+    regUrl: '/reg/angry-birds'
   }
 ]);

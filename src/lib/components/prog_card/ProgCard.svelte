@@ -6,7 +6,8 @@
   export let title: string;
   export let description: string;
   export let imgUrl: string;
-  export let url: string;
+  export let infoUrl: string;
+  export let regUrl: string;
 
   const MAX_LENGTH = 256;
   if (description.length > MAX_LENGTH) {
@@ -23,7 +24,10 @@
   <Heading>{title}</Heading>
   <img src={imgUrl} alt="image of {title}" />
   <Paragraph>{description}</Paragraph>
-  <Link href={url} internal>Find out more</Link>
+  <div class="links">
+    <Link href={regUrl} internal>Register</Link>
+    <Link href={infoUrl} internal>Find out more</Link>
+  </div>
 </article>
 
 <style lang="postcss">
@@ -55,11 +59,18 @@
   }
 
   article > img {
-    max-height: theme('height.48');
-    width: 100%;
     object-fit: cover;
     border-radius: theme('borderRadius.md');
     border-width: theme('borderWidth.DEFAULT');
     border-color: theme('colors.gray.200');
+    max-height: theme('height.48');
+    width: 100%;
+  }
+
+  .links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--gaps);
+    justify-self: left;
   }
 </style>

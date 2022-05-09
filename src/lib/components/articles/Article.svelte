@@ -4,8 +4,8 @@
 
   export let title;
   export let description;
-  export let date = null;
-  export let author = null;
+  export let date;
+  export let author;
 </script>
 
 <SvelteSeo {title} {description} />

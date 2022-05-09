@@ -5,6 +5,9 @@ specifiers:
   '@sveltejs/kit': ^1.0.0-next.324
   '@tailwindcss/forms': ^0.3.4
   '@tailwindcss/typography': ^0.4.1
+  '@types/postcss-import': ^14.0.0
+  '@types/postcss-preset-env': ^6.7.3
+  '@types/tailwindcss': ^3.0.10
   '@typescript-eslint/eslint-plugin': ^4.33.0
   '@typescript-eslint/parser': ^4.33.0
   autoprefixer: ^10.4.2
@@ -40,6 +43,9 @@ devDependencies:
   '@sveltejs/kit': 1.0.0-next.324_svelte@3.46.2
   '@tailwindcss/forms': 0.3.4_tailwindcss@2.2.19
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
+  '@types/postcss-import': 14.0.0
+  '@types/postcss-preset-env': 6.7.3
+  '@types/tailwindcss': 3.0.10
   '@typescript-eslint/eslint-plugin': 4.33.0_swkqfqhkeqhinvgsxkfyyd7oiu
   '@typescript-eslint/parser': 4.33.0_sgaiclxgc5mltnpgmg7py4v6ca
   autoprefixer: 10.4.2_postcss@8.4.5
@@ -245,6 +251,20 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
+  /@types/autoprefixer/9.7.2:
+    resolution: {integrity: sha512-QX7U7YW3zX3ex6MECtWO9folTGsXeP4b8bSjTq3I1ODM+H+sFHwGKuof+T+qBcDClGlCGtDb3SVfiTVfmcxw4g==}
+    dependencies:
+      '@types/browserslist': 4.15.0
+      postcss: 7.0.39
+    dev: true
+
+  /@types/browserslist/4.15.0:
+    resolution: {integrity: sha512-h9LyKErRGZqMsHh9bd+FE8yCIal4S0DxKTOeui56VgVXqa66TKiuaIUxCAI7c1O0LjaUzOTcsMyOpO9GetozRA==}
+    deprecated: This is a stub types definition. browserslist provides its own type definitions, so you do not need this installed.
+    dependencies:
+      browserslist: 4.19.1
+    dev: true
+
   /@types/hast/2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
@@ -277,6 +297,19 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
+  /@types/postcss-import/14.0.0:
+    resolution: {integrity: sha512-rYonq8jtSbdbBKNpi2xzi9CGFF7IcS/tzX6vMKFH1TMberRgTgTzYqCzRHPavBej/KId/AJd255iDSOsLv8esQ==}
+    dependencies:
+      postcss: 8.4.13
+    dev: true
+
+  /@types/postcss-preset-env/6.7.3:
+    resolution: {integrity: sha512-3YS66Cd7yNTOjjIPoOUaeGbcnxH+0eeP8Ih/RLpFEDazK16lOTabMqmHfL76DBNj5LreJlKRtKML07JkkuxRyw==}
+    dependencies:
+      '@types/autoprefixer': 9.7.2
+      postcss: 7.0.39
+    dev: true
+
   /@types/pug/2.0.6:
     resolution: {integrity: sha512-SnHmG9wN1UVmagJOnyo/qkk0Z7gejYxOYYmaAwr5u2yFYfsupN3sg10kyzN8Hep/2zbHxCnsumxOoRIRMBwKCg==}
     dev: true
@@ -285,6 +318,10 @@ packages:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
       '@types/node': 17.0.11
+    dev: true
+
+  /@types/tailwindcss/3.0.10:
+    resolution: {integrity: sha512-1UnZIHO0NOPyPlPFV0HuMjki2SHkvG9uBA1ZehWj/OQMSROk503nuNyyfmJSIT289yewxTbKoPG+KLxYRvfIIg==}
     dev: true
 
   /@types/unist/2.0.6:
