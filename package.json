@@ -31,9 +31,8 @@
     "lint:build:deploy": "npm run lint && npm run build && npm run deploy"
   },
   "devDependencies": {
-    "@sveltejs/adapter-netlify": "^1.0.0-next.43",
-    "@sveltejs/adapter-static": "^1.0.0-next.26",
-    "@sveltejs/kit": "^1.0.0-next.241",
+    "@sveltejs/adapter-netlify": "^1.0.0-next.56",
+    "@sveltejs/kit": "^1.0.0-next.324",
     "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
