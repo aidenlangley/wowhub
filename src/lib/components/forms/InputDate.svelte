@@ -1,6 +1,6 @@
 <script lang="ts">
   export let label: string;
-  export let date: string;
+  export let date = '';
   export let required = false;
   export let id = label.toLowerCase().split(' ').join('-');
 </script>

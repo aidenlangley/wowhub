@@ -20,7 +20,7 @@
 
   const name = 'Whakaoranga Whanau Registration';
   const description = `Planting the seed of hope... Sharing gifts of recovery.
-  Register with the Whakaoranga Whanau here.`;
+    Register with the Whakaoranga Whanau here.`;
 </script>
 
 <SvelteSeo title={name} {description} />

@@ -1,6 +1,6 @@
 <script lang="ts">
   export let label: string;
-  export let email: string;
+  export let email = '';
   export let placeholder = '';
   export let hideLabel = false;
   export let required = false;

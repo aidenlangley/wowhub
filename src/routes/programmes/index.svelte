@@ -15,7 +15,7 @@
   Our programmes.
 -->
 <article class="pad-y column">
-  {#each $programmes as { title, description, imgUrl, url }}
-    <ProgCard {title} {description} {imgUrl} {url} />
+  {#each $programmes as { title, description, imgUrl, infoUrl, regUrl }}
+    <ProgCard {title} {description} {imgUrl} {infoUrl} {regUrl} />
   {/each}
 </article>
