@@ -15,7 +15,30 @@
   Our programmes.
 -->
 <article class="pad-y column">
-  {#each $programmes as { title, description, imgUrl, infoUrl, regUrl }}
-    <ProgCard {title} {description} {imgUrl} {infoUrl} {regUrl} />
-  {/each}
+  <div class="fill">
+    {#each $programmes as { title, description, imgUrl, infoUrl, regUrl }}
+      <ProgCard {title} {description} {imgUrl} {infoUrl} {regUrl} />
+    {/each}
+  </div>
 </article>
+
+<style lang="postcss">
+  .fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: theme('gap.4');
+  }
+
+  @media screen(ty) {
+    .fill {
+      grid-template-columns: repeat(auto-fill, minmax(22.5rem, 1fr));
+    }
+  }
+
+  @media screen(md) {
+    .fill {
+      grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+      padding: theme('padding.8');
+    }
+  }
+</style>

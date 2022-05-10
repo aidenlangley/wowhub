@@ -72,7 +72,7 @@ const config = {
         16: '16px'
       },
       colors: {
-        gray: colors.stone,
+        gray: colors.warmGray,
         orange: colors.orange
       },
       typography: (theme) => ({

@@ -21,8 +21,10 @@
   a fuller page.
 -->
 <article class="pad-y">
-  <Heading>{title}</Heading>
   <img src={imgUrl} alt="image of {title}" />
+  <Heading>
+    <a href={infoUrl}>{title}</a>
+  </Heading>
   <Paragraph>{description}</Paragraph>
   <div class="links">
     <Link href={regUrl} internal>Register</Link>

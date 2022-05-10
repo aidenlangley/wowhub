@@ -3,6 +3,7 @@ import { readable } from 'svelte/store';
 
 export const programmes = readable([
   {
+    id: 'angry-birds',
     title: 'Manu Pukuriri (Angry Birds)',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -12,9 +13,11 @@ export const programmes = readable([
       cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
       est laborum.`,
     imgUrl: logo,
-    url: '/programmes/angry-birds'
+    infoUrl: '/programmes/angry-birds',
+    regUrl: '/reg/angry-birds'
   },
   {
+    id: 'aod',
     title: 'Waipiro Tarukino (AOD)',
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
       do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -28,3 +31,12 @@ export const programmes = readable([
     regUrl: '/reg/angry-birds'
   }
 ]);
+
+export interface programme {
+  id: string;
+  title: string;
+  description: string;
+  imgUrl: string;
+  infoUrl: string;
+  regUrl: string;
+}
